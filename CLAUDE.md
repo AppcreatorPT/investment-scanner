@@ -6,7 +6,7 @@ Le este ficheiro antes de fazer qualquer coisa.
 
 ## O que e este sistema
 
-Scanner de oportunidades de investimento organizado em 8 categorias. Gera listas curadas de entidades (empresas, fundos, protocolos, analistas) com potencial de retorno assimetrico, em formato JSON estruturado.
+Scanner de oportunidades de investimento organizado em 7 temas. Gera listas curadas de **instrumentos acessiveis a um retail da UE de baixo orcamento** (€10-100), com potencial de retorno assimetrico e **via de compra real** (direto ou proxy cotado), em formato JSON estruturado.
 
 ---
 
@@ -17,7 +17,7 @@ Scanner de oportunidades de investimento organizado em 8 categorias. Gera listas
 | 1 | Longevidade & Saude | LSA- | prompts/01-longevidade.md |
 | 2 | Trading & Mercados | TRD- | prompts/02-trading.md |
 | 3 | Materiais & Energia | MAT- | prompts/03-materiais.md |
-| 4 | Economia & Macro | MAC- | prompts/04-economia.md |
+| ~~4~~ | ~~Economia & Macro~~ — retirada (macro acessivel dobra para Materiais/Trading) | — | — |
 | 5 | Geopolitica & Defesa | GEO- | prompts/05-geopolitica.md |
 | 6 | IA & Computacao | AIC- | prompts/06-ia-computacao.md |
 | 7 | Espaco & Deep Tech | SDT- | prompts/07-espaco-deeptech.md |
@@ -41,15 +41,13 @@ O utilizador diz algo como:
 4. Guarda em `output/YYYY-MM-DD_nome-categoria.json`
 5. Corre o validador: `bun run scripts/validate.ts output/ficheiro.json`
 
-### Workflow de agregacao:
+### Agregacao:
 
-1. Le todos os JSONs em `output/` com a mesma data
-2. Le `prompts/09-agregacao.md`
-3. Gera `output/YYYY-MM-DD_agregado.json`
+A agregacao e feita **ao vivo pelo dashboard** (carrega varios JSONs e cruza-os). **Nao gerar** `_agregado.json` — e dado duplicado.
 
 ---
 
-## Schema JSON (essencial — 16 campos)
+## Schema JSON (essencial — acessivel + grounded)
 
 Cada ficheiro de output segue esta estrutura:
 
@@ -64,7 +62,7 @@ Cada ficheiro de output segue esta estrutura:
       "description": "Descricao curta, 1-2 linhas",
       "subcategory": "Sub-area especifica",
       "status": "privada | pre-IPO | cotada | token | fundo",
-      "ticker": "TICK | null",
+      "ticker": "ticker COMPRAVEL (o do proxy se houver proxy) | null",
       "geography": "Pais sede + bolsa se cotada",
       "market_cap_or_valuation": "~$2B | Serie C $400M",
       "liquidity": "alta | media | baixa | sem mercado",
@@ -75,7 +73,13 @@ Cada ficheiro de output segue esta estrutura:
       "asymmetry_score": 4,
       "return_horizon": "curto (0-12m) | medio (1-3a) | longo (3+a)",
       "red_flags": "Risco principal ou null",
-      "source": "Fonte verificavel"
+      "source": "URL real e datada (filing/noticia) — sem placeholders",
+      "account": "neobroker | vantage-cfd | cripto-exchange | abrir-conta",
+      "proxy_for": "subjacente inacessivel que o ticker replica | null",
+      "entry_min": "~€10 (fracionado)",
+      "why_now": "porque existe e porque ainda nao esta no preco",
+      "confidence": "verificado | parcial | especulativo",
+      "access_note": "a pega (UCITS, app, CFD-so-catalisador) | null"
     }
   ],
   "category_summary": {
@@ -85,7 +89,7 @@ Cada ficheiro de output segue esta estrutura:
   },
   "_meta": {
     "total_entities": 0,
-    "schema_version": "1.0",
+    "schema_version": "2.0",
     "category": "Nome da Categoria"
   }
 }
@@ -95,13 +99,18 @@ Cada ficheiro de output segue esta estrutura:
 
 ## Regras criticas
 
-1. **30-50 entidades por categoria** — qualidade > quantidade
+1. **~12-15 instrumentos ACESSIVEIS por tema** — poucos e de alta conviccao (nao 30-50)
 2. **Prefere omitir a inventar** — se nao conseguires verificar pelo menos 8 campos, nao incluas a entidade
 3. **Usa WebSearch** para verificar dados: tickers, valuations, catalisadores, datas
 4. **asymmetry_score** deve ser entre 1 e 5 (5 = maxima assimetria risco/retorno)
 5. **`_meta.total_entities`** deve corresponder ao comprimento real do array `entities`
 6. **IDs sequenciais** com o prefixo da categoria (LSA-001, LSA-002, ...)
 7. **Naming do output**: `YYYY-MM-DD_nome-categoria.json` (ex: `2026-04-05_longevidade.json`)
+8. **Acessivel-primeiro**: nada entra se um retail UE de baixo orcamento (€10-100, neobroker fracionado) nao puder comprar — direto ou via proxy cotado NOMEADO. Sem via → omitir.
+9. **Rotear `account`** por instrumento; `ticker` = o que se escreve no broker (o do proxy se houver proxy).
+10. **Catalisador datavel quase-obrigatorio**; sem `catalyst_date`, so com conviccao muito alta.
+11. **Grounded**: cada entidade traz `why_now` (porque ainda nao esta no preco) e `confidence`; `source` real e datada. Sem `why_now` solido → omitir.
+12. **Sem agregado**: a agregacao e feita ao vivo pelo dashboard; nao gerar `_agregado.json`.
 
 ---
 
@@ -120,6 +129,6 @@ Ou o utilizador pode dizer "valida o ultimo output".
 ## Comandos rapidos
 
 - `/scan [categoria]` — corre scan de uma categoria
-- `/scan todas` — corre as 8 categorias sequencialmente
+- `/scan todas` — corre os 7 temas sequencialmente
 - `/valida [ficheiro]` — corre validacao
 - `/agrega` — corre agregacao dos outputs do dia
