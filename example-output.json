@@ -1,0 +1,70 @@
+{
+  "category": "IA & Computacao",
+  "scan_date": "2026-06-03",
+  "entities": [
+    {
+      "id": "AIC-001",
+      "name": "Nvidia",
+      "description": "Lider em GPUs de datacenter para treino/inferencia de IA.",
+      "subcategory": "Computacao / semicondutores IA",
+      "status": "cotada",
+      "ticker": "NVDA",
+      "geography": "EUA, NASDAQ",
+      "market_cap_or_valuation": "~$3T",
+      "liquidity": "alta",
+      "risk_level": "moderado",
+      "opportunity_type": "acao cotada",
+      "catalyst": "Rampa de Blackwell e guidance de datacenter",
+      "catalyst_date": "Q3 2026",
+      "why_now": "Procura de compute ainda excede oferta; consenso pode subestimar a duracao do ciclo de capex de IA",
+      "confidence": "parcial",
+      "asymmetry_score": 4,
+      "return_horizon": "medio (1-3a)",
+      "red_flags": "Valuation alta; risco de digestao de capex pelos hyperscalers",
+      "account": "neobroker",
+      "proxy_for": null,
+      "entry_min": "~€10 (fracionado)",
+      "access_note": null,
+      "source": "https://investor.nvidia.com — earnings 2026"
+    },
+    {
+      "id": "AIC-002",
+      "name": "Exposicao a OpenAI",
+      "description": "OpenAI e privada; a Microsoft detem participacao e integra os modelos no Azure/Copilot.",
+      "subcategory": "Modelos fundacionais (exposicao indireta)",
+      "status": "privada",
+      "ticker": "MSFT",
+      "geography": "EUA, NASDAQ",
+      "market_cap_or_valuation": "OpenAI ~$300B (privada)",
+      "liquidity": "alta",
+      "risk_level": "moderado",
+      "opportunity_type": "exposicao indireta",
+      "catalyst": "Monetizacao de Copilot e crescimento de Azure AI",
+      "catalyst_date": "Q4 2026",
+      "why_now": "Unica via liquida e acessivel ao retail UE para exposicao economica a OpenAI antes de qualquer evento de liquidez",
+      "confidence": "especulativo",
+      "asymmetry_score": 3,
+      "return_horizon": "medio (1-3a)",
+      "red_flags": "Exposicao a OpenAI e diluida dentro de uma mega-cap",
+      "account": "neobroker",
+      "proxy_for": "OpenAI (privada) — via participacao da Microsoft",
+      "entry_min": "~€10 (fracionado)",
+      "access_note": "Proxy imperfeito: MSFT e muito mais do que OpenAI",
+      "source": "https://news.microsoft.com — comunicado 2026"
+    }
+  ],
+  "category_summary": {
+    "top5_asymmetry": ["AIC-001", "AIC-002"],
+    "top3_contrarian": ["AIC-002"],
+    "systemic_risks": [
+      "Digestao de capex de IA pelos hyperscalers",
+      "Compressao de multiplos com taxas altas",
+      "Concentracao do tema em poucas mega-caps"
+    ]
+  },
+  "_meta": {
+    "total_entities": 2,
+    "schema_version": "2.0",
+    "category": "IA & Computacao"
+  }
+}
