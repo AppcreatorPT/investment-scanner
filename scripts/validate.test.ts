@@ -8,7 +8,9 @@ function baseEntity(over: Record<string, unknown> = {}) {
     liquidity: "alta", risk_level: "alto", opportunity_type: "acao cotada",
     catalyst: "c", catalyst_date: "Q3 2026", asymmetry_score: 4,
     return_horizon: "curto (0-12m)", red_flags: null,
-    source: "https://sec.gov/x — 2026", ...over,
+    source: "https://sec.gov/x — 2026",
+    account: "neobroker", proxy_for: null, entry_min: "~€10 (fracionado)",
+    why_now: "edge real", confidence: "parcial", access_note: null, ...over,
   };
 }
 function baseScan(entities: unknown[]): ScanOutput {
@@ -22,6 +24,44 @@ function baseScan(entities: unknown[]): ScanOutput {
 test("smoke: a single well-formed entity yields no errors", () => {
   const { errors } = validateScan(baseScan([baseEntity()]));
   expect(errors).toEqual([]);
+});
+
+test("invalid account is an error", () => {
+  const { errors } = validateScan(baseScan([baseEntity({ account: "etrade" })]));
+  expect(errors.some(e => e.includes("invalid account"))).toBe(true);
+});
+
+test("missing why_now and entry_min are errors", () => {
+  const { errors } = validateScan(baseScan([baseEntity({ why_now: "", entry_min: "" })]));
+  expect(errors.some(e => e.includes('"why_now"'))).toBe(true);
+  expect(errors.some(e => e.includes('"entry_min"'))).toBe(true);
+});
+
+test("invalid confidence is an error", () => {
+  const { errors } = validateScan(baseScan([baseEntity({ confidence: "talvez" })]));
+  expect(errors.some(e => e.includes("invalid confidence"))).toBe(true);
+});
+
+test("missing catalyst_date is a warning", () => {
+  const { warnings } = validateScan(baseScan([baseEntity({ catalyst_date: null })]));
+  expect(warnings.some(w => w.includes("missing catalyst_date"))).toBe(true);
+});
+
+test("placeholder source is a warning", () => {
+  const { warnings } = validateScan(baseScan([baseEntity({ source: "ClinicalTrials NCT0000000" })]));
+  expect(warnings.some(w => w.includes("placeholder"))).toBe(true);
+});
+
+test("low entity count (<8) warns", () => {
+  const { warnings } = validateScan(baseScan([baseEntity()]));
+  expect(warnings.some(w => w.includes("entities"))).toBe(true);
+});
+
+test("Economia category is no longer recognized", () => {
+  const scan = baseScan([baseEntity()]);
+  scan.category = "Economia & Macro";
+  const { warnings } = validateScan(scan);
+  expect(warnings.some(w => w.includes("Unknown category"))).toBe(true);
 });
 
 export { baseEntity, baseScan };
