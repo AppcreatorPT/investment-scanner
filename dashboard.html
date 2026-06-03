@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Investment Scanner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  /* ── Design Tokens ── */
+  :root {
+    --font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --mono: 'SF Mono', 'Cascadia Code', 'Consolas', monospace;
+
+    /* Spacing (4pt base) */
+    --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px;
+    --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px;
+
+    /* Type scale (Major Third 1.25) */
+    --text-xs: 0.7rem;
+    --text-sm: 0.8125rem;
+    --text-base: 0.9375rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.375rem;
+    --text-2xl: 1.75rem;
+
+    /* Radius */
+    --r-sm: 4px; --r-md: 6px; --r-lg: 10px;
+
+    /* Transitions */
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --dur: 0.2s;
+  }
+
+  /* ── Dark Theme ── */
+  [data-theme="dark"] {
+    --bg-1: oklch(10% 0.008 55);
+    --bg-2: oklch(13.5% 0.008 55);
+    --bg-3: oklch(17% 0.008 55);
+    --bg-hover: oklch(20% 0.01 55);
+    --border: oklch(22% 0.008 55);
+    --border-subtle: oklch(18% 0.006 55);
+
+    --text-1: oklch(92% 0.01 55);
+    --text-2: oklch(65% 0.01 55);
+    --text-3: oklch(45% 0.008 55);
+
+    --accent: oklch(72% 0.14 75);
+    --accent-subtle: oklch(72% 0.14 75 / 0.12);
+
+    --positive: oklch(70% 0.15 145);
+    --positive-subtle: oklch(70% 0.15 145 / 0.1);
+    --negative: oklch(65% 0.2 25);
+    --negative-subtle: oklch(65% 0.2 25 / 0.1);
+    --warning: oklch(75% 0.15 80);
+    --info: oklch(70% 0.1 240);
+    --info-subtle: oklch(70% 0.1 240 / 0.1);
+
+    --shadow: none;
+    --body-weight: 350;
+  }
+
+  /* ── Light Theme ── */
+  [data-theme="light"] {
+    --bg-1: oklch(97% 0.005 55);
+    --bg-2: oklch(100% 0.002 55);
+    --bg-3: oklch(94% 0.006 55);
+    --bg-hover: oklch(92% 0.008 55);
+    --border: oklch(88% 0.006 55);
+    --border-subtle: oklch(92% 0.004 55);
+
+    --text-1: oklch(15% 0.01 55);
+    --text-2: oklch(42% 0.01 55);
+    --text-3: oklch(62% 0.008 55);
+
+    --accent: oklch(52% 0.14 60);
+    --accent-subtle: oklch(52% 0.14 60 / 0.08);
+
+    --positive: oklch(45% 0.14 145);
+    --positive-subtle: oklch(45% 0.14 145 / 0.08);
+    --negative: oklch(50% 0.18 25);
+    --negative-subtle: oklch(50% 0.18 25 / 0.08);
+    --warning: oklch(55% 0.14 70);
+    --info: oklch(48% 0.1 240);
+    --info-subtle: oklch(48% 0.1 240 / 0.08);
+
+    --shadow: 0 1px 3px oklch(0% 0 0 / 0.06);
+    --body-weight: 400;
+  }
+
+  /* ── Reset ── */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font);
+    font-weight: var(--body-weight);
+    font-size: var(--text-base);
+    line-height: 1.55;
+    background: var(--bg-1);
+    color: var(--text-1);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ── Header ── */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--s5) var(--s6);
+    border-bottom: 1px solid var(--border-subtle);
+    background: var(--bg-2);
+  }
+  .header-left { display: flex; align-items: center; gap: var(--s3); }
+  .header h1 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--text-1);
+  }
+  .header-right { display: flex; align-items: center; gap: var(--s3); }
+  .header .scan-date {
+    font-size: var(--text-sm);
+    color: var(--text-3);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ── Buttons ── */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--s2);
+    padding: var(--s2) var(--s3);
+    border-radius: var(--r-md);
+    border: 1px solid var(--border);
+    background: var(--bg-3);
+    color: var(--text-2);
+    font: inherit;
+    font-size: var(--text-xs);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all var(--dur) var(--ease);
+  }
+  .btn:hover { background: var(--bg-hover); color: var(--text-1); border-color: var(--text-3); }
+  .btn-accent { border-color: var(--accent); color: var(--accent); }
+  .btn-accent:hover { background: var(--accent-subtle); }
+  .btn svg { width: 14px; height: 14px; }
+
+  /* Theme toggle */
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-3);
+    padding: var(--s2);
+    border-radius: var(--r-sm);
+    transition: color var(--dur);
+    display: flex;
+  }
+  .theme-toggle:hover { color: var(--text-1); }
+  .theme-toggle svg { width: 18px; height: 18px; }
+  [data-theme="dark"] .icon-sun { display: none; }
+  [data-theme="light"] .icon-moon { display: none; }
+
+  /* ── Compare bar ── */
+  .compare-bar {
+    display: none;
+    align-items: center;
+    gap: var(--s3);
+    padding: var(--s3) var(--s6);
+    background: var(--accent-subtle);
+    border-bottom: 1px solid var(--border-subtle);
+    font-size: var(--text-sm);
+  }
+  .compare-bar.active { display: flex; }
+  .compare-bar label { color: var(--text-3); font-size: var(--text-xs); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+  .compare-bar select {
+    background: var(--bg-2); border: 1px solid var(--border); color: var(--text-1);
+    padding: var(--s1) var(--s2); border-radius: var(--r-sm); font: inherit; font-size: var(--text-sm);
+  }
+  .compare-bar select:focus { outline: none; border-color: var(--accent); }
+  .compare-stats { margin-left: auto; display: flex; gap: var(--s4); font-size: var(--text-sm); font-weight: 500; }
+  .cs-new { color: var(--positive); }
+  .cs-removed { color: var(--negative); }
+  .cs-up { color: var(--info); }
+  .cs-down { color: var(--warning); }
+
+  /* ── Stats ── */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 1px solid var(--border-subtle);
+  }
+  .stat-card {
+    padding: var(--s5) var(--s4);
+    text-align: left;
+    border-right: 1px solid var(--border-subtle);
+  }
+  .stat-card:last-child { border-right: none; }
+  .stat-card .value {
+    font-size: var(--text-2xl);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+    color: var(--text-1);
+  }
+  .stat-card .label {
+    font-size: var(--text-xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-3);
+    margin-top: var(--s1);
+  }
+  .stat-card .delta { font-size: var(--text-xs); font-weight: 600; margin-top: 2px; }
+  .delta.positive { color: var(--positive); }
+  .delta.negative { color: var(--negative); }
+  .stat-fav .value { color: var(--accent); }
+
+  /* ── Category tabs ── */
+  .cat-tabs {
+    display: flex;
+    gap: 0;
+    padding: 0 var(--s6);
+    border-bottom: 1px solid var(--border-subtle);
+    overflow-x: auto;
+  }
+  .cat-tab {
+    padding: var(--s3) var(--s4);
+    font-size: var(--text-xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-3);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+    transition: all var(--dur);
+  }
+  .cat-tab:hover { color: var(--text-2); }
+  .cat-tab.active { color: var(--text-1); border-bottom-color: var(--accent); }
+  .cat-tab .count {
+    font-variant-numeric: tabular-nums;
+    margin-left: var(--s1);
+    opacity: 0.5;
+  }
+
+  /* ── Controls ── */
+  .controls {
+    display: flex;
+    gap: var(--s3);
+    align-items: center;
+    padding: var(--s3) var(--s6);
+    border-bottom: 1px solid var(--border-subtle);
+    flex-wrap: wrap;
+  }
+  .ctrl-group { display: flex; align-items: center; gap: var(--s2); }
+  .ctrl-group label {
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-3);
+  }
+  .controls select, .controls input[type="text"] {
+    background: var(--bg-3);
+    border: 1px solid var(--border);
+    color: var(--text-1);
+    padding: var(--s2) var(--s3);
+    border-radius: var(--r-sm);
+    font: inherit;
+    font-size: var(--text-sm);
+  }
+  .controls select:focus, .controls input:focus { outline: none; border-color: var(--accent); }
+  .controls input[type="text"] { flex: 1; min-width: 180px; }
+  .controls input::placeholder { color: var(--text-3); }
+
+  /* ── Table ── */
+  .table-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    padding: var(--s3) var(--s4);
+    text-align: left;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-3);
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+    background: var(--bg-1);
+    z-index: 2;
+  }
+  thead th:hover { color: var(--text-2); }
+  thead th.sorted { color: var(--accent); }
+  thead th .arrow { font-size: var(--text-xs); margin-left: 2px; }
+  tbody tr {
+    border-bottom: 1px solid var(--border-subtle);
+    transition: background var(--dur);
+  }
+  tbody tr:hover { background: var(--bg-hover); }
+  td {
+    padding: var(--s3) var(--s4);
+    font-size: var(--text-sm);
+    white-space: nowrap;
+    color: var(--text-2);
+    font-variant-numeric: tabular-nums;
+  }
+  td.wrap { white-space: normal; max-width: 260px; }
+  td.name-cell { color: var(--text-1); font-weight: 500; }
+
+  /* Delta row styles */
+  tr.delta-new { border-left: 2px solid var(--positive); }
+  tr.delta-removed { opacity: 0.4; border-left: 2px solid var(--negative); }
+  tr.delta-removed td { text-decoration: line-through; text-decoration-color: var(--negative); }
+  tr.delta-removed td .tag, tr.delta-removed td .delta-tag { text-decoration: none; }
+  tr.delta-upgraded { border-left: 2px solid var(--info); }
+  tr.delta-downgraded { border-left: 2px solid var(--warning); }
+
+  /* ── Tags ── */
+  .tag {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: var(--r-sm);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+  }
+  .tag-score {
+    font-family: var(--mono);
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+  .tag-score-5 { background: var(--positive-subtle); color: var(--positive); }
+  .tag-score-4 { background: var(--positive-subtle); color: var(--positive); opacity: 0.8; }
+  .tag-score-3 { background: var(--accent-subtle); color: var(--accent); }
+  .tag-score-2 { background: var(--negative-subtle); color: var(--warning); }
+  .tag-score-1 { background: var(--negative-subtle); color: var(--negative); }
+
+  .tag-risk { text-transform: uppercase; font-size: 0.6rem; letter-spacing: 0.06em; }
+  .risk-baixo { color: var(--positive); }
+  .risk-moderado { color: var(--accent); }
+  .risk-alto { color: var(--warning); }
+  .risk-especulativo { color: var(--negative); }
+
+  .tag-horizon { font-size: var(--text-xs); color: var(--text-3); }
+
+  .tag-status { font-size: var(--text-xs); color: var(--text-3); }
+
+  .delta-tag {
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 1px 5px;
+    border-radius: var(--r-sm);
+  }
+  .delta-tag-new { background: var(--positive-subtle); color: var(--positive); }
+  .delta-tag-removed { background: var(--negative-subtle); color: var(--negative); }
+  .delta-tag-up { background: var(--info-subtle); color: var(--info); }
+  .delta-tag-down { background: var(--negative-subtle); color: var(--warning); }
+
+  .score-delta { font-size: var(--text-xs); font-weight: 700; margin-left: 4px; }
+  .score-delta.up { color: var(--positive); }
+  .score-delta.down { color: var(--negative); }
+
+  /* ── Star / Favorites ── */
+  .star-btn {
+    background: none; border: none; cursor: pointer;
+    font-size: 14px; padding: 2px;
+    color: var(--border);
+    transition: color var(--dur), transform var(--dur);
+  }
+  .star-btn:hover { color: var(--accent); transform: scale(1.15); }
+  .star-btn.active { color: var(--accent); }
+  tr.is-fav { background: var(--accent-subtle); }
+
+  /* ── Drop Zone ── */
+  .drop-zone {
+    max-width: 480px;
+    margin: var(--s8) auto;
+    border: 1.5px dashed var(--border);
+    border-radius: var(--r-lg);
+    padding: var(--s8) var(--s7);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s var(--ease);
+  }
+  .drop-zone:hover, .drop-zone.dragover { border-color: var(--accent); background: var(--accent-subtle); }
+  .drop-zone h2 { font-size: var(--text-xl); font-weight: 600; margin-bottom: var(--s2); letter-spacing: -0.01em; }
+  .drop-zone p { color: var(--text-3); font-size: var(--text-sm); }
+  .drop-zone .hint { margin-top: var(--s4); font-size: var(--text-xs); color: var(--text-3); opacity: 0.6; }
+  .drop-zone input { display: none; }
+
+  /* ── Detail Panel ── */
+  .detail-overlay {
+    display: none; position: fixed;
+    inset: 0;
+    background: oklch(0% 0 0 / 0.5);
+    z-index: 100;
+    justify-content: flex-end;
+  }
+  .detail-overlay.open { display: flex; }
+  .detail-panel {
+    background: var(--bg-2);
+    border-left: 1px solid var(--border);
+    width: 100%; max-width: 520px;
+    height: 100%;
+    overflow-y: auto;
+    padding: var(--s6);
+    animation: slideIn 0.25s var(--ease);
+  }
+  @keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
+  .detail-panel h2 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin-bottom: var(--s1);
+  }
+  .detail-panel .close-btn {
+    float: right;
+    background: none; border: none;
+    color: var(--text-3); font-size: 20px;
+    cursor: pointer; padding: var(--s2);
+  }
+  .detail-panel .close-btn:hover { color: var(--text-1); }
+  .detail-row {
+    display: flex;
+    padding: var(--s3) 0;
+    border-bottom: 1px solid var(--border-subtle);
+    gap: var(--s4);
+  }
+  .detail-row .dl {
+    width: 140px;
+    flex-shrink: 0;
+    font-size: var(--text-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--text-3);
+    padding-top: 2px;
+  }
+  .detail-row .dv { font-size: var(--text-sm); color: var(--text-1); }
+  .detail-prev { font-size: var(--text-xs); color: var(--text-3); text-decoration: line-through; margin-right: var(--s2); }
+  .detail-banner {
+    padding: var(--s3) var(--s4);
+    border-radius: var(--r-md);
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: var(--s4);
+  }
+
+  /* Fav button in detail */
+  .detail-fav-btn {
+    display: inline-flex; align-items: center; gap: var(--s2);
+    padding: var(--s2) var(--s4);
+    border-radius: var(--r-md);
+    border: 1px solid var(--border);
+    background: var(--bg-3);
+    color: var(--text-2);
+    font: inherit; font-size: var(--text-sm); font-weight: 500;
+    cursor: pointer;
+    transition: all var(--dur);
+    margin-bottom: var(--s5);
+  }
+  .detail-fav-btn.active { border-color: var(--accent); color: var(--accent); background: var(--accent-subtle); }
+  .detail-fav-btn:hover { border-color: var(--accent); }
+
+  /* Notes */
+  .notes-section { margin-top: var(--s5); border-top: 1px solid var(--border-subtle); padding-top: var(--s4); }
+  .notes-section label {
+    font-size: var(--text-xs); font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--text-3); display: block; margin-bottom: var(--s2);
+  }
+  .notes-section textarea {
+    width: 100%; background: var(--bg-3); border: 1px solid var(--border); color: var(--text-1);
+    font: inherit; font-size: var(--text-sm); padding: var(--s3); border-radius: var(--r-md);
+    resize: vertical; min-height: 80px; line-height: 1.5;
+  }
+  .notes-section textarea:focus { outline: none; border-color: var(--accent); }
+  .notes-saved { font-size: var(--text-xs); color: var(--positive); margin-top: var(--s1); opacity: 0; transition: opacity 0.3s; }
+  .notes-saved.show { opacity: 1; }
+
+  /* ── Summary ── */
+  .summary-section { padding: var(--s6); border-top: 1px solid var(--border-subtle); }
+  .summary-section h3 {
+    font-size: var(--text-xs); font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--text-3); margin-bottom: var(--s4);
+  }
+  .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--s4); }
+  .summary-card {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--r-md);
+    padding: var(--s4) var(--s5);
+  }
+  .summary-card h4 {
+    font-size: var(--text-xs); font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.04em; color: var(--accent); margin-bottom: var(--s3);
+  }
+  .summary-card ul { list-style: none; font-size: var(--text-sm); color: var(--text-2); }
+  .summary-card li { padding: 2px 0; }
+  .summary-card li::before { content: "\2192"; color: var(--text-3); margin-right: var(--s2); }
+
+  .red-flag { color: var(--negative); }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
+
+  /* ── Responsive ── */
+  @media (max-width: 768px) {
+    .stats-bar { grid-template-columns: repeat(3, 1fr); }
+    .header, .controls, .cat-tabs { padding-left: var(--s4); padding-right: var(--s4); }
+    .detail-panel { max-width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <h1>Investment Scanner</h1>
+  </div>
+  <div class="header-right">
+    <button class="btn btn-accent" id="exportFavBtn" style="display:none">Export Favs</button>
+    <button class="btn" id="addMoreBtn" style="display:none">+ Files</button>
+    <input type="file" id="addMoreInput" multiple accept=".json" style="display:none">
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+    <span class="scan-date" id="scanDate"></span>
+  </div>
+</div>
+
+<div class="compare-bar" id="compareBar">
+  <label>Base</label>
+  <select id="compareBase"></select>
+  <label style="color:var(--text-3)">vs</label>
+  <select id="compareTarget"></select>
+  <div class="compare-stats" id="compareStats"></div>
+</div>
+
+<div id="dropZone" class="drop-zone">
+  <h2>Load scan files</h2>
+  <p>Drop JSON files here or click to select</p>
+  <div class="hint">Load files from different dates to compare scans</div>
+  <input type="file" id="fileInput" multiple accept=".json">
+</div>
+
+<div id="dashboard" style="display:none">
+  <div class="stats-bar">
+    <div class="stat-card"><div class="value" id="totalEntities">0</div><div class="delta" id="totalEntitiesDelta"></div><div class="label">Entities</div></div>
+    <div class="stat-card"><div class="value" id="totalCategories">0</div><div class="delta" id="totalCategoriesDelta"></div><div class="label">Categories</div></div>
+    <div class="stat-card"><div class="value" id="avgScore">0</div><div class="delta" id="avgScoreDelta"></div><div class="label">Avg Score</div></div>
+    <div class="stat-card"><div class="value" id="highConviction">0</div><div class="delta" id="highConvictionDelta"></div><div class="label">Score 4-5</div></div>
+    <div class="stat-card"><div class="value" id="shortTerm">0</div><div class="delta" id="shortTermDelta"></div><div class="label">Short Term</div></div>
+    <div class="stat-card stat-fav"><div class="value" id="totalFavs">0</div><div class="delta"></div><div class="label">Favorites</div></div>
+  </div>
+
+  <div class="cat-tabs" id="catTabs"></div>
+
+  <div class="controls">
+    <div class="ctrl-group"><label>Risk</label>
+      <select id="filterRisk"><option value="">All</option><option value="baixo">Low</option><option value="moderado">Moderate</option><option value="alto">High</option><option value="especulativo">Speculative</option></select>
+    </div>
+    <div class="ctrl-group"><label>Horizon</label>
+      <select id="filterHorizon"><option value="">All</option><option value="curto (0-12m)">Short</option><option value="medio (1-3a)">Medium</option><option value="longo (3+a)">Long</option></select>
+    </div>
+    <div class="ctrl-group"><label>Score</label>
+      <select id="filterScore"><option value="0">All</option><option value="3">3+</option><option value="4">4+</option><option value="5">5</option></select>
+    </div>
+    <div class="ctrl-group"><label>Delta</label>
+      <select id="filterDelta"><option value="">All</option><option value="new">New</option><option value="removed">Removed</option><option value="upgraded">Upgraded</option><option value="downgraded">Downgraded</option><option value="unchanged">Unchanged</option></select>
+    </div>
+    <div class="ctrl-group"><label>Favs</label>
+      <select id="filterFav"><option value="">All</option><option value="fav">Favorites</option><option value="notfav">Not fav</option></select>
+    </div>
+    <input type="text" id="searchInput" placeholder="Search name, ticker, subcategory...">
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr>
+        <th data-sort="_fav" style="width:28px">&#9733;<span class="arrow"></span></th>
+        <th data-sort="_delta" id="thDelta" style="display:none">Delta<span class="arrow"></span></th>
+        <th data-sort="id">ID<span class="arrow"></span></th>
+        <th data-sort="name">Name<span class="arrow"></span></th>
+        <th data-sort="subcategory">Subcategory<span class="arrow"></span></th>
+        <th data-sort="ticker">Ticker<span class="arrow"></span></th>
+        <th data-sort="asymmetry_score">Score<span class="arrow"></span></th>
+        <th data-sort="risk_level">Risk<span class="arrow"></span></th>
+        <th data-sort="return_horizon">Horizon<span class="arrow"></span></th>
+        <th data-sort="status">Status<span class="arrow"></span></th>
+        <th data-sort="geography">Geo<span class="arrow"></span></th>
+        <th data-sort="market_cap_or_valuation">Valuation<span class="arrow"></span></th>
+      </tr></thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+  <div id="summarySection"></div>
+</div>
+
+<div class="detail-overlay" id="detailOverlay">
+  <div class="detail-panel" id="detailPanel"></div>
+</div>
+
+<script>
+const CAT_COLORS = {
+  "Longevidade & Saude": "oklch(65% 0.12 145)",
+  "Trading & Mercados": "oklch(60% 0.12 250)",
+  "Materiais & Energia": "oklch(70% 0.14 65)",
+  "Economia & Macro": "oklch(72% 0.14 90)",
+  "Geopolitica & Defesa": "oklch(62% 0.16 25)",
+  "IA & Computacao": "oklch(60% 0.14 300)",
+  "Espaco & Deep Tech": "oklch(65% 0.1 210)",
+  "Financas Alternativas": "oklch(65% 0.14 340)",
+};
+const RISK_ORDER = { "baixo": 0, "moderado": 1, "alto": 2, "especulativo": 3 };
+const HORIZON_ORDER = { "curto (0-12m)": 0, "medio (1-3a)": 1, "longo (3+a)": 2 };
+const DELTA_ORDER = { "new": 0, "upgraded": 1, "downgraded": 2, "unchanged": 3, "removed": 4 };
+
+let dataByDate = {}, summariesByDate = {}, displayEntities = [], allSummaries = {};
+let currentSort = { key: "asymmetry_score", dir: -1 };
+let activeCategory = "", compareMode = false, selectedBase = "", selectedTarget = "";
+
+// Theme
+const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("scanner_theme") || "dark";
+document.documentElement.setAttribute("data-theme", savedTheme);
+themeToggle.addEventListener("click", () => {
+  const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  localStorage.setItem("scanner_theme", next);
+});
+
+// Favorites
+function loadFavs() { try { return JSON.parse(localStorage.getItem("scanner_favs") || "{}"); } catch { return {}; } }
+function saveFavs(f) { localStorage.setItem("scanner_favs", JSON.stringify(f)); }
+function favKey(e) { return (e.name||"").trim()+"|"+(e._category||"").trim(); }
+function isFav(e) { return !!loadFavs()[favKey(e)]; }
+function toggleFav(e) {
+  const f = loadFavs(), k = favKey(e);
+  if (f[k]) delete f[k]; else f[k] = { added: new Date().toISOString(), name: e.name, category: e._category, notes: "" };
+  saveFavs(f); updateFavCount(); return !!f[k];
+}
+function getFavNotes(e) { const f = loadFavs()[favKey(e)]; return f ? f.notes||"" : ""; }
+function setFavNotes(e, n) { const f = loadFavs(), k = favKey(e); if (f[k]) { f[k].notes = n; saveFavs(f); } }
+function updateFavCount() {
+  const c = Object.keys(loadFavs()).length;
+  document.getElementById("totalFavs").textContent = c;
+  document.getElementById("exportFavBtn").style.display = c > 0 ? "inline-flex" : "none";
+}
+
+// File handling
+const dropZone = document.getElementById("dropZone");
+const fileInput = document.getElementById("fileInput");
+const addMoreBtn = document.getElementById("addMoreBtn");
+const addMoreInput = document.getElementById("addMoreInput");
+
+dropZone.addEventListener("click", () => fileInput.click());
+dropZone.addEventListener("dragover", e => { e.preventDefault(); dropZone.classList.add("dragover"); });
+dropZone.addEventListener("dragleave", () => dropZone.classList.remove("dragover"));
+dropZone.addEventListener("drop", e => { e.preventDefault(); dropZone.classList.remove("dragover"); handleFiles(e.dataTransfer.files); });
+fileInput.addEventListener("change", e => handleFiles(e.target.files));
+addMoreBtn.addEventListener("click", () => addMoreInput.click());
+addMoreInput.addEventListener("change", e => { handleFiles(e.target.files); e.target.value = ""; });
+document.body.addEventListener("dragover", e => { if (document.getElementById("dashboard").style.display !== "none") e.preventDefault(); });
+document.body.addEventListener("drop", e => { if (document.getElementById("dashboard").style.display !== "none") { e.preventDefault(); handleFiles(e.dataTransfer.files); } });
+
+function handleFiles(files) {
+  const promises = [];
+  for (const f of files) { if (f.name.endsWith(".json")) promises.push(f.text().then(t => ({ data: JSON.parse(t), name: f.name }))); }
+  Promise.all(promises).then(results => {
+    for (const { data, name } of results) {
+      let date = data.scan_date || ""; if (!date) { const m = name.match(/(\d{4}-\d{2}-\d{2})/); date = m ? m[1] : "unknown"; }
+      if (!dataByDate[date]) dataByDate[date] = [];
+      if (!summariesByDate[date]) summariesByDate[date] = {};
+      if (data.entities) {
+        const cat = data.category || "Unknown";
+        dataByDate[date] = dataByDate[date].filter(e => e._category !== cat);
+        for (const e of data.entities) { e._category = cat; e._date = date; dataByDate[date].push(e); }
+      }
+      if (data.category_summary && data.category) summariesByDate[date][data.category] = data.category_summary;
+    }
+    initDashboard();
+  }).catch(err => alert("JSON error: " + err.message));
+}
+
+function initDashboard() {
+  const dates = Object.keys(dataByDate).sort();
+  if (!dates.length) return;
+  dropZone.style.display = "none";
+  document.getElementById("dashboard").style.display = "block";
+  addMoreBtn.style.display = "inline-flex";
+  if (dates.length >= 2) {
+    compareMode = true;
+    selectedBase = selectedBase || dates[dates.length - 2];
+    selectedTarget = selectedTarget || dates[dates.length - 1];
+    buildCompareBar(dates); computeComparison();
+  } else {
+    compareMode = false; selectedTarget = dates[0];
+    displayEntities = dataByDate[dates[0]].map(e => ({ ...e, _delta: null, _scoreDelta: 0 }));
+    allSummaries = summariesByDate[dates[0]] || {};
+    document.getElementById("compareBar").classList.remove("active");
+    document.getElementById("thDelta").style.display = "none";
+  }
+  document.getElementById("scanDate").textContent = selectedTarget;
+  updateStats(); updateFavCount(); buildCategoryTabs(); buildSummary(); renderTable();
+}
+
+function buildCompareBar(dates) {
+  document.getElementById("compareBar").classList.add("active");
+  const bs = document.getElementById("compareBase"), ts = document.getElementById("compareTarget");
+  bs.innerHTML = dates.map(d => `<option value="${d}" ${d===selectedBase?"selected":""}>${d} (${dataByDate[d].length})</option>`).join("");
+  ts.innerHTML = dates.map(d => `<option value="${d}" ${d===selectedTarget?"selected":""}>${d} (${dataByDate[d].length})</option>`).join("");
+  bs.onchange = () => { selectedBase = bs.value; computeComparison(); refreshAll(); };
+  ts.onchange = () => { selectedTarget = ts.value; computeComparison(); refreshAll(); };
+  document.getElementById("thDelta").style.display = "";
+}
+
+function computeComparison() {
+  const base = dataByDate[selectedBase]||[], target = dataByDate[selectedTarget]||[];
+  const lookup = {}; for (const e of base) lookup[nk(e)] = e;
+  displayEntities = [];
+  const seen = new Set();
+  for (const e of target) {
+    const k = nk(e); seen.add(k); const prev = lookup[k];
+    const entry = { ...e, _delta: "unchanged", _scoreDelta: 0, _prev: null };
+    if (!prev) { entry._delta = "new"; }
+    else {
+      entry._prev = prev;
+      const d = (e.asymmetry_score||0) - (prev.asymmetry_score||0);
+      entry._scoreDelta = d;
+      if (d > 0) entry._delta = "upgraded";
+      else if (d < 0) entry._delta = "downgraded";
+      else if (e.risk_level !== prev.risk_level || e.return_horizon !== prev.return_horizon || e.catalyst !== prev.catalyst) entry._delta = "upgraded";
+    }
+    displayEntities.push(entry);
+  }
+  for (const e of base) { if (!seen.has(nk(e))) displayEntities.push({ ...e, _delta: "removed", _scoreDelta: 0, _prev: null }); }
+  const s = { new:0, removed:0, upgraded:0, downgraded:0, unchanged:0 };
+  displayEntities.forEach(e => s[e._delta]++);
+  document.getElementById("compareStats").innerHTML =
+    `<span class="cs-new">+${s.new} new</span><span class="cs-removed">-${s.removed} out</span><span class="cs-up">${s.upgraded} up</span><span class="cs-down">${s.downgraded} down</span>`;
+  allSummaries = summariesByDate[selectedTarget]||{};
+  document.getElementById("scanDate").textContent = `${selectedBase} \u2192 ${selectedTarget}`;
+}
+
+function nk(e) { return (e.name||"").toLowerCase().trim()+"|"+(e._category||"").toLowerCase().trim(); }
+function refreshAll() { updateStats(); buildCategoryTabs(); buildSummary(); renderTable(); }
+
+function updateStats() {
+  const cur = displayEntities.filter(e => e._delta !== "removed"), t = cur.length;
+  document.getElementById("totalEntities").textContent = t;
+  const cats = new Set(cur.map(e => e._category));
+  document.getElementById("totalCategories").textContent = cats.size;
+  const avg = cur.reduce((s,e) => s+(e.asymmetry_score||0), 0)/(t||1);
+  document.getElementById("avgScore").textContent = avg.toFixed(1);
+  document.getElementById("highConviction").textContent = cur.filter(e => e.asymmetry_score >= 4).length;
+  document.getElementById("shortTerm").textContent = cur.filter(e => e.return_horizon === "curto (0-12m)").length;
+  if (compareMode) {
+    const b = dataByDate[selectedBase]||[], bt = b.length;
+    const ba = b.reduce((s,e)=>s+(e.asymmetry_score||0),0)/(bt||1);
+    setD("totalEntitiesDelta", t-bt); setD("totalCategoriesDelta", cats.size-new Set(b.map(e=>e._category)).size);
+    setD("avgScoreDelta", avg-ba, true); setD("highConvictionDelta", cur.filter(e=>e.asymmetry_score>=4).length-b.filter(e=>e.asymmetry_score>=4).length);
+    setD("shortTermDelta", cur.filter(e=>e.return_horizon==="curto (0-12m)").length-b.filter(e=>e.return_horizon==="curto (0-12m)").length);
+  } else { ["totalEntitiesDelta","totalCategoriesDelta","avgScoreDelta","highConvictionDelta","shortTermDelta"].forEach(id => document.getElementById(id).textContent = ""); }
+}
+
+function setD(id, diff, dec=false) {
+  const el = document.getElementById(id);
+  if (diff === 0) { el.textContent = ""; return; }
+  el.textContent = `${diff>0?"+":""}${dec?diff.toFixed(1):Math.round(diff)}`;
+  el.className = `delta ${diff>0?"positive":"negative"}`;
+}
+
+function buildCategoryTabs() {
+  const tabs = document.getElementById("catTabs"), cats = {};
+  displayEntities.filter(e => e._delta !== "removed").forEach(e => { cats[e._category] = (cats[e._category]||0)+1; });
+  let html = `<div class="cat-tab active" data-cat="">All <span class="count">${displayEntities.length}</span></div>`;
+  for (const [c, n] of Object.entries(cats).sort()) html += `<div class="cat-tab" data-cat="${c}">${c} <span class="count">${n}</span></div>`;
+  tabs.innerHTML = html;
+  tabs.querySelectorAll(".cat-tab").forEach(tab => {
+    tab.addEventListener("click", () => { tabs.querySelectorAll(".cat-tab").forEach(t=>t.classList.remove("active")); tab.classList.add("active"); activeCategory = tab.dataset.cat; renderTable(); });
+  });
+}
+
+function getFiltered() {
+  let list = [...displayEntities];
+  if (activeCategory) list = list.filter(e => e._category === activeCategory);
+  const r = document.getElementById("filterRisk").value; if (r) list = list.filter(e => e.risk_level === r);
+  const h = document.getElementById("filterHorizon").value; if (h) list = list.filter(e => e.return_horizon === h);
+  const ms = parseInt(document.getElementById("filterScore").value); if (ms > 0) list = list.filter(e => e.asymmetry_score >= ms);
+  const df = document.getElementById("filterDelta").value; if (df) list = list.filter(e => e._delta === df);
+  const ff = document.getElementById("filterFav").value;
+  if (ff === "fav") list = list.filter(e => isFav(e)); else if (ff === "notfav") list = list.filter(e => !isFav(e));
+  list.forEach(e => { e._fav = isFav(e) ? 1 : 0; });
+  const s = document.getElementById("searchInput").value.toLowerCase();
+  if (s) list = list.filter(e => [e.name,e.ticker,e.subcategory,e.id,e.description,e.catalyst].some(v => (v||"").toLowerCase().includes(s)));
+  const { key, dir } = currentSort;
+  list.sort((a,b) => {
+    let va = a[key], vb = b[key];
+    if (key === "risk_level") { va = RISK_ORDER[va]??9; vb = RISK_ORDER[vb]??9; }
+    else if (key === "return_horizon") { va = HORIZON_ORDER[va]??9; vb = HORIZON_ORDER[vb]??9; }
+    else if (key === "_delta") { va = DELTA_ORDER[va]??9; vb = DELTA_ORDER[vb]??9; }
+    else if (typeof va === "string") { va = va.toLowerCase(); vb = (vb||"").toLowerCase(); }
+    return va < vb ? -dir : va > vb ? dir : 0;
+  });
+  return list;
+}
+
+function renderTable() {
+  const list = getFiltered(), tbody = document.getElementById("tableBody"), sd = compareMode;
+  tbody.innerHTML = list.map(e => {
+    const rk = (e.risk_level||"").replace(/\s/g,"");
+    const hk = (e.return_horizon||"").split(" ")[0];
+    const dc = e._delta ? `delta-${e._delta}` : "";
+    const fc = isFav(e);
+    let dt = ""; if (sd && e._delta) {
+      const m = { new:"NEW", removed:"OUT", upgraded:"UP", downgraded:"DOWN" };
+      const c = { new:"delta-tag-new", removed:"delta-tag-removed", upgraded:"delta-tag-up", downgraded:"delta-tag-down" };
+      if (m[e._delta]) dt = `<span class="delta-tag ${c[e._delta]}">${m[e._delta]}</span>`;
+    }
+    let sa = ""; if (sd && e._scoreDelta) { sa = `<span class="score-delta ${e._scoreDelta>0?"up":"down"}">${e._scoreDelta>0?"\u25B2":"\u25BC"}${Math.abs(e._scoreDelta)}</span>`; }
+    const dCell = sd ? `<td>${dt}</td>` : "";
+    return `<tr data-id="${e.id}" data-name="${(e.name||"").replace(/"/g,"&quot;")}" class="${dc} ${fc?"is-fav":""}" style="cursor:pointer">
+      <td><button class="star-btn ${fc?"active":""}" data-sn="${(e.name||"").replace(/"/g,"&quot;")}" data-sc="${(e._category||"").replace(/"/g,"&quot;")}" onclick="event.stopPropagation()">&#9733;</button></td>
+      ${dCell}
+      <td style="font-family:var(--mono);font-size:var(--text-xs);color:var(--text-3)">${e.id}</td>
+      <td class="name-cell">${e.name||""}</td>
+      <td class="wrap" style="color:var(--text-3);font-size:var(--text-xs)">${e.subcategory||""}</td>
+      <td style="font-family:var(--mono);font-size:var(--text-xs)">${e.ticker||"\u2014"}</td>
+      <td><span class="tag tag-score tag-score-${e.asymmetry_score}">${e.asymmetry_score}/5</span>${sa}</td>
+      <td><span class="tag tag-risk risk-${rk}">${e.risk_level||""}</span></td>
+      <td><span class="tag-horizon">${hk}</span></td>
+      <td><span class="tag-status">${e.status||""}</span></td>
+      <td style="font-size:var(--text-xs);color:var(--text-3)">${e.geography||""}</td>
+      <td style="font-family:var(--mono);font-size:var(--text-xs)">${e.market_cap_or_valuation||""}</td>
+    </tr>`;
+  }).join("");
+
+  tbody.querySelectorAll(".star-btn").forEach(b => {
+    b.addEventListener("click", ev => {
+      ev.stopPropagation();
+      const ent = displayEntities.find(x => x.name === b.dataset.sn && x._category === b.dataset.sc);
+      if (ent) { const nf = toggleFav(ent); b.classList.toggle("active", nf); b.closest("tr").classList.toggle("is-fav", nf); }
+    });
+  });
+  tbody.querySelectorAll("tr").forEach(row => { row.addEventListener("click", () => showDetail(row.dataset.id, row.dataset.name)); });
+}
+
+function showDetail(id, name) {
+  const e = displayEntities.find(x => x.id === id && x.name === name) || displayEntities.find(x => x.id === id);
+  if (!e) return;
+  const prev = e._prev;
+  function fh(l, v, pv) {
+    let ch = compareMode && prev && pv !== undefined && pv !== null && pv !== v;
+    let ph = ch ? `<span class="detail-prev">${pv}</span>` : "";
+    return `<div class="detail-row"><div class="dl">${l}</div><div class="dv">${ph}${v}</div></div>`;
+  }
+  let banner = "";
+  if (compareMode && e._delta) {
+    const labels = { new:"NEW ENTITY", removed:"REMOVED", upgraded:"SCORE UP", downgraded:"SCORE DOWN" };
+    const bg = { new:"var(--positive-subtle)", removed:"var(--negative-subtle)", upgraded:"var(--info-subtle)", downgraded:"var(--negative-subtle)" };
+    const fg = { new:"var(--positive)", removed:"var(--negative)", upgraded:"var(--info)", downgraded:"var(--warning)" };
+    if (labels[e._delta]) banner = `<div class="detail-banner" style="background:${bg[e._delta]};color:${fg[e._delta]}">${labels[e._delta]}${e._scoreDelta?` (${e._scoreDelta>0?"+":""}${e._scoreDelta})`:""}</div>`;
+  }
+  const faved = isFav(e);
+  const notes = getFavNotes(e);
+  const fields = [
+    fh("ID", `<span style="font-family:var(--mono)">${e.id}</span>`, prev?.id),
+    fh("Category", e._category, null),
+    fh("Subcategory", e.subcategory, prev?.subcategory),
+    fh("Status", e.status, prev?.status),
+    fh("Ticker", e.ticker||"\u2014", prev?.ticker),
+    fh("Geography", e.geography, prev?.geography),
+    fh("Valuation", e.market_cap_or_valuation, prev?.market_cap_or_valuation),
+    fh("Liquidity", e.liquidity, prev?.liquidity),
+    fh("Type", e.opportunity_type, prev?.opportunity_type),
+    fh("Score", `<span class="tag tag-score tag-score-${e.asymmetry_score}">${e.asymmetry_score}/5</span>`, prev ? `${prev.asymmetry_score}/5` : undefined),
+    fh("Risk", `<span class="tag tag-risk risk-${(e.risk_level||"").replace(/\s/g,"")}">${e.risk_level}</span>`, prev?.risk_level),
+    fh("Horizon", e.return_horizon, prev?.return_horizon),
+    fh("Catalyst", e.catalyst, prev?.catalyst),
+    fh("Catalyst Date", e.catalyst_date||"\u2014", prev?.catalyst_date),
+    `<div class="detail-row"><div class="dl">Red Flags</div><div class="dv">${e.red_flags?`<span class="red-flag">${e.red_flags}</span>`:"\u2014"}</div></div>`,
+    fh("Source", e.source, prev?.source),
+  ];
+  document.getElementById("detailPanel").innerHTML = `
+    <button class="close-btn" onclick="closeDetail()">\u00D7</button>
+    <h2>${e.name}</h2>
+    <p style="color:var(--text-2);margin-bottom:var(--s4);font-size:var(--text-sm);line-height:1.6">${e.description||""}</p>
+    ${banner}
+    <button class="detail-fav-btn ${faved?"active":""}" id="dFavBtn">${faved?"\u2605 Remove from favorites":"\u2606 Add to favorites"}</button>
+    ${fields.join("")}
+    <div class="notes-section" id="notesSection" ${faved?"":"style=\"display:none\""}>
+      <label>Personal notes</label>
+      <textarea id="detailNotes" placeholder="Your notes about this entity...">${notes}</textarea>
+      <div class="notes-saved" id="notesSaved">Saved</div>
+    </div>`;
+  document.getElementById("dFavBtn").addEventListener("click", () => {
+    const nf = toggleFav(e), btn = document.getElementById("dFavBtn");
+    btn.innerHTML = nf?"\u2605 Remove from favorites":"\u2606 Add to favorites";
+    btn.classList.toggle("active", nf);
+    document.getElementById("notesSection").style.display = nf?"":"none";
+    renderTable();
+  });
+  const na = document.getElementById("detailNotes"); let nt;
+  na.addEventListener("input", () => { clearTimeout(nt); nt = setTimeout(() => { setFavNotes(e, na.value); const sv = document.getElementById("notesSaved"); sv.classList.add("show"); setTimeout(()=>sv.classList.remove("show"),1500); }, 500); });
+  document.getElementById("detailOverlay").classList.add("open");
+}
+
+function closeDetail() { document.getElementById("detailOverlay").classList.remove("open"); }
+document.getElementById("detailOverlay").addEventListener("click", e => { if (e.target === document.getElementById("detailOverlay")) closeDetail(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeDetail(); });
+
+// Sorting
+document.querySelectorAll("thead th[data-sort]").forEach(th => {
+  th.addEventListener("click", () => {
+    const k = th.dataset.sort;
+    if (currentSort.key === k) currentSort.dir *= -1;
+    else { currentSort.key = k; currentSort.dir = (k==="asymmetry_score"||k==="_delta"||k==="_fav") ? -1 : 1; }
+    document.querySelectorAll("thead th").forEach(t => { t.classList.remove("sorted"); t.querySelector(".arrow").textContent = ""; });
+    th.classList.add("sorted"); th.querySelector(".arrow").textContent = currentSort.dir === 1 ? "\u25B2" : "\u25BC";
+    renderTable();
+  });
+});
+
+// Filters
+["filterRisk","filterHorizon","filterScore","filterDelta","filterFav"].forEach(id => { document.getElementById(id).addEventListener("change", renderTable); });
+document.getElementById("searchInput").addEventListener("input", renderTable);
+
+// Export
+document.getElementById("exportFavBtn").addEventListener("click", () => {
+  const favs = loadFavs(), fe = displayEntities.filter(e => favs[favKey(e)]);
+  const data = fe.map(e => { const f = favs[favKey(e)]; return { name:e.name, category:e._category, id:e.id, ticker:e.ticker, asymmetry_score:e.asymmetry_score, risk_level:e.risk_level, return_horizon:e.return_horizon, catalyst:e.catalyst, catalyst_date:e.catalyst_date, notes:f.notes||"", favorited_at:f.added }; });
+  const blob = new Blob([JSON.stringify({ exported_at: new Date().toISOString(), total: data.length, favorites: data }, null, 2)], { type: "application/json" });
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `favorites_${new Date().toISOString().split("T")[0]}.json`; a.click();
+});
+
+// Summary
+function buildSummary() {
+  const sec = document.getElementById("summarySection");
+  if (!Object.keys(allSummaries).length) { sec.innerHTML = ""; return; }
+  let html = '<div class="summary-section"><h3>Category Summary</h3><div class="summary-grid">';
+  for (const [cat, s] of Object.entries(allSummaries)) {
+    if (cat === "_aggregated") continue;
+    html += `<div class="summary-card"><h4>${cat}</h4><ul>
+      ${(s.top5_asymmetry||[]).map(id => `<li>Top: ${id}</li>`).join("")}
+      ${(s.systemic_risks||[]).map(r => `<li style="color:var(--negative)">${r}</li>`).join("")}
+    </ul></div>`;
+  }
+  html += '</div></div>'; sec.innerHTML = html;
+}
+</script>
+</body>
+</html>

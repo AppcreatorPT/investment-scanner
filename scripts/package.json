@@ -1,0 +1,8 @@
+{
+  "name": "search-validator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "validate": "bun run validate.ts"
+  }
+}
