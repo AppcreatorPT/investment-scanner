@@ -355,6 +355,15 @@
 
   .tag-status { font-size: var(--text-xs); color: var(--text-3); }
 
+  /* Account routing + proxy + why_now */
+  .tag-account { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.04em; padding: 1px 5px; border-radius: var(--r-sm); border: 1px solid var(--border); color: var(--text-2); white-space: nowrap; }
+  .acct-neobroker { color: var(--positive); border-color: var(--positive-subtle); }
+  .acct-vantagecfd { color: var(--info); border-color: var(--info-subtle); }
+  .acct-criptoexchange { color: var(--warning); }
+  .acct-abrirconta { color: var(--text-3); }
+  .tag-proxy { font-size: 0.55rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 1px 4px; margin-left: var(--s2); border-radius: var(--r-sm); background: var(--accent-subtle); color: var(--accent); cursor: help; }
+  .detail-why { background: var(--accent-subtle); border-left: 2px solid var(--accent); padding: var(--s3) var(--s4); border-radius: var(--r-sm); margin: var(--s3) 0 var(--s4); font-size: var(--text-sm); color: var(--text-1); line-height: 1.55; }
+
   .delta-tag {
     font-size: 0.6rem;
     font-weight: 700;
@@ -582,12 +591,16 @@
     <div class="ctrl-group"><label>Score</label>
       <select id="filterScore"><option value="0">All</option><option value="3">3+</option><option value="4">4+</option><option value="5">5</option></select>
     </div>
+    <div class="ctrl-group"><label>Account</label>
+      <select id="filterAccount"><option value="">All</option><option value="neobroker">Neobroker</option><option value="vantage-cfd">Vantage CFD</option><option value="cripto-exchange">Cripto</option><option value="abrir-conta">Abrir conta</option></select>
+    </div>
     <div class="ctrl-group"><label>Delta</label>
       <select id="filterDelta"><option value="">All</option><option value="new">New</option><option value="removed">Removed</option><option value="upgraded">Upgraded</option><option value="downgraded">Downgraded</option><option value="unchanged">Unchanged</option></select>
     </div>
     <div class="ctrl-group"><label>Favs</label>
       <select id="filterFav"><option value="">All</option><option value="fav">Favorites</option><option value="notfav">Not fav</option></select>
     </div>
+    <button class="btn btn-accent" id="buyListBtn" title="Score 4+, ordenado por assimetria">&#9733; Buy-list</button>
     <input type="text" id="searchInput" placeholder="Search name, ticker, subcategory...">
   </div>
 
@@ -600,6 +613,8 @@
         <th data-sort="name">Name<span class="arrow"></span></th>
         <th data-sort="subcategory">Subcategory<span class="arrow"></span></th>
         <th data-sort="ticker">Ticker<span class="arrow"></span></th>
+        <th data-sort="account">Account<span class="arrow"></span></th>
+        <th data-sort="entry_min">Entry<span class="arrow"></span></th>
         <th data-sort="asymmetry_score">Score<span class="arrow"></span></th>
         <th data-sort="risk_level">Risk<span class="arrow"></span></th>
         <th data-sort="return_horizon">Horizon<span class="arrow"></span></th>
@@ -685,6 +700,7 @@ function handleFiles(files) {
   for (const f of files) { if (f.name.endsWith(".json")) promises.push(f.text().then(t => ({ data: JSON.parse(t), name: f.name }))); }
   Promise.all(promises).then(results => {
     for (const { data, name } of results) {
+      if (/agregado|aggregat/i.test(name)) continue;
       let date = data.scan_date || ""; if (!date) { const m = name.match(/(\d{4}-\d{2}-\d{2})/); date = m ? m[1] : "unknown"; }
       if (!dataByDate[date]) dataByDate[date] = [];
       if (!summariesByDate[date]) summariesByDate[date] = {};
@@ -804,6 +820,7 @@ function getFiltered() {
   const r = document.getElementById("filterRisk").value; if (r) list = list.filter(e => e.risk_level === r);
   const h = document.getElementById("filterHorizon").value; if (h) list = list.filter(e => e.return_horizon === h);
   const ms = parseInt(document.getElementById("filterScore").value); if (ms > 0) list = list.filter(e => e.asymmetry_score >= ms);
+  const ac = document.getElementById("filterAccount").value; if (ac) list = list.filter(e => e.account === ac);
   const df = document.getElementById("filterDelta").value; if (df) list = list.filter(e => e._delta === df);
   const ff = document.getElementById("filterFav").value;
   if (ff === "fav") list = list.filter(e => isFav(e)); else if (ff === "notfav") list = list.filter(e => !isFav(e));
@@ -840,9 +857,11 @@ function renderTable() {
       <td><button class="star-btn ${fc?"active":""}" data-sn="${(e.name||"").replace(/"/g,"&quot;")}" data-sc="${(e._category||"").replace(/"/g,"&quot;")}" onclick="event.stopPropagation()">&#9733;</button></td>
       ${dCell}
       <td style="font-family:var(--mono);font-size:var(--text-xs);color:var(--text-3)">${e.id}</td>
-      <td class="name-cell">${e.name||""}</td>
+      <td class="name-cell">${e.name||""}${e.proxy_for?`<span class="tag-proxy" title="Proxy de: ${(e.proxy_for||"").replace(/"/g,"&quot;")}">proxy</span>`:""}</td>
       <td class="wrap" style="color:var(--text-3);font-size:var(--text-xs)">${e.subcategory||""}</td>
       <td style="font-family:var(--mono);font-size:var(--text-xs)">${e.ticker||"\u2014"}</td>
+      <td>${e.account?`<span class="tag-account acct-${(e.account||"").replace(/[^a-z]/gi,"")}">${e.account}</span>`:"\u2014"}</td>
+      <td style="font-size:var(--text-xs);color:var(--text-2)">${e.entry_min||"\u2014"}</td>
       <td><span class="tag tag-score tag-score-${e.asymmetry_score}">${e.asymmetry_score}/5</span>${sa}</td>
       <td><span class="tag tag-risk risk-${rk}">${e.risk_level||""}</span></td>
       <td><span class="tag-horizon">${hk}</span></td>
@@ -886,6 +905,9 @@ function showDetail(id, name) {
     fh("Subcategory", e.subcategory, prev?.subcategory),
     fh("Status", e.status, prev?.status),
     fh("Ticker", e.ticker||"\u2014", prev?.ticker),
+    fh("Account", e.account||"\u2014", prev?.account),
+    fh("Entry min", e.entry_min||"\u2014", prev?.entry_min),
+    e.proxy_for ? fh("Proxy de", e.proxy_for, prev?.proxy_for) : "",
     fh("Geography", e.geography, prev?.geography),
     fh("Valuation", e.market_cap_or_valuation, prev?.market_cap_or_valuation),
     fh("Liquidity", e.liquidity, prev?.liquidity),
@@ -896,12 +918,15 @@ function showDetail(id, name) {
     fh("Catalyst", e.catalyst, prev?.catalyst),
     fh("Catalyst Date", e.catalyst_date||"\u2014", prev?.catalyst_date),
     `<div class="detail-row"><div class="dl">Red Flags</div><div class="dv">${e.red_flags?`<span class="red-flag">${e.red_flags}</span>`:"\u2014"}</div></div>`,
+    fh("Confidence", e.confidence||"—", prev?.confidence),
+    e.access_note ? fh("Como comprar", e.access_note, prev?.access_note) : "",
     fh("Source", e.source, prev?.source),
   ];
   document.getElementById("detailPanel").innerHTML = `
     <button class="close-btn" onclick="closeDetail()">\u00D7</button>
     <h2>${e.name}</h2>
     <p style="color:var(--text-2);margin-bottom:var(--s4);font-size:var(--text-sm);line-height:1.6">${e.description||""}</p>
+    ${e.why_now?`<div class="detail-why"><strong>Porque agora:</strong> ${e.why_now}</div>`:""}
     ${banner}
     <button class="detail-fav-btn ${faved?"active":""}" id="dFavBtn">${faved?"\u2605 Remove from favorites":"\u2606 Add to favorites"}</button>
     ${fields.join("")}
@@ -939,7 +964,12 @@ document.querySelectorAll("thead th[data-sort]").forEach(th => {
 });
 
 // Filters
-["filterRisk","filterHorizon","filterScore","filterDelta","filterFav"].forEach(id => { document.getElementById(id).addEventListener("change", renderTable); });
+["filterRisk","filterHorizon","filterScore","filterDelta","filterFav","filterAccount"].forEach(id => { document.getElementById(id).addEventListener("change", renderTable); });
+document.getElementById("buyListBtn").addEventListener("click", () => {
+  document.getElementById("filterScore").value = "4";
+  currentSort = { key: "asymmetry_score", dir: -1 };
+  renderTable();
+});
 document.getElementById("searchInput").addEventListener("input", renderTable);
 
 // Export
@@ -954,11 +984,12 @@ document.getElementById("exportFavBtn").addEventListener("click", () => {
 function buildSummary() {
   const sec = document.getElementById("summarySection");
   if (!Object.keys(allSummaries).length) { sec.innerHTML = ""; return; }
+  const nameById = {}; for (const e of displayEntities) nameById[e.id] = e.name;
   let html = '<div class="summary-section"><h3>Category Summary</h3><div class="summary-grid">';
   for (const [cat, s] of Object.entries(allSummaries)) {
     if (cat === "_aggregated") continue;
     html += `<div class="summary-card"><h4>${cat}</h4><ul>
-      ${(s.top5_asymmetry||[]).map(id => `<li>Top: ${id}</li>`).join("")}
+      ${(s.top5_asymmetry||[]).map(id => `<li>${nameById[id] || id}</li>`).join("")}
       ${(s.systemic_risks||[]).map(r => `<li style="color:var(--negative)">${r}</li>`).join("")}
     </ul></div>`;
   }
