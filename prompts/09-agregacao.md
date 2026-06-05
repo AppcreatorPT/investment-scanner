@@ -1,5 +1,9 @@
 # Agregacao de Resultados
 
+> **DEPRECADO (Plano 2):** nao gerar `_agregado.json` (dado duplicado). A agregacao e feita
+> **ao vivo pelo dashboard**, que carrega varios JSONs de temas e cruza-os. Este ficheiro fica
+> como referencia da logica, mas o passo de gerar ficheiro foi retirado do workflow.
+
 ---
 
 ## Instrucoes
@@ -54,13 +58,6 @@ Le todos os ficheiros JSON em `output/` com a data de hoje (ou a data especifica
 
 ## Output
 
-Guarda em `output/YYYY-MM-DD_agregado.json`.
-
-O ficheiro deve conter:
-- `scan_date`
-- `total_entities` (soma de todas as categorias)
-- `entities` (array combinado e ordenado)
-- `cross_category_highlights`
-- `portfolio_construction`
-- `stress_scenarios`
-- `action_items`
+> **Nao gerar ficheiro.** A agregacao e feita ao vivo pelo dashboard (carrega varios JSONs
+> de temas da mesma data e cruza-os: top global por `asymmetry_score`, buy-list, etc.).
+> A logica acima fica como referencia conceptual do que o dashboard deve mostrar.

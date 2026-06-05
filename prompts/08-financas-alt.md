@@ -1,13 +1,13 @@
 # Scan: Financas Alternativas
 
 **Prefixo ID:** FIN-
-**Target:** 30-50 entidades
+**Target:** ~12-15 instrumentos acessiveis (ver regra no fim)
 
 ---
 
 ## Instrucoes
 
-Actua como analista de investimento especializado em financas descentralizadas e ativos digitais. Gera uma lista curada de 30 a 50 entidades com elevado potencial de retorno financeiro.
+Actua como analista de investimento especializado em financas descentralizadas e ativos digitais. Gera uma lista curada de ~12-15 instrumentos ACESSIVEIS (ver "Regra de Acessibilidade & Rigor" no fim) com elevado potencial de retorno financeiro.
 
 Usa WebSearch para verificar cada entidade antes de a incluir.
 
@@ -40,3 +40,20 @@ Gera JSON valido seguindo o schema definido em CLAUDE.md. Guarda em `output/YYYY
 - `_meta.total_entities` deve corresponder ao comprimento real do array
 - Nao incluas entidades sobre as quais nao consigas verificar pelo menos 8 campos
 - **Prefere omitir a inventar**
+
+---
+
+<!-- Aplicar SEMPRE as regras abaixo (ver prompts/_regra-acessibilidade-rigor.md) -->
+
+## Regra de Acessibilidade & Rigor (UE / baixo orcamento)
+
+Toda a entidade DEVE ser compravel por um retail da UE (Franca) com €10-100:
+
+- **Acessivel-primeiro:** se a tese e inacessivel (pre-IPO, privada, ETF US sem KID), so
+  entra atraves de um **proxy cotado NOMEADO**. Sem proxy → nao incluir.
+- **`account`** (obrigatorio): `neobroker` · `vantage-cfd` · `cripto-exchange` · `abrir-conta`.
+- **`ticker`** = ticker compravel (o do proxy, se proxy). **`proxy_for`**: subjacente ou `null`.
+- **`entry_min`**: minimo realista. **`access_note`**: a pega ou `null`.
+- **`why_now`** (obrigatorio): porque ainda nao esta no preco. Sem boa resposta → omitir.
+- **`confidence`**: `verificado`/`parcial`/`especulativo`. **`source`**: real e datada.
+- **`catalyst_date`** quase-obrigatorio. Alvo: **~12-15 instrumentos acessiveis**.

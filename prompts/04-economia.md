@@ -1,7 +1,12 @@
 # Scan: Economia & Macro
 
-**Prefixo ID:** MAC-
-**Target:** 30-50 entidades
+> **RETIRADO da rotacao (Plano 2).** Tema descontinuado: era o mais fraco (avg asymmetry ~2.6,
+> quase sem catalisadores dataveis) e macro nao e onde vivem apostas assimetricas de entidade
+> unica. As jogadas macro *acessiveis* (ETFs UCITS de taxas/commodities/FX) dobram para
+> **Materiais & Energia** e **Trading**. Ficheiro mantido apenas como referencia historica.
+
+**Prefixo ID:** MAC- (retirado)
+**Target:** — (nao gerar)
 
 ---
 
