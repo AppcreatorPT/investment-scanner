@@ -36,7 +36,7 @@ O utilizador diz algo como:
 ### Workflow por categoria:
 
 1. Le o prompt correspondente em `prompts/`
-2. Usa **WebSearch** para verificar dados de cada entidade (catalisadores, IPOs, contratos, funding, tickers)
+2. Usa **WebSearch** para verificar dados de cada entidade (catalisadores, IPOs, contratos, funding, tickers), **seguindo `prompts/_metodologia-pesquisa.md`** (fontes primarias, bloquear listicles, triangular, bear-case, contrarian)
 3. Gera o JSON seguindo o schema abaixo
 4. Guarda em `output/YYYY-MM-DD_nome-categoria.json`
 5. Corre o validador: `bun run scripts/validate.ts output/ficheiro.json`
@@ -111,6 +111,7 @@ Cada ficheiro de output segue esta estrutura:
 10. **Catalisador datavel quase-obrigatorio**; sem `catalyst_date`, so com conviccao muito alta.
 11. **Grounded**: cada entidade traz `why_now` (porque ainda nao esta no preco) e `confidence`; `source` real e datada. Sem `why_now` solido → omitir.
 12. **Sem agregado**: a agregacao e feita ao vivo pelo dashboard; nao gerar `_agregado.json`.
+13. **Metodologia de pesquisa (anti-bias)**: aplica `prompts/_metodologia-pesquisa.md` — fonte-primaria-primeiro, bloquear ruido SEO (`blocked_domains`), triangular, procurar a tese contraria (bear case) e angulos sub-cobertos/contrarian, e eventos futuros + presentes + historicos.
 
 ---
 

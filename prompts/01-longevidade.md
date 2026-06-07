@@ -9,7 +9,7 @@
 
 Actua como analista de investimento especializado em longevity biotech e healthtech. Gera uma lista curada de ~12-15 instrumentos ACESSIVEIS (ver "Regra de Acessibilidade & Rigor" no fim) com elevado potencial de retorno financeiro.
 
-Usa WebSearch para verificar cada entidade antes de a incluir.
+Usa WebSearch para verificar cada entidade antes de a incluir. **Aplica a metodologia anti-bias de `prompts/_metodologia-pesquisa.md`** (fontes primarias, bloquear listicles, bear-case, contrarian, eventos).
 
 ## Scope
 
