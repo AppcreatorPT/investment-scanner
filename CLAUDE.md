@@ -6,7 +6,7 @@ Le este ficheiro antes de fazer qualquer coisa.
 
 ## O que e este sistema
 
-Scanner de oportunidades de investimento organizado em 7 temas. Gera listas curadas de **instrumentos acessiveis a um retail da UE de baixo orcamento** (€10-100), com potencial de retorno assimetrico e **via de compra real** (direto ou proxy cotado), em formato JSON estruturado.
+Scanner de oportunidades de investimento organizado em 8 temas. Gera listas curadas de **instrumentos acessiveis a um retail da UE de baixo orcamento** (€10-100), com potencial de retorno assimetrico e **via de compra real** (direto ou proxy cotado), em formato JSON estruturado.
 
 ---
 
@@ -23,6 +23,7 @@ Scanner de oportunidades de investimento organizado em 7 temas. Gera listas cura
 | 7 | Espaco & Deep Tech | SDT- | prompts/07-espaco-deeptech.md |
 | 8 | Financas Alternativas | FIN- | prompts/08-financas-alt.md |
 | 9 | Agregacao | — | prompts/09-agregacao.md |
+| 10 | Commodities & Economia Real | COM- | prompts/10-commodities.md |
 
 ---
 
@@ -130,6 +131,6 @@ Ou o utilizador pode dizer "valida o ultimo output".
 ## Comandos rapidos
 
 - `/scan [categoria]` — corre scan de uma categoria
-- `/scan todas` — corre os 7 temas sequencialmente
+- `/scan todas` — corre os 8 temas sequencialmente
 - `/valida [ficheiro]` — corre validacao
 - `/agrega` — corre agregacao dos outputs do dia

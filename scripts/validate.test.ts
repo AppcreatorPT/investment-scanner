@@ -47,9 +47,29 @@ test("missing catalyst_date is a warning", () => {
   expect(warnings.some(w => w.includes("missing catalyst_date"))).toBe(true);
 });
 
-test("placeholder source is a warning", () => {
-  const { warnings } = validateScan(baseScan([baseEntity({ source: "ClinicalTrials NCT0000000" })]));
+test("source without a URL is an error", () => {
+  const { errors } = validateScan(baseScan([baseEntity({ source: "Coinbase - Everything Exchange (2026)" })]));
+  expect(errors.some(e => e.includes("source must contain a real URL"))).toBe(true);
+});
+
+test("source with URL but placeholder pattern is a warning", () => {
+  const { warnings } = validateScan(baseScan([baseEntity({ source: "https://clinicaltrials.gov/NCT0000000" })]));
   expect(warnings.some(w => w.includes("placeholder"))).toBe(true);
+});
+
+test("especulativo entity in top5_asymmetry warns", () => {
+  const scan = baseScan([baseEntity({ confidence: "especulativo" })]);
+  const { warnings } = validateScan(scan);
+  expect(warnings.some(w => w.includes("especulativo"))).toBe(true);
+});
+
+test("Commodities category is recognized with COM- prefix", () => {
+  const scan = baseScan([baseEntity({ id: "COM-001" })]);
+  scan.category = "Commodities & Economia Real";
+  scan.category_summary.top5_asymmetry = ["COM-001"];
+  const { errors, warnings } = validateScan(scan);
+  expect(errors).toEqual([]);
+  expect(warnings.some(w => w.includes("Unknown category"))).toBe(false);
 });
 
 test("low entity count (<8) warns", () => {

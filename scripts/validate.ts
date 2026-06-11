@@ -11,6 +11,7 @@ const VALID_PREFIXES: Record<string, string> = {
   "IA & Computacao": "AIC-",
   "Espaco & Deep Tech": "SDT-",
   "Financas Alternativas": "FIN-",
+  "Commodities & Economia Real": "COM-",
 };
 
 const VALID_STATUS = ["privada", "pre-IPO", "cotada", "token", "fundo"];
@@ -91,8 +92,9 @@ export function validateScan(data: ScanOutput): { errors: string[]; warnings: st
     if (!e.catalyst_date) warn(`${ctx}: missing catalyst_date`);
     {
       const src = e.source || "";
-      const looksReal = /https?:\/\//.test(src) || /\b(19|20)\d{2}\b/.test(src);
-      if (src && (!looksReal || /NCT0{3,}|exemplo|example|placeholder|xxx/i.test(src))) {
+      if (src && !/https?:\/\//.test(src)) {
+        error(`${ctx}: source must contain a real URL (rule 11), got "${src}"`);
+      } else if (src && /NCT0{3,}|exemplo|example|placeholder|xxx/i.test(src)) {
         warn(`${ctx}: source looks like a placeholder, not a real dated reference`);
       }
     }
@@ -102,6 +104,10 @@ export function validateScan(data: ScanOutput): { errors: string[]; warnings: st
   if (data.category_summary) {
     const allIds = [...(data.category_summary.top5_asymmetry || []), ...(data.category_summary.top3_contrarian || [])];
     for (const id of allIds) if (!seenIds.has(id)) warn(`category_summary references non-existent ID: ${id}`);
+    const byId = new Map(data.entities.map(e => [e.id, e]));
+    for (const id of data.category_summary.top5_asymmetry || []) {
+      if (byId.get(id)?.confidence === "especulativo") warn(`top5_asymmetry includes "${id}" with confidence "especulativo" — buy-list needs verificado/parcial`);
+    }
   }
 
   return { errors, warnings };
