@@ -12,9 +12,10 @@
       "thesis": "Uma das poucas vias retail para exposicao a SpaceX antes do IPO; fundo tambem detem xAI/OpenAI/Anthropic",
       "catalyst": "IPO da SpaceX (mid-2026) e re-rating dos ativos privados do fundo",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o IPO da SpaceX (pricing 2026-06-11, listagem Nasdaq SPCX prevista 2026-06-12 a $135/acao) for cancelado ou adiado para depois de 2026-09-30; OU, consumado o IPO, se a DXYZ negociar abaixo do NAV reportado em 2026-12-31 — com a SpaceX cotada, a razao de ser 'via pre-IPO' desaparece e o premio sobre NAV tem de se converter em valor verificavel",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 5, confidence especulativo)"
+        "2026-06-03: entrou via scan (asymmetry 5, confidence especulativo)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -28,9 +29,10 @@
       "thesis": "Se o Neutron voar, RKLB passa de small-launch a concorrente do Falcon 9 — degrau de valor ainda nao no preco",
       "catalyst": "Estreia do Neutron (medium-lift reutilizavel) em Q4 2026; contratos Space Force",
       "catalyst_date": "Q4 2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o primeiro lancamento do Neutron nao ocorrer ate 2027-03-31 (alvo atual Q4 2026, ja adiado de 2025 — segundo adiamento mata a tese de degrau); OU se o voo inaugural falhar com perda do veiculo e a empresa nao anunciar data para segunda tentativa nos 6 meses seguintes",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -44,9 +46,10 @@
       "thesis": "Dados proprietarios (constelacao) + camada de IA; backlog a acelerar (+79%) ainda pouco refletido",
       "catalyst": "Crescimento de backlog (defesa/governo) e produtos de analytics por IA",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o backlog reportado nos earnings trimestrais cair YoY em dois trimestres consecutivos ate aos resultados do FY que fecha em jan-2027 (reportados ~mar-2027) — referencia de entrada: backlog +79% YoY; OU se a empresa retirar/cortar a guidance anual de receita em qualquer comunicado ate 2027-03-31",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -60,9 +63,10 @@
       "thesis": "Lider numa das poucas narrativas cripto com uso real (RWA); mercado RWA +257% em 15 meses",
       "catalyst": "Lancamento de Ondo Perps; RWAs como colateral; expansao de Treasuries tokenizadas",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Ondo Perps lancou a 2026-06-09 (catalisador consumado). Invalida-se se ate 2026-12-31 o TVL da Ondo Global Markets cair abaixo de $1B (marco atingido a 2026-05-11) ou a quota de mercado em equities tokenizadas cair abaixo de 50% (era >70%); OU se a SEC rejeitar o registration statement da Ondo Global Markets nos EUA",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 5, confidence especulativo)"
+        "2026-06-03: entrou via scan (asymmetry 5, confidence especulativo)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -76,9 +80,10 @@
       "thesis": "Receita ligada a adopcao de pagamentos (nao ao preco do cripto); via cotada limpa para a tese stablecoin",
       "catalyst": "Adopcao de USDC e lancamento da blockchain Arc; clareza regulatoria de stablecoins (Genius Act)",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o mainnet do Arc nao for lancado ate 2026-09-30 (alvo oficial: verao 2026; testnet live desde out-2025); OU se a circulacao de USDC cair YoY em dois trimestres consecutivos ate aos resultados do FY2026 (fev-2027) — a tese e adopcao de pagamentos, e a circulacao e a metrica publica que a mede",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -92,9 +97,10 @@
       "thesis": "Picks-and-shovels da tokenizacao: ganha independentemente de qual chain vence; adopcao institucional a crescer",
       "catalyst": "Adopcao institucional de CCIP/oraculos para RWA e cross-chain settlements",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se ate 2026-12-31 nao houver pelo menos UM anuncio novo (fonte primaria: comunicado do banco/infraestrutura de mercado) de CCIP ou oraculos Chainlink a entrar em PRODUCAO num caso de uso institucional de RWA/settlement; OU se um parceiro institucional ancora (ex: Swift, DTCC) anunciar descontinuacao da integracao ate essa data",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -108,9 +114,10 @@
       "thesis": "Pure-play de sensores (vs conglomerados) com alavancagem direta ao tema; mid-cap mais assimetrico",
       "catalyst": "Procura de sensores/radar com air-defence europeia; encomendas de EW",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o order intake/backlog reportado nos resultados H1 2026 (jul/ago-2026) e 9M 2026 (nov-2026) cair YoY em ambos os reports; OU se a guidance de receita/EBITDA 2026 for cortada em qualquer comunicado ate 2026-12-31 — a tese e alavancagem directa as encomendas; sem encomendas a crescer, nao ha tese",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -124,9 +131,10 @@
       "thesis": "Gargalo critico (transmissoes) do boom de veiculos blindados; pure-play mid-cap com alavancagem alta",
       "catalyst": "Ramp de producao de veiculos blindados na Europa; backlog de powertrains",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o order backlog reportado no H1 2026 (ago-2026) ficar abaixo do reportado no FY2025 (backlog a encolher = ramp de blindados nao chega as transmissoes); OU se a guidance 2026 de receita/margem for cortada em qualquer comunicado ate 2026-12-31",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -140,9 +148,10 @@
       "thesis": "Crescimento futuro vem de drones/AI/cyber, onde Thales lidera; menos esticada que a Rheinmetall apos a corrida",
       "catalyst": "Crescimento em drones/AI/cyber e missile defense; rearmamento europeu (3% PIB)",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se a guidance 2026 (crescimento organico/margem) for cortada em qualquer comunicado ate 2026-12-31; OU se nos resultados FY2026 (mar-2027) o segmento Defence reportar crescimento organico YoY inferior a 5% — abaixo disso o premio 'rearmamento' nao se justifica face aos conglomerados",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -156,9 +165,10 @@
       "thesis": "Consenso foca-se nos retimers e pode subestimar a entrada no switching com o Scorpio",
       "catalyst": "Ramp do Scorpio (AI fabric switch, mercado ~$20B); guidance 2026 +25%",
       "catalyst_date": "H2 2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o Scorpio NAO for a maior linha de produto da empresa nos resultados do FY2026 (fev-2027), como a propria guiou (era 15% da receita no FY2025); OU se a receita trimestral cair sequencialmente em dois trimestres consecutivos ate la (referencias: Q1 2026 $308.4M; guidance Q2 $355-365M)",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -172,9 +182,10 @@
       "thesis": "Unica neocloud com infra propria significativa na UE; residencia de dados cria procura on-continent subestimada",
       "catalyst": "Procura por compute na UE (AI Act data residency); ramp do deal Meta ~$27B",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se nos resultados Q4 2026 (fev-2027) a Nebius nao reportar pelo menos 800MW de connected power (guidance propria: 800MW-1GW ate final de 2026, ~2.5GW contratados); OU se o contrato Meta (base $12B/5 anos, opcao ate $27B) for reduzido ou cancelado em comunicado/filing ate essa data",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -188,9 +199,10 @@
       "thesis": "Crescimento de 272% YoY ainda subvalorizado vs nomes mainstream; AECs viram padrao com racks >100kW",
       "catalyst": "Adopcao de AECs a escalar com a densidade dos racks; ramp de receita FY2026",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o crescimento YoY da receita ficar abaixo de +50% em dois earnings consecutivos ate mar-2027 (referencia de entrada: +272% YoY — desaceleracao para <50% nega o 'AECs viram padrao'); OU se a guidance anual for cortada em qualquer earnings call ate 2026-12-31",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -204,9 +216,10 @@
       "thesis": "Senoliticos sao a via mais proxima de validacao clinica do envelhecimento; um readout positivo re-rateia, mas e binario",
       "catalyst": "Readouts de UBX1325 (edema macular diabetico) e avanco do pipeline senolitico",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "O topline da Phase 2b ASPIRE (UBX1325 vs aflibercept em DME) ja foi divulgado com resultados mistos (nao-inferioridade aos 36 semanas mas com aumentos de CST). Invalida-se se ate 2026-12-31 a Unity nao anunciar NEM inicio/desenho de Phase 3 para UBX1325 NEM parceria/licenciamento com farmaceutica (comunicado primario); OU se reportar cash runway que nao chegue a 2027-06-30 sem financiamento diluitivo anunciado",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -220,9 +233,10 @@
       "thesis": "Distribuicao direta-ao-consumidor de longevidade/GLP-1; expansao UE ainda nao totalmente no preco",
       "catalyst": "Lancamento da vertical de longevidade 2026; aquisicao da ZAVA (Europa); expansao Canada",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se a vertical de longevidade nao for lancada (anuncio oficial da empresa) ate 2026-12-31; OU se a receita internacional (ZAVA: UK/Alemanha/Franca/Irlanda + Canada) nao mostrar crescimento sequencial nos resultados Q3 2026 (nov-2026); OU se a guidance FY2026 for cortada ate essa data",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -236,9 +250,10 @@
       "thesis": "Forma assimetrica de jogar GLP-1 (vs mega-caps); dados fortes ou M&A re-rateiam, mas e binario",
       "catalyst": "Resultados de ensaios de obesidade (injetavel/oral); potencial alvo de M&A",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o readout do Phase 3 VANQUISH-2 (VK2735 sc em T2D/obesidade, esperado Q3 2026) falhar o endpoint primario ou mostrar eficacia/tolerabilidade claramente inferior a tirzepatida; OU se ate 2027-03-31 nao houver nem dados VANQUISH positivos divulgados nem anuncio de M&A/parceria — sem nenhum dos dois, o binario resolveu-se contra a tese",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -252,9 +267,10 @@
       "thesis": "Integracao vertical mina->imanes com apoio do governo US; cadeia magnetica fora da China e estrategica e escassa",
       "catalyst": "Construcao da fabrica de imanes (10x) em 2026; comissionamento ~2028; backing do DoD",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se o groundbreaking do 10X (Northlake, TX — site de 120 acres anunciado fev-2026, empresa diz 'iminente') nao ocorrer ate 2026-12-31; OU se a meta de primeiro produto comercial deslizar para alem de 2028 em comunicado; OU se a parceria com o DoD/DoW (jul-2025) for alterada ou rescindida em filing ate 2026-12-31",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -268,9 +284,10 @@
       "thesis": "Ocidente quer cadeia de REE fora da China; producao real de heavy REE (rara) ainda pouco refletida no preco",
       "catalyst": "Ramp de producao de heavy REE (terbio/disprosio) e contratos de uranio",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se a separacao comercial de Dy/Tb no White Mesa nao estiver em comissionamento/producao ate 2027-06-30 (alvo da empresa: 'as soon as Q4 2026'; primeiro kg de Tb 99.9% produzido a 2026-03-25); OU se a meta de ~12 t/ano de terbio em 2027 for abandonada/adiada em comunicado ate essa data — fica so a tese uranio, que nao e esta",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -284,9 +301,10 @@
       "thesis": "IA drena a rede; SMRs sao a resposta de medio prazo e a NuScale tem vantagem regulatoria",
       "catalyst": "Acordos com hyperscalers/utilities para SMRs; marcos de licenciamento 2026",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se ate 2026-12-31 nao houver NENHUMA encomenda firme de modulos (FID/contrato vinculativo com cliente identificado) — nem o RoPower (que avancou de fase a 2026-02-12 por voto dos acionistas da Nuclearelectrica) converter em encomenda, nem um hyperscaler/utility novo assinar; marcos de licenciamento e FEEDs sem encomenda firme NAO contam",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -300,9 +318,10 @@
       "thesis": "Passa de pure-play cripto a plataforma multi-ativo; o mercado ainda avalia como exchange so de cripto",
       "catalyst": "Lancamento de acoes/ETF a todos os users US; clareza regulatoria (Clarity/Genius Act)",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Catalisador parcialmente consumado: acoes/ETFs abertos a todos os users US a 2026-02-24. Invalida-se se nos resultados FY2026 (fev-2027) a receita nao-trading (subscriptions & services) nao crescer YoY — sem isso a Coinbase continua a ser avaliada como exchange ciclica e o re-rating multi-ativo nao tem base; OU se o produto de equities for suspenso/restringido por accao regulatoria (SEC/FINRA) ate 2026-12-31",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -316,9 +335,10 @@
       "thesis": "Monetizacao para alem do trading (subscricoes, tokenizacao) ainda subvalorizada",
       "catalyst": "Expansao de cripto/tokenizacao e produtos (cartao, jubilacao); crescimento de contas",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Se em dois earnings consecutivos ate aos resultados FY2026 (fev-2027) os funded customers E os subscritores Gold nao crescerem sequencialmente (ambas as metricas sao reportadas trimestralmente); OU se o produto de acoes tokenizadas na UE for suspenso por ordem de um regulador (ESMA/regulador nacional) ate 2026-12-31",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     },
     {
@@ -332,9 +352,10 @@
       "thesis": "Optionalidade dupla (compute futures + M&A); negocio de dados recorrente subvalorizado vs puro exchange",
       "catalyst": "Compute futures (2026); especulacao de combinacao com CME; crescimento de dados/analytics",
       "catalyst_date": "2026",
-      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "invalidation": "Pata compute: se os futuros de GPU compute com a Ornn (anunciados 2026-05-19, indice OCPI, pendentes de aprovacao regulatoria) nao listarem ate 2027-06-30 ou a CFTC recusar a aprovacao. Pata M&A: se ate 2026-12-31 nao houver confirmacao formal (filing/comunicado) de conversas ICE-CME, essa opcionalidade vale zero. Ambas falhadas + receita de dados sem crescer YoY no FY2026 = tese invalidada",
       "history": [
-        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)",
+        "2026-06-11: invalidation definida"
       ]
     }
   ]
