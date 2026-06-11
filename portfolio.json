@@ -1,0 +1,14 @@
+{
+  "_schema": "portfolio v1 — posicoes REAIS, editado a mao apos cada compra/venda",
+  "_fields": {
+    "ticker": "como escrito no broker",
+    "broker": "neobroker | vantage-cfd | cripto-exchange",
+    "entry_date": "YYYY-MM-DD",
+    "entry_price": "preco unitario na moeda do instrumento",
+    "amount_eur": "valor investido em €",
+    "thesis_id": "id na theses/watchlist.json (ex: COM-001) ou null",
+    "exit_rule": "condicao objetiva de saida (preco-alvo, data, ou invalidacao da tese)",
+    "closed": "null enquanto aberta; {date, price, pnl_eur} ao fechar"
+  },
+  "positions": []
+}

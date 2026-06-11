@@ -1,0 +1,341 @@
+{
+  "_schema": "watchlist v1 — ver prompts/_reavaliacao-teses.md",
+  "theses": [
+    {
+      "id": "SDT-006",
+      "name": "Exposicao a SpaceX (via Destiny Tech100)",
+      "ticker": "DXYZ",
+      "category": "Espaco & Deep Tech",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Uma das poucas vias retail para exposicao a SpaceX antes do IPO; fundo tambem detem xAI/OpenAI/Anthropic",
+      "catalyst": "IPO da SpaceX (mid-2026) e re-rating dos ativos privados do fundo",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 5, confidence especulativo)"
+      ]
+    },
+    {
+      "id": "SDT-001",
+      "name": "Rocket Lab",
+      "ticker": "RKLB",
+      "category": "Espaco & Deep Tech",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Se o Neutron voar, RKLB passa de small-launch a concorrente do Falcon 9 — degrau de valor ainda nao no preco",
+      "catalyst": "Estreia do Neutron (medium-lift reutilizavel) em Q4 2026; contratos Space Force",
+      "catalyst_date": "Q4 2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "SDT-003",
+      "name": "Planet Labs",
+      "ticker": "PL",
+      "category": "Espaco & Deep Tech",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Dados proprietarios (constelacao) + camada de IA; backlog a acelerar (+79%) ainda pouco refletido",
+      "catalyst": "Crescimento de backlog (defesa/governo) e produtos de analytics por IA",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "FIN-005",
+      "name": "Ondo Finance",
+      "ticker": "ONDO",
+      "category": "Financas Alternativas",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Lider numa das poucas narrativas cripto com uso real (RWA); mercado RWA +257% em 15 meses",
+      "catalyst": "Lancamento de Ondo Perps; RWAs como colateral; expansao de Treasuries tokenizadas",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 5, confidence especulativo)"
+      ]
+    },
+    {
+      "id": "FIN-001",
+      "name": "Circle Internet Group",
+      "ticker": "CRCL",
+      "category": "Financas Alternativas",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Receita ligada a adopcao de pagamentos (nao ao preco do cripto); via cotada limpa para a tese stablecoin",
+      "catalyst": "Adopcao de USDC e lancamento da blockchain Arc; clareza regulatoria de stablecoins (Genius Act)",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "FIN-004",
+      "name": "Chainlink",
+      "ticker": "LINK",
+      "category": "Financas Alternativas",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Picks-and-shovels da tokenizacao: ganha independentemente de qual chain vence; adopcao institucional a crescer",
+      "catalyst": "Adopcao institucional de CCIP/oraculos para RWA e cross-chain settlements",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "GEO-005",
+      "name": "Hensoldt",
+      "ticker": "HAG",
+      "category": "Geopolitica & Defesa",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Pure-play de sensores (vs conglomerados) com alavancagem direta ao tema; mid-cap mais assimetrico",
+      "catalyst": "Procura de sensores/radar com air-defence europeia; encomendas de EW",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "GEO-006",
+      "name": "Renk Group",
+      "ticker": "R3NK",
+      "category": "Geopolitica & Defesa",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Gargalo critico (transmissoes) do boom de veiculos blindados; pure-play mid-cap com alavancagem alta",
+      "catalyst": "Ramp de producao de veiculos blindados na Europa; backlog de powertrains",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "GEO-001",
+      "name": "Thales",
+      "ticker": "HO",
+      "category": "Geopolitica & Defesa",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Crescimento futuro vem de drones/AI/cyber, onde Thales lidera; menos esticada que a Rheinmetall apos a corrida",
+      "catalyst": "Crescimento em drones/AI/cyber e missile defense; rearmamento europeu (3% PIB)",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "AIC-001",
+      "name": "Astera Labs",
+      "ticker": "ALAB",
+      "category": "IA & Computacao",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Consenso foca-se nos retimers e pode subestimar a entrada no switching com o Scorpio",
+      "catalyst": "Ramp do Scorpio (AI fabric switch, mercado ~$20B); guidance 2026 +25%",
+      "catalyst_date": "H2 2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "AIC-008",
+      "name": "Nebius Group",
+      "ticker": "NBIS",
+      "category": "IA & Computacao",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Unica neocloud com infra propria significativa na UE; residencia de dados cria procura on-continent subestimada",
+      "catalyst": "Procura por compute na UE (AI Act data residency); ramp do deal Meta ~$27B",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "AIC-002",
+      "name": "Credo Technology",
+      "ticker": "CRDO",
+      "category": "IA & Computacao",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Crescimento de 272% YoY ainda subvalorizado vs nomes mainstream; AECs viram padrao com racks >100kW",
+      "catalyst": "Adopcao de AECs a escalar com a densidade dos racks; ramp de receita FY2026",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "LSA-001",
+      "name": "Unity Biotechnology",
+      "ticker": "UBX",
+      "category": "Longevidade & Saude",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Senoliticos sao a via mais proxima de validacao clinica do envelhecimento; um readout positivo re-rateia, mas e binario",
+      "catalyst": "Readouts de UBX1325 (edema macular diabetico) e avanco do pipeline senolitico",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)"
+      ]
+    },
+    {
+      "id": "LSA-002",
+      "name": "Hims & Hers Health",
+      "ticker": "HIMS",
+      "category": "Longevidade & Saude",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Distribuicao direta-ao-consumidor de longevidade/GLP-1; expansao UE ainda nao totalmente no preco",
+      "catalyst": "Lancamento da vertical de longevidade 2026; aquisicao da ZAVA (Europa); expansao Canada",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "LSA-004",
+      "name": "Viking Therapeutics",
+      "ticker": "VKTX",
+      "category": "Longevidade & Saude",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Forma assimetrica de jogar GLP-1 (vs mega-caps); dados fortes ou M&A re-rateiam, mas e binario",
+      "catalyst": "Resultados de ensaios de obesidade (injetavel/oral); potencial alvo de M&A",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)"
+      ]
+    },
+    {
+      "id": "MAT-002",
+      "name": "MP Materials",
+      "ticker": "MP",
+      "category": "Materiais & Energia",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Integracao vertical mina->imanes com apoio do governo US; cadeia magnetica fora da China e estrategica e escassa",
+      "catalyst": "Construcao da fabrica de imanes (10x) em 2026; comissionamento ~2028; backing do DoD",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "MAT-001",
+      "name": "Energy Fuels",
+      "ticker": "UUUU",
+      "category": "Materiais & Energia",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Ocidente quer cadeia de REE fora da China; producao real de heavy REE (rara) ainda pouco refletida no preco",
+      "catalyst": "Ramp de producao de heavy REE (terbio/disprosio) e contratos de uranio",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "MAT-005",
+      "name": "NuScale Power",
+      "ticker": "SMR",
+      "category": "Materiais & Energia",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "IA drena a rede; SMRs sao a resposta de medio prazo e a NuScale tem vantagem regulatoria",
+      "catalyst": "Acordos com hyperscalers/utilities para SMRs; marcos de licenciamento 2026",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence especulativo)"
+      ]
+    },
+    {
+      "id": "TRD-001",
+      "name": "Coinbase",
+      "ticker": "COIN",
+      "category": "Trading & Mercados",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Passa de pure-play cripto a plataforma multi-ativo; o mercado ainda avalia como exchange so de cripto",
+      "catalyst": "Lancamento de acoes/ETF a todos os users US; clareza regulatoria (Clarity/Genius Act)",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "TRD-002",
+      "name": "Robinhood",
+      "ticker": "HOOD",
+      "category": "Trading & Mercados",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Monetizacao para alem do trading (subscricoes, tokenizacao) ainda subvalorizada",
+      "catalyst": "Expansao de cripto/tokenizacao e produtos (cartao, jubilacao); crescimento de contas",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    },
+    {
+      "id": "TRD-005",
+      "name": "Intercontinental Exchange",
+      "ticker": "ICE",
+      "category": "Trading & Mercados",
+      "state": "aberta",
+      "entered": "2026-06-03",
+      "last_review": "2026-06-03",
+      "thesis": "Optionalidade dupla (compute futures + M&A); negocio de dados recorrente subvalorizado vs puro exchange",
+      "catalyst": "Compute futures (2026); especulacao de combinacao com CME; crescimento de dados/analytics",
+      "catalyst_date": "2026",
+      "invalidation": "A DEFINIR na proxima reavaliacao (obrigatorio)",
+      "history": [
+        "2026-06-03: entrou via scan (asymmetry 4, confidence parcial)"
+      ]
+    }
+  ]
+}
