@@ -42,3 +42,17 @@ Para os top candidatos, pesquisa as tres janelas:
 - Evita recencia/popularidade: o que ja subiu muito pode estar no preco → nota em `red_flags`.
 - Distingue facto (com fonte) de narrativa (opiniao).
 - Na duvida entre incluir um nome ruidoso e omitir → **omitir** (a regra "prefere omitir a inventar").
+
+## 8. Disciplina do asymmetry_score (calibrado pelo scorecard 2026-06-11)
+
+O scorecard retrospectivo mostrou que scores 4-5 performaram PIOR que score 3
+(mediana -7,0% vs -0,1%) — o score estava a premiar "historia excitante", nao assimetria real.
+Regras:
+- **Score 4-5 exige quantificacao**: estimar downside maximo plausivel E upside plausivel
+  com numeros (valuation floor, cash em balanco, comparaveis, payoff do catalisador).
+  Sem numeros → maximo score 3.
+- Assimetria = downside LIMITADO por algo concreto + upside multiplo. "Pode 10x" sem
+  floor identificado nao e assimetria, e lotaria.
+- `confidence: especulativo` nunca leva score >3 (no scorecard, especulativos tiveram
+  0% de retornos positivos).
+- Apos cada scorecard, reler esta regra e ajusta-la ao que os dados mostrarem.

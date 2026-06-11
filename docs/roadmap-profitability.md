@@ -56,6 +56,21 @@ zero registo de posicoes reais ou performance dos picks passados.
 - [x] Validador apertado: `source` sem URL = ERRO (regra 11); `especulativo` no
   top5_asymmetry = WARN. **Nota:** outputs de 2026-06-03 falham agora a validacao de
   source — e intencional; proximo scan tem de trazer URLs reais.
+- [x] **P0** — `scripts/scorecard.ts` + primeiro relatorio (`output/2026-06-11_scorecard.md`).
+  Findings: especulativo = 0% positivos; score 4-5 anti-sinal vs score 3.
+- [x] **P1** — `theses/watchlist.json` (21 teses semeadas) + `prompts/_reavaliacao-teses.md`.
+- [x] **P2** — `portfolio.json` (template; preencher a mao apos cada compra real).
+- [x] **P3** — calendario de catalisadores no dashboard (botao "Calendario").
+- [x] **P4** — primeira sintese semanal com buy-list 3-4 (`output/2026-06-11_sintese-semanal.md`).
+- [x] Recalibracao do asymmetry_score na metodologia (seccao 8) com base no scorecard.
+
+## Rotina operacional (a partir de agora)
+
+- **Sabado (sintese semanal):** 1) `_reavaliacao-teses.md` sobre as teses abertas →
+  2) `bun run scripts/scorecard.ts` → 3) scans dos temas com catalisadores na semana seguinte
+  (agente sequencial, 1 por tema) → 4) actualizar a sintese semanal (buy-list 3-5 + calendario).
+- **Apos cada compra/venda real:** actualizar `portfolio.json` na hora.
+- **Scans diarios:** NAO — ruido a este orcamento. So scan extraordinario com evento macro grande.
 
 ## Ordem de execucao sugerida
 
