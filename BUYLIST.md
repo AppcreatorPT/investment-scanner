@@ -1,61 +1,50 @@
-# Buy-list 2026-06-16 — funil para a tua DD, nao e conselho
+# Buy-list 2026-06-17 — funil para a tua DD, nao e conselho
 
-> Instrumentos com `asymmetry_score >= 4` de todos os 7 temas do scan de 2026-06-16.
-> Ordenado por score (desc), depois alfabetico. Nao e conselho de investimento.
+> 44 instrumentos com asymmetry_score >= 4. Ordenado por score desc. Nao e conselho de investimento — faz a tua propria diligencia antes de entrar.
 
----
-
-## Score 5 — Maxima assimetria
-
-| Ticker | Nome | Tema | Conta | Entrada | Catalisador (data) | Porque agora |
-|--------|------|------|-------|---------|-------------------|-------------|
-| PDYN | Palladyne AI Corp. | Geopolitica & Defesa | neobroker | ~€10 | 8 jun 2026 | Parceria IAI loitering munitions anunciada 8/06 ainda nao precificada; stock small cap com DOD pipeline real |
-| ONDS | Ondas Holdings | Geopolitica & Defesa | neobroker | ~€10 | Q2 2026 | Q1 2026 receita $50.1M (+1000% YoY) e guidance $390M anual — crescimento extraordinario verificado mas mercado nao revalorizou |
-| PPTA | Perpetua Resources | Materiais & Energia | neobroker | ~€10 | H2 2026 | $2.9B DOE loan garantido em mai 2026 — maior de sempre para mineracao critica EUA; antimonio classificado DEFCON por DOD |
-
----
-
-## Score 4 — Assimetria elevada
-
-| Ticker | Nome | Tema | Conta | Entrada | Catalisador (data) | Porque agora |
-|--------|------|------|-------|---------|-------------------|-------------|
-| 2197.HK | Insilico Medicine | Longevidade & Saude | abrir-conta | ~€20 | — | Deal Servier $888M jan 2026 valida AI drug discovery; unico cotado com pipeline gerado 100% por IA em Phase 2 |
-| AAVE | Aave | Financas Alternativas | cripto-exchange | ~€10 | Q3 2026 | Oversold RSI a $61 apesar de $1T+ cumulative lending e $83.3M fees/30d; V4 + Horizon RWA catalisadores proximos |
-| ACHR | Archer Aviation | Espaco & Deep Tech | neobroker | ~€6 | Q3 2026 | Primeiro eVTOL a completar FAA Phase 3; entrada mais barata que Joby com timeline de certificacao similar; ARK a comprar |
-| AVAX | Avalanche | Financas Alternativas | cripto-exchange | ~€10 | 12 jun 2026 | A $6.52 e 85% abaixo do ATH; SEC/CFTC commodity clarity + 350 acoes tokenizadas Dinari em 12/06; base case $24 |
-| BBAI | BigBear.ai Holdings | Geopolitica & Defesa | neobroker | ~€10 | Q2 2026 | Backlog $281.9M com contrato classified $53M; mercado nao reflecte transicao para contratos AI solo sem prime |
-| BIOA | BioAge Labs | Longevidade & Saude | neobroker | ~€10 | H2 2026 | Phase 1 BGE-102 melhor reducao hsCRP (abr 2026) de todos os NLRP3 inibidores; down 30%+ do IPO sem razao fundamental |
-| CBRS | Cerebras Systems | IA & Computacao | neobroker | ~€20 | Q3 2026 | IPO fechou $311 em mai 2026; agora $218 — correccao nao reflecte $510M revenue (+76%) nem contrato OpenAI $20B |
-| COIN | Coinbase Global | Financas Alternativas | neobroker | ~€10 | Q3 2026 | Down 64% do maximo ($444 para $160) apesar de institucional growing e legislacao cripto EUA iminente H2 2026 |
-| CRCL | Circle Internet Group | Financas Alternativas | neobroker | ~€10 | Q3 2026 | Q1 2026 $694M record revenue; 50%+ abaixo ATH; Genius Act elimina principal risco regulatorio; USDC $78B market share |
-| DRO.AX | DroneShield Ltd. | Geopolitica & Defesa | abrir-conta | ~€20 | 2 jun 2026 | $24.9M contrato JIATF-401 EUA (2/06); $155M receita AUD comprometida FY2026; counter-UAS e o segmento mais urgente NATO |
-| ENLV | Enlivex Therapeutics | Longevidade & Saude | neobroker | ~€10 | 18 mai 2026 | IND FDA + dosagem primeiro paciente EUA mai 2026 ainda nao no preco; Allocetra e nova classe terapeutica unica |
-| ETOR | eToro Group | Trading & Mercados | neobroker | ~€10 | Q2 2026 | Down 38% desde IPO mai 2025; $82M lucro Q1 2026 com 35M utilizadores — plataforma lucrativa a desconto significativo |
-| FDMT | 4D Molecular Therapeutics | Longevidade & Saude | neobroker | ~€10 | — | One-shot gene therapy wAMD vs injecoes mensais vitaliciais; analogos IVERIC/Astellas sugerem aquisicao potencial |
-| FUTU | Futu Holdings | Trading & Mercados | neobroker | ~€10 | 22 mai 2026 | Penalizacao CSRC mai 2026 remove overhang regulatorio; 55% contas internacionais; +24.7% revenue Q1 2026 |
-| GPCR | Structure Therapeutics | Longevidade & Saude | neobroker | ~€10 | Q3 2026 | Melhor eficacia GLP-1 oral em Phase 2 (16.3% peso); Phase 3 inicio Q3 2026; small cap $2B com blockbuster potential |
-| JOBY | Joby Aviation | Espaco & Deep Tech | neobroker | ~€9 | 30 set 2026 | Down 58% do maximo; FAA Stage 5 (fase final) iniciado abr 2026; $2.5B cash ate 2029; certification e questao de 'quando' |
-| LDO | Lido Finance | Financas Alternativas | cripto-exchange | ~€10 | Q3 2026 | $0.26 com $19.42B TVL — ratio MC/TVL de 86x; stETH ETPs institucionais em curso; buyback ativa quando ETH > $3000 |
-| LEU | Centrus Energy | Materiais & Energia | neobroker | ~€10 | H2 2026 | Unico licenciamento NRC para producao HALEU nos EUA; todos os advanced reactors americanos precisam de HALEU da Centrus |
-| LINK | Chainlink | Financas Alternativas | cripto-exchange | ~€10 | Q4 2026 | DTCC Collateral AppChain integra CCIP em producao Q4 2026; $18B/mes volume cross-chain; cada RWA tokenizado precisa de LINK |
-| LUNR | Intuitive Machines | Espaco & Deep Tech | neobroker | ~€10 | Q3 2026 | $180.4M CLPS NASA mais recente; $3.2B backlog total; IM-3 missao lunar H2 2026; stock subiu 37% no anuncio do contrato |
-| MVIS | MicroVision | Espaco & Deep Tech | neobroker | ~€3 | 10 jun 2026 | Activos Luminar adquiridos em falencia por $33M; MDA com maior OEM construcao/mineracao assinado 10/06 — nao esta no preco |
-| NBIS | Nebius Group | IA & Computacao | neobroker | ~€10 | 22 jun 2026 | Q1 2026 $399M revenue (+580% YoY); inclusao Nasdaq-100 a 22/06 (compras passivas $1-2B); $46B backlog nao precificado |
-| NPWR | NET Power Inc. | Materiais & Energia | neobroker | ~€10 | H2 2026 | FID H2 2026; stock a 63% do maximo anual; energia electrica zero-emissoes sem CCS do stack — tecnologia unica verificada |
-| OKLO | Oklo Inc. | Materiais & Energia | neobroker | ~€10 | jan 2027 | 14GW pipeline de contratos; Meta 1.2GW assinou; Aurora reactor commissioning jan 2027 — catalisador binario de grande magnitude |
-| ONDO | Ondo Finance | Financas Alternativas | cripto-exchange | ~€10 | 1 mai 2026 | JPMorgan+Mastercard+Ripple+Ondo fizeram primeiro resgate cross-border tokenized treasury em tempo real (mai 2026) |
-| PENDLE | Pendle Finance | Financas Alternativas | cripto-exchange | ~€10 | Q3 2026 | $40M receita anualizada vs $200M market cap (P/S de 5x); sPENDLE 80% fees para buybacks; Grayscale watchlist + Aave V4 |
-| POET | POET Technologies | IA & Computacao | neobroker | ~€21 | Q2 2026 | $50M PO Lumilens + $500M potencial em 5 anos; $400M cash levantado; gargalo de bandwidth AI data centers e problema #1 infra |
-| QS | QuantumScape | Materiais & Energia | neobroker | ~€10 | 4 fev 2026 | Eagle Line inaugurada fev 2026 com primeiros customer billings; BMW e VW parceiros; solid-state battery em ramp piloto |
-| RCAT | Red Cat Holdings | Geopolitica & Defesa | neobroker | ~€10 | Q3 2026 | Black Widow FPV provado em combate real; Drone Dominance Program DOD favorece RCAT; small cap com pipeline DOD verificado |
-| RGTI | Rigetti Computing | IA & Computacao | neobroker | ~€10 | 3 jun 2026 | $100M CHIPS Act LOI assinada 3/06; Cepheus-1 108Q em cloud AWS/Azure; Wedbush target $40 vs stock ~$20 — 2x potencial |
-| SATL | Satellogic | Espaco & Deep Tech | neobroker | ~€7 | 26 mai 2026 | $30M em contratos defesa em 30 dias = 150% das receitas TTM; +80% revenue YoY Q1; micro-cap EO fora do radar dos analistas |
-| TEM | Tempus AI | IA & Computacao | neobroker | ~€10 | 4 jun 2026 | Down 21% YTD apesar de $348M Q1 (+36% YoY) e FDA approval 4/06; consenso $67 vs preco $49 — gap de 38% |
-| TIGR | UP Fintech (Tiger Brokers) | Trading & Mercados | neobroker | ~€10 | Q2 2026 | +56.3% revenue 2025; small cap $1.2B com fundamentais de empresa muito maior; beneficia de expansao cripto regulada APAC |
-| VERV | Verve Therapeutics | Longevidade & Saude | neobroker | ~€10 | — | Uma unica injecao para reducao permanente de LDL — revolucionario vs estatinas vitaliciais; dados Phase 1b em curso 2026 |
-| VIRT | Virtu Financial | Trading & Mercados | neobroker | ~€10 | Q2 2026 | P/E de 9.5 com PEG 0.13 — mercado trata como ciclica; volatilidade estruturalmente elevada beneficia market makers |
-| XE | X-energy Inc. | Materiais & Energia | neobroker | ~€10 | H2 2026 | IPO abr 2026 ($1.1B levantado); FONSI NRC para projeto Dow — primeiro reactor Xe-100 em producao; Amazon + Dow + Centrica |
-
----
-
-*38 instrumentos. Scans gerados em 2026-06-16. Validados sem erros. Nao substitui analise propria nem conselho financeiro.*
+| Score | Ticker | Nome | Tema | Conta | Entrada | Catalisador (data) | Porque agora |
+|------:|--------|------|------|-------|---------|-------------------|--------------|
+| 5 | PDYN | Palladyne AI Corp. | Geopolitica & Defesa | neobroker | ~€10 | Parceria IAI (2026-06-08) | Parceria IAI a 9 dias nao totalmente precificada; software ODIN ja em uso em combate real com drones israelitas |
+| 5 | ONDS | Ondas Holdings | Geopolitica & Defesa | neobroker | ~€10 | Guidance $390M+ (Q2 2026) | Q1 $50.1M receita com guidance $390M+; backlog $457M; unico drone de combate NDAA-compliant em producao em serie nos EUA |
+| 5 | PPTA | Perpetua Resources Corp. | Materiais & Energia | neobroker | ~€10 | Emprestimo DOE $2.9B (H2 2026) | Maior garantia DOE para mineracao; unica fonte de antimonio dos EUA; EIS aprovado; Executive Order designou projecto prioritario nacional |
+| 4 | ASTS | AST SpaceMobile | Espaco & Deep Tech | neobroker | ~€10 | BlueBird 8-9-10 (2026-06-17 HOJE) | Launch BlueBird Block 2 (10x bandwidth) HOJE; FCC aprovou servico comercial nos EUA; $3.5B cash ate 2029 |
+| 4 | NBIS | Nebius Group | IA & Computacao | neobroker | ~€10 | Nasdaq-100 (2026-06-22) | Inclusao Nasdaq-100 em 5 dias; compras passivas $1-2B estimados; $46B backlog e Q1 run-rate $1.6B nao plenamente precificados |
+| 4 | MORPHO | Morpho | Financas Alternativas | cripto-exchange | ~€10 | Serie B $175M (2026-06-09) | $175M raise Paradigm+a16z a $2B valuation; $9.9B depositos; Coinbase, Binance, Kraken e SocGen integrados — maior raise DeFi de 2026 |
+| 4 | AVAX | Avalanche | Financas Alternativas | cripto-exchange | ~€10 | Acoes tokenizadas Dinari (2026-06-12) | 350+ acoes tokenizadas em Avalanche; SEC/CFTC commodity classification remove risco legal; 85% abaixo do ATH historico |
+| 4 | MVIS | MicroVision | Espaco & Deep Tech | neobroker | ~€3 | MDA OEM construcao (2026-06-10) | MDA com maior fabricante de equipamento construcao/mineracao do mundo assinado 10 junho — primeiro contrato real pos-aquisicao activos Luminar |
+| 4 | TEM | Tempus AI | IA & Computacao | neobroker | ~€10 | FDA xT CDx (2026-06-04) | 17 analistas consensus $66.53 vs preco ~$52 (gap 28%); FDA approval recente; digital pathology consorcio + Alzheimer care-gap abertura vertical adjacente |
+| 4 | RGTI | Rigetti Computing | IA & Computacao | neobroker | ~€10 | DOE/CHIPS LOI $100M (2026-06-03) | CHIPS Act $100M LOI assinada; stock recuou de $27 para $20 pos-spike; Wedbush target $40; Cepheus-1 108Q unico QPU mais potente em cloud publico |
+| 4 | ONDO | Ondo Finance | Financas Alternativas | cripto-exchange | ~€10 | JPMorgan+Mastercard+Ripple (2026-05-01) | Primeira transacao cross-border de Treasury tokenizado em tempo real; proxy mais acessivel ao mercado RWA de $29B; Broadridge integration com direitos de voto reais |
+| 4 | SATL | Satellogic | Espaco & Deep Tech | neobroker | ~€7 | Contratos defesa $30M (2026-05-26) | Dois contratos defesa em 30 dias ($30M = 150% das receitas TTM); crescimento 80% YoY Q1 2026; micro-cap invisivel para analistas mainstream |
+| 4 | ENLV | Enlivex Therapeutics | Longevidade & Saude | neobroker | ~€10 | Phase 2 EUA (2026-05-18) | IND clearance FDA e dosagem primeiro paciente EUA em maio 2026; resultados de sobrevivencia macrofago unico ainda nao no preco |
+| 4 | GENF.L | Genflow Biosciences | Longevidade & Saude | abrir-conta | ~€50 | Trial SLAB unblinding (2026-07-31) | Dog trial SLAB unblinding julho 2026; $12M market cap vs $100M+ potencial; SIRT6 gene therapy unica em longevidade — MASH CTA EU filing mid-2026 |
+| 4 | JOBY | Joby Aviation | Espaco & Deep Tech | neobroker | ~€9 | FAA Type Cert. (Q4 2026) | Down 58% do maximo; Stage 5 FAA iniciado marco 2026; launch comercial Delta Air Lines Q4 2026; $2.5B cash sem risco de solvencia |
+| 4 | ACHR | Archer Aviation | Espaco & Deep Tech | neobroker | ~€6 | FAA Phase 4 (Q3 2026) | Primeiro eVTOL a completar FAA Phase 3; $4B cap vs Joby $8.7B com timeline similar; contrato LA28 Olympics cria deadline regulatoria real para FAA |
+| 4 | LUNR | Intuitive Machines | Espaco & Deep Tech | neobroker | ~€10 | IM-3 missao lunar (Q3 2026) | CLPS $180.4M activa lander nova classe; $3.2B backlog total; parceria Leonardo e exposicao internacional que concorrentes nao tem |
+| 4 | BKSY | BlackSky Technology | Espaco & Deep Tech | neobroker | ~€10 | $99M USAF IDIQ (Q3 2026) | $99M USAF IDIQ + $55M Assured contracts defesa em Q1 2026; Gen-3 35cm AI analytics tempo real; $400M cap nao reflecte pipeline |
+| 4 | CRCL | Circle Internet Group | Financas Alternativas | neobroker | ~€10 | Genius Act impl. (Q3 2026) | Genius Act passou Senado 68-30; $78B USDC market share; stock abaixo ATH >$250 apesar de $694M Q1 revenue; EURC unico stablecoin EUR com escala real |
+| 4 | COIN | Coinbase Global | Financas Alternativas | neobroker | ~€10 | Genius Act impl. (Q3 2026) | Framework regulatorio clarificado; unica exchange regulada para derivados EUA; Base L2 cresce como maior DEX ecosystem fora de Ethereum mainnet |
+| 4 | LINK | Chainlink | Financas Alternativas | cripto-exchange | ~€10 | DTCC Collateral AppChain (Q4 2026) | DTCC — maior clearing house do mundo — integra CCIP em producao Q4 2026; cada dolar de RWA tokenizado precisa de feeds LINK |
+| 4 | AAVE | Aave | Financas Alternativas | cripto-exchange | ~€10 | Aave V4 + Horizon (Q3 2026) | Perto dos minimos de 2026 apesar de $1T+ volume e $83.3M fees/30d; V4 Horizon com $550M depositos cria primeiro lending RWA auditado para bancos |
+| 4 | PENDLE | Pendle Finance | Financas Alternativas | cripto-exchange | ~€10 | sPENDLE buybacks (Q3 2026) | sPENDLE: 80% revenue → buybacks + 20-30% corte emissoes; $40M revenue anualizada com $200M market cap = P/S de 5x barato vs DeFi peers |
+| 4 | LDO | Lido Finance | Financas Alternativas | cripto-exchange | ~€10 | stETH ETPs (Q3 2026) | LDO $0.26 com $19.42B TVL — ratio market cap/TVL de 86x; buyback mecanismo ativa se ETH>$3000; stETH ETPs institucionais em curso 2026 |
+| 4 | BBAI | BigBear.ai Holdings | Geopolitica & Defesa | neobroker | ~€10 | Contratos classified (Q2 2026) | Backlog $281.9M com contrato classified sole-source $53M; CJADC2 camada de AI entre sensores militares e decisores — moat regulatoria dificil de replicar |
+| 4 | RCAT | Red Cat Holdings | Geopolitica & Defesa | neobroker | ~€10 | Contratos DOD (Q3 2026) | Black Widow FPV provado em combate real; IDIQ $95.9M DOD Small UAS em execucao; SkyDweller acquisition expande para surveillance de longa duracao |
+| 4 | DRO.AX | DroneShield Ltd. | Geopolitica & Defesa | abrir-conta | ~€20 | Contrato ADF (2026-06-02) | Counter-UAS e o segmento de defesa com maior urgencia pos-Ucrania; $105M contrato ADF Australia; $1.2B pipeline; cobre lacuna critica NATO |
+| 4 | HAG.DE | HENSOLDT AG | Geopolitica & Defesa | neobroker | ~€10 | Backlog EUR 8.83B (H2 2026) | Stock 36% abaixo 52-week high com backlog EUR 8.83B (3.6x revenue); order intake +62% YoY Q4 2025; EUR 1B investimento optronics ate 2027 |
+| 4 | CBRS | Cerebras Systems | IA & Computacao | neobroker | ~€20 | Q2 2026 resultados (Q3 2026) | IPO $185 spike $311 agora $218; Morgan Stanley $250 PT; avg analistas $294; unico rival real ao monopolio Nvidia em AI inference com cliente OpenAI $20B |
+| 4 | POET | POET Technologies | IA & Computacao | neobroker | ~€21 | 800G producao (Q3 2026) | $50M PO Lumilens confirmado; 800G high-volume Q3 2026 Malaysia; 30,000+ optical engines 2026; Optical Interposer WDM unico que semicondutores nao replicam |
+| 4 | GPCR | Structure Therapeutics | Longevidade & Saude | neobroker | ~€10 | Phase 3 readout (Q3 2026) | Melhor eficacia Phase 2 ACCESS II (16.3% perda de peso); unico GLP-1RA oral comparavel a injetavel; analistas consensus $65 vs <$40 atual — gap 62% |
+| 4 | BIOA | BioAge Labs | Longevidade & Saude | neobroker | ~€10 | Phase 2 BGE-102 (H2 2026) | Phase 1 BGE-102 best-in-class reducao hsCRP (abril 2026); primeiro NLRP3 inibidor em Phase 2 para longevidade; AstraZeneca collaboration valida abordagem |
+| 4 | 2197.HK | Insilico Medicine | Longevidade & Saude | abrir-conta | ~€20 | Phase 2 ISM001 resultados | Deal Servier $888M jan 2026 valida AI drug discovery; primeiro composto descoberto por AI a entrar em Phase 2 clinica; media foca Nvidia e ignora biotech AI |
+| 4 | VERV | Verve Therapeutics | Longevidade & Saude | neobroker | ~€10 | HEART-2 resultados (H2 2026) | One-shot permanente para prevencao cardiovascular; HEART-2 H2 2026; down 70%+ do pico apesar de AstraZeneca parceria e dados Phase 1b prometedores |
+| 4 | FDMT | 4D Molecular Therapeutics | Longevidade & Saude | neobroker | ~€10 | Phase 2/3 readout (H2 2026) | One-shot gene therapy wAMD (10M+ doentes EUA); Phase 2/3 readout H2 2026; down 80% do pico com cash suficiente para resultados clinicos definitivos |
+| 4 | OKLO | Oklo Inc. | Materiais & Energia | neobroker | ~€10 | Aurora comercial (Q1 2027) | Procura de energia 24/7 para AI data centers e catalisador secular; data centers comprometidos a comprar Aurora; NRC application em curso |
+| 4 | XE | X-energy Inc. | Materiais & Energia | neobroker | ~€10 | NRC license (H2 2026) | Maior IPO nuclear da historia ($1.1B); FONSI NRC para projeto Dow Chemical; pebble-bed TRISO impossivel de fundir — seguranca intrinseca diferenciadora |
+| 4 | QS | QuantumScape Corporation | Materiais & Energia | neobroker | ~€10 | Customer billings (2026-02-04) | Eagle Line inaugurada fev 2026 com primeiros customer billings — transicao de R&D para produto; electrodo de estado solido com 80% mais energia vs Li-ion |
+| 4 | NPWR | NET Power Inc. | Materiais & Energia | neobroker | ~€10 | FID (H2 2026) | Stock a 63% do maximo anual com FID visado H2 2026; processo Allam-Fetvedt gera electricidade sem CO2 por captura intrinseca — diferenciador tecnologico unico |
+| 4 | LEU | Centrus Energy Corp. | Materiais & Energia | neobroker | ~€10 | HALEU producao (H2 2026) | HALEU e o combustivel de todos os advanced reactors americanos; Centrus e o unico produtor HALEU licenciado nos EUA; capex feito — proximo passo e producao |
+| 4 | VIRT | Virtu Financial | Trading & Mercados | neobroker | ~€10 | Q2 2026 resultados (Q2 2026) | P/E de 9.5 com PEG de 0.13; infra-estrutura de mercado essencial que beneficia de volatilidade crescente; sub-coberta por analistas de growth |
+| 4 | FUTU | Futu Holdings | Trading & Mercados | neobroker | ~€10 | Expansao global (2026-05-22) | Penalizacao CSRC maio 2026 remove overhang regulatorio mais temido; 55% contas internacionais; broker asiatico 2x mais barato que Interactive Brokers para retail |
+| 4 | ETOR | eToro Group | Trading & Mercados | neobroker | ~€10 | Q2 2026 resultados (Q2 2026) | Queda 38% desde IPO cria entrada em plataforma lucrativa (30M+ utilizadores, copy-trading moat); crypto volumes explodiram em 2026 — beneficiario directo |
+| 4 | TIGR | UP Fintech (Tiger Brokers) | Trading & Mercados | neobroker | ~€10 | Q2 2026 resultados (Q2 2026) | 56% revenue growth e 181% net income growth em 2025; small cap ignorada por analistas; broker asiatico acessivel para europeus com crescimento dramatico |
