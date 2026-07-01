@@ -695,24 +695,53 @@ addMoreInput.addEventListener("change", e => { handleFiles(e.target.files); e.ta
 document.body.addEventListener("dragover", e => { if (document.getElementById("dashboard").style.display !== "none") e.preventDefault(); });
 document.body.addEventListener("drop", e => { if (document.getElementById("dashboard").style.display !== "none") { e.preventDefault(); handleFiles(e.dataTransfer.files); } });
 
+function ingest(results) {
+  for (const { data, name } of results) {
+    if (/agregado|aggregat/i.test(name)) continue;
+    let date = data.scan_date || ""; if (!date) { const m = name.match(/(\d{4}-\d{2}-\d{2})/); date = m ? m[1] : "unknown"; }
+    if (!dataByDate[date]) dataByDate[date] = [];
+    if (!summariesByDate[date]) summariesByDate[date] = {};
+    if (data.entities) {
+      const cat = data.category || "Unknown";
+      dataByDate[date] = dataByDate[date].filter(e => e._category !== cat);
+      for (const e of data.entities) { e._category = cat; e._date = date; dataByDate[date].push(e); }
+    }
+    if (data.category_summary && data.category) summariesByDate[date][data.category] = data.category_summary;
+  }
+  initDashboard();
+}
+
 function handleFiles(files) {
   const promises = [];
   for (const f of files) { if (f.name.endsWith(".json")) promises.push(f.text().then(t => ({ data: JSON.parse(t), name: f.name }))); }
-  Promise.all(promises).then(results => {
-    for (const { data, name } of results) {
-      if (/agregado|aggregat/i.test(name)) continue;
-      let date = data.scan_date || ""; if (!date) { const m = name.match(/(\d{4}-\d{2}-\d{2})/); date = m ? m[1] : "unknown"; }
-      if (!dataByDate[date]) dataByDate[date] = [];
-      if (!summariesByDate[date]) summariesByDate[date] = {};
-      if (data.entities) {
-        const cat = data.category || "Unknown";
-        dataByDate[date] = dataByDate[date].filter(e => e._category !== cat);
-        for (const e of data.entities) { e._category = cat; e._date = date; dataByDate[date].push(e); }
-      }
-      if (data.category_summary && data.category) summariesByDate[date][data.category] = data.category_summary;
-    }
-    initDashboard();
-  }).catch(err => alert("JSON error: " + err.message));
+  Promise.all(promises).then(ingest).catch(err => alert("JSON error: " + err.message));
+}
+
+// Auto-load latest scans straight from the public GitHub repo (works on GitHub Pages / any http host).
+// Falls back silently to the manual file input on failure or when opened as a local file.
+const GH_REPO = "AppcreatorPT/investment-scanner";
+async function autoLoadFromGitHub() {
+  if (location.protocol === "file:") return;
+  const title = dropZone.querySelector("h2");
+  const prev = title.textContent;
+  try {
+    title.textContent = "A carregar scans do GitHub...";
+    const res = await fetch(`https://api.github.com/repos/${GH_REPO}/contents/output`);
+    if (!res.ok) throw new Error("GitHub API " + res.status);
+    const list = await res.json();
+    const scans = list.filter(f => /^\d{4}-\d{2}-\d{2}_.+\.json$/.test(f.name) && !/agregado/i.test(f.name));
+    const dates = [...new Set(scans.map(f => f.name.slice(0, 10)))].sort();
+    const wanted = dates.slice(-2); // two most recent dates -> compare mode
+    const files = scans.filter(f => wanted.includes(f.name.slice(0, 10)));
+    if (!files.length) throw new Error("sem scans em output/");
+    const results = await Promise.all(files.map(f =>
+      fetch(f.download_url).then(r => { if (!r.ok) throw new Error(f.name + ": " + r.status); return r.json(); }).then(data => ({ data, name: f.name }))
+    ));
+    ingest(results);
+  } catch (err) {
+    console.warn("GitHub auto-load falhou:", err);
+    title.textContent = prev;
+  }
 }
 
 function initDashboard() {
@@ -995,6 +1024,8 @@ function buildSummary() {
   }
   html += '</div></div>'; sec.innerHTML = html;
 }
+
+autoLoadFromGitHub();
 </script>
 </body>
 </html>
