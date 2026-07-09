@@ -1,26 +1,29 @@
-# Delta 2026-07-08 — funil para a tua DD, nao e conselho
+# Delta 2026-07-09 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**PRME ⚠️ (carry forward)**
-NZ Medsafe CTA aprovada (18 jun); primeiro paciente WD H2 2026 a caminho; cash $149.2M runway ate 2027. IND/CTA H1 2026 on track (Q1 report Mai 7). Dados clinicos so 2027 — tese permanece especulativa. H.C. Wainwright Buy mantido. Sem novidade negativa.
+**RKLB ⚠️ ESCALADO — suporte $85 perdido**
+CEO Beck concluiu venda de 3.27M acoes em 3 dias (Jul 6-8): total $286M (correccao delta anterior: plano era ate 5M, executado 3.27M/$286M). Stock caiu -10.4% para $83.34 em Jul 8; -17% na semana. Nivel de vigiar ($85) PERDIDO. Iridium deal mid-2027 on track; Neutron Q4 2026 idem. Proximo suporte tecnico: ~$80. Sem novidade fundamental negativa — pressao e tecnica/insider. Rever posicao se $80 perder.
+
+**PRME ⚠️ (carry forward + nova positiva — +15.91% Jul 8)**
+Vitoria em arbitragem vs Beam Therapeutics (Jul 8): remove risco de IP sobre tecnologia de prime editing. ARK Invest comprou 206,200 acoes. TD Cowen e H.C. Wainwright Buy ($8 target) reiterados apos decisao. PM577a Wilson Disease on track H2 2026. Alerta original permanece: CGD deprioritizado, dados clinicos so 2027. Tese reforcada com IP limpo.
+
+**EYPT ⚠️⚠️ BINARIO IMINENTE — LUGANO agosto 2026**
+Topline confirmado "beginning in August / mid-summer" (EyePoint IR + clinicaltrialsarena). DSMC 3a revisao sem alteracoes. Enrollment 432 pac. completo. Asimetria: +60%+ se nao-inferior vs Eylea 2mg; -70%+ se falha. LUCIA segue ~2 meses depois. Posicao ja aberta — NAO aumentar antes do readout.
 
 **INOD ⚠️ (carry forward — gate 30 jul)**
-~$71.41 (Jul 6) — flat vs delta anterior; -21% total desde buylist 23 jun. Sem noticia negativa — profit-taking puro. Gate critico: Q2 earnings 30 jul. Nao reforcar antes dos dados.
+$69.50 (Jul 8), -23% desde buylist 23 jun. Novo CFO (Jayant Chauhan) nomeado Jul 6 — positivo estruturalmente. Q2 earnings 30 jul e gate critico. Guidance 40%+ e Wedbush $120 em vigor. NAO reforcar antes dos dados.
 
-**CWR.L ⚠️ (carry forward — aguardar estabilizacao)**
-~521-527p. Goldman Buy PT 930p vs Panmure Liberum sell. Sem resolucao nos ultimos 48h. Royalties Doosan Q4 2026 on track. Aguardar sinal de estabilizacao antes de adicionar.
+**HYPE ⚠️ (carry forward — unlock 6 agosto)**
+Unlock Jul 6 ($645M) ABSORVIDO POSITIVAMENTE: HYPE +6.71% na semana pos-unlock (confirma mecanismo de buyback). Proximo unlock: 6 agosto, 9.92M tokens (~$670M core contributors). NAO aumentar posicao antes de 7 agosto.
 
-**AEVA ⚠️ (carry forward — catalisador alargado para 2027)**
-Daimler Truck Freightliner Cascadia production ramp = 2027, nao 2026. C-samples entregues on track. Revenue impacto so 2027.
+**CWR.L ⚠️ (carry forward)**
+~521p. Berenberg raised PT de 530p para 980p (novo desenvolvimento bullish significativo). Goldman Buy 930p ainda valido. Panmure Liberum sell. Conflito analitico persiste; royalties Doosan Q4 2026 on track. Aguardar estabilizacao.
 
-**RKLB ⚠️ NOVO — CEO insider sale $465M**
-Peter Beck vendeu 5M acoes (Jul 6, ~$465M, ~0.9% do float) via Goldman Sachs. Stock caiu -7.37% para $93.09 nesse dia. Janela pre-anunciada (marco 2026, Jun 30-Jul 8) — nao e surprise mas escala e relevante. Iridium on track (mid-2027 close); Neutron Q4 2026 idem. Vigiar se stock rompe abaixo de $85.
-
-**HYPE ⚠️ NOVO — unlock 6 agosto $684M**
-Proximo unlock: 6 agosto, 9.92M tokens (~$684M core contributors). Preco hoje ~$70.78. O unlock de jul foi absorvido positivamente (+2.3% no dia). Nao aumentar posicao antes de 7 agosto.
+**AEVA ⚠️ (carry forward)**
+C-samples Daimler entregues on track. Revenue impact SOP Freightliner Cascadia = 2027, nao 2026. Sem alteracao na tese.
 
 ---
 
@@ -28,14 +31,17 @@ Proximo unlock: 6 agosto, 9.92M tokens (~$684M core contributors). Preco hoje ~$
 
 | Ticker | Evento | Nota |
 |--------|--------|------|
-| HAG.DE ✅ +10.8% | €73 (buylist 23 jun) → €80.92 (Jul 7) | H1 results 31 jul aproxima-se; backlog record €9.8B; move positivo pre-catalisador |
-| GERN ✅ | IMpactMF FULLY ENROLLED (anterior: >50%) | Remove risco de execucao; interim OS analysis H2 2026 confirmado |
-| BKSY ✅ | PTs revertidos: Clear Street $20→$29 (Hold); Jefferies $27→$50 (Buy); avg PT $40.5 | Reverte "vigiar" flag do delta anterior; earnings 12 ago = proximo catalisador |
-| RKLB ⚠️ | CEO Beck: 5M acoes vendidas Jul 6, stock -7.37% para $93 | Ver alertas acima |
-| AAVE | Monad V4: $100M deposits em 48h (lancamento Jul 2); preco ~$88 (de $95 no delta anterior, -8%) | Fee switch + Monad expansion valida tese cross-chain |
-| CRML | Up 158% YTD 2026; analistas avisam "looks rich" pos-drilling | Offtake 75% coberto; drill on track; tese intacta mas cautela em novas entradas apos rally extremo |
-| EXOS.PA | Earnings 28 jul — semana que vem | Preco €58.40 estavel; catalisador de confirmacao iminente |
-| EYPT ⚠️⚠️ IMINENTE | LUGANO topline: AGOSTO 2026 | Binario nAMD (432 pac.); positivo → +60%+; negativo → -70%; posicao ja aberta — sem entrada nova antes do readout |
+| RKLB ⚠️ -17% semana | $83.34 (Jul 8); CEO venda $286M (3.27M acoes Jul 6-8) | Broke $85; vigiar $80; Iridium/Neutron on track |
+| PRME ✅ +15.91% Jul 8 | $4.51; arbitragem Beam vencida; ARK +206K acoes | IP risk removido; tese mais limpa; dados so 2027 |
+| RGTI ✅ +20.8% (30d) | Cepheus-108Q em AWS/Azure/cloud Rigetti; CHIPS LOI $100M confirmado | Milestone real; formal award em processo Q3 |
+| BKSY ✅ +18% semana | $25.46 (Jul 7); AFRL $99M; avg PT $40.5 (+59% vs atual) | Earnings 12 ago = proximo catalisador |
+| HAG.DE ✅ | ~€80.92 (Jul 7, +10.8% desde buylist); H1 results 31 jul iminente | Backlog €9.8B record; gate 31 jul e decisor |
+| EXOS.PA | €58.40; earnings 28 jul (19 dias) | Catalisador de confirmacao iminente |
+| BGC | Reafirmou Q2 guidance ($785-845M); results 30 jul | Record Q1 $955M (+44%); BGC Compute on track |
+| CRML | $8.45 (Jul 8); 92.5% Tanbreez; drill on track | Analistas "stock looks rich" — cautela novas entradas |
+| ASTS | $74.08 (Jul 8); BlueBirds 11-13 launch 1a metade agosto | -4% minor; commercial H1 2027 on track |
+| NNE | $18.75 (Jul 7); NRC KRONOS formal review em curso | Cash $569M; earnings 13 ago |
+| AAVE | ~$87-93; V4 mainnet; Aavenomics 3.0 buybacks ativos | Standard Chartered $180 end-2026 target |
 
 ---
 
@@ -47,4 +53,4 @@ Proximo unlock: 6 agosto, 9.92M tokens (~$684M core contributors). Preco hoje ~$
 
 ## Sem alteracao
 
-15 instrumentos sem novidade material: ASTS (~$77; BlueBirds 11-13 Falcon 9 agosto on track), PL (backlog $906M; pipeline defesa Q3), HYPE (ver alerta agosto), CFG (Coinbase preferred RWA infra; TVL $1.6B on track), THEON.AS (OCCAR 100K NVGs on track), CTM (CMCC L2 cumprido; aguardar contratos DoD Q3), RGTI (CHIPS Act $100M milestone-based em processo), CEVA (Toyota RAV4 em producao; royalties lag 12-24m), BIOA (Phase 2 BGE-102 Q4 2026 on track), ALT (RECLAIM topline Q3 2026 on track), LCTX (OpRegen Phase 2a enrolling), PROK (PROACT 1 >50% enrolled; topline Q2 2027), SLI (FID H2 2026 on track; todas approvals obtidas), NNE (NRC KRONOS formal review em curso), FLOW.AS (Q2 results 30 jul) e BGC (Q2 results 30 jul; BGC Compute on track).
+12 instrumentos sem novidade material: GERN (IMpactMF 320 pac. fully enrolled; OS H2 2026 on track), BIOA (Phase 2 BGE-102 Q4 2026 on track), ALT (RECLAIM topline Q3 2026), LCTX (OpRegen Phase 2a Q4 2026), PROK (PROACT 1 on track; topline Q2 2027), SLI (FID H2 2026 on track; financiamento ECA $1.1B em curso), CFG (TVL $1.6B; Base Chain on track), THEON.AS (OCCAR 100K NVGs on track), CTM (CMCC L2 cumprido; DoD Q3 aguardar), CEVA (Toyota RAV4 em producao; royalties lag 12-24m), FLOW.AS (results 30 jul), PL (backlog $906M; NATO Q3 on track).
