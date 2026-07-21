@@ -5,7 +5,7 @@ Gerada automaticamente a partir dos scans de 2026-07-20 (7 temas). Apenas instru
 | Score | Ticker | Nome | Tema | Conta | Entrada | Catalisador (data) | Porque agora |
 |-------|--------|------|------|-------|---------|-------------------|--------------|
 | 5 | PRME | Prime Medicine | Longevidade | neobroker | ~€10 | INDs clinicos 2026; ARK comprando Jul 2026 (Q3 2026) | Prime Editing corrige insercoes+delecoes sem double-strand breaks — unica plataforma; mercado nao precifica transicao plataforma→pipeline clinico real com 3 INDs em 2026 |
-| 5 | LEU | Centrus Energy | Materiais | neobroker | ~€10 | Contrato DOE $900M HALEU assinado 30 jun; resultados Q2 Jul 31 (2026-07-31) | MCap $800M vs contrato $900M — inversao absurda; choke-point HALEU nao replicavel para todos SMRs avancados |
+| 5 | LEU | Centrus Energy | Materiais | neobroker | ~€10 | ✅ $900M HALEU CUMPRIDO Jul 1; proximo gate Q2 earnings Aug 4 (2026-08-04) | Catalisador realizado; preco ~$179 (analistas $195-264); choke-point HALEU intacto; nova entrada se correcao |
 | 5 | NBIS | Nebius Group | IA & Computacao | neobroker | ~€10 | FY2026 guidance $3-3.4B; Physical AI Living Lab UK lancado (2026-12-31) | -35% do pico por ruido Meta cloud; fundamentais Q1 intactos (+684% YoY); Meta $27B + Nvidia $2B = visibilidade unica |
 | 5 | ASTS | AST SpaceMobile | Espaco & Deep Tech | neobroker | ~€10 | BlueBirds 11-13 lancamento agosto; servico comercial AT&T/Verizon early 2027 (2026-08-15) | Pullback -17% tecnico nao fundamental; $1.2B contratado AT&T/Verizon intacto; 98.9 Mbps demonstrado; convertivel $79.57 = upside >40% |
 | 5 | AAVE | Aave Protocol | Financas Alternativas | cripto-exchange | ~€10 | Buyback imutavel 292 AAVE/dia; GHO Arbitrum Jul 8; Stable Vaults Jul 9 (2026-09-30) | Pullback -12% para ~$87 = entrada melhorada; mecanismo buyback nao removivel por governance; 205K AAVE eliminados permanentemente |
@@ -20,10 +20,10 @@ Gerada automaticamente a partir dos scans de 2026-07-20 (7 temas). Apenas instru
 | 4 | VIRT | Virtu Financial | Trading & Mercados | neobroker | ~€10 | Q2 formal jul 30 (prelim $285M net income, $1.82 EPS) (2026-07-30) | Q2 prelim confirma vol estrutural persiste H2; mercado penalizou $400M term loan vs profitability record; jul 30 pode reverter -5.7% |
 | 4 | BGC | BGC Group | Trading & Mercados | neobroker | ~€10 | Q2 resultados jul 30; BGC Compute nova linha receita AI (2026-07-30) | BGC Compute cria optionality nao no consensus; vol elevada sustenta cashflows; Q2 jul 30 = re-rating se Compute ganha tracao |
 | 4 | FLOW.AS | Flow Traders | Trading & Mercados | neobroker | ~€10 | Q2 formal agosto (NTI record €143.4M, net profit €51.3M) (Q3 2026) | Q2 record ainda nao refletido; Horizon 2030 re-rating story; posicao unica cripto ETP market making com BHYP ETF como cliente estrutural |
-| 4 | PLUS.L | Plus500 Ltd | Trading & Mercados | neobroker | ~€10 | H1 record anunciado; FY2026 consensus $811.5M; EUA prediction markets CFTC (Q3 2026) | H1 record entregue; debt-free $850M cash = retorno acionista substancial; EUA prediction markets = nova avenida nao no preco |
+| 4 | PLUS.L | Plus500 Ltd | Trading & Mercados | neobroker | ~€10 | H1 revenue +12% $462.9M; EBITDA +1% $187.5M — ⚠️ margin compressao (Q3 2026) | Customer income 5 anos maximos mas EBITDA flat; debt-free $850M cash; EUA prediction markets = avenida nao no preco; vigiar H1 formal |
 | 4 | SNEX | StoneX Group | Trading & Mercados | neobroker | ~€10 | Q3 FY2026 resultados novembro; 3:2 split efetivo hoje jul 20 (Q4 2026) | Split aumenta visibilidade e liquidez; Q2 FY2026 +70% YoY nao totalmente digerido; pouca cobertura sell-side = sub-descoberto |
 | 4 | MRX | Marex Group | Trading & Mercados | neobroker | ~€10 | Q2 resultados agosto; $40M capital benefit venda Winterflood (Q3 2026) | Sub-coberto em Nasdaq; Neon platform = switching costs; vol commodities beneficia clearing; IPO 2024 = discovery story |
-| 4 | CMCX.L | CMC Markets | Trading & Mercados | neobroker | ~€10 | FY2027 guidance upgrade NOI £550M+ (anunciado jul 2026) (Q3 2026) | Guidance upgrade substancial vs £460-480M consensus nao totalmente refletido; B2B com Revolut e Westpac = receita recorrente; 7x PBT abaixo peers |
+| 4 | CMCX.L | CMC Markets | Trading & Mercados | neobroker | ~€10 | FY2026 record: NOI £392.6M (+15%), PBT £101.3M (+20%); FY2027 guidance £550M+ (Q3 2026) | ✅ FY2026 record entregue; FY2027 £550M+ substancialmente acima consensus; B2B Revolut/Westpac; re-rating potencial |
 | 4 | GLXY | Galaxy Digital | Trading & Mercados | neobroker | ~€10 | OTC Prediction Markets desk lancado jun 2026; Q2 resultados agosto (Q3 2026) | 16 analistas Buy PT $41 vs $23 = 82% upside implicado; prediction markets OTC sem rival institucional; data center IA = segunda alavanca nao-crypto |
 | 4 | ETOR | eToro Group | Trading & Mercados | neobroker | ~€10 | Q2 resultados agosto/setembro; commodities 60% revenue acelerando (Q3 2026) | Record Q1 $82M net income +37% mas stock -25% do IPO — gap fundamental injustificado; copy trading = network effects subestimado |
 | 4 | UUUU | Energy Fuels | Materiais | neobroker | ~€10 | Phase 1 mods circuito REE White Mesa jul 2026; Phase 2 expansao 2027 (2026-09-30) | Primeiro Tb e Dy oxide americano; dual monopolio uranio+heavy REE sub-radar vs MP Materials ($3B) |
@@ -39,7 +39,7 @@ Gerada automaticamente a partir dos scans de 2026-07-20 (7 temas). Apenas instru
 | 4 | KTOS | Kratos Defense | Geopolitica & Defesa | neobroker | ~€10 | Space Force OTA $446.8M; $36M air defense jul 2026; Q2 agosto 2026 (Q2 2026) | 17 analistas Buy target mediano $112.50 vs ~$46 = >140% upside; Valkyrie = unico jato autonomo atritavel em producao |
 | 4 | PL | Planet Labs | Geopolitica & Defesa | neobroker | ~€10 | Conversao backlog $900M; FY26 primeiro EBITDA positivo (2026-12-31) | Backlog $900M +79% YoY (NATO, NRO, NGA, Alemanha €240M); maior frota EO do mundo; mercado nao precia conversao em FCF |
 | 4 | ESLT | Elbit Systems | Geopolitica & Defesa | neobroker | ~€10 | Exportacoes Iron Vision, Trophy, drones NATO e Indo-Pacifico 2026 (2026-12-31) | Iron Vision e Trophy validados em operacoes reais; exportacoes crescendo India/Alemanha/UK/Brasil; sub-coberto vs peers europeus |
-| 4 | INOD | Innodata | IA & Computacao | neobroker | ~€10 | Q2 earnings 6 agosto 2026 (gate critico); novo engagement Big Tech +$51M (2026-08-06) | Q1 +54% vs consensus; EBITDA 28% quase dobrando; guidance 40%+ YoY; stock flat = nao precia guidance cut; Wedbush PT $120 |
+| 4 | INOD | Innodata | IA & Computacao | neobroker | ~€10 | Q2 earnings Jul 30 2026 after-close (era Aug 6); Q2 revenue +66% YoY (2026-07-30) | Q1 +54% vs consensus; EBITDA 28% quase dobrando; guidance 40%+ YoY; Q2 +66% indicativo solido; Wedbush PT $120 |
 | 4 | CRWV | CoreWeave | IA & Computacao | neobroker | ~€10 | Expansao GPU clusters; contratos enterprise pos-IPO; Microsoft deal multi-ano (2026-12-31) | Unico pure-play GPU cloud escala cotado alem de NBIS; Nvidia acionista = supply chain priority; -14% correcao = entrada melhorada |
 | 4 | RKLB | Rocket Lab USA | Espaco & Deep Tech | neobroker | ~€10 | Earnings Aug 6 (gate absoluto); Neutron first flight Q4 2026; integracao Iridium mid-2027 (2026-08-06) | 16 analistas Buy PT medio $116.57 vs $67 = 74% upside; Q1 +63.5% YoY; Iridium = verticalmente integrado launch+sats+payload |
 | 4 | LUNR | Intuitive Machines | Espaco & Deep Tech | neobroker | ~€10 | 6.o contrato CLPS $148.3M jun 30; IM-3 lancamento 2026 (Q3 2026) | Unico operador lunar com missoes completas; CLPS pipeline continuo; short 28.85% float = squeeze potencial se IM-3 bem |
@@ -68,9 +68,11 @@ Gerada automaticamente a partir dos scans de 2026-07-20 (7 temas). Apenas instru
 
 ## Alertas ativos
 
-- **HYPE**: nao aumentar antes de Aug 7 — unlock 9.92M tokens (~$670M) em 6 ago; entrar pos-unlock
-- **EYPT**: LUGANO topline agosto 2026 = binario +60%/-70%; sizing pequeno ate dados
-- **ASTS**: convertivel $1B a $79.57 limita upside ate conversao; BlueBirds lancamento agosto = gate tecnico
-- **RKLB**: Piper Sandler downgrade para Neutral recente; earnings Aug 6 = gate absoluto antes de adicionar
-- **SNEX**: 3:2 split efetivo hoje jul 20 — ajustar historico de preco (dividir por 1.5)
-- **LUNR**: short 28.85% float + insider sell Ghaffarian $1.74M jul 13 — tese intacta mas sizing conservador
+- **HYPE**: nao aumentar antes de Aug 7 — unlock core contributors 9.92M tokens (~$600M) em 6 ago; entrar pos-unlock; jul 6 insider unlock ja absorvido
+- **EYPT**: LUGANO topline "mid-summer 2026" iminente = binario +60%/-70%; NAO aumentar posicao
+- **ASTS**: convertivel $1B a $79.57 overhang; BlueBird 11 em Cape Canaveral = lancamento 1.a metade ago iminente; vigiar sell-the-news (padrao repetido)
+- **RKLB**: Piper Sandler Neutral/$83; Citizens PT $130; earnings Aug 6 = gate absoluto antes de adicionar; Q2 guide $225-240M
+- **LUNR**: short 37.84M shares (28.85% float) + ATM $500M + -36.5% em 30 dias — NAO reforcar; suporte chave $12
+- **INOD**: ⚠️ GATE MOVIDO para Jul 30 after-close (era Aug 6) — nao reforcar antes dos dados; Q2 +66% YoY indicativo
+- **PLUS.L**: ⚠️ H1 EBITDA +1% apenas — margin compressao por customer acquisition; vigiar formal agosto
+- **LEU**: ✅ $900M catalisador CUMPRIDO Jul 1; proximo gate = Q2 earnings Aug 4; analistas $195-264
