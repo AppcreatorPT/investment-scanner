@@ -1,47 +1,50 @@
-# Delta 2026-07-21 — funil para a tua DD, nao e conselho
+# Delta 2026-07-22 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**INOD ⚠️ NOVO — gate movido para Jul 30 (era Aug 6); Q2 forte**
-Q2 earnings confirmados Jul 30 after-close (9 dias, nao Aug 6 como no BUYLIST). Q2 revenue +66% YoY com raised guidance e novos Big Tech engagements. Gate critico mais proximo — nao reforcar antes dos dados.
+**LEU ⚠️ NOVO — preco ~$150 vs $179 no BUYLIST (-16%); gate corrigido Aug 11**
+Sell-the-news pos-catalisador principal (HALEU $900M Jul 1). Yahoo Finance: "Down 11.9% After Raising 2026 Outlook And Winning Major HALEU Deal." 52-week low $144.65 — suporte proximo. Tese HALEU intacta: producao comercial iniciada, choke-point real. Data earnings corrigida: Q2 = **Aug 11** (nao Aug 4 como estava no BUYLIST). Analisas $195-264. Zona de re-entrada se suporte $144 aguentar. BUYLIST atualizado.
 
-**NBIS ⚠️ NOVO — Nvidia 9.3% stake divulgado Jul 20 (+3% afterhours)**
-Nvidia disclosed 9.3% passive stake (22.3M shares incl. $2B investment + warrant; restricted ate set 2026). Positivo estrutural. Mas 30-day -38%, asset-light model ainda a digerir, insiders venderam $141.8M em 3 meses. Preco ~$188 Jul 20. Meta cloud risco persiste. Vigiar — dois sinais opostos em simultaneo.
+**NBIS ⚠️⚠️ POSITIVO — +18.78% Jul 21; fechou $216.92**
+Nvidia divulgou 9.3% passive stake (22.3M shares: $2B investment + warrant; restrito ate set 2026). Citi Buy $287; Wall St consensus $276; +250% em 12 meses. Mas: insiders venderam $141.8M em 3 meses — dois sinais opostos. Meta cloud risco persiste. Tese estrutural (GPU cloud pure-play com backing Nvidia + Microsoft $17B) reconfirmada.
 
-**LEU — catalisador $900M CUMPRIDO (Jul 1)**
-$900M HALEU contract assinado com DOE Jul 1 — tese principal realizada. Preco ~$179 Jul 21 (analistas Roth $195, Needham $264, BoA $205). Q2 earnings Aug 4 = proximo gate. Tese estrutural (choke-point HALEU) intacta mas catalisador nao-no-preco consumido.
+**GLXY ⚠️ NOVO — -13% semana; $24.59; sem catalisador negativo especifico**
+De ~$28 para $24.59 Jul 22 (-13.05% em 7 dias). Helios DC Phase I completo: 133MW CoreWeave, renda Q2 iniciada. GalaxyOne app lancada. Sem noticia negativa identificada — volatilidade geral cripto. Vigiar earnings Q2 agosto.
 
-**PLUS.L ⚠️ NOVO — H1 EBITDA flat (+1%)**
-Revenue H1 +12% a $462.9M (customer income $460.8M — 5 anos maximos). Mas EBITDA +1% apenas ($187.5M) por maior custo de aquisicao de clientes. Compressao de margem preocupante vs narrativa de retorno. Se H2 nao acelera, FY guidance $811.5M em risco. Aguardar H1 formal agosto.
+**INOD ⚠️ CARRY — data de earnings novamente incerta: Jul 30 vs Aug 6**
+DELTA anterior confirmou Jul 30; nova fonte indica Aug 6. Fontes contraditorias. Q1 record: $90.1M +54% YoY, EBITDA $25M (28%), EPS $0.42 (vs $0.17 consensus). Nao reforcar antes de confirmacao oficial. Gate critico em qualquer dos cenarios.
 
-**RDW ⚠️ ESCALADO CARRY — ~$8.45; ATH $25.90 Mai = -67%; do BUYLIST entry -15%**
-Sem novo catalisador positivo desde PAE RAS $21.5M Jul 15. Andromeda IDIQ $1.8B + backlog $498.1M record intactos. Jefferies PT $24. Suporte chave $8; abaixo = rever posicao.
+**ASTS ⚠️⚠️ CARRY — BlueBird 11-13 1.a metade agosto; commercial service early 2027 oficializado**
+Price ~$57-58. Commercial service diferido oficialmente para early 2027 (45 BlueBirds necessarios; Blue Origin New Glenn setback causou delay 3-6 meses). BlueBirds 11-13 Falcon 9 on track agosto. $1B convertivel ($79.57) overhang. Historico sell-the-news em 4/4 lancamentos anteriores. NAO reforcar antes.
 
-**RKLB ⚠️⚠️ CARRY — gate Aug 6; Q2 guide $225-240M; Citizens PT $130**
-Q1 record $200M+. Neutron AVac full-duration test completo. Maior contrato alguma vez assinado (Neutron+Electron ate 2029). Citizens PT $95→$130 (Jul). Piper Neutral/$83 persiste. Gate absoluto = earnings Aug 6. NAO cortar antes.
+**EYPT ⚠️⚠️ CARRY — LUGANO topline "mid-summer 2026" iminente; binario +60%/-70%**
+Sem data exacta. DSMC positivo; 432 pac Week 32+; LUCIA a seguir Q3. NAO aumentar posicao.
 
-**ASTS ⚠️⚠️ CARRY — BlueBird 11 em Cape Canaveral; lancamento 1.a metade agosto iminente**
-Assembly completa. On track. $1B convertivel ($79.57) overhang. Commercial service H1 2027. Vigiar sell-the-news pos-launch (padrao repetido 4x).
+**RKLB ⚠️⚠️ CARRY — gate absoluto Aug 6; contratos reconfirmam tese**
+$266M Air Force + participacao em $17B Space Force ceiling (multi-empresa). Citizens PT $130 (de $95). Piper Neutral/$83 persiste. ~$67. Gate = earnings Q2 (guide $225-240M). NAO cortar antes.
 
-**EYPT ⚠️⚠️ CARRY — LUGANO topline iminente; binario +60%/-70%**
-Sem data exacta ("mid-summer 2026"). DSMC positivo; 432 pac Week 32+; LUCIA a seguir Q3. NAO aumentar posicao.
+**LUNR ⚠️⚠️ CARRY — down ~40% recente; IM-3 H2 2026 on track**
+IM-3 H2 2026 confirmado. 6.o CLPS $148.3M. Cantor $43, B.Riley $45. ATM $500M + short 28.85% float. FY26 guide $900M-$1B + EBITDA positivo. NAO reforcar.
 
-**LUNR ⚠️⚠️ CARRY ESCALADO — -36.5% em 30 dias; short 37.84M (28.85% float)**
-7-day losing streak -24.5% ate Jul 13. Bounce para $12.70-14.15 Jul 17 com Cantor Overweight/$43 (Jul 19) + B.Riley Buy/$45 + Fifth Third $4.31M. ATM $500M overhang persiste. Tese CLPS + IM-3 intacta. NAO reforcar.
+**HYPE ⚠️ CARRY — ~$62 Jul 22; unlock core contributors Aug 6**
+Unlock Jul 6 ($645M insiders) absorvido sem queda. Proximo: 9.92M tokens core contributors Aug 6 (~$615M). T. Rowe Price TKNZ comprador estrutural. NAO aumentar antes Aug 7.
 
-**HYPE ⚠️ CARRY — ~$60-71; unlock core contributors Aug 6**
-9.92M tokens core contributors (~$600M ao preco atual) desbloqueados Aug 6. Jul 6 insider unlock ($645M) ja absorvido (+3%). T. Rowe Price TKNZ 6.14% = comprador estrutural. NAO aumentar antes Aug 7.
+**PRME ⚠️ CARRY — runway 3-4Q; PM577a IND H2 2026**
+ARK 206K shares. H.C. Wainwright Buy $8. PM577a clearance NZ Medsafe. Trial inicio H2 2026. Runway $135.5M / $42.7M burn = ~3-4Q. NAO reforcar.
 
-**PRME ⚠️ CARRY — runway 3-4Q; PM577a clearance NZ Medsafe (positivo)**
-ARK 206K shares. H.C. Wainwright Buy $8 pos-clearance. Beam arbitragem resolvida Jul 8 (PM647 rights clarificados). Runway $135.5M / $42.7M burn = ~3-4Q. NAO reforcar.
+**HAG.DE ⚠️ CARRY — H1 Jul 31 gate em 9 dias; €76.68**
+De ~€81 (sintese Jul 18) para €76.68 = -5.3%. Gate Jul 31: confirmar FCF guidance 50% EBITDA e aceleracao backlog. F126 shadow ate MEKO A-200 subcontrato confirmado.
 
-**HAG.DE ⚠️ CARRY — H1 Jul 31 gate critico (10 dias)**
-Q1 muito forte: order intake €1.48B (+112% YoY), book-to-bill 3x, order book €9.8B record, FY guidance €2.75B mantida. F126 shadow persiste ate MEKO A-200 subcontrato Hensoldt confirmado.
+**PLUS.L ⚠️ CARRY — EBITDA compressao; aguardar formal agosto**
+H1 revenue +12% $462.9M; EBITDA +1% $187.5M. Compressao margem por custo aquisicao. Aguardar resultado formal.
 
 **CWR.L ⚠️ CARRY — Goldman Buy 930p vs Panmure Sell; aguardar H1**
-Sem novidade. Conflito analitico persiste.
+Sem novidade.
+
+**RDW ⚠️ CARRY — ~-65% do ATH mai; +8.9% Jul 21**
+Andromeda IDIQ $1.8B + backlog $498.1M intactos. Jefferies PT $24 vs ~$10. Penguin Mk2.5 VTOL Taiwan. Suporte $8; abaixo = rever.
 
 ---
 
@@ -49,26 +52,25 @@ Sem novidade. Conflito analitico persiste.
 
 | Ticker | Evento | Nota |
 |--------|--------|------|
-| NBIS | Nvidia 9.3% stake divulgado Jul 20 (+3% AH); Reflection AI $1B+ compute deal | Ver alertas; 30-day -38% mas Nvidia backing estrutural confirma tese longo prazo |
-| GLXY | +6.8% Jul 20; Helios DC Phase I completo (200MW CoreWeave, renda Q2 2026 iniciada) | GalaxyOne retail app lancada; $500M Grove warehouse facility; Piper PT $36→$33 |
-| KTOS | $100M sole source Jul 7 + $400M DoW Jul 14 = $500M+ novos contratos | Goldman PT $100→$89 offset por contratos; tese reforcada; Q2 earnings agosto |
-| VKTX | +8 dias consecutivos pos-Jul 1; Medicare GLP-1 coverage desde Jul 1 | Oral VK2735 12.2% loss em 13 semanas; Phase 3 Q3-Q4 on track; tese reforcada |
-| AAVE | ~$88-91; V4 Avalanche Jul 16; Monad $100M/48h Jul 2; GHO Arbitrum Jul 8 | Stable Vaults Jul 9; buyback 292 AAVE/dia intacto; StanChart $180 end-2026 |
-| CMCX.L | FY2026 record: NOI +15% £392.6M, PBT +20% £101.3M; FY2027 guidance £550M+ | Catalisador FY2026 cumprido; re-rating potencial a materializar |
-| LEU | $900M HALEU contract cumprido Jul 1; preco ~$179 (analistas $195-264) | Catalisador principal consumido; proximo gate = Q2 earnings Aug 4 |
-| LUNR | -36.5% 30 dias; streak -24.5% ate Jul 13; bounce para $12.70-14.15 Jul 17 | Ver alertas; suporte analitico forte ($43-45 PT) mas pressao severa |
-| PLUS.L | H1 revenue +12% $462.9M; EBITDA +1% $187.5M — margin compressao | Ver alertas; customer income 5 anos maximos mas EBITDA decepciona |
+| NBIS | +18.78% Jul 21 (Nvidia 9.3% stake); fechou $216.92 | Citi $287; insiders $141.8M vendidos em 3m — vigiar ambos |
+| LEU | -16% de $179 → $150; sell-the-news pos-HALEU Jul 1 | Earnings corrigido Aug 11; suporte $144; tese intacta |
+| GLXY | -13% semana; $24.59 | Helios DC on; sem noticia negativa; volatilidade cripto |
+| VKTX | +10% em reacao a oral VK2735 Phase 3 Q3 2026 anunciado | VANQUISH SC fully enrolled; Phase 3 oral Q3 inicio confirmado |
+| QURE | BLA Q3 2026 confirmado; FDA Type B: 3 anos de dados aceites para accelerated approval | 75% slowing high dose; UK MAA Q3 tambem |
+| RDW | +8.9% Jul 21 (Penguin Mk2.5 Taiwan) | Ainda -65% ATH; tese backlog intacta |
+| KTOS | Q2 earnings confirmados Aug 12; Q2 guide $400-410M | Full-year $1.70B-$1.76B organico +15-19% |
+| ETOR | Q2 earnings confirmados Aug 11; AuM $20.1B +18% | Goldman PT $43 de $39; Q2 upside indicado |
 
 ---
 
 ## Novos nomes
 
-0 novos nomes. Buylist existente cobre 44 instrumentos de alta conviccao. Nenhum candidato adicional atingiu limiar de verificacao primaria completa + via EU retail clara + catalisador datavel com conviccao suficiente nesta janela.
+0 novos nomes. Buylist cobre 44 instrumentos. Sem candidato com catalisador datavel + via EU retail clara + verificacao primaria completa suficiente nesta janela. Drone/AI defense europeu disparou ($49B compromissos Jul 2026; Helsing $18B privado; NATO counter-drone $40B) — angulo ja coberto por EXOS.PA, THEON.AS, R3NK.DE no BUYLIST.
 
 ---
 
 ## Sem alteracao
 
-Cluster de gates iminente — nao ha novidade mas vigiar: **THEON.AS** (Q2 Jul 27), **EXOS.PA** (H1 Jul 28), **VIRT/BGC/FLOW.AS** (Q2 Jul 30).
+Gates proximos — vigiar: **THEON.AS** Q2 Jul 27 (5 dias; FY €570-600M reafirmado); **EXOS.PA** H1 Jul 28 (6 dias; Q1 +19.7% on track); **VIRT/BGC** Q2 Jul 30 (VIRT prelim $285M/$1.82 EPS ja publicado); **FLOW.AS** Q2 ~Jul 31; **HAG.DE** H1 Jul 31.
 
-26 instrumentos sem novidade material: GERN (IMpactMF H2 on track), BIOA (QUELL-CV H2), ALT (RECLAIM Q3; Phase 3 iminente), LCTX (OpRegen Q4 Genentech), QURE (AMT-130 BLA Q3 acelerado on track), VERV (Heart-2 2026; Vertex parceria), VIRT (prelim Q2 solido $285M/$1.82 EPS; formal Jul 30), BGC (Q2 Jul 30; guidance $785-845M), FLOW.AS (Q2 Jul 30; Q1 NTI €155.9M +11.2%), SNEX (split 3:2 Jul 20 concluido; Q3 FY26 novembro), MRX (Q2 agosto; Neon platform), ETOR (Q2 agosto/setembro), UUUU (REE circuit Jul 2026 ativo; heavy REE expansion 2027-28), NXE (Rook I construcao verao on track), SLI (FID H2; Trafigura take-or-pay intacto), CRML (strategic review em curso; European Lithium JV setembro 2026), FRVO (IPO mai 2026; Google deal intacto), THEON.AS (FY €570-600M reiterado; Q2 Jul 27), EXOS.PA (H1 Jul 28; Q1 +19.7% on track), R3NK.DE ($691M IDIQ intacto; >90% receita 2026 em backlog), PL (FY26 EBITDA positivo $15.5M entregue; backlog $900M), ESLT (exportacoes on track), CRWV (GPU clusters; Microsoft deal intacto), ONDO (RWA on-chain crescendo), MORPHO (TVL $6.8B; Coinbase/Apollo intactos), UNI (fee switch 8+ L2s; 100M burn em curso).
+35 instrumentos sem novidade material: GERN (IMpactMF H2 on track), BIOA (QUELL-CV H2), ALT (RECLAIM Q3), LCTX (OpRegen Q4 Genentech), QURE (BLA Q3 on track — ver movimentos), VERV (Heart-2 2026; Vertex parceria), VIRT (prelim Q2 $285M/$1.82; formal Jul 30), BGC (Q2 Jul 30; guidance $785-845M), FLOW.AS (Q2 ~Jul 31), SNEX (split concluido; Q3 nov), MRX (Q2 agosto), CMCX.L (FY2026 record entregue; FY2027 £550M+), AAVE (~$87-99; buyback 292/dia; Monad $100M), ONDO (RWA crescendo), MORPHO (TVL $6.8B; Coinbase/Apollo), UNI (fee switch ativo), UUUU (REE circuit Jul on), NXE (Rook I construcao verao), SLI (FID H2; Trafigura intacto), CRML (strategic review Clear Street em curso), FRVO (Google deal intacto), R3NK.DE ($691M IDIQ intacto), PL (FY26 EBITDA positivo; backlog $900M), ESLT (exportacoes on track), CRWV (Microsoft deal intacto), VKTX (ver movimentos).
