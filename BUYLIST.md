@@ -71,16 +71,17 @@
 | Ticker | Alerta | Gate |
 |--------|--------|------|
 | VKTX | ⚠️ -37% sem news; gate binario | Jul 29 earnings |
-| EYPT | ⚠️⚠️ LUGANO binario extremo +60%/-70% | Agosto 2026 |
+| EYPT | ⚠️⚠️ LUGANO binario extremo +60%/-70% | Beginning of August — iminente |
 | INOD | ⚠️⚠️ -38% desde entrada; mercado antecipa guidance cut | Aug 6 (gate = saida ou manutencao) |
 | HAG.DE | ⚠️ gate critico; suporte €70 | Jul 31 H1 |
 | PLUS.L | ⚠️ margem comprimida 41% vs 44.6% | Aug 10 H1 |
-| HYPE | ⚠️ unlock 9.92M tokens Aug 6 (~$618M) | NAO comprar antes Aug 7 |
-| ASTS | ⚠️ sell-the-news historico | Aguardar pos-launch agosto |
-| RKLB | ⚠️ abaixo suporte $65 | Aug 6 gate absoluto |
-| LUNR | ⚠️ short 28.15% float + ATM | NAO reforcar |
+| HYPE | ⚠️ unlock 9.92M tokens Aug 6 (~$583M); MAS Singapore Investor Alert List Jun 2026 | NAO comprar antes Aug 7 |
+| ASTS | ⚠️⚠️ ESCALADO Jul 27: -23% ($72.87 → ~$56); convertivel $1.15B overhang | NAO entrar antes launch; aguardar dip pos-launch |
+| RKLB | ⚠️⚠️ -9% adicional Jul 27 (Iridium $8B dilution); abaixo $65 threshold | Aug 6 gate absoluto |
+| LUNR | ⚠️ short 28.15% float; NASA $148.3M contract absorvido sem sustentacao | NAO reforcar |
 | CWR.L | ⚠️ divergencia Goldman vs Panmure/UBS | Aguardar H1 |
-| LEU | ⚠️ -36% YTD; gate HALEU ramp | Aug 5 — nao aumentar antes |
+| LEU | ⚠️ $163.89 (Jul 25); DOE $900M assinado Jul 1; gate ramp | Aug 5 — nao aumentar antes |
+| NBIS | ⚠️ NOVO Jul 27: -14% (~$220 → ~$189.78); insider selling $141.8M+ (Chairman Jul 15) | Monitorizar Form 6-K; Nvidia 9.3% stake ancora |
 
 ---
 
@@ -88,10 +89,10 @@
 
 | Data | Ticker | Evento |
 |------|--------|--------|
-| Jul 27 (HOJE) | THEON.AS | Q2 Trading Update apos-mercado |
-| Jul 28 | EXOS.PA | H1 resultados |
+| Jul 27 ✅ | THEON.AS | Q2 Trading Update — DISPARADO; guidance €570-600M reafirmado; order intake YTD €223M+€68M opcoes |
+| Jul 28 | EXOS.PA | H1 resultados (+9% hoje pre-resultado; Bernstein+Oddo Buy) |
 | Jul 29 | VKTX | Q2 earnings — ⚠️ gate binario |
-| Jul 30 | VIRT, BGC | Q2 resultados formais |
+| Jul 30 | VIRT, BGC, FLOW.AS | Q2 resultados formais (FLOW.AS: CORRECAO — nao agosto; Q2 Jul 30 confirmado) |
 | Jul 31 | HAG.DE | H1 resultados — ⚠️ gate critico |
 | Aug 5 | SOUN | Q2 earnings |
 | Aug 5 | LEU | Q2 earnings — ⚠️ gate HALEU |
