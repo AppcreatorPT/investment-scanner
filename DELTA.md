@@ -1,41 +1,41 @@
-# Delta 2026-07-27 — funil para a tua DD, nao e conselho
+# Delta 2026-07-28 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**ASTS ⚠️⚠️ ESCALADO — -23% em 2 sessoes ($72.87 Jul 25 → ~$56 hoje)**
-Sem catalisador negativo especifico identificado. Convertivel $1.15B (fechou Jul 21, causou -17% Jul 16) e dilution antecipada continuam a pesar. BlueBirds 11 confirmado no Cape Canaveral; BlueBirds 12+13 em transito; launch H1 agosto on track. Padrao sell-the-news amplificado antes do launch. NAO entrar antes do launch; aguardar dip pos-launch se BlueBirds 11-13 bem-sucedidos.
+**VKTX ⚠️ GATE AMANHA — Q2 earnings Jul 29 AMC**
+Confirmado: resultados apos-mercado Jul 29. Foco: VK2735 sc maintenance update (resultados Q3 2026) e oral Phase 3 study design. Cash $603M, burn $114M/trimestre — runway intacto. NAO aumentar antes do resultado.
 
-**NBIS ⚠️ NOVO ALERTA — -14% desde Jul 24 (~$220 → ~$189.78)**
-Insider selling em cadeia: CEO ($10.97M a $235 em Jul 1), CTO ($3.99M), CIO ($7.97M); Chairman Boynton adicionou $1.4M a ~$197 em Jul 15. Total insiders 3 meses: $141.8M+. Gap entre preco de venda insiders ($235, $197) e preco atual ($190) a alargar — sinal de deterioracao. Nvidia 9.3% stake ancora bullish intacto. Monitorizar Form 6-K.
+**EYPT ⚠️⚠️ IMINENTE — LUGANO topline "beginning of August"; sem data especifica**
+Sem anuncio hoje. NDA target early 2027 reafirmado (CEO Jan 2026). 432 pacientes completos. DSMC Nov 2025 positivo. Assimetria +60%/-70%. NAO aumentar.
 
-**EYPT ⚠️⚠️ CARRY — LUGANO topline iminente; readout "beginning of August"**
-Nenhum anuncio ate hoje. IR Q1 2026 (May 6) confirmou topline esperado "beginning of August"; DSMC Nov 2025 positivo intacto; 432 pacientes completos. Assimetria +60% / -70%. NAO aumentar posicao.
+**RKLB ⚠️ ATUALIZADO — +5% para $66.69 (Jul 27); ACIMA do threshold $65**
+$266M Space Force contract (12 suborbital launches, Jul 20) elevou preco acima da linha-na-areia. Iridium $8B dilution overhang persiste. Consenso sell-side considera o deal positivo mas requer financiamento misto. Gate absoluto Aug 6 mantem-se. Alerta reduzido de ⚠️⚠️ para ⚠️.
 
-**RKLB ⚠️⚠️ CARRY + DETERIORACAO — possivel -9% adicional hoje; Iridium $8B overhang**
-Queda adicional hoje por concerns de dilution/leverage no deal Iridium $8B. Continua abaixo do threshold $65. Gate absoluto Aug 6 (verificar data: uma fonte indica Aug 10). NAO reforcar.
+**ASTS ⚠️⚠️ CARRY — $58.55 (Jul 27); BlueBirds 11-13 confirmados para 1a metade agosto**
+Leve recuperacao de $56 para $58.55. BlueBirds 8-10 lancados em junho, operacionais (12 total em orbita). Fairing SpaceX Falcon 9 confirmado. Convertivel $1.15B overhang intacto. NAO entrar antes do launch; aguardar dip pos-launch.
 
-**INOD ⚠️⚠️ CARRY — $55.99, -38% de entrada; gate Aug 6**
-Sem novidade negativa especifica. Mercado consolida. Gate Aug 6 apos-mercado: se guidance 40%+ mantido → recovery possivel ($55 → $83); se cortado → saida obrigatoria. NAO reforcar.
+**NBIS ⚠️ CARRY — ~$198 (Jul 27); insider selling chain**
+Preco consolida. CEO ($10.97M a $235), CTO ($3.99M), CIO ($7.97M), Chairman ($1.4M a $197) — total $141.8M+ 3 meses. Nvidia 9.3% stake ancora intacto. Monitorizar Form 6-K.
 
-**VKTX ⚠️ CARRY — ~$35.50, flat; gate binario AMANHA Jul 29**
-Sem novidade. Consensus: net loss ~$1.23/sh, zero revenue (pre-comercial). Focus: VK2735 pipeline update e cash runway. Gate Jul 29 apos-mercado. NAO aumentar.
+**INOD ⚠️⚠️ CARRY — $60.01 (Jul 24); gate Aug 6**
+Q1 guidance raised to 40%+ YoY (de 35%+); revenue Q1 $90.1M +54% YoY. Preco recuperou de $55.99 para $60. Gate Aug 6 AMC: guidance confirmado → recovery $83+; cortado → saida obrigatoria. NAO reforcar.
 
-**HAG.DE ⚠️ CARRY — gate Jul 31 (4 dias); ~€73-81 (incerto)**
-Sem novidade negativa. Possivel pullback de €81 (Jul 18) para €73-76 em meados de julho — verificar preco atual. Gate critico: FCF 50% adj EBITDA + backlog converte. Linha-na-areia: €70.
+**HAG.DE — €82.96 (Jul 27); ACIMA do suporte €70; gate Jul 31 em 3 dias**
+Q1 record: order intake quase dobrou YoY para ~€1.5B, revenue +25% para ~€500M, EBITDA +47% para €44M. Guidance FY2026: €2.75B revenue, 18.5-19% EBITDA margin intacto. Gate Jul 31 — confirmar FCF 50% adj EBITDA + backlog conversion. Linha-na-areia €70 nao foi testada.
 
-**HYPE ⚠️ CARRY + NOVO FLAG — unlock Aug 6; MAS Singapore Investor Alert List**
-MAS (Monetary Authority of Singapore) adicionou HYPE a Investor Alert List (Jun 2026) — novo risco regulatorio nao presente nos alertas anteriores. Preco ~$59 (+2% vs Jul 25). Unlock 9.92M tokens Aug 6 (~$583M) on track. NAO comprar antes Aug 7.
+**HYPE ⚠️ CARRY — ~$56 (Jul 28); unlock Aug 6 reconfirmado**
+Unlock 9.92M tokens Aug 6 e release mensal recorrente (dia 6 de cada mes desde jan 2026). Historico: baixa volatilidade 7 dias pos-unlock. MAS Singapore Investor Alert List (Jun 2026) ativo. NAO comprar antes Aug 7.
 
-**LUNR ⚠️ CARRY — $12.92; NASA $148.3M contract absorvido sem sustentacao**
-NASA lander contract ($68.6M base + $79.7M incentivo, delivery 2028) anunciado ~Jul 21. Spike breve +5.6%; sem sustentacao. Short 28% float. Cantor PT $43. NAO reforcar.
+**LUNR ⚠️ CARRY — short 28.15% float; sem catalisador de suporte**
+NASA $148.3M contract absorvido sem sustentacao de preco. Cantor PT $43 intacto. NAO reforcar.
 
-**LEU ⚠️ CARRY — $163.89 (Jul 25); gate Q2 earnings Aug 5**
-$900M DOE HALEU task order assinado Jul 1 (PR Newswire — fonte primaria confirmada). Market cap ~$800M < contrato $900M = tese intacta. Roth Capital PT $230; BofA PT $205. Gate: confirmar guidance $450-500M.
+**LEU ⚠️ CARRY — $163.89 (Jul 25); gate Aug 5**
+DOE $900M (+$170M opcoes = $1.07B total com opcoes) assinado Jul 1 — confirmado SEC 8-K. Queda de ~12% pos-anuncio por concerns de margin compression durante expansao. Tese intacta: unico enricher HALEU americano, backlog LEU $2.4B. Gate Q2 earnings Aug 5 (conf call Aug 6 8:30 EDT).
 
-**THEON.AS ✅ GATE DISPARADO — Q2 update Jul 27 apos-mercado; guidance reafirmado**
-FY2026 guidance €570-600M reafirmado; order intake YTD €223M + €68M opcoes. Sem surpresa negativa. Catalisador cumprido. Preco amanha (possivel -4% sell-the-news leve) a monitorizar; nao e motivo de saida se guidance se mantiver.
+**CWR.L ⚠️ CARRY — H1 agosto; divergencia Goldman vs UBS/Panmure**
+Sem novidade. Aguardar H1.
 
 ---
 
@@ -43,20 +43,25 @@ FY2026 guidance €570-600M reafirmado; order intake YTD €223M + €68M opcoes
 
 | Ticker | Movimento | Nota |
 |--------|-----------|------|
-| ASTS | -23% ($72.87 → ~$56) | ⚠️⚠️ Convertivel $1.15B overhang; launch H1 agosto on track |
-| NBIS | -14% (~$220 → ~$189.78) | ⚠️ NOVO — insider chain; Nvidia 9.3% stake intacto mas nao segura preco |
-| RKLB | ~-9% adicional hoje | Iridium $8B dilution concerns; continua abaixo threshold $65 |
-| EXOS.PA | +9.1% (~€62 → ~€68 hoje) | Pre-H1 run-up; H1 resultados amanha Jul 28; Bernstein+Oddo Buy |
-| THEON.AS | Possivel -4% pos-anuncio amanha | Gate Jul 27 disparado; guidance reafirmado; sell-the-news leve |
+| THEON.AS | ✅ GATE CUMPRIDO — H1 out Jul 28 | Q2 +38.4% (€128.6M), H1 +35.4% (€248.7M), EBIT 27.3%; backlog €1.46B (2.4x coverage); maior aquisicao da historia; FY2026 guidance + MTT €1B 2029 reafirmados |
+| EXOS.PA | H1 out HOJE Jul 28 — "strong, night vision + defense imaging" | Indexacao pendente; run-up +9.1% Jul 27 (Bernstein + Oddo Buy intactos); catalisador disparado |
+| RKLB | +5% (Jul 27) → $66.69 | $266M Space Force contract (12 suborbital launches); recuperou acima $65 threshold; gate Aug 6 |
+| PRME | +15.9% recente | PM577a Medsafe NZ clearance + PM647 arbitragem vs Beam resolvida; ARK comprou; H.C. Wainwright Buy $8 |
+| SOUN | $6.30-6.90; estabilizou perto 52W low | Gartner Magic Quadrant Leader (Jul 13) + "Agentic AI Company of Year" absorvidos; gate Aug 5 |
+| VIRT | Prelim Q2: $285M net income, $1.82 EPS norm, $437M EBITDA | Formal Jul 30; sem surpresa negativa esperada |
 
 ---
 
 ## Novos nomes
 
-0 novos nomes. Buylist cobre 49 instrumentos com todos os temas activos. Nenhum candidato com catalisador datavel + via EU retail + verificacao primaria completa suficiente nesta janela. Zero e uma resposta correcta.
+0 novos nomes. 49 instrumentos activos cobrem todos os temas; nenhum candidato com catalisador datavel + via EU retail + verificacao primaria completa nesta janela. Zero e uma resposta correcta.
 
 ---
 
 ## Sem alteracao
 
-37 instrumentos sem novidade material: VIRT (Q2 Jul 30; prelim $285M net income absorvido), BGC (Q2 Jul 30; guidance $785-845M intacto), FLOW.AS (Q2 Jul 30 — CORRECAO: nao agosto; data confirmada), PLUS.L (gate Aug 10 on track), SOUN (gate Aug 5; perto de 52W low $5.83; sem pre-release), AAVE (Aavenomics 3.0 buybacks diarios activos; V4 $300M deposits), PRME (FDA RMAT PM359 positivo; NZ Medsafe clearance PM577a; runway 3-4Q intacto), R3NK.DE ($691M IDIQ priced in; frigate program cancelado absorvido; PT €67 intacto), CWR.L (aguardar H1), EXOS.PA (gate amanha; em Movimentos), GERN, BIOA, ALT, LCTX, QURE, VERV, IONQ, CRWV, NXE, SLI, CRML, UUUU, FRVO, KTOS, PL, ESLT, RDW, SERV, ONDO, MORPHO, UNI, LDO, SNEX, MRX, CMCX.L, GLXY, ETOR.
+38 instrumentos sem novidade material: BGC (Q2 Jul 30; guidance $785-845M intacto), FLOW.AS (Q2 Jul 30; NTI record Q2 €143.4M pre-anunciado), VKTX (gate amanha — ver Alertas), HAG.DE (gate Jul 31 — ver Alertas), PLUS.L (Aug 10), GERN, BIOA, ALT, LCTX, QURE, VERV, IONQ, CRWV, NXE, SLI, CRML, UUUU, FRVO, KTOS, PL, ESLT, RDW, SERV, AAVE, ONDO, MORPHO, UNI, LDO, SNEX, MRX, CMCX.L, GLXY, ETOR, R3NK.DE, HYPE (ver Alertas), INOD (ver Alertas), NBIS (ver Alertas).
+
+---
+
+_Gerado automaticamente pelo investment-scanner em 2026-07-28. Nao e conselho de investimento._

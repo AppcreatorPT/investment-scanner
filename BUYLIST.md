@@ -76,8 +76,8 @@
 | HAG.DE | ⚠️ gate critico; suporte €70 | Jul 31 H1 |
 | PLUS.L | ⚠️ margem comprimida 41% vs 44.6% | Aug 10 H1 |
 | HYPE | ⚠️ unlock 9.92M tokens Aug 6 (~$583M); MAS Singapore Investor Alert List Jun 2026 | NAO comprar antes Aug 7 |
-| ASTS | ⚠️⚠️ ESCALADO Jul 27: -23% ($72.87 → ~$56); convertivel $1.15B overhang | NAO entrar antes launch; aguardar dip pos-launch |
-| RKLB | ⚠️⚠️ -9% adicional Jul 27 (Iridium $8B dilution); abaixo $65 threshold | Aug 6 gate absoluto |
+| ASTS | ⚠️⚠️ $58.55 Jul 27 (recuperou de $56); BlueBirds 11-13 1a metade agosto confirmados; convertivel $1.15B overhang | NAO entrar antes launch; aguardar dip pos-launch |
+| RKLB | ⚠️ ATUALIZADO Jul 28: +5% para $66.69 (acima threshold $65); $266M Space Force contract Jul 20; Iridium $8B dilution persiste | Aug 6 gate absoluto |
 | LUNR | ⚠️ short 28.15% float; NASA $148.3M contract absorvido sem sustentacao | NAO reforcar |
 | CWR.L | ⚠️ divergencia Goldman vs Panmure/UBS | Aguardar H1 |
 | LEU | ⚠️ $163.89 (Jul 25); DOE $900M assinado Jul 1; gate ramp | Aug 5 — nao aumentar antes |
@@ -90,7 +90,7 @@
 | Data | Ticker | Evento |
 |------|--------|--------|
 | Jul 27 ✅ | THEON.AS | Q2 Trading Update — DISPARADO; guidance €570-600M reafirmado; order intake YTD €223M+€68M opcoes |
-| Jul 28 | EXOS.PA | H1 resultados (+9% hoje pre-resultado; Bernstein+Oddo Buy) |
+| Jul 28 ✅ | EXOS.PA | H1 resultados disparados — "strong performance night vision + defense imaging"; numeros exatos pendentes de indexacao |
 | Jul 29 | VKTX | Q2 earnings — ⚠️ gate binario |
 | Jul 30 | VIRT, BGC, FLOW.AS | Q2 resultados formais (FLOW.AS: CORRECAO — nao agosto; Q2 Jul 30 confirmado) |
 | Jul 31 | HAG.DE | H1 resultados — ⚠️ gate critico |
