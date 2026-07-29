@@ -76,12 +76,12 @@
 | HAG.DE | ⚠️ gate critico; suporte €70 | Jul 31 H1 |
 | PLUS.L | ⚠️ margem comprimida 41% vs 44.6% | Aug 10 H1 |
 | HYPE | ⚠️ unlock 9.92M tokens Aug 6 (~$583M); MAS Singapore Investor Alert List Jun 2026 | NAO comprar antes Aug 7 |
-| ASTS | ⚠️⚠️ $58.55 Jul 27 (recuperou de $56); BlueBirds 11-13 1a metade agosto confirmados; convertivel $1.15B overhang | NAO entrar antes launch; aguardar dip pos-launch |
-| RKLB | ⚠️ ATUALIZADO Jul 28: +5% para $66.69 (acima threshold $65); $266M Space Force contract Jul 20; Iridium $8B dilution persiste | Aug 6 gate absoluto |
+| ASTS | ⚠️⚠️ ATUALIZADO Jul 29: BlueBirds 11-13 CONFIRMADOS Aug 5 (anunciado Jul 28); pre-launch pump $58.55 → ~$73-80 em 2 dias (+25%+); padrao sell-the-news historico -19/-23% pos-launch; convertivel $1.15B overhang | NAO reforcar antes Aug 5; aguardar dip pos-launch (janela Aug 5-12) |
+| RKLB | ⚠️ ATUALIZADO Jul 29: ~$63-65 (Power Inflow Jul 28 $61.12 → $64.95); ainda abaixo threshold $65; Iridium $8B overhang persiste | Aug 6 gate absoluto; posicao de watch |
 | LUNR | ⚠️ short 28.15% float; NASA $148.3M contract absorvido sem sustentacao | NAO reforcar |
 | CWR.L | ⚠️ divergencia Goldman vs Panmure/UBS | Aguardar H1 |
 | LEU | ⚠️ $163.89 (Jul 25); DOE $900M assinado Jul 1; gate ramp | Aug 5 — nao aumentar antes |
-| NBIS | ⚠️ NOVO Jul 27: -14% (~$220 → ~$189.78); insider selling $141.8M+ (Chairman Jul 15) | Monitorizar Form 6-K; Nvidia 9.3% stake ancora |
+| NBIS | ⚠️⚠️ ESCALADO Jul 29: -14% Jul 28 ($189.78 → $163.09 fecho); capex guidance elevado para $20-25B; modelo asset-light sem partners confirmados = tese ROI em questao; insider selling $141.8M+ continua | NAO reforcar; monitorizar Form 6-K; Nvidia 9.3% stake ancora |
 
 ---
 
@@ -90,10 +90,11 @@
 | Data | Ticker | Evento |
 |------|--------|--------|
 | Jul 27 ✅ | THEON.AS | Q2 Trading Update — DISPARADO; guidance €570-600M reafirmado; order intake YTD €223M+€68M opcoes |
-| Jul 28 ✅ | EXOS.PA | H1 resultados disparados — "strong performance night vision + defense imaging"; numeros exatos pendentes de indexacao |
+| Jul 28 ✅ | EXOS.PA | H1 resultados CONFIRMADOS — revenue €253.1M (+15.3%), EBITDA €83.6M (+18.3%), margin 33%; guidance UPPER END do range €520-540M |
 | Jul 29 | VKTX | Q2 earnings — ⚠️ gate binario |
 | Jul 30 | VIRT, BGC, FLOW.AS | Q2 resultados formais (FLOW.AS: CORRECAO — nao agosto; Q2 Jul 30 confirmado) |
 | Jul 31 | HAG.DE | H1 resultados — ⚠️ gate critico |
+| Aug 5 | ASTS | BlueBirds 11-13 launch — ⚠️⚠️ sell-the-news risk; NAO reforcar; aguardar dip pos-launch |
 | Aug 5 | SOUN | Q2 earnings |
 | Aug 5 | LEU | Q2 earnings — ⚠️ gate HALEU |
 | Aug 6 | INOD | Q2 resultados — ⚠️⚠️ gate saida/manutencao |
