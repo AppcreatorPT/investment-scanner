@@ -73,16 +73,19 @@
 | VKTX | ⚠️ ATUALIZADO Jul 30: gate cumprido; beat EPS (-$1.10 vs -$1.21); cash $502M runway 2028; Phase 3 on track; $33.43 Jul 30 (-6% pos-earnings) | Manter sem reforcar; sem catalisador de curto prazo |
 | EYPT | ⚠️⚠️ LUGANO topline "beginning of August" — pendente; assimetria +60%/-70% | IMINENTE — vigiar dia a dia |
 | INOD | ⚠️⚠️ $55.10 (Jul 29); -38% desde entrada; sem noticia nova; gate decisivo Aug 6 AMC | Aug 6 (gate = saida ou manutencao) — NAO reforcar |
-| HAG.DE | ⚠️ gate critico; suporte €70; Q1 record: intake €1.48B +112%, backlog €9.8B +41% | Jul 31 H1 — AMANHA |
+| HAG.DE | ⚠️ GATE HOJE Jul 31 — H1 publicados; numeros nao confirmados no momento de escrita; stock ~€83 (Jul 27); floor €70 mantido; se FCF < 50% conversion → flag escalado | Jul 31 H1 — HOJE |
 | PLUS.L | ⚠️ margem comprimida 41% vs 44.6% | Aug 10 H1 |
-| HYPE | ⚠️ ATUALIZADO Jul 30: $53.96 (-8.5% em 7 dias, -28% desde ATH); unlock 9.92M tokens Aug 6 (~$535M); MAS Singapore Investor Alert List Jun 2026 | NAO comprar antes Aug 7 |
-| ASTS | ⚠️⚠️ ATUALIZADO Jul 30: SELL-THE-NEWS JA EM CURSO — $53.27 Jul 30, abaixo de $58.55 pre-anuncio (Jul 27); pump reverteu antecipadamente; launch Aug 5; convertivel $1.15B overhang | NAO reforcar; aguardar dip pos-launch Aug 5-12 se missao bem-sucedida |
-| RKLB | ⚠️ ATUALIZADO Jul 30: $58.81; -37% em julho; ARK a comprar mas abaixo threshold $65; Iridium overhang persiste | Aug 6 gate absoluto; posicao de watch |
-| LUNR | ⚠️ ATUALIZADO Jul 30: short escalado 28.85% float (37.84M shares, de 34.79M); Q2 results Aug 13 | NAO reforcar |
+| HYPE | ⚠️ ATUALIZADO Jul 31: $55.08 (range $52.99-$56.02); flat; unlock 9.92M tokens Aug 6 (~$535M); MAS Singapore Investor Alert List Jun 2026 | NAO comprar antes Aug 7 |
+| ASTS | ⚠️⚠️ ATUALIZADO Jul 31: $58.29 (+9.4% de $53.27 Jul 27); launch CONFIRMADO Aug 5 3:42am EDT Falcon 9; sell-the-news risco ATIVO; convertivel $1.15B overhang | NAO reforcar; aguardar dip pos-launch Aug 5-12 se missao bem-sucedida |
+| RKLB | ⚠️ ~$58.60 (Jul 30); flat; -37% em julho; ARK a comprar mas abaixo threshold $65; Iridium overhang persiste | Aug 6 gate absoluto; posicao de watch |
+| LUNR | ⚠️ ATUALIZADO Jul 31: $11.72; -46.75% em julho; short 28.85% float (37.84M shares); Q2 results Aug 13 | NAO reforcar |
 | CWR.L | ⚠️ divergencia Goldman vs Panmure/UBS | Aguardar H1 agosto |
-| LEU | ⚠️ ATUALIZADO Jul 30: PT cuts: JPMorgan $178 (de $236), BofA $205 (de $240), Roth $195 (de $230); DOE $1.07B total confirmado; S&P SmallCap 600 inclusion positivo | Aug 5 Q2 earnings — nao aumentar antes |
-| NBIS | ⚠️⚠️ ATUALIZADO Jul 30: $157.01 fecho Jul 29 (de $163.09 Jul 28); -39.5% desde Jun 24; capex $20-25B + asset-light + credit-swap costs AI cloud; Q2 resultados Aug 12; insider selling continua | NAO reforcar; monitorizar Form 6-K |
+| LEU | ⚠️ ATUALIZADO Jul 31: ~$170-177; Roth PT lowered $171 (de $195) Neutral; DOE $1.07B total confirmado; S&P SmallCap 600 inclusion positivo | Aug 5 Q2 earnings — nao aumentar antes |
+| NBIS | ⚠️ ATUALIZADO Jul 31: +25.5% em 1 sessao ($157.01→$197); Microsoft/Meta capex guidance valida procura GPU cloud; downgraded de ⚠️⚠️; insider selling continua; meme volatility; Q2 resultados Aug 12 | NAO reforcar; monitorizar Form 6-K |
 | PRME | ✅ ATUALIZADO Jul 30: FDA clearance PM577a (Wilson Disease, Jul 23) + RMAT designation PM359 (CGD); 2 milestones clinicos; ARK comprou 206K acoes | Tese reforcada; runway 3-4Q ainda risco principal — nao reforcar |
+| CRWV | ⚠️⚠️ NOVO Jul 31: Meta Compute (cloud comercial) anunciado Jul 1-17 — stock caiu ~35% para $72.91; Meta $35B customer agora competidor GPU cloud; no-sublease firewall no contrato pode neutralizar ameaca (Rosenblatt $250 PT); Leidos classified AI deal positivo; Truist Buy $126 | NAO reforcar antes Q3 guidance; lockup setembro 2026 = possivel entry mas risco competitivo real |
+| RDW | ⚠️⚠️ NOVO Jul 31: $8.69 (Jul 24) vs $16.28 (Jun 12) = -46.6%; ATM stock offering ate $500M = enorme dilui*cao para MCap ~$900M; SpaceX IPO sector rotation dragged space small cap; backlog $498M = 1.05x FY guidance (operacoes intactas); Jefferies PT $24 mantido | Vigiar Q2 gate agosto + explicacao uso capital do ATM |
+| SOUN | ⚠️ NOVO Jul 31: $5.70 (Jul 30), -18% de $6.96 (Jul 6); pre-gate fraqueza; fundamentals OK (Gartner Leader, LivePerson merger OK, Deliverect 80K restaurantes) | Aug 5 gate Q2 earnings — watchlist |
 
 ---
 
@@ -95,8 +98,8 @@
 | Jul 29 ✅ | VKTX | Q2 earnings — beat EPS (-$1.10 vs -$1.21 est.); cash $502M; Phase 3 on track; $33.43 Jul 30 (caiu pos-earnings) |
 | Jul 30 ✅ | VIRT | Q2 formal: $285M NI, $1.82 EPS (in-line prelim); stock +7.2%; Piper Sandler PT $70 Overweight |
 | Jul 30 ✅ | FLOW.AS | H1 NTI €303.7M (+7% YoY); tradicional +18%, digital assets -36% (queda cripto Q2) |
-| Jul 30 ⏳ | BGC | Q2 results 8am ET; guidance $785-845M reafirmado; BGC Compute nova divisao AI — aguardar confirmacao |
-| Jul 31 | HAG.DE | H1 resultados — ⚠️ gate critico; AMANHA |
+| Jul 30 ✅ | BGC | Q2 CUMPRIDO — Revenue $845.5M beat (+4% vs est $812.8M); EPS $0.35 non-GAAP +4.5%; Q3 guide $805M ligeiramente soft; stock -0.77% |
+| Jul 31 ⏳ | HAG.DE | H1 resultados — ⚠️ gate HOJE; numeros nao confirmados no momento de escrita |
 | Aug 5 | ASTS | BlueBirds 11-13 launch — ⚠️⚠️ sell-the-news risk; NAO reforcar; aguardar dip pos-launch |
 | Aug 5 | SOUN | Q2 earnings |
 | Aug 5 | LEU | Q2 earnings — ⚠️ gate HALEU |
@@ -110,4 +113,4 @@
 
 ---
 
-_Atualizado pelo delta diario em 2026-07-30. Nao e conselho de investimento._
+_Atualizado pelo delta diario em 2026-07-31. Nao e conselho de investimento._

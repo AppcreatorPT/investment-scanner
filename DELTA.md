@@ -1,43 +1,52 @@
-# Delta 2026-07-30 — funil para a tua DD, nao e conselho
+# Delta 2026-07-31 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**ASTS ⚠️⚠️ ESCALADO — Sell-the-news JA EM CURSO ANTES DO LAUNCH**
-$53.27 hoje (range $51.65-$59.35) — abaixo do nivel pre-anuncio $58.55 (Jul 27). O pump ja reverteu com 6 dias de antecedencia ao launch (Aug 5). Padrao historico: BlueBirds 1-3 -23%, 4-6 -19% pos-launch. Desta vez a reversao comecou mais cedo. Nao reforcar. Se BlueBirds 11-13 bem-sucedidos, janela de entrada pos-dip Aug 5-12. Convertivel $1.15B overhang intacto.
+**CRWV ⚠️⚠️ NOVO — Meta Compute threat; stock -35% para ~$73**
+Meta anunciou "Meta Compute" (cloud comercial) em Jul 1-17, desencadeando uma queda acumulada de ~35% no CRWV de pico. Stock a ~$72.91 (Jul 30). Rosenblatt mantem $250 PT: contrato $35B Meta tem no-sublease firewall que impede Meta de revender capacidade CoreWeave. Mas o mercado precifica risco de competicao em outros clientes. Leidos classified AI defense deal = positivo. Truist upgrade para Buy PT $126. Thesis parcialmente desafiada: lockup setembro 2026 entry agora mais barato mas risco competitivo real. NAO reforcar antes Q3 guidance.
 
-**NBIS ⚠️⚠️ CARRY — $157.01 fecho Jul 29; -39.5% desde Jun 24**
-Nova queda -3.7% no dia (de $163.09 Jul 28). Credit-swap costs a afetar AI cloud stocks (+10% credit-swap press). Q2 resultados Aug 12 (nao Aug 6 como antecipado). Capex $20-25B + asset-light sem partners confirmados = tese ROI ainda em questao. Insider selling continua. NAO reforcar. Vigiar Form 6-K.
+**RDW ⚠️⚠️ NOVO — ATM $500M dilui*cao; stock -47% desde Jun 12**
+Redwire caiu de $16.28 (Jun 12) para $8.69 (Jul 24) = -46.6%. Dois catalisadores negativos: (1) SpaceX IPO rotation saiu do sector space small cap; (2) ATM stock offering ate $500M = dilui*cao potencialmente massiva para MCap ~$900M. Backlog $498M = 1.05x FY guidance = operacoes intactas. Jefferies PT $24 mantido mas a ponderacao muda com dilui*cao. Q2 gate agosto 2026 — vigiar se management explica uso de capital.
 
-**VKTX ⚠️ GATE CUMPRIDO — tese intacta; stock caiu mesmo assim ($33.43 Jul 30)**
-Bateu consensus: EPS -$1.10 vs -$1.21 est. Cash $502M (runway ate 2028). VANQUISH 1&2 fully enrolled, on track. Maintenance dosing data Q3 2026. Phase 3 oral Q4 2026 confirmado. Mas stock -6% pos-earnings sem news negativa — mercado exige catalisador de dados, nao de pipeline. Tese intacta mas sem momentum de curto prazo. Manter sem reforcar.
+**HAG.DE ⏳ GATE HOJE — H1 resultados Jul 31 (numeros nao confirmados)**
+H1 resultados publicados hoje. Nao foi possivel confirmar numeros via search no momento de escrita. Stock ~€83 (Jul 27), acima do floor €70. Floor mantido. Se FCF H1 < 50% conversion ou revenue miss → flag escalado. Se confirmado: re-rating para €95+. Vigiar preco de abertura Xetra hoje.
 
-**HAG.DE ⚠️ GATE AMANHA — H1 resultados Jul 31**
-Consenso: revenue €2.75B FY; EBITDA 18.5-19%; FCF ~50% adj EBITDA. Q1 record: order intake €1.48B (+112% YoY), backlog €9.8B (+41%). Re-rating para €95+ se FCF confirmado e backlog conversion saudavel. Linha-na-areia €70 mantida.
+**SOUN ⚠️ NOVO PRE-GATE — $5.70 (Jul 30); gate Aug 5**
+-18% de pico $6.96 (Jul 6). Stock fraco pre-earnings mas fundamentals positivos: LivePerson merger aprovado (regulatory), Gartner Magic Quadrant Leader 2026, Deliverect 80K restaurantes. Analyst consensus PT $13.14. Gate Aug 5 Q2 earnings. Watchlist ate numeros.
 
-**EYPT ⚠️⚠️ CARRY — LUGANO topline "beginning of August"; ainda pendente**
-CEO confirmou readout a partir de agosto 2026. Sem press release ate ao momento. DSMC positivo (3x consecutivo). Assimetria +60%/-70% mantida. NAO aumentar. Posicao existente — vigiar dia a dia.
+**NBIS ⚠️ MITIGADO — $197 (+25.5% Jul 30); downgrade de ⚠️⚠️**
+Rebounced de $157.01 para $197 em 1 sessao. Catalisador: Microsoft anunciou >$130B em contratos data center Q2 + Meta capex $125-145B 2026 = mercado valida procura GPU cloud independente. Reflection AI $1B deal (ja confirmado) re-avaliado como bullish. Mantido como ⚠️ (nao ⚠️⚠️): insider selling continua, Q2 Aug 12 (vigiar Form 6-K). NAO reforcar.
 
-**INOD ⚠️⚠️ CARRY — $55.10 (Jul 29); gate Aug 6 AMC**
-Essencialmente flat vs DELTA Jul 29. Sem noticia nova material. Novo CFO Jayant Chauhan positivo estrutural. Gate Aug 6: guidance 40%+ mantido = recovery $83+; cortado = saida obrigatoria. NAO reforcar.
+**ASTS ⚠️⚠️ CARRY — launch confirmado Aug 5 (3:42am EDT, Falcon 9 Cape Canaveral)**
+$58.29 (Jul 30) +9.4% de $53.27 Jul 27. Sell-the-news padrao historico mantido. NAO reforcar. Aguardar dip pos-launch Aug 5-12 se BlueBirds 11-13 bem-sucedidos.
 
-**RKLB ⚠️ CARRY ESCALADO — $58.81 (Jul 30); -37% em julho**
-ARK a comprar (sinal institucional positivo) mas stock continua a ceder. Abaixo threshold $65. Iridium $8B overhang persiste. Gate Aug 6 = confirmar Neutron Q4 + FY guidance. Posicao de watch apenas.
+**EYPT ⚠️⚠️ CARRY — LUGANO topline iminente; sem press release**
+"Beginning of August" = esta semana ou proxima. CEO confirmou calendario. DSMC 3x positivo. Assimetria +60%/-70%. Vigiar PR. NAO aumentar.
 
-**LEU ⚠️ CARRY + CORTES PT — gate Aug 5**
-PT cortados em julho: JPMorgan $178 (de $236), BofA $205 (de $240), Roth $195 (de $230). Sinalizacao de ramp mais lento do que esperado — nao invalidacao. DOE $1.07B total (incl. opcoes $170M) confirmado. S&P SmallCap 600 inclusion positivo. Tese fundamental intacta. Gate Aug 5 mantido — nao aumentar antes.
+**INOD ⚠️⚠️ CARRY — $55.10; gate Aug 6 AMC**
+Flat vs ontem. Sem noticia nova. Gate Aug 6: guidance 40%+ mantido = recovery $83+; cortado = saida obrigatoria. NAO reforcar.
 
-**HYPE ⚠️ CARRY — $53.96 (Jul 30); unlock Aug 6 ($535M tokens)**
--8.5% em 7 dias. -28% desde ATH $76.67 (Jun 16). Unlock 9.92M tokens core contributors: 6 dias. NAO comprar antes Aug 7.
+**HYPE ⚠️ CARRY — $55.08 (Jul 31); unlock Aug 6**
+Range $52.99-$56.02. Essencialmente flat. Unlock 9.92M tokens ($535M) em 6 dias. NAO comprar antes Aug 7.
 
-**LUNR ⚠️ CARRY — short escalado 28.85% float; Q2 Aug 13**
-Short interest subiu para 37.84M shares (de 34.79M) = 28.85% do float. NASA $148.3M absorvido sem suporte de preco. Q2 results Aug 13. IM-3 H2 2026 on track. NAO reforcar.
+**RKLB ⚠️ CARRY — ~$58.60; gate Aug 6**
+Flat vs Jul 30. Gate absoluto: Neutron Q4 + FY guidance. Abaixo threshold $65 = posicao de watch.
 
-**PRME ✅ ATUALIZADO — FDA clearance PM577a + RMAT designation PM359 (julho)**
-PM577a (Wilson Disease) IND clearance FDA Jul 23. PM359 (CGD p47phox) recebeu RMAT designation. Dois milestones clinicos em julho. Stock -10% em bearish sentiment apesar dos catalisadores. ARK comprou 206K acoes. TD Cowen + H.C. Wainwright Buy $8 reiterados. Runway ~3-4Q ainda o risco principal — nao reforcar mas tese reforcada.
+**LEU ⚠️ CARRY — ~$170-177; gate Aug 5**
+Roth corta PT para $171 (de $195), Neutral. Ramp mais lento que esperado mas tese DOE $1.07B intacta. Gate Aug 5.
 
-**CWR.L ⚠️ CARRY — aguardar H1 agosto | PLUS.L ⚠️ CARRY — gate Aug 10**
+**LUNR ⚠️ CARRY — $11.72; -46.75% em julho**
+Short 28.85% float mantido. Q2 Aug 13. NAO reforcar.
+
+**VKTX ⚠️ CARRY — gate cumprido; sem catalisador curto prazo**
+Tese intacta (Phase 3 on track, cash $502M). Sem momentum.
+
+**PRME ✅ CARRY — tese reforçada; FDA clearances Jul**
+Sem novidade adicional. NAO reforcar (runway 3-4Q).
+
+**CWR.L ⚠️ CARRY | PLUS.L ⚠️ gate Aug 10**
 Sem novidade.
 
 ---
@@ -46,28 +55,27 @@ Sem novidade.
 
 | Ticker | Movimento | Nota |
 |--------|-----------|------|
-| VIRT | ✅ GATE CUMPRIDO +7.2% Jul 30 | Q2 formal: $285M NI, $1.82 EPS (in-line prelim); Piper Sandler PT $70 (de $61) Overweight |
-| FLOW.AS | ✅ GATE CUMPRIDO Jul 30 | H1 NTI €303.7M (+7% YoY); tradicional +18% YoY; digital assets -36% (queda cripto Q2) |
-| BGC | ⏳ aguardar | Q2 results 8am ET Jul 30; guidance $785-845M reafirmado; BGC Compute nova divisao AI |
-| ASTS | ⚠️⚠️ -9% de Jul 27 | $53.27 Jul 30 — abaixo de pre-anuncio $58.55; sell-the-news antes do launch Aug 5 |
-| VKTX | ⚠️ -6% pos-earnings | Beat EPS mas sem catalisador de preco; $33.43; tese intacta |
-| NBIS | ⚠️⚠️ $157.01 Jul 29 | -3.7% no dia; -39.5% acumulado desde Jun 24; AI cloud credit-swap costs |
-| RKLB | ⚠️ -37% em julho | $58.81 Jul 30; ARK a comprar; abaixo threshold $65; gate Aug 6 |
-| LEU | ⚠️ PT cuts | JPM $178, BofA $205, Roth $195 — todos cortaram; S&P 600 inclusion positivo |
-| PRME | ✅ 2 milestones clinicos | FDA clearance PM577a + RMAT PM359; stock -10% mas tese fortalecida |
+| NBIS | ✅ +25.5% Jul 30 ($157→$197) | Microsoft/Meta capex confirmation; meme amplification; Q2 Aug 12 |
+| BGC | ✅ CUMPRIDO Jul 30 | Revenue $845.5M +12.7% YoY; EPS $0.35 non-GAAP +4.5% vs est; Q3 guide $805M ligeiramente abaixo est; stock -0.77% |
+| CRWV | ⚠️⚠️ -35% de pico (~$115→$73) | Meta Compute ameaca; no-sublease firewall debate; Leidos defense deal; Q2 agosto |
+| RDW | ⚠️⚠️ -46.6% de Jun 12 ($16.28→$8.69) | ATM $500M dilui*cao + SpaceX IPO effect; backlog 1.05x FY guidance intacto |
+| ASTS | ⚠️⚠️ +9.4% de Jul 27 ($53.27→$58.29) | Launch Aug 5 confirmado; sell-the-news risco ainda ativo |
+| SOUN | ⚠️ -18% de Jul 6 ($6.96→$5.70) | Pre-gate fraqueza; gate Aug 5 |
+| LUNR | ⚠️ -9.3% de Jul 25 ($12.92→$11.72) | -46.75% em julho; short ratio elevado |
+| HAG.DE | ⏳ gate Jul 31 | H1 publicados hoje; numeros nao confirmados; floor €70 mantido |
 
 ---
 
 ## Novos nomes
 
-0 novos nomes. Budget-light daily run; nenhum candidato com catalisador datavel + via EU retail + verificacao primaria completa nesta janela. Zero e uma resposta correcta.
+0 novos nomes. Budget-light daily run; nenhum candidato com catalisador datavel + via EU retail + verificacao primaria completa. Zero e resposta correcta.
 
 ---
 
 ## Sem alteracao
 
-33 instrumentos sem novidade material: BIOA, ALT, GERN, LCTX, QURE, VERV, SOUN (gate Aug 5), IONQ, CRWV, AAVE, ONDO, MORPHO, UNI, LDO, NXE, SLI, CRML, UUUU, FRVO, KTOS (gate Aug 12), PL, ESLT, RDW, SERV, SNEX, MRX, CMCX.L, GLXY, ETOR (gate Aug 11), R3NK.DE, THEON.AS (✅ cumprido Jul 27), EXOS.PA (✅ cumprido Jul 28), SNEX.
+30 instrumentos sem novidade material: GERN, BIOA, ALT, LCTX, QURE, VERV, IONQ, AAVE, ONDO, MORPHO, UNI, LDO, NXE, SLI, CRML, UUUU, FRVO, KTOS (gate Aug 12), PL, ESLT, SERV, SNEX, MRX, CMCX.L, GLXY, ETOR (gate Aug 11), R3NK.DE, THEON.AS (✅ cumprido Jul 27), EXOS.PA (✅ cumprido Jul 28), FLOW.AS (✅ cumprido Jul 30).
 
 ---
 
-_Gerado automaticamente pelo investment-scanner em 2026-07-30. Nao e conselho de investimento._
+_Gerado automaticamente pelo investment-scanner em 2026-07-31. Nao e conselho de investimento._
