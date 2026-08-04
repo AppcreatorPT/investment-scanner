@@ -53,7 +53,7 @@
 | 4 | UUUU | Energy Fuels | Materiais & Energia | neobroker | ~€10 | NdPr REE circuit ativo julho 2026 | Unico processador REE nos EUA; dupla exposicao uranio + REE = dois catalisadores |
 | 4 | CWR.L | Ceres Power Holdings | Materiais & Energia | neobroker | ~€10 | H1 resultados agosto 2026 — ⚠️ carry | UBS PT 970p = 100%+ upside; Doosan + Bosch royalties escalando; zero capex manufacturacao |
 | 4 | FRVO | Fervo Energy | Materiais & Energia | neobroker | ~€10 | Lockup IPO expira novembro 2026 | Geothermal 24/7 baseload; Google deal validado; entry pos-lockup Nov melhor |
-| 4 | KTOS | Kratos Defense | Geopolitica & Defesa | neobroker | ~€10 | Q2 resultados Aug 12 2026 | Space Force OTA $446.8M; Valkyrie UCAV $2-3M vs F-35 $80M = disruption real |
+| 4 | KTOS | Kratos Defense | Geopolitica & Defesa | neobroker | ~€10 | Q2 resultados Aug 4 2026 AMC ⚠️ HOJE (corrigido de Aug 12) | Space Force OTA $446.8M; Valkyrie UCAV $2-3M vs F-35 $80M = disruption real |
 | 4 | PL | Planet Labs | Geopolitica & Defesa | neobroker | ~€10 | FY2026 EBITDA positivo | Backlog $900M +79% YoY; cobertura diaria global = moat de frequencia |
 | 4 | ESLT | Elbit Systems | Geopolitica & Defesa | neobroker | ~€10 | Q2 2026 resultados agosto | Trophy APS standard NATO; EW segmento de maior crescimento; backlog multi-ano |
 | 4 | LUNR | Intuitive Machines | Espaco & Deep Tech | neobroker | ~€10 | IM-3 missao lunar H2 2026 — ⚠️ NAO reforcar | Backlog $1.06B > MCap $900M; Cantor PT $43 = 230%+ upside; short squeeze potencial |
@@ -75,17 +75,18 @@
 | INOD | ⚠️⚠️ $55.10 (Jul 29); -38% desde entrada; sem noticia nova; gate decisivo Aug 6 AMC | Aug 6 (gate = saida ou manutencao) — NAO reforcar |
 | HAG.DE | ⚠️ GATE HOJE Jul 31 — H1 publicados; numeros nao confirmados no momento de escrita; stock ~€83 (Jul 27); floor €70 mantido; se FCF < 50% conversion → flag escalado | Jul 31 H1 — HOJE |
 | PLUS.L | ⚠️ margem comprimida 41% vs 44.6% | Aug 10 H1 |
-| HYPE | ⚠️ ATUALIZADO Jul 31: $55.08 (range $52.99-$56.02); flat; unlock 9.92M tokens Aug 6 (~$535M); MAS Singapore Investor Alert List Jun 2026 | NAO comprar antes Aug 7 |
+| HYPE | ⚠️ ATUALIZADO Aug 4: ~$54-55 (recovery de $52.30 Aug 1); unlock 9.92M tokens Aug 6 (~$520M) em 2 dias; MAS Singapore Investor Alert List Jun 2026 | NAO comprar antes Aug 7 |
 | ASTS | ⚠️⚠️ ATUALIZADO Jul 31: $58.29 (+9.4% de $53.27 Jul 27); launch CONFIRMADO Aug 5 3:42am EDT Falcon 9; sell-the-news risco ATIVO; convertivel $1.15B overhang | NAO reforcar; aguardar dip pos-launch Aug 5-12 se missao bem-sucedida |
-| RKLB | ⚠️ ~$58.60 (Jul 30); flat; -37% em julho; ARK a comprar mas abaixo threshold $65; Iridium overhang persiste | Aug 6 gate absoluto; posicao de watch |
-| LUNR | ⚠️ ATUALIZADO Jul 31: $11.72; -46.75% em julho; short 28.85% float (37.84M shares); Q2 results Aug 13 | NAO reforcar |
+| RKLB | ⚠️ ATUALIZADO Aug 4: maior contrato confidencial da historia assinado; 5 novos contratos Neutron+Electron dedicados; Neutron Q4 on track; gate Aug 6 = confirmar timeline | Aug 6 gate absoluto; positivo pre-gate |
+| LUNR | ⚠️ ATUALIZADO Aug 4: ~$13.31 (+13.6% de $11.72 Jul 31); short squeeze parcial provavel; short 28.15% float; Q2 Aug 13 | NAO reforcar |
 | CWR.L | ⚠️ divergencia Goldman vs Panmure/UBS | Aguardar H1 agosto |
 | LEU | ⚠️ ATUALIZADO Jul 31: ~$170-177; Roth PT lowered $171 (de $195) Neutral; DOE $1.07B total confirmado; S&P SmallCap 600 inclusion positivo | Aug 5 Q2 earnings — nao aumentar antes |
-| NBIS | ⚠️ ATUALIZADO Jul 31: +25.5% em 1 sessao ($157.01→$197); Microsoft/Meta capex guidance valida procura GPU cloud; downgraded de ⚠️⚠️; insider selling continua; meme volatility; Q2 resultados Aug 12 | NAO reforcar; monitorizar Form 6-K |
+| NBIS | ⚠️ ATUALIZADO Aug 4: Vera Rubin NVL72 rack validado e live Finland; GPU backlog contratado $40B; volatile; insider selling continua; Q2 Aug 12 | NAO reforcar; monitorizar Form 6-K |
 | PRME | ✅ ATUALIZADO Jul 30: FDA clearance PM577a (Wilson Disease, Jul 23) + RMAT designation PM359 (CGD); 2 milestones clinicos; ARK comprou 206K acoes | Tese reforcada; runway 3-4Q ainda risco principal — nao reforcar |
 | CRWV | ⚠️⚠️ NOVO Jul 31: Meta Compute (cloud comercial) anunciado Jul 1-17 — stock caiu ~35% para $72.91; Meta $35B customer agora competidor GPU cloud; no-sublease firewall no contrato pode neutralizar ameaca (Rosenblatt $250 PT); Leidos classified AI deal positivo; Truist Buy $126 | NAO reforcar antes Q3 guidance; lockup setembro 2026 = possivel entry mas risco competitivo real |
-| RDW | ⚠️⚠️ NOVO Jul 31: $8.69 (Jul 24) vs $16.28 (Jun 12) = -46.6%; ATM stock offering ate $500M = enorme dilui*cao para MCap ~$900M; SpaceX IPO sector rotation dragged space small cap; backlog $498M = 1.05x FY guidance (operacoes intactas); Jefferies PT $24 mantido | Vigiar Q2 gate agosto + explicacao uso capital do ATM |
-| SOUN | ⚠️ NOVO Jul 31: $5.70 (Jul 30), -18% de $6.96 (Jul 6); pre-gate fraqueza; fundamentals OK (Gartner Leader, LivePerson merger OK, Deliverect 80K restaurantes) | Aug 5 gate Q2 earnings — watchlist |
+| RDW | ⚠️⚠️ ATUALIZADO Aug 4: ~$9.64 (+11% de $8.69 Jul 24); Q2 gate AMANHA Aug 5 AMC; ATM $500M flag mantido; backlog $498M = 1.05x FY guidance; Jefferies PT $24 | Vigiar Q2 Aug 5 AMC: se ATM uso de capital nao explicado + revenue flat = flag escalado |
+| KTOS | ⚠️ NOVO Aug 4: earnings HOJE AMC (data corrigida — estava Aug 12 no BUYLIST); +5.6% intraday; consensus EPS $0.13 +18% YoY, revenue $411.7M +17% YoY; 4 beats consecutivos | HOJE AMC — vigiar resultado |
+| SOUN | ⚠️ CARRY Aug 4: ~$5.70; pre-gate sem novidade; LivePerson merger pendente fecho | Aug 5 gate Q2 earnings |
 
 ---
 
@@ -100,17 +101,22 @@
 | Jul 30 ✅ | FLOW.AS | H1 NTI €303.7M (+7% YoY); tradicional +18%, digital assets -36% (queda cripto Q2) |
 | Jul 30 ✅ | BGC | Q2 CUMPRIDO — Revenue $845.5M beat (+4% vs est $812.8M); EPS $0.35 non-GAAP +4.5%; Q3 guide $805M ligeiramente soft; stock -0.77% |
 | Jul 31 ⏳ | HAG.DE | H1 resultados — ⚠️ gate HOJE; numeros nao confirmados no momento de escrita |
+| Aug 4 HOJE ⚠️ | KTOS | Q2 earnings AMC — CORRECAO (estava Aug 12); +5.6% intraday |
 | Aug 5 | ASTS | BlueBirds 11-13 launch — ⚠️⚠️ sell-the-news risk; NAO reforcar; aguardar dip pos-launch |
+| Aug 5 | RDW | Q2 resultados AMC — ⚠️⚠️ gate ATM/revenue; ~$9.64 |
 | Aug 5 | SOUN | Q2 earnings |
 | Aug 5 | LEU | Q2 earnings — ⚠️ gate HALEU |
 | Aug 6 | INOD | Q2 resultados — ⚠️⚠️ gate saida/manutencao |
 | Aug 6 | RKLB | Q2 earnings — ⚠️ gate absoluto |
+| Aug 6 | R3NK.DE | H1 resultados — record backlog €6.9B; David Brown Defence deal |
 | Aug 6 | HYPE | Unlock 9.92M tokens — ⚠️ nao comprar ate Aug 7 |
 | Aug 7+ | HYPE | Entry pos-unlock |
 | Aug 10 | PLUS.L | H1 formal + shareholder returns — ⚠️ |
+| Aug 11 | CRWV | Q2 earnings — ⚠️⚠️ Meta Compute debate |
 | Aug 11 | ETOR | Q2 resultados |
-| Aug 12 | KTOS | Q2 resultados |
+| Aug 12 | NBIS | Q2 earnings — ⚠️ volatile; Vera Rubin NVL72 validado |
+| Aug 13 | LUNR | Q2 resultados — ⚠️ NAO reforcar; short squeeze parcial em curso |
 
 ---
 
-_Atualizado pelo delta diario em 2026-07-31. Nao e conselho de investimento._
+_Atualizado pelo delta diario em 2026-08-04. Nao e conselho de investimento._
