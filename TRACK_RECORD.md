@@ -1,14 +1,15 @@
 # Track Record — picks datados vs realidade; nao e conselho
 
-Ultima atualizacao: 2026-08-01 | Precos de entrada = fecho aprox. data do scan | Precos atuais = fecho/intraday 2026-08-01
-Nota: entradas marcadas "est." sao estimativas baseadas em pesquisa; serao corrigidas se encontrar fonte primaria melhor.
+Ultima atualizacao: 2026-08-08 | Precos de entrada = fecho aprox. data do scan | Precos atuais = fecho/intraday Aug 7-8 2026
+Nota: entradas marcadas "est." sao aproximacoes; as da bolsa US foram fecho 2026-04-04
 Avisos de ticker: GENF.L parece ser Genflow Biosciences (nano-cap), nao Genfit (GNFT.PA) — possivel erro no scan; 1231.HK e Newton Resources, nao CSL — idem.
 AVISO Jul-25: VKTX era estimado $55 (+38%) no update Jul-18 — preco real Jul-25 era $35.50 (-11%); 52-week high so $43.15; estimativa anterior incorreta. Ver Licao #15.
 AVISO Aug-01: VKTX EPS beat Jul-29 mas stock caiu para $32.53 (-19% vs entrada Apr-05); ASTS launch Aug-5 iminente (gate vivo); HYPE unlock Aug-6 ($550M+ em tokens).
+AVISO Aug-08: RKLB gate CORRIGIDO para Aug 10 AMC (nao Aug 6 como registado ate Aug-01); LEU Q2 HUGE beat (EPS $1.77 vs $1.02 est., FY raised, backlog $4.5B) — +9% vs entrada Jul-13; INOD Q2 beat EPS $0.41 vs $0.22 est., FY >=40% maintained — recuperacao de -39% para -18% vs entrada Jun-20; ASTS +17% pos-launch BlueBirds 11-13 (sell-the-news NAO materializou, ver Licao #21); RDW +22% pos-Q2 ($117.1M record); SOUN +26% Q2 record; KTOS +12.5% EPS beat; HYPE unlock Aug-6 absorvido (+7.4% pos-unlock); gates pendentes: RKLB Q2 Aug 10 AMC, EYPT LUGANO iminente, NBIS Q2 Aug 12, CRWV Q2 Aug 11, PLUS.L + CWR.L H1 Aug 10, ETOR Aug 11, LUNR Aug 13.
 
 ---
 
-## Resumo — Coorte 2026-04-05 (118 dias, benchmark SPY ~+6%)
+## Resumo — Coorte 2026-04-05 (128 dias, benchmark SPY ~+10.0%)
 
 | Tema | Picks trackados | Bateram SPY | Hit-rate |
 |------|----------------|------------|---------|
@@ -24,24 +25,27 @@ AVISO Aug-01: VKTX EPS beat Jul-29 mas stock caiu para $32.53 (-19% vs entrada A
 > Update Jul-18: RKLB desceu de +98% para +60%; VKTX subiu de -7% para +38% est.; HAG.DE recuperou de -8% para -2%; Longevidade 33%→50%.
 > Update Jul-25: RKLB +60%→+52% ($63.91); VKTX REVISAO: estimativa +38% era incorreta — preco real $35.50 = -11%; HYPE +89%→+51% ($57.39); benchmark SPY revisto para +5.7%. Longevidade REVISA para 33% (VKTX sai dos hits). Total 53%→50%.
 > Update Aug-01: VKTX $32.53 = -19% (EPS beat Jul-29 nao travou queda); HYPE $52.30 = +38% (desceu de +51%); benchmark SPY +6.1% ($746.19). Hit-rate e composicao de beats inalterada a 50%.
+> Update Aug-08: RKLB $83.88 = +100% (Space Force $397M deal; gate CORRIGIDO Aug 10 AMC nao Aug 6); KTOS ~$58 = +66% (EPS +62% beat); HYPE $56.19 = +48% (unlock Aug-6 absorvido, stock +7.4% pos-unlock); VKTX $33.76 = -16% (ligeira recuperacao); benchmark SPY +10.0% ($772.47). Hit-rate: 16/32 = 50% (inalterado — RKLB ja era beat, composicao de themes inalterada).
 
 ### Media de retorno por score (coorte Apr-05)
 
-| Score | Picks | Retorno medio (estimado) | vs SPY (+6.1%) |
+| Score | Picks | Retorno medio (estimado) | vs SPY (+10.0%) |
 |-------|-------|--------------------------|----------------|
-| 5 | ONDO, CFG, SYRUP, GENF.L, OKLO (CBRS n/a) | ~-15% est. | -21pp |
-| 4 | restantes 27 | ~+17% est. | +11pp |
+| 5 | ONDO, CFG, SYRUP, GENF.L, OKLO (CBRS n/a) | ~-15% est. | -25pp |
+| 4 | restantes 27 | ~+18% est. | +8pp |
 
 > Nota contraintuitiva: score-5 inferior a score-4 por peso de ONDO (-61%), ENA era score-4.
-> Update Aug-01: VKTX REVISAO — preco real $32.53 (-19%), nao $35.50 (-11%) como registado Jul-25. Media score-4 ajustada de +18% para +17%.
+> Update Aug-08: RKLB +100% eleva media score-4 de +17% para +18%; score-5 inalterado (ONDO/ENA/EIGEN dominam negativamente).
 
-### Melhores 3 apostas (Abr-05, precos Aug-01)
+### Melhores 3 apostas (Abr-05, precos Aug-08)
 
 | Ticker | Retorno | Catalisador |
 |--------|---------|-------------|
 | PL | ~+288% est. | Contratos governamentais + NATO confirmado |
 | LYC.AX | ~+136% est. | Rare earth prices + contratos gov AU/US |
 | MP | ~+109% est. | China rare-earth restrictions + EV supply chain |
+
+> RKLB +100% entra como 4o melhor pick (subiu de +52%); top 3 inalterado.
 
 ### Piores 3 apostas (Abr-05)
 
@@ -62,7 +66,7 @@ HAG.DE, RHM.DE e KTOS bateram SPY com folga. O rearmamento europeu tem visibilid
 ONDO, ENA, PENDLE, EIGEN, ETHFI todos entre -61% e -80%. A tese de "rendimento real em DeFi" nao se materializou: o rendimento era circular (TVL dependente de incentivos) e colapsou com a rotacao de capital. Regra: sem cashflows auditaveis externos ao protocolo, nao entra.
 
 **3. Cripto selectivo funciona — diferenciacao e tudo**
-HYPE (+38%) vs media DeFi (-72%). Hyperliquid tem fees reais de uma DEX com moat de liquidez. O score-4 igual a outros tokens foi enganoso; o modelo de negocio e qualitativamente diferente. Licao: analisar origem dos cashflows, nao apenas TVL.
+HYPE (+48%) vs media DeFi (-72%). Hyperliquid tem fees reais de uma DEX com moat de liquidez. O score-4 igual a outros tokens foi enganoso; o modelo de negocio e qualitativamente diferente. Licao: analisar origem dos cashflows, nao apenas TVL.
 
 **4. Materiais criticos: producao real vs tecnologia pre-receita**
 MP (+109%), LYC.AX (+136%), NEO.TO (+80%) vs PLUG (-34%), QS (-28%), SLDP (-26%). Quem tem mina e receita ganhou; quem tem tecnologia sem producao continuou a diluir. Regra: em materiais, produtores > early-stage.
@@ -74,7 +78,7 @@ ONDO era score-5 e foi o pior pick rastreavel. O score reflete assimetria perceb
 VAXX (-98%) apaga 2-3 picks moderados. Concentrar biotech apenas com readout Phase 2+ iminente e dados preliminares positivos. Nao entrar em "pre-clinical narrativa".
 
 **7. Infraestrutura espacial > especulativo**
-RKLB (+52%) e PL (+288%) com contratos reais e launches confirmados. Execucao de contratos assinados > narrativa de TAM. Picks com launches confirmados e clientes pagadores outperformam.
+RKLB (+100%) e PL (+288%) com contratos reais e launches confirmados. Execucao de contratos assinados > narrativa de TAM. Picks com launches confirmados e clientes pagadores outperformam.
 
 **8. Riscos de ticker — higiene de scan**
 VAXX (delisted 2024), GENF.L (possivelmente empresa errada), 1231.HK (possivelmente empresa errada). Regra futura: confirmar ticker contra nome e bolsa em fonte primaria antes de incluir.
@@ -107,128 +111,157 @@ INOD perdeu -39% desde entrada Jun-20 ($90.68 → ~$55) sem nenhum press release
 H1 2026 (publicado Jul-31): backlog record EUR 9.8B + mais dois contratos. Mas guidance H2 mais fraco que esperado. O mercado penalizou o guidance, nao o backlog. Licao: backlog e um leading indicator (visibilidade futura) mas nao garante margem ou timing de execucao. Quando o guidance imediato decepciona mesmo com backlog elevado, o mercado reprece para o guidance, nao para o backlog. Monitorizar o gap entre ambos.
 
 **18. ATM dilution em queda = sinal de cash stress, nao de oportunidade**
-RDW (Redwire) lancou ATM de $500M em Jul-31 com stock a -46.6% desde Jun 12 ($16.28→$8.69). Backlog 1.05x FY2026 guidance = quasi-zero visibilidade alem do ano corrente. Numa empresa de infraestrutura espacial com capex pesado e backlog estreito, ATM durante queda prolongada = burn rate cobre por dilucao. Distinguir: (a) ATM para financiar crescimento com receitas contratadas (menos negativo) vs (b) ATM para cobrir cash burn sem visibilidade (muito negativo). RDW = caso (b). Regra: ATM >10% market cap durante queda >30% e red flag de saida imediata, nao dip to buy.
+RDW (Redwire) lancou ATM de $500M em Jul-31 com stock a -46.6% desde Jun 12 ($16.28→$8.69). Backlog 1.05x FY2026 guidance = quasi-zero visibilidade alem do ano corrente. Numa empresa de infraestrutura espacial com capex pesado e backlog estreito, ATM durante queda prolongada = burn rate coberto por dilucao. Distinguir: (a) ATM para financiar crescimento com receitas contratadas (menos negativo) vs (b) ATM para cobrir cash burn sem visibilidade (muito negativo). RDW = caso (b). Regra: ATM >10% market cap durante queda >30% e red flag de saida imediata, nao dip to buy.
 
 **19. LUNR vs RKLB: modelo de negocio recorrente > missao one-off em espaco**
-RKLB +52% (coorte Apr-05, 118 dias) vs LUNR -44% (coorte Jul-13, 19 dias). RKLB tem launches Electron repetitivos, revenues reais Q2 $133M, contratos Iridium e HASTE. LUNR tem uma missao lunar historica (IM-1 NASA CLPS) mas path to revenues repetitivas e incerto — cada missao e um contrato standalone. Licao: em espaco, receitas recorrentes de launches multiplos > heroismo one-off de missoes singulares. Escalonar posicao em funcao do revenue backlog recorrente, nao do headline.
+RKLB +100% (coorte Apr-05, 128 dias) vs LUNR -27% (coorte Jul-13, 26 dias). RKLB tem launches Electron repetitivos, revenues reais Q2 $133M, contratos Iridium e HASTE. LUNR tem uma missao lunar historica (IM-1 NASA CLPS) mas path to revenues repetitivas e incerto — cada missao e um contrato standalone. Licao: em espaco, receitas recorrentes de launches multiplos > heroismo one-off de missoes singulares. Escalonar posicao em funcao do revenue backlog recorrente, nao do headline.
+
+**20. Pre-earnings dip de >35% pode ser institutional pre-positioning short, nao deterioracao real**
+INOD -39% em 30 dias pre-Q2 reverteu para +80% pos-Q2 (EPS $0.41 vs $0.22 est., +86% beat; FY >=40% maintained). Net position Jun-20 entrada: de -39% pre-Q2 para -18% pos-Q2 — perda reduzida em mais de metade no gate. Padrao: queda rapida sem news especifica + magnitude de beat pos-gate sugerem pre-positioning institucional short (hedges), nao informacao privada sobre deterioracao. Distingue de Licao #16 (queda = antecipacao de resultados fracos): chave e short interest + magnitude do beat. Regra: antes de sair numa queda pre-earnings >30%, verificar short interest — se >15% float, a queda pode ser hedge pre-posicionado, nao sinal informativo. Nao sair automaticamente; aguardar o gate.
+
+**21. Sell-the-news inverte quando launch ativa contrato existente, nao apenas prova tecnica**
+ASTS BlueBirds 11-13 +17% pos-launch (Aug 5) vs BlueBirds 1-3 -23% pos-launch (2025). Diferenca estrutural: BlueBirds 11-13 ativam contratos comerciais assinados AT&T/Verizon ($1.2B); BlueBirds 1-3 eram prova de conceito sem contrato de receita imediato. Stock ja tinha corrigido -31% pre-launch (de $84 para $58.29), pelo que o "vender a news" ja estava parcialmente precificado. Regra: sell-the-news e valido quando (a) stock nao corrigiu pre-event e (b) o evento e prova tecnica sem contrato ativado. Inverte quando (a) stock corrigiu >25% pre-event e (b) o evento ativa contrato de receita pre-assinado em escala comercial.
 
 ---
 
-## Coorte 2026-04-05 (118 dias) — benchmark SPY ~+6% no periodo
+## Coorte 2026-04-05 (128 dias) — benchmark SPY ~+10.0% no periodo
 
 *Nota: precos de entrada marcados "est." sao aproximacoes; as da bolsa US foram fecho 2026-04-04*
 
 | Ticker | Tema | Data entrada | Preco entrada | Preco atual | % move | SPY % | Catalisador | Nota |
 |--------|------|-------------|--------------|------------|--------|-------|-------------|------|
-| RKLB | Espaco | 2026-04-05 | ~$42 est. | ~$63.90 | +52% | +6.1% | pendente — Iridium deal fecha mid-2027; earnings Aug 6 | Piper Sandler Neutral/$83; Air Force HASTE $266M absorvido; desceu de +138%→+60%→+52% |
-| PL | Espaco | 2026-04-05 | ~$8 est. | $31.30 | ~+288% est. | +6% | cumprido — contratos governamentais + NATO | Melhor pick da coorte; verificar reverse split historico |
-| BKSY | Espaco | 2026-04-05 | ~$15 est. | ~$30 | +99% | +6% | cumprido — guidance levantado $130-150M | Duplicou; execucao solida |
-| SPIR | Espaco | 2026-04-05 | ~$10 est. | $18.20 | ~+82% est. | +6% | pendente | Verificar reverse split historico |
-| PLTR | Geopolitica | 2026-04-05 | ~$105 est. | $130 | +24% | +6% | cumprido — contratos DoD continuam | Beat SPY; AI gov contracts |
-| KTOS | Geopolitica | 2026-04-05 | ~$35 est. | ~$48 | +37% | +6% | cumprido — contratos USAF/Army | Beat SPY; JPMorgan Overweight confirmado |
-| RHM.DE | Geopolitica | 2026-04-05 | ~EUR 850 est. | EUR 1,093 | +29% | +6% | cumprido — backlog contratual EU | Re-rating europeu em curso |
-| HAG.DE | Geopolitica | 2026-04-05 | ~EUR 83 est. | ~EUR 81 | -2% | +6.1% | parcialmente cumprido — H1 Jul 31: backlog record EUR 9.8B mas H2 guidance mais fraco | F126 fragata cancelada Jun 24 ⚠️; recuperou de EUR 63; H2 guidance dececionou; ver Licao #12, #17 |
-| GPCR | Longevidade | 2026-04-05 | ~$30 est. | $39.19 | +31% | +6% | pendente | Beat SPY; GLP-1 oral pipeline |
-| VKTX | Longevidade | 2026-04-05 | ~$40 est. | $32.53 | -19% | +6.1% | parcialmente cumprido — EPS beat Jul-29 ($0.22 adj) mas preco caiu; Phase 3 oral GLP-1 Q4 on track | ⚠️ EPS beat Jul-29 nao travou queda; revisao sequencial: $55 est. (Jul-18, errado) → $35.50 (Jul-25) → $32.53 (Aug-01) = -19%; 52-week high $43.15 |
-| BIOA | Longevidade | 2026-04-05 | ~$15 est. | $25.07 | +67% | +6% | pendente — BGE-102 Phase 2 Q4 | BioAge Labs; forte move |
-| GENF.L | Longevidade | 2026-04-05 | ~GBP 0.04 est. | GBP 0.022 | -45% est. | +6% | falhou/erro | ATENCAO: GENF.L parece Genflow Biosciences, nao Genfit |
-| VAXX | Longevidade | 2026-04-05 | n/d (OTC) | ~$0.01 | ~-98% | +6% | falhou | Delisting Nasdaq Abr-2024; ticker invalido — erro de scan |
-| 1231.HK | Longevidade | 2026-04-05 | ~HK$0.45 est. | HK$0.335 | -26% est. | +6% | n/d | ATENCAO: 1231.HK e Newton Resources, nao CSL |
-| QS | Materiais | 2026-04-05 | ~$10 est. | $7.17 | -28% | +6% | falhou — sem producao comercial | QuantumScape ainda pre-receita |
-| SLDP | Materiais | 2026-04-05 | ~$3.50 est. | $2.58 | -26% | +6% | falhou — sem escala comercial | Solid Power idem |
-| SMR | Materiais | 2026-04-05 | ~$12 est. | $9.83 | -18% | +6% | adiado — licencas NRC atrasadas | NuScale sem FID ainda |
-| OKLO | Materiais | 2026-04-05 | ~$35 est. | $52.52 | +50% | +6% | cumprido — contratos data center | Nuclear para AI: tese a funcionar |
-| MP | Materiais | 2026-04-05 | ~$25 est. | $52.21 | +109% | +6% | cumprido — restrictions China | Terra rara com producao real |
-| LYC.AX | Materiais | 2026-04-05 | ~A$7.50 est. | A$17.68 | +136% | +6% | cumprido — contratos gov AU/US | Lynas: melhor proxy terra rara fora China |
-| PLUG | Materiais | 2026-04-05 | ~$4 est. | $2.65 | -34% | +6% | falhou — cash burn continua | Hidrogenio sem path to profit |
-| NEO.TO | Materiais | 2026-04-05 | ~C$20 est. | C$36.08 | +80% | +6% | cumprido | Neo Performance: dividendo + producao |
-| ONDO | Fin. Alt. | 2026-04-05 | ~$0.85 est. | $0.33 | -61% | +6% | falhou — RWA nao escalou como esperado | Score-5 mas destruicao de valor |
-| CFG | Fin. Alt. | 2026-04-05 | ~$0.18 est. | $0.20 | +11% | +6% | pendente — Centrifuge institucional | Beat SPY por margem estreita |
-| SYRUP | Fin. Alt. | 2026-04-05 | ~$0.25 est. | ~$0.17 | -32% est. | +6% | falhou | Maple Finance: competicao cresceu |
-| ENA | Fin. Alt. | 2026-04-05 | ~$0.40 est. | $0.079 | -80% | +6% | falhou — unlock pressao + yield colapsou | Ethena: pior call da coorte em % |
-| MORPHO | Fin. Alt. | 2026-04-05 | ~$1.80 est. | $2.12 | +18% | +6% | pendente | Beat SPY; protocolo de lending com moat |
-| PENDLE | Fin. Alt. | 2026-04-05 | ~$4.50 est. | $1.50 | -67% | +6% | falhou — yield tokens implosao DeFi | Correlacionado com ENA/EIGEN |
-| EIGEN | Fin. Alt. | 2026-04-05 | ~$1.20 est. | $0.286 | -76% | +6% | falhou — restaking sem cashflows reais | EigenLayer: narrativa > fundamentos |
-| ETHFI | Fin. Alt. | 2026-04-05 | ~$1.80 est. | $0.37 | -79% | +6% | falhou | ether.fi: correlacionado sector |
-| HYPE | Fin. Alt. | 2026-04-05 | ~$38 | $52.30 | +38% | +6.1% | pendente — unlock 9.92M tokens Aug 6 ⚠️ | Desceu de +89%→+51%→+38%; MAS Singapore alert; unlock Aug 6 gate critico; ver Licao #3 |
-| ENFN | Trading | 2026-04-05 | ~$12 est. | $10.76 | -10% | +6% | adiado — Clearwater acquisition pending | M&A pode ser exit; aguardar |
+| RKLB | Espaco | 2026-04-05 | ~$42 est. | $83.88 | +100% | +10.0% | cumprido — Space Force $397M Aug 5; Q2 earnings Aug 10 AMC gate | Gate CORRIGIDO Aug 10 (nao Aug 6); foi +138%→+60%→+52%→+100%; Piper Sandler Neutral/$83 |
+| PL | Espaco | 2026-04-05 | ~$8 est. | $31.30 | ~+288% est. | +10% | cumprido — contratos governamentais + NATO | Melhor pick da coorte; verificar reverse split historico |
+| BKSY | Espaco | 2026-04-05 | ~$15 est. | ~$30 | +99% | +10% | cumprido — guidance levantado $130-150M | Duplicou; execucao solida |
+| SPIR | Espaco | 2026-04-05 | ~$10 est. | $18.20 | ~+82% est. | +10% | pendente | Verificar reverse split historico |
+| PLTR | Geopolitica | 2026-04-05 | ~$105 est. | $130 | +24% | +10% | cumprido — contratos DoD continuam | Beat SPY; AI gov contracts |
+| KTOS | Geopolitica | 2026-04-05 | ~$35 est. | ~$58 | +66% | +10% | cumprido — EPS $0.21 +62% beat; FY $1.75-1.81B raised Aug 5 | Beat SPY; +12.5% pos-Q2; JPMorgan Overweight confirmado |
+| RHM.DE | Geopolitica | 2026-04-05 | ~EUR 850 est. | EUR 1,093 | +29% | +10% | cumprido — backlog contratual EU | Re-rating europeu em curso |
+| HAG.DE | Geopolitica | 2026-04-05 | ~EUR 83 est. | ~EUR 81 | -2% | +10.0% | parcialmente cumprido — H1 Jul 31: backlog record EUR 9.8B mas H2 guidance mais fraco | F126 fragata cancelada Jun 24; recuperou de EUR 63; H2 guidance dececionou; ver Licao #12, #17 |
+| GPCR | Longevidade | 2026-04-05 | ~$30 est. | $39.19 | +31% | +10% | pendente | Beat SPY; GLP-1 oral pipeline |
+| VKTX | Longevidade | 2026-04-05 | ~$40 est. | $33.76 | -16% | +10.0% | parcialmente cumprido — EPS beat Jul-29 ($0.22 adj) mas preco caiu; Phase 3 GLP-1 Q4 on track | Sequencial: $55 est. (Jul-18, errado) → $35.50 (Jul-25) → $32.53 (Aug-01) → $33.76 (Aug-08) = -16% |
+| BIOA | Longevidade | 2026-04-05 | ~$15 est. | $25.07 | +67% | +10% | pendente — BGE-102 Phase 2 Q4 | BioAge Labs; forte move |
+| GENF.L | Longevidade | 2026-04-05 | ~GBP 0.04 est. | GBP 0.022 | -45% est. | +10% | falhou/erro | ATENCAO: GENF.L parece Genflow Biosciences, nao Genfit |
+| VAXX | Longevidade | 2026-04-05 | n/d (OTC) | ~$0.01 | ~-98% | +10% | falhou | Delisting Nasdaq Abr-2024; ticker invalido — erro de scan |
+| 1231.HK | Longevidade | 2026-04-05 | ~HK$0.45 est. | HK$0.335 | -26% est. | +10% | n/d | ATENCAO: 1231.HK e Newton Resources, nao CSL |
+| QS | Materiais | 2026-04-05 | ~$10 est. | $7.17 | -28% | +10% | falhou — sem producao comercial | QuantumScape ainda pre-receita |
+| SLDP | Materiais | 2026-04-05 | ~$3.50 est. | $2.58 | -26% | +10% | falhou — sem escala comercial | Solid Power idem |
+| SMR | Materiais | 2026-04-05 | ~$12 est. | $9.83 | -18% | +10% | adiado — licencas NRC atrasadas | NuScale sem FID ainda |
+| OKLO | Materiais | 2026-04-05 | ~$35 est. | $52.52 | +50% | +10% | cumprido — contratos data center | Nuclear para AI: tese a funcionar |
+| MP | Materiais | 2026-04-05 | ~$25 est. | $52.21 | +109% | +10% | cumprido — restrictions China | Terra rara com producao real |
+| LYC.AX | Materiais | 2026-04-05 | ~A$7.50 est. | A$17.68 | +136% | +10% | cumprido — contratos gov AU/US | Lynas: melhor proxy terra rara fora China |
+| PLUG | Materiais | 2026-04-05 | ~$4 est. | $2.65 | -34% | +10% | falhou — cash burn continua | Hidrogenio sem path to profit |
+| NEO.TO | Materiais | 2026-04-05 | ~C$20 est. | C$36.08 | +80% | +10% | cumprido | Neo Performance: dividendo + producao |
+| ONDO | Fin. Alt. | 2026-04-05 | ~$0.85 est. | $0.33 | -61% | +10% | falhou — RWA nao escalou como esperado | Score-5 mas destruicao de valor |
+| CFG | Fin. Alt. | 2026-04-05 | ~$0.18 est. | $0.20 | +11% | +10% | pendente — Centrifuge institucional | Beat SPY por margem estreita |
+| SYRUP | Fin. Alt. | 2026-04-05 | ~$0.25 est. | ~$0.17 | -32% est. | +10% | falhou | Maple Finance: competicao cresceu |
+| ENA | Fin. Alt. | 2026-04-05 | ~$0.40 est. | $0.079 | -80% | +10% | falhou — unlock pressao + yield colapsou | Ethena: pior call da coorte em % |
+| MORPHO | Fin. Alt. | 2026-04-05 | ~$1.80 est. | $2.12 | +18% | +10% | pendente | Beat SPY; protocolo de lending com moat |
+| PENDLE | Fin. Alt. | 2026-04-05 | ~$4.50 est. | $1.50 | -67% | +10% | falhou — yield tokens implosao DeFi | Correlacionado com ENA/EIGEN |
+| EIGEN | Fin. Alt. | 2026-04-05 | ~$1.20 est. | $0.286 | -76% | +10% | falhou — restaking sem cashflows reais | EigenLayer: narrativa > fundamentos |
+| ETHFI | Fin. Alt. | 2026-04-05 | ~$1.80 est. | $0.37 | -79% | +10% | falhou | ether.fi: correlacionado sector |
+| HYPE | Fin. Alt. | 2026-04-05 | ~$38 | $56.19 | +48% | +10.0% | pendente — unlock Aug 6 absorvido; stock +7.4% pos-unlock | De +89%→+51%→+38%→+48%; unlock absorvido sem crash; Beat SPY; ver Licao #3 |
+| ENFN | Trading | 2026-04-05 | ~$12 est. | $10.76 | -10% | +10% | adiado — Clearwater acquisition pending | M&A pode ser exit; aguardar |
 | CBRS | IA | 2026-04-05 | privada | privada | n/a | n/a | n/a | Cerebras: sem ticker; nao rastreavel |
 
 ---
 
-## Coorte 2026-06-20 (42 dias) — benchmark SPY ~+4.6% no periodo
+## Coorte 2026-06-20 (49 dias) — benchmark SPY ~+8.0% no periodo
 
-*Base: sintese semanal 2026-06-20 (data de entrada = 2026-06-20). Preco atual = 2026-08-01.*
+*Base: sintese semanal 2026-06-20 (data de entrada = 2026-06-20). Preco atual = 2026-08-08.*
 
 | Ticker | Tema | Data entrada | Preco entrada | Preco atual | % move | SPY % | Catalisador | Nota |
 |--------|------|-------------|--------------|------------|--------|-------|-------------|------|
-| RKLB | Espaco | 2026-06-20 | ~$80 est. | ~$63.90 | -20% | ~+4.6% | pendente — Iridium fecha mid-2027; earnings Aug 6 | Piper Sandler Neutral/$83; -20%; abaixo threshold $65 ⚠️ |
-| ASTS | Espaco | 2026-06-20 | ~$84 est. | $58.29 | -31% | ~+4.6% | pendente — BlueBirds 11-13 launch Aug 5 ⚠️⚠️ | $58.29 Jul-30; launch confirmado 3:42am EDT Aug 5; BlueBird 7 perdido antes; comercial service AT&T/Verizon intacto; ver Licao #13 |
-| PL | Espaco | 2026-06-20 | ~$18 est. | $31.30 | +72% | ~+4% | cumprido | Forte em ambas coortes |
-| SPIR | Espaco | 2026-06-20 | ~$12 est. | $18.20 | +52% | ~+4% | pendente | Forte move |
-| BKSY | Espaco | 2026-06-20 | ~$22 est. | ~$30 | +36% | ~+4% | cumprido — guidance $130-150M | Continua a superar |
-| KTOS | Geopolitica | 2026-06-20 | ~$48 est. | ~$48 | 0% | ~+4.6% | cumprido — contratos Jul 6-14 reafirmados; gate Aug 12 | Plano esta coorte; JPMorgan Overweight |
-| HAG.DE | Geopolitica | 2026-06-20 | ~EUR 75 est. | ~EUR 81 | +8% | ~+4.6% | parcialmente cumprido — H1 Jul 31: backlog record + dois contratos mas H2 guidance mais fraco | Beat SPY; ver Licao #17 |
-| INOD | IA | 2026-06-20 | $90.68 | ~$55 | -39% | ~+4.6% | pendente — Q2 Aug 6 ⚠️⚠️ | Deterioracao: -25% (Jul-18) → -38% (Jul-25) → -39% (Aug-01); ver Licao #11, #16 |
-| AAVE | Fin. Alt. | 2026-06-20 | ~$70 est. | ~$97 | +39% | ~+4.6% | pendente — Aavenomics V3 buybacks; Monad deploy | Acelerou: +24%→+41%→+39%; GHO $599M; 292 AAVE/dia buyback; Beat SPY |
-| HYPE | Fin. Alt. | 2026-06-20 | ~$75 est. | $52.30 | -30% | ~+4.6% | pendente — unlock 9.92M tokens Aug 6 ⚠️⚠️ ($550M+) | Deteriorou: -4%→-24%→-30%; unlock Aug 6 = pressao estrutural adicional; MAS Singapore alert |
-| CFG | Fin. Alt. | 2026-06-20 | ~$0.20 est. | $0.20 | 0% | ~+4% | pendente | Plano; sem catalisador imediato |
-| PRME | Longevidade | 2026-06-20 | ~$3.16 | ~$4.50 est. | +42% | ~+4.6% | pendente — PM577a Medsafe cleared NZ; RMAT; Lilly/Novartis parceria especulativa | Beat SPY; ARK +206k acoes; H.C. Wainwright Buy PT $8; Wilson Disease gene edit |
-| RGTI | IA | 2026-06-20 | ~$14 est. | ~$16.60 | +19% est. | ~+4% | pendente — CHIPS formal award Q3 | Beat SPY; LOI $100M assinado |
-| CORZ | Fin. Alt. | 2026-06-20 | n/d | n/d | n/a | ~+4% | FALHOU — M&A bloqueado | Shareholder vote bloqueou Oct 2025; tese invalida |
-| IONQ | IA | 2026-06-20 | n/d | n/d | n/a | ~+4% | FALHOU — catalisador CHIPS nunca existiu | Catalisador nao verificado em scan |
-| QNT | Fin. Alt. | 2026-06-20 | n/d | n/d | n/a | ~+4% | FALHOU — revenue -73% Q1 | Fundamentais deteriorados |
-| SMR | Materiais | 2026-06-20 | ~$10 est. | $9.83 | -2% | ~+4% | adiado — FID pendente | Plano; SLI tem FID mais proximo |
-| GERN | Longevidade | 2026-06-20 | n/d | n/d | n/a | ~+4% | pendente — IMpactMF interima H2 | On track; revenue $61.8M Q1 |
-| SLI | Materiais | 2026-06-20 | n/d | n/d | n/a | ~+4% | pendente — FID H2 2026 | FONSI + EPC assinado; Trafigura offtake intacto |
-| CWR.L | Materiais | 2026-06-20 | n/d | n/d | n/a | ~+4% | pendente — H1 results ~Aug 10; royalties Doosan 2027 | Gate Aug 10; Goldman vs Panmure divergencia |
-| FLOW.AS | Trading | 2026-06-20 | n/d | n/d | n/a | ~+4% | cumprido — Q2 results Jul 30: publicados | Verificado Jul 30 |
-| BGC | Trading | 2026-06-20 | n/d | n/d | n/a | ~+4% | cumprido — earnings Jul 30; guidance $785-845M reafirmado | Verificado Jul 30 |
-| EYPT | Longevidade | 2026-06-20 | n/d | n/d | n/a | ~+4% | pendente — LUGANO topline "inicio de agosto" per CEO ⚠️⚠️ | Binario iminente; 432 pac completo; DSMC 3x positivo; assimetria +60%/-70% |
-| CEVA | IA | 2026-06-20 | n/d | n/d | n/a | ~+4% | pendente — Toyota royalties lag | Dados em atualizacao |
+| RKLB | Espaco | 2026-06-20 | ~$80 est. | $83.88 | +5% | ~+8.0% | cumprido — Space Force $397M Aug 5; Q2 Aug 10 AMC gate | De -20% (Aug-01 $63.90) para +5% (Aug-08 $83.88); gate CORRIGIDO Aug 10 |
+| ASTS | Espaco | 2026-06-20 | ~$84 est. | $67.36 | -20% | ~+8.0% | cumprido — BlueBirds 11-13 launch Aug 5 success | +17% pos-launch de $58.29→$67.36; sell-the-news NAO materializou; AT&T/Verizon $1.2B intacto; ver Licao #21 |
+| PL | Espaco | 2026-06-20 | ~$18 est. | $31.30 | +72% | ~+8% | cumprido | Forte em ambas coortes |
+| SPIR | Espaco | 2026-06-20 | ~$12 est. | $18.20 | +52% | ~+8% | pendente | Forte move |
+| BKSY | Espaco | 2026-06-20 | ~$22 est. | ~$30 | +36% | ~+8% | cumprido — guidance $130-150M | Continua a superar |
+| KTOS | Geopolitica | 2026-06-20 | ~$48 est. | ~$58 | +21% | ~+8.0% | cumprido — EPS $0.21 +62% beat; FY $1.75-1.81B raised | Beat SPY; +12.5% pos-Q2 Aug 5; JPMorgan Overweight |
+| HAG.DE | Geopolitica | 2026-06-20 | ~EUR 75 est. | ~EUR 81 | +8% | ~+8.0% | parcialmente cumprido — H1 backlog record + H2 guidance fraco | Plano vs SPY; ver Licao #17 |
+| INOD | IA | 2026-06-20 | $90.68 | ~$74 | -18% | ~+8.0% | cumprido — Q2 Aug 6: EPS $0.41 vs $0.22 est.; FY >=40% maintained; CEO transition Sep 30 | De -39% (pre-Q2) para -18% pos-gate; +80% desde minimo; ver Licao #11, #16, #20 |
+| AAVE | Fin. Alt. | 2026-06-20 | ~$70 est. | ~$97 | +39% | ~+8.0% | pendente — Aavenomics V3 buybacks; Monad deploy | Beat SPY; GHO $599M; 292 AAVE/dia buyback |
+| HYPE | Fin. Alt. | 2026-06-20 | ~$75 est. | $56.19 | -25% | ~+8.0% | pendente — unlock Aug 6 absorvido (+7.4% pos-unlock) | De -30% (Aug-01) para -25% (Aug-08); unlock de 9.92M tokens absorvido sem crash; ver Licao #3 |
+| CFG | Fin. Alt. | 2026-06-20 | ~$0.20 est. | $0.20 | 0% | ~+8% | pendente | Plano; sem catalisador imediato |
+| PRME | Longevidade | 2026-06-20 | ~$3.16 | ~$4.50 est. | +42% | ~+8.0% | pendente — PM577a Medsafe cleared NZ; RMAT; Lilly/Novartis especulativo | Beat SPY; ARK +206k acoes; H.C. Wainwright Buy PT $8 |
+| RGTI | IA | 2026-06-20 | ~$14 est. | ~$16.60 | +19% est. | ~+8% | pendente — CHIPS formal award Q3 | Beat SPY; LOI $100M assinado |
+| CORZ | Fin. Alt. | 2026-06-20 | n/d | n/d | n/a | ~+8% | FALHOU — M&A bloqueado | Shareholder vote bloqueou Oct 2025; tese invalida |
+| IONQ | IA | 2026-06-20 | n/d | n/d | n/a | ~+8% | FALHOU — catalisador CHIPS nunca existiu | Catalisador nao verificado; re-entry Jul-20 com nova tese (RPO $470M +554%) |
+| QNT | Fin. Alt. | 2026-06-20 | n/d | n/d | n/a | ~+8% | FALHOU — revenue -73% Q1 | Fundamentais deteriorados |
+| SMR | Materiais | 2026-06-20 | ~$10 est. | $9.83 | -2% | ~+8% | adiado — FID pendente | Plano |
+| GERN | Longevidade | 2026-06-20 | n/d | n/d | n/a | ~+8% | pendente — IMpactMF interima H2 | On track; revenue $61.8M Q1 |
+| SLI | Materiais | 2026-06-20 | n/d | n/d | n/a | ~+8% | pendente — FID H2 2026 | FONSI + EPC assinado; Trafigura offtake intacto |
+| CWR.L | Materiais | 2026-06-20 | n/d | n/d | n/a | ~+8% | pendente — H1 results Aug 10 ⚠️ | Gate Aug 10; Goldman vs Panmure divergencia |
+| FLOW.AS | Trading | 2026-06-20 | n/d | n/d | n/a | ~+8% | cumprido — Q2 results Jul 30 publicados | Verificado Jul 30 |
+| BGC | Trading | 2026-06-20 | n/d | n/d | n/a | ~+8% | cumprido — earnings Jul 30; guidance $785-845M reafirmado | Verificado Jul 30 |
+| EYPT | Longevidade | 2026-06-20 | n/d | n/d | n/a | ~+8% | pendente — LUGANO topline iminente (combinado com Q2 call) ⚠️⚠️ | Binario maximo; 432 pac completo; DSMC 3x positivo; assimetria +60%/-70% |
+| CEVA | IA | 2026-06-20 | n/d | n/d | n/a | ~+8% | pendente — Toyota royalties lag | Dados em atualizacao |
 
 ---
 
-## Coorte 2026-06-23 (39 dias) — benchmark SPY ~+4.7% no periodo
+## Coorte 2026-06-23 (46 dias) — benchmark SPY ~+7.9% no periodo
 
 *Base: scans 2026-06-23_*.json. Picks novos nesta coorte = presentes nos scans Jun-23 mas nao trackados em Jun-20.*
-*Data de entrada = 2026-06-23. Preco atual = 2026-08-01.*
+*Data de entrada = 2026-06-23. Preco atual = 2026-08-08.*
 
 | Ticker | Tema | Data entrada | Preco entrada | Preco atual | % move | SPY % | Catalisador | Nota |
 |--------|------|-------------|--------------|------------|--------|-------|-------------|------|
-| BIOA | Longevidade | 2026-06-23 | ~$25 est. | ~$25 | ~0% | ~+4.7% | pendente — BGE-102 Phase 2 Q4 2026 | BioAge Labs; sem movimento materialmente novo |
-| ALT | Longevidade | 2026-06-23 | ~$2.70 est. | n/d | n/a | ~+4.7% | pendente — RECLAIM topline Q3 2026 | Altimmune; readout iminente |
-| LCTX | Longevidade | 2026-06-23 | n/d | n/d | n/a | ~+4.7% | pendente — OpRegen dados Genentech Q4 2026 | Lineage Cell Therapeutics |
-| PROK | Longevidade | 2026-06-23 | n/d | n/d | n/a | ~+4.7% | pendente — PROACT 1 topline Q2 2027 | ProKidney; dados em atualizacao |
-| CRML | Materiais | 2026-06-23 | ~$9.50 est. | ~$8.40 | -12% est. | ~+4.7% | pendente — strategic review Clear Street H2 2026 | Tanbreez; Gronelandia; volatilidade alta |
-| NNE | Materiais | 2026-06-23 | ~$20 est. | ~$19 | -5% est. | ~+4.7% | pendente — NRC KRONOS formal review | NANO Nuclear; perto 52-week low |
-| THEON.AS | Geopolitica | 2026-06-23 | ~EUR 28 est. | ~EUR 32 | +14% est. | ~+4.7% | cumprido — Q2 results Jul 27: HGH Systemes exclusivity €300M; revenues €40M EBITDA>40% | Beat SPY; closing HGH Q4 2026; leverage pro-forma ~3.0x; tese intacta |
-| EXOS.PA | Geopolitica | 2026-06-23 | ~EUR 38 est. | n/d | n/a | ~+4.7% | cumprido — earnings Jul 28: Q1 EUR 122.6M +19.7%; OCCAR contracts | Verificado Jul 28; dados de preco em atualizacao |
-| CTM | Geopolitica | 2026-06-23 | ~$2 est. | n/d | n/a | ~+4.7% | pendente — DoD CUI contratos Q3 | Castellan; dados em atualizacao |
-| AEVA | Espaco | 2026-06-23 | ~$3.50 est. | n/d | n/a | ~+4.7% | pendente — SOP Freightliner Cascadia 2027 | AEVA Technologies; C-samples Atlas entregues Daimler Truck |
+| BIOA | Longevidade | 2026-06-23 | ~$25 est. | ~$25 | ~0% | ~+7.9% | pendente — BGE-102 Phase 2 Q4 2026 | BioAge Labs; sem movimento material |
+| ALT | Longevidade | 2026-06-23 | ~$2.70 est. | n/d | n/a | ~+7.9% | pendente — RECLAIM topline Q3 2026 | Altimmune; readout iminente |
+| LCTX | Longevidade | 2026-06-23 | n/d | n/d | n/a | ~+7.9% | pendente — OpRegen dados Genentech Q4 2026 | Lineage Cell Therapeutics |
+| PROK | Longevidade | 2026-06-23 | n/d | n/d | n/a | ~+7.9% | pendente — PROACT 1 topline Q2 2027 | ProKidney; dados em atualizacao |
+| CRML | Materiais | 2026-06-23 | ~$9.50 est. | ~$8.40 | -12% est. | ~+7.9% | pendente — strategic review Clear Street H2 2026 | Tanbreez; Gronelandia; volatilidade alta |
+| NNE | Materiais | 2026-06-23 | ~$20 est. | ~$19 | -5% est. | ~+7.9% | pendente — NRC KRONOS formal review | NANO Nuclear; perto 52-week low |
+| THEON.AS | Geopolitica | 2026-06-23 | ~EUR 28 est. | ~EUR 32 | +14% est. | ~+7.9% | cumprido — Q2 results Jul 27: HGH Systemes exclusivity EUR 300M; revenues EUR 40M EBITDA>40% | Beat SPY; closing HGH Q4 2026; leverage pro-forma ~3.0x; tese intacta |
+| EXOS.PA | Geopolitica | 2026-06-23 | ~EUR 38 est. | n/d | n/a | ~+7.9% | cumprido — earnings Jul 28: Q1 EUR 122.6M +19.7%; OCCAR contracts | Verificado Jul 28; dados de preco em atualizacao |
+| CTM | Geopolitica | 2026-06-23 | ~$2 est. | n/d | n/a | ~+7.9% | pendente — DoD CUI contratos Q3 | Castellan; dados em atualizacao |
+| AEVA | Espaco | 2026-06-23 | ~$3.50 est. | n/d | n/a | ~+7.9% | pendente — SOP Freightliner Cascadia 2027 | AEVA Technologies; C-samples Atlas entregues Daimler Truck |
 
 ---
 
-## Coorte 2026-07-13 (19 dias) — benchmark SPY ~+2.2% no periodo
+## Coorte 2026-07-13 (26 dias) — benchmark SPY ~+5.8% no periodo
 
 *Base: scans 2026-07-13_*.json. Picks novos nesta coorte = score >= 4, nao presentes em coortes anteriores.*
-*Data de entrada = 2026-07-13. Preco atual = 2026-08-01. SPY entrada est. ~$730 (2026-07-13).*
+*Data de entrada = 2026-07-13. Preco atual = 2026-08-08. SPY entrada est. ~$730 (2026-07-13).*
 
 | Ticker | Tema | Data entrada | Preco entrada | Preco atual | % move | SPY % | Catalisador | Nota |
 |--------|------|-------------|--------------|------------|--------|-------|-------------|------|
-| NBIS | IA | 2026-07-13 | ~$150 est. | ~$190-208 volatile | ~+27-38% est. | +2.2% | pendente — Q2 Aug 12; Meta Compute threat ⚠️ | Nebius; GPU cloud; Meta announcement Jul-24: crash $220→$157; rebote $197; volatile; score 5 |
-| LUNR | Espaco | 2026-07-13 | ~$21 est. | $11.72 | -44% | +2.2% | pendente — Q2 earnings set | -46.75% em julho; deterioracao severa sem catalisador positivo confirmado; ver Licao #19 |
-| RDW | Espaco | 2026-07-13 | ~$14 est. | ~$8.69 | -38% | +2.2% | pendente | ATM $500M Jul-31 ⚠️⚠️; backlog 1.05x FY guidance; cash stress; ver Licao #18 |
-| ESLT | Geopolitica | 2026-07-13 | ~$310 est. | n/d | n/a | +2.2% | pendente | Elbit Systems; defesa israelita; dados de preco em atualizacao |
-| LEU | Materiais | 2026-07-13 | ~$175 est. | ~$170-177 | ~-1% | +2.2% | pendente — Q2 earnings Aug 5 ⚠️ | Centrus; HALEU DOE $900M; Roth PT cortado $195→$171; gate decisivo Aug 5 |
-| UUUU | Materiais | 2026-07-13 | ~$14 est. | ~$13.81 | ~-1% | +2.2% | pendente — NdPr ramp | Energy Fuels; REE circuit operacional Jul 2026; down-trend severo; uranium spot ~$65/lb |
-| VIRT | Trading | 2026-07-13 | ~$35 est. | n/d | n/a | +2.2% | cumprido (parcial) — prelim Q2 Jul 30 $285M net income; formal results aguardados | Virtu Financial; -5.7% por term loan $400M simultaneo; ver Licao #14 |
-| SNEX | Trading | 2026-07-13 | ~$67 est. (pre-split) | n/d | n/a | +2.2% | pendente | StoneX; split 3:2 efetuado Jul 17; preco post-split ~$100 est.; dados em atualizacao |
-| PLUS.L | Trading | 2026-07-13 | ~GBP 2,000 est. | n/d | n/a | +2.2% | pendente — H1 results ~Aug 10 ⚠️ | Plus500; gate Aug 10 junto com CWR.L |
-| MRX | Trading | 2026-07-13 | ~$28 est. | n/d | n/a | +2.2% | pendente | Marex Group; dados em atualizacao |
-| QURE | Longevidade | 2026-07-13 | n/d | n/d | n/a | +2.2% | pendente — Phase 1/2 ALS Q4 2026 | uniQure; gene therapy; dados em atualizacao |
-| IMVT | Longevidade | 2026-07-13 | n/d | n/d | n/a | +2.2% | pendente | Immunovant; FcRn inhibitor IMVT-1402; dados em atualizacao |
-| UNI | Fin. Alt. | 2026-07-13 | n/d | n/d | n/a | +2.2% | pendente — fee switch governance vote | Uniswap; dados em atualizacao |
+| NBIS | IA | 2026-07-13 | ~$150 est. | ~$186 est. | ~+24% est. | +5.8% | pendente — Q2 Aug 12 gate ⚠️ | Nebius; Meta announcement Jul-24 crash $220→$157; rebote ~$186; volatile; Beat SPY est. |
+| LUNR | Espaco | 2026-07-13 | ~$21 est. | $15.39 | -27% | +5.8% | pendente — Q2 earnings Aug 13 | De -44% (Aug-01 $11.72) para -27% (Aug-08 $15.39); recuperacao parcial; ver Licao #19 |
+| RDW | Espaco | 2026-07-13 | ~$14 est. | ~$12.96 | -7% | +5.8% | pendente — Q2 record $117.1M +89.6% YoY | De -38% (Aug-01 $8.69) para -7% (Aug-08 $12.96); +22% pos-Q2 beat; ATM $500M mitigado por Cantor PT $13.50; ver Licao #18 |
+| ESLT | Geopolitica | 2026-07-13 | ~$310 est. | n/d | n/a | +5.8% | pendente | Elbit Systems; defesa israelita; dados em atualizacao |
+| LEU | Materiais | 2026-07-13 | ~$175 est. | $190.50 | +9% | +5.8% | cumprido — Q2 Aug 5: EPS $1.77 vs $1.02 est.; FY raised; backlog $4.5B | HUGE beat; +14% vs consensus -6.8%; backlog $4.5B = 8x receita; Beat SPY |
+| UUUU | Materiais | 2026-07-13 | ~$14 est. | ~$13.81 | ~-1% | +5.8% | pendente — NdPr ramp | Energy Fuels; REE circuit operacional Jul 2026; down-trend severo |
+| VIRT | Trading | 2026-07-13 | ~$35 est. | n/d | n/a | +5.8% | cumprido (parcial) — prelim Q2 Jul 30 $285M net income | Virtu Financial; -5.7% por term loan $400M; ver Licao #14 |
+| SNEX | Trading | 2026-07-13 | ~$67 est. (pre-split) | n/d | n/a | +5.8% | pendente | StoneX; split 3:2 efetuado Jul 17; preco post-split ~$100 est. |
+| PLUS.L | Trading | 2026-07-13 | ~GBP 2,000 est. | n/d | n/a | +5.8% | pendente — H1 results Aug 10 ⚠️ | Plus500; gate Aug 10 |
+| MRX | Trading | 2026-07-13 | ~$28 est. | n/d | n/a | +5.8% | pendente | Marex Group; dados em atualizacao |
+| QURE | Longevidade | 2026-07-13 | n/d | n/d | n/a | +5.8% | pendente — Phase 1/2 ALS Q4 2026 | uniQure; gene therapy |
+| IMVT | Longevidade | 2026-07-13 | n/d | n/d | n/a | +5.8% | pendente | Immunovant; FcRn inhibitor IMVT-1402 |
+| UNI | Fin. Alt. | 2026-07-13 | n/d | n/d | n/a | +5.8% | pendente — fee switch governance vote | Uniswap; dados em atualizacao |
+
+---
+
+## Coorte 2026-07-20 (19 dias) — benchmark SPY ~+4.2% no periodo
+
+*Base: scans 2026-07-20 confirmados por scans 2026-07-27 (threshold 14 dias cumprido em Aug-08).*
+*Picks novos = score >= 4, nao presentes em coortes anteriores (SLI e GERN ja trackados em Jun-20).*
+*Data de entrada = 2026-07-20. Preco atual = 2026-08-08. SPY entrada est. ~$741 (2026-07-20).*
+
+| Ticker | Tema | Data entrada | Preco entrada | Preco atual | % move | SPY % | Catalisador | Nota |
+|--------|------|-------------|--------------|------------|--------|-------|-------------|------|
+| SOUN | IA | 2026-07-20 | ~$5.50 est. | $7.13 | +30% | ~+4.2% | cumprido — Q2 Aug 5: record $61.9M +55%; guidance raised $230-260M | Beat SPY; voice AI; SOUN +26% pos-Q2 |
+| CRWV | IA | 2026-07-20 | ~$70 est. | ~$82 est. | +17% est. | ~+4.2% | pendente — Q2 Aug 11 ⚠️; Microsoft/Amazon/Meta capex beats validam GPU cloud | Beat SPY est.; hyperscaler capex +60-90% YoY = procura confirmada |
+| IONQ | IA | 2026-07-20 | ~$38 est. | n/d | n/a | ~+4.2% | pendente — RPO $470M +554% YoY; Air Force deal | Re-entry com nova tese verificada; era FALHOU em Jun-20 (catalisador CHIPS nao existiu) |
+| R3NK.DE | Geopolitica | 2026-07-20 | ~EUR 44 est. | ~EUR 47 est. | +7% est. | ~+4.2% | cumprido — H1 backlog ATH EUR 7.4B; book-to-bill 1.9x | Beat SPY est.; Renk Group; defesa alem; traction forte |
+| CMCX.L | Trading | 2026-07-20 | ~GBP 115 est. | n/d | n/a | ~+4.2% | pendente | CMC Markets; dados em atualizacao |
+| GLXY | Trading | 2026-07-20 | ~$24 est. | n/d | n/a | ~+4.2% | pendente | Galaxy Digital; dados em atualizacao |
+| ETOR | Trading | 2026-07-20 | ~$25 est. | n/d | n/a | ~+4.2% | pendente — Q2 Aug 11 ⚠️ | eToro; gate Q2 Aug 11 |
+| NXE | Materiais | 2026-07-20 | ~$11 est. | n/d | n/a | ~+4.2% | pendente — construcao Rook I iniciada Summer 2026; CNSC aprovado | NexGen Energy; uranio high-grade; horizonte longo |
+| FRVO | Materiais | 2026-07-20 | ~$26 est. | n/d | n/a | ~+4.2% | pendente — lockup expira Nov 14 2026; EGS Google deal ramp | Fervo Energy; geothermal 24/7; entry recomendado pos-lockup Nov |
+| VERV | Longevidade | 2026-07-20 | ~$20 est. | n/d | n/a | ~+4.2% | pendente — BEACON-LDL Ph1/2 dados 2026 | Verve Therapeutics; gene editing cardiovascular |
+| SERV | Espaco | 2026-07-20 | ~$5 est. | n/d | n/a | ~+4.2% | pendente | Serve Robotics; dados em atualizacao |
+| LDO | Fin. Alt. | 2026-07-20 | ~$1.00 est. | n/d | n/a | ~+4.2% | pendente | Lido DAO; staking; dados em atualizacao |
 
 ---
 
@@ -240,7 +273,7 @@ RKLB +52% (coorte Apr-05, 118 dias) vs LUNR -44% (coorte Jul-13, 19 dias). RKLB 
 
 ---
 
-*Proximo update: 2026-08-08 (sintese semanal). Precos marcados "est." serao revistos com fontes primarias adicionais.*
-*Gates iminentes a vigiar: ASTS BlueBirds launch Aug 5 / LEU Q2 Aug 5 / HYPE unlock 9.92M Aug 6 / RKLB + INOD Q2 Aug 6 / EYPT LUGANO topline inicio ago / CWR.L + PLUS.L H1 ~Aug 10 / KTOS + NBIS Q2 Aug 12 / ETOR Q2 ~Aug 11.*
-*Jul-20 coorte (12 dias): picks dos scans 2026-07-20 ainda nao elegíveis (threshold 14 dias) — entram na sintese de Aug-08 se os scans Jul-27 os confirmarem.*
+*Proximo update: 2026-08-15 (sintese semanal). Precos marcados "est." serao revistos com fontes primarias adicionais.*
+*Gates iminentes a vigiar: RKLB Q2 Aug 10 AMC / PLUS.L H1 Aug 10 / CWR.L H1 Aug 10 / EYPT LUGANO topline iminente / CRWV Q2 Aug 11 / ETOR Q2 Aug 11 / NBIS Q2 Aug 12 / LUNR Q2 Aug 13.*
+*Jul-27 coorte (12 dias): picks dos scans 2026-07-27 ainda nao elegiveis (threshold 14 dias) — entram na sintese de Aug-15 se confirmados pelos proximos scans.*
 *Aviso: este ficheiro e um registo de accountability interno; nao e conselho de investimento.*
