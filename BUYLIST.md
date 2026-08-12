@@ -4,7 +4,7 @@
 |-------|--------|------|------|-------|---------|-------------------|--------------|
 | 5 | PRME | Prime Medicine | Longevidade | neobroker | ~€10 | Q3 2026 (IND PM647) | IND PM577a aprovado Jul 2026 + ARK buying — nao totalmente no preco |
 | 5 | LEU | Centrus Energy | Materiais | neobroker | ~€30 | Q3 2026 | Contrato X-energy Ago 6 + DOE $900M + backlog $4.5B — unico HALEU domestico |
-| 5 | NBIS | Nebius Group | IA & Computacao | neobroker | ~€10 | 2026-08-12 ⚠️ | ⚠️⚠️ Burry short $211.77 "fish in barrel" Ago 8; capex raised $20-25B; debt doubled $8.4B; Q2 AMANHA gate critico; Reflection AI $1B; Baird PT $250 |
+| 5 | NBIS | Nebius Group | IA & Computacao | neobroker | ~€10 | 2026-08-12 ⚠️ | ⚠️⚠️ Burry short ativo; capex $20-25B; debt $8.4B; Q2 HOJE resultado pendente (consensus $573-575M); Reflection AI $1B; Baird PT $250; nao movimentar ate resultado confirmado |
 | 4 | GERN | Geron Corporation | Longevidade | neobroker | ~€10 | H2 2026 | RYTELO revenue +17% QoQ; IMpactMF interim = mercado 3x maior se positivo |
 | 4 | QURE | uniQure | Longevidade | neobroker | ~€15 | Q3 2026 | BLA submission Huntington AMT-130 com 3 designacoes prioridade — first-in-disease |
 | 4 | VKTX | Viking Therapeutics | Longevidade | neobroker | ~€20 | Q3 2026 | ⚠️ $500M ATM shelf Jul 2026 (dilution); VANQUISH-1/-2 enrolled; maintenance Q3; cash $502M |
@@ -14,10 +14,10 @@
 | 4 | VIRT | Virtu Financial | Trading | neobroker | ~€20 | Q3 2026 | Q2 RECORD $285M; vol geopolitica sustentada; dividend yield ~3% floor |
 | 4 | BGC | BGC Group | Trading | neobroker | ~€10 | Q3 2026 | Q2 +12.7%; FMX Futures ganha quota vs CME — optionalidade nao no preco |
 | 4 | FLOW.AS | Flow Traders | Trading | neobroker | ~€10 | Q3 2026 | Cripto ETPs Europa em expansao; moat Euronext; acessivel em euros |
-| 4 | PLUS.L | Plus500 | Trading | neobroker | ~€10 | H2 2026 | ⚠️ -13.9% pos-H1: EBITDA 41% vs 45%; guidance nao raised; US prediction markets residual |
+| 4 | PLUS.L | Plus500 | Trading | neobroker | ~€10 | H2 2026 | ✅ REVERSAO: record H1 $462.9M +12% YoY; Customer Income five-year high +24%; $182.5M shareholder returns ($100M buyback + $82.5M div); guidance maintained; flag anterior dissolvida |
 | 4 | CMCX.L | CMC Markets | Trading | neobroker | ~€10 | Q4 2026 | B2B Revolut/Westpac nao no preco; guidance raised; sub-coberto vs Plus500 |
 | 4 | GLXY | Galaxy Digital | Trading / Fin Alt | neobroker | ~€10 | Q4 2026 | Preco 50% abaixo consenso PT $41; CLARITY Act remove risco regulatorio |
-| 4 | ETOR | eToro Group | Trading | neobroker | ~€10 | 2026-08-11 | ⚠️ Q2 HOJE antes de market open; resultado pendente; Q1 NI $82M +37%; gate credibilidade pos-IPO |
+| 4 | ETOR | eToro Group | Trading | neobroker | ~€10 | Q4 2026 | ⚠️ Q2 CUMPRIDO NI $53M +77% YoY; EPS $0.68 vs $0.61 (beat); MAS TradeZero $231M (3a M&A 2026) = -8-11%; crypto revenue recuou; capital allocation concern; nao aumentar |
 | 4 | NXE | NexGen Energy | Materiais | neobroker | ~€10 | Q4 2026 | Rook I construcao iniciada — maior deposito uranio nao desenvolvido do mundo |
 | 4 | UUUU | Energy Fuels | Materiais | neobroker | ~€10 | Q4 2026 | Unico produtor US dual-stream U+REE; Phase 1 HREE iniciada Jul 2026 |
 | 4 | FRVO | Fervivo Energy | Materiais | neobroker | ~€10 | Q4 2026 | 658MW binding PPAs; Google 3GW interest; data-center power demand critica para AI |
@@ -29,8 +29,8 @@
 | 4 | PL | Planet Labs | Geopolitica | neobroker | ~€10 | Q3 2026 | Primeiro ano EBITDA positivo; backlog +79%; GEOINT comercial valorizado em geopolitica ativa |
 | 4 | IONQ | IonQ | IA & Computacao | neobroker | ~€10 | H1 2027 | Q2 +287% RECORD; RPO $485M +297%; SkyWater 256-qubit = salto qualitativo |
 | 4 | SOUN | SoundHound AI | IA & Computacao | neobroker | ~€10 | Q3 2026 | Q2 RECORD +45%; Gartner MQ Leader; automotive embedded AI com switching costs altos |
-| 4 | INOD | Innodata Inc | IA & Computacao | neobroker | ~€10 | 2026-09-30 | ⚠️ $62.82 (-31% vs entrada); top-2 clientes 71% Q2 revenue; CEO Set 30; Q2 +58% mas guidance reiterada |
-| 4 | CRWV | CoreWeave | IA & Computacao | neobroker | ~€20 | 2026-08-11 | ⚠️ Q2 HOJE 5pm ET; consenso $2.56B +111% YoY; options 15.5% swing; lockup Set 2026; resultado pendente |
+| 4 | INOD | Innodata Inc | IA & Computacao | neobroker | ~€10 | 2026-09-30 | ✅ $95.50 (acima entry $90.68 +5%); AI Cyber Suite novo produto; CEO Singhal Set 30 (Jack Abuhoff executive chairman); Q2 $92.1M +58%; tese reforcada |
+| 4 | CRWV | CoreWeave | IA & Computacao | neobroker | ~€20 | Q4 2026 | ✅ Q2 CUMPRIDO $2.58B +112% YoY BEAT; FY $12.4-13.2B raised; backlog $104B; Meta $21B + Anthropic + Jane Street $6B; +14% AH; lockup Set 2026 mantido |
 | 4 | RKLB | Rocket Lab USA | Espaco | neobroker | ~€10 | Q4 2026 ⚠️ | ⚠️ Q2 cumprido record $234M +62%; Neutron Q4 "window narrowing" — slip 2027 possivel; AH -6.8% ($74.60); nao aumentar sem Neutron confirmado |
 | 4 | ASTS | AST SpaceMobile | Espaco | neobroker | ~€10 | Q4 2026 | Q2 miss: $31.5M vs $35.18M est; adj loss 3x esperado; FY $150-200M mantida; backlog $1.3B; tese AT&T/Verizon intacta; nao aumentar |
 | 4 | LUNR | Intuitive Machines | Espaco | neobroker | ~€10 | 2026-08-13 | Q2 Ago 13; $428.9M novos contratos; short 28% float = squeeze potencial |
