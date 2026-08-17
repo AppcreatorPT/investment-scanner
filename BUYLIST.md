@@ -16,7 +16,7 @@
 | 4 | FLOW.AS | Flow Traders | Trading | neobroker | ~€10 | Q3 2026 | Cripto ETPs Europa em expansao; moat Euronext; acessivel em euros |
 | 4 | PLUS.L | Plus500 | Trading | neobroker | ~€10 | H2 2026 | ✅ REVERSAO: record H1 $462.9M +12% YoY; Customer Income five-year high +24%; $182.5M shareholder returns ($100M buyback + $82.5M div); guidance maintained; flag anterior dissolvida |
 | 4 | CMCX.L | CMC Markets | Trading | neobroker | ~€10 | Q4 2026 | B2B Revolut/Westpac nao no preco; guidance raised; sub-coberto vs Plus500 |
-| 4 | GLXY | Galaxy Digital | Trading / Fin Alt | neobroker | ~€10 | Q4 2026 ⚠️ | ⚠️ CLARITY Act odds cortadas 50%→30% pela propria Galaxy Research; 3 itens em aberto; catalisador principal adiado; preco 50% abaixo PT $41 mas convicao reduzida |
+| 4 | GLXY | Galaxy Digital | Trading / Fin Alt | neobroker | ~€10 | Q4 2026 ⚠️⚠️ | ⚠️⚠️ DELTA Aug 17: CLARITY Act odds 10% (50%→30%→10%, Galaxy Research Aug 14); Senate voto Set 15 procedural only; catalisador praticamente eliminado; tese 2026 comprometida; nao reforcar |
 | 4 | ETOR | eToro Group | Trading | neobroker | ~€10 | Q4 2026 | ⚠️ Q2 CUMPRIDO NI $53M +77% YoY; EPS $0.68 vs $0.61 (beat); MAS TradeZero $231M (3a M&A 2026) = -8-11%; crypto revenue recuou; capital allocation concern; nao aumentar |
 | 4 | NXE | NexGen Energy | Materiais | neobroker | ~€10 | Q4 2026 | Rook I construcao iniciada — maior deposito uranio nao desenvolvido do mundo |
 | 4 | UUUU | Energy Fuels | Materiais | neobroker | ~€10 | Q4 2026 | Unico produtor US dual-stream U+REE; Phase 1 HREE iniciada Jul 2026 |

@@ -1,35 +1,41 @@
-# Delta 2026-08-14 — funil para a tua DD, nao e conselho
+# Delta 2026-08-17 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**LUNR ⚠️ NOVO — Q2 MISS + INSIDER SALE**
-Q2 (Aug 13): EPS -$0.29 vs -$0.09 est; rev $206M vs $224M est. Stock -9 a -16%. Backlog $1.8B (positivo mas nao chegou). IM-3 date nao confirmada. CEO insider sale $14.7M registada no mesmo dia. FY guidance $0.9-1B mantida. Miss duplo + insider selling = nao reforcar.
+**EYPT ⚠️⚠️ CARRY — LUGANO PENDENTE (janela ativa ate Aug 31)**
+Sem topline publicado. Stock $13.48 (Aug 13) → $15.00 (Aug 15) = +11% — possivel buildup pre-anuncio ou volatilidade normal; sem dados publicados. Empresa nao faz Q2 call ate ter dados LUGANO. Binario +60%/-70% ATIVO. NAO entrar novo; manter posicoes existentes.
 
-**HAG.DE ⚠️ NOVO — DOWNGRADE VALUATION**
-Jefferies downgrade Buy→Hold (PT €98); JPMorgan Neutral €85. Razao: premium historicamente alto vs setor; JPMorgan ve mais upside em R3NK.DE. Tese operacional (backlog, rearmamento) intacta mas stock valorizado acima de pares — entrada nova com cautela.
+**GLXY ⚠️⚠️ ESCALACAO — CLARITY ACT 10% (era 30%)**
+Galaxy Research corta odds 30%→10% em Aug 14 (era 75% em Maio). Senate voto procedural agendado para Set 15 — nao e voto final. Alex Thorn: "CLARITY e agora mais sobre politica do que politica." Catalisador principal praticamente eliminado para 2026. Tese comprometida; nao reforcar. Buylist atualizada.
 
-**GLXY ⚠️ NOVO — CLARITY ACT ODDS 30%**
-Galaxy Research cortou probabilidade de aprovacao 2026 de 50% para 30%. Tres itens ainda em aberto (ethics, illicit finance, stablecoin yield). Senate em recesso — proximo voto incerto. Catalisador principal adiado; assimetria reduzida.
+**NBIS ⚠️ BURRY DOUBLED DOWN**
+Burry adicionou MU, ORCL e SOXX shorts para alem de NBIS pos-Q2 ("shoot fish in a barrel"). Short UNDERWATER: NBIS ~$259 vs short divulgado ~$212. Base case Burry: 2028 "compute demasiado." Vigiar Form 4 proximos 30 dias.
 
-**EYPT ⚠️⚠️ CARRY — LUGANO PENDENTE**
-Sem anuncio topline. Empresa confirmou: nao faz Q2 call ate ter dados LUGANO. Janela agosto ativa. Binario +60%/-70% ATIVO. LUCIA Q4 2026. NAO entrar novo; manter posicoes existentes.
+**LUNR ⚠️ Q2 MISS + INSIDER SALE — CARRY com contraponto positivo**
+Carry: EPS -$0.29 vs -$0.09; CEO insider sale $14.7M; IM-3 nao confirmada. POSITIVO (Aug 4): L3Harris selecionou LUNR para 18 spacecraft AMDT3 (missile defense SDA Tracking Layer) +22.8% na epoca; 18 SDA IM-300 orders (+5.9%). Stock recuperou para ~$19. Nao reforcar sem IM-3 confirmada.
 
-**NBIS ⚠️ GATE RESOLVIDO MAS BURRY ADICIONOU**
-Q2 BEAT: $582.3M +454% YoY; EPS -$0.12 vs -$0.82 (beat 85%). Stock +34% ~$259. Gate positivo. MAS: Burry adicionou short em $247 pos-earnings ("Nebius e como o topo de um boom"). Bear case: chips depreciados demasiado lentamente; debt $8.4B; capex $20-25B. Vigiar — Burry adicionou, nao fechou.
+**RKLB ⚠️ NEUTRON — CARRY**
+Sem nova informacao negativa: Stage 1 tanks em producao; Archimedes 400+ hot-fire tests; Q2 record $234M; Space Force $397M. Empresa nao reafirmou primeiro voo Q4 2026. Linha-na-areia: slip 2027 confirmado = rebuy $65-70.
 
-**ETOR ⚠️ CARRY — capital allocation concern**
-Q2 beat (NI $53M +77%) mas TradeZero $231M = 3a M&A de 2026; crypto revenue recuou. Nao aumentar.
+**ASTS ⚠️ Q2 MISS — CARRY**
+Stock estavel ~$70.90 (Aug 16). FCC aprovacao 800 MHz obtida. Q2 miss documentado (EPS -$0.349 vs -$0.315). Backlog $1.3B; tese AT&T/Verizon intacta. Nao aumentar.
 
-**RKLB ⚠️ CARRY — Neutron nao reafirmado Q4**
-Bloomberg (Aug 10): "Rocket Lab Warns Neutron May Face Further Delays Into 2027." Kepler deal = pipeline 2028 mas primeiro voo Q4 2026 nao reafirmado. Linha-na-areia: slip 2027 confirmado = tese adiada; rebuy $65-70.
+**VKTX ⚠️ ATM OVERHEAD — CARRY**
+Maintenance study data Q3 2026 ainda pendente (iminente). ATM $500M overhead continua. Nao aumentar.
 
-**VKTX ⚠️ CARRY — ATM overhead**
-Maintenance data ainda Q3 2026. ATM $500M overhead continua. Nao aumentar.
+**ETOR ⚠️ CAPITAL ALLOCATION — CARRY**
+Sem novidade. 3a M&A 2026 (TradeZero $231M); crypto revenue recuou. Nao aumentar.
 
-**HYPE ⚠️ CARRY — MAS alert ativo**
-MAS Singapore investor alert ativo. HIP-4 (prediction markets) proposto — nao altera risco jurisdicional. Usar exchange fora SG.
+**HAG.DE ⚠️ DOWNGRADE — CARRY**
+Jefferies Hold, JPMorgan Neutral EUR 85. Rotacao para R3NK.DE sugerida. Nao entrar novo.
+
+**HYPE ⚠️ MAS SINGAPORE — CARRY**
+Investor alert ativo. Usar exchange fora de Singapore. Sem alteracao.
+
+**PRME ⚠️ PRECO — CARRY com positivo**
+Preco ainda ~$3.19. POSITIVO (Q2 results Aug 6): RMAT designation para PM359 (BLA path 1H 2027); arbitragem Beam Therapeutics ganha (clears PM647); PM647 IND Q3 2026 on track; Wilson disease Phase 1/2 aprovada US+NZ. ARK continua a comprar. Cash runway 2027.
 
 ---
 
@@ -37,14 +43,9 @@ MAS Singapore investor alert ativo. HIP-4 (prediction markets) proposto — nao 
 
 | Ticker | Movimento | Nota |
 |--------|-----------|------|
-| NBIS | +34% pos-Q2 (~$259) | $582.3M +454% YoY BEAT; EPS beat 85%; Burry adicionou short $247 — ver alerta |
-| LUNR | -9% a -16% pos-Q2 miss | EPS -$0.29 vs -$0.09; rev $206M vs $224M; insider sale $14.7M — ver alerta |
-| IONQ | +11% pos-Q2 | $80.1M +287% record; guidance raised $280-290M; SkyWater done; NRO contract |
-| SOUN | +10% pos-Q2 | $61.9M +45% record; guidance raised $230-260M; tese reafirmada |
-| ASTS | Japan direct-to-cellular iniciado; BlueBird 11-12-13 lancados | BofA PT $95→$80; Cantor raised $80→$90; catalyst milestone |
-| GERN | +6.4% (Aug 11) | Q2 on track; RYTELO revenue em linha; IMpactMF gate H2 |
-| ALT | Q2 beat + PERFORMA Ph3 MASH iniciado | loss -$0.12 vs est; pemvidutide avancando; deal target potencial |
-| HAG.DE | Downgrade Jefferies Hold; JPMorgan Neutral | Valuation premium; mais upside visto em R3NK — ver alerta |
+| EYPT | +11% (Aug 13→15, $13.48→$15.00) | Pre-LUGANO buildup possivel; sem topline; binario ativo; nao e sinal seguro |
+| GLXY | CLARITY Act 30%→10% (Aug 14 Galaxy Research) | Deterioracao material; voto Senate Set 15 procedural; tese 2026 praticamente morta |
+| LUNR | +22.8% L3Harris deal (Aug 4, pre-DELTA) | 18 spacecraft AMDT3 missile defense; contraponto parcial ao Q2 miss |
 
 ---
 
@@ -56,8 +57,8 @@ MAS Singapore investor alert ativo. HIP-4 (prediction markets) proposto — nao 
 
 ## Sem alteracao
 
-24 instrumentos sem novidade: PRME, LEU, QURE, BIOA, VIRT, BGC, FLOW.AS, PLUS.L, CMCX.L, NXE, UUUU, FRVO, THEON.AS, EXOS.PA, R3NK.DE, KTOS, PL, CRWV, INOD, RDW, VOYG, AAVE, ONDO, MORPHO.
+27 instrumentos sem novidade: LEU, GERN, QURE, BIOA, ALT, VIRT, BGC, FLOW.AS, PLUS.L, CMCX.L, NXE, UUUU, FRVO, THEON.AS, EXOS.PA, R3NK.DE, KTOS, PL, IONQ, SOUN, INOD, CRWV, RDW, VOYG, AAVE, ONDO, MORPHO.
 
 ---
 
-_Gerado automaticamente pelo investment-scanner em 2026-08-14. Nao e conselho de investimento._
+_Gerado automaticamente pelo investment-scanner em 2026-08-17. Nao e conselho de investimento._
