@@ -1,41 +1,50 @@
-# Delta 2026-08-18 — funil para a tua DD, nao e conselho
+# Delta 2026-08-19 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**EYPT ⚠️⚠️⚠️ INVALIDADO — LUGANO FALHOU (-70% → ~$4.28)**
-Topline divulgado Aug 17: primary endpoint NAO atingido no full dataset (9/211 pacientes DURAVYU com vision loss ≥15 letras nao relacionada com AMD contaminaram resultado). Ad hoc excluindo 4% assimetrico mostra non-inferioridade (p=0.0096) — argumento regulatorio fraco sem pre-especificacao. Stock colapsou -70% (de ~$15 para ~$4.28 abertura Aug 18). Binario -70% que estava flagado concretizou-se. Empresa manteve LUCIA (2o trial pivotal, topline Q4 2026) — unica opcao restante para tese. NAO entrar novo; quem tem posicao decide entre stop-loss imediato ou aguardar LUCIA Q4 como last-chance. Buylist atualizada: INVALIDADO para nova entrada.
+**EYPT ⚠️⚠️⚠️ CARRY — INVALIDADO (LUGANO falhou Aug 17)**
+LUCIA Q4 2026 e unica opcao restante. Stock ~$4.28. NAO entrar novo.
 
-**INOD ⚠️ NOVO ALERTA — ATM $300M + concentracao de cliente**
-Q2 Aug 6: resultados record ($92.1M +58%) mas apenas reafirmou guidance (nao raised). Anuncio simultaneo de ATM equity offering de $300M + CEO transition Sep 30. Detalhe preocupante: 2 clientes = 71% de Q2 revenue (37% + 34%) — concentracao extrema nao divulgada anteriormente. Stock caiu ~-10.7% nos dias seguintes; preco atual ~$61-62 (substancialmente abaixo da ref $95.50 do buylist anterior). Tese operacional nao destruida mas overhead de diluicao + concentracao de cliente sao flags novas. Vigiar posicao; nao aumentar.
+**SOUN ⚠️ NOVO — LivePerson voto Aug 20 (amanha)**
+SoundHound adquire LivePerson (empresa em risco de falencia standalone). ISS + Glass Lewis recomendam FOR. Voto na assembleia extraordinaria Aug 20. Dilucao pos-fecho; risco de integracao real. Stock $7.04 (Aug 18, -25% YTD). Vigiar resultado do voto e guidance revisto pos-aquisicao.
 
-**GLXY ⚠️⚠️ CARRY — CLARITY Act 10% (Senate procedural Sep 15)**
-Sem alteracao vs delta anterior. Galaxy Research mantem odds 10%, Polymarket ~17-19%. Senate voto procedural Set 15 (cloture, nao voto final). Catalisador 2026 praticamente eliminado. Nao reforcar.
+**GERN ⚠️ NOVO — IMpactMF event threshold em renegociacao**
+Geron em conversas com reguladores para ajustar o event threshold do IMpactMF trial. Readout previsto H2 2026 pode escorregar para 2027. Positivo: RYTELO Q2 $57.5M +11% QoQ; stock +18.3% pos-Q2 Aug 5. Tese de longo prazo intacta mas timing incerto. Vigiar anuncio de nova data.
 
-**NBIS ⚠️ CARRY — Burry short ativo; stock +7% vs pos-Q2**
-Stock ~$277 (Aug 17) — subiu de ~$259 pos-Q2. Burry short (aberto ~$212) fica cada vez mais underwater. Nenhum Form 4 de encerramento de posicao encontrado. Vigiar proximos 30 dias.
+**ASTS ⚠️ NOVO — Deutsche Bank PT cortado $93 (era $106, Aug 17)**
+Terceiro PT cut pos-Q2 miss. Tese AT&T/Verizon + backlog $1.3B intacta. Stock $66.69 (Aug 18). Nao aumentar.
 
-**LUNR ⚠️ CARRY + recuperacao parcial**
-Stock recuperou para ~$18.93 (Aug 14). L3Harris 18 spacecraft AMDT3 + 18 SDA IM-300 orders sustentam backlog $1.8B. IM-3 date ainda nao confirmada oficialmente. CEO insider sale $14.7M persiste. Nao reforcar sem confirmacao de data IM-3.
+**INOD ⚠️ CARRY — CEO transition Sep 30; ATM $300M; 2 clientes = 71% rev**
+Sem novidade vs Aug 18. Stock ~$61. Nao aumentar.
 
-**RKLB ⚠️ CARRY — Neutron sem confirmacao; Viasat positivo**
-Neutron: sem novo anuncio de delay oficial pos-Bloomberg warning. Empresa nao reafirmou Q4 2026. POSITIVO Aug 17: Viasat selecionou RKLB para GEO satellite (Space Force PTS-G); RKLB onboarded para NITE-STAR $981M; entregou primeiros 8 Globalstar satellites ($143M MDA). Linha-na-areia mantida: slip 2027 confirmado = rebuy $65-70.
+**GLXY ⚠️⚠️ CARRY — CLARITY Act 10%; Senate procedural Sep 15**
+Sem novidade. Catalisador 2026 praticamente eliminado. Nao reforcar.
 
-**VKTX ⚠️ CARRY — maintenance study ainda pendente Q3**
-Dados nao publicados. ATM $500M overhead continua. Nao aumentar.
+**NBIS ⚠️ CARRY — Burry short; sem Form 4 de encerramento**
+Stock ~$277-280. Burry cada vez mais underwater (posicao aberta ~$247). Vigiar proximos 30 dias.
+
+**LUNR ⚠️ CARRY — IM-3 H2 2026 mas sem data oficial**
+NASA confirmou 12 payloads (Aug 4). Janela provavel: novembro 2026. CEO insider sale $14.7M persiste. Nao reforcar.
+
+**RKLB ⚠️ CARRY — Neutron: Q4 2026 nao reafirmado**
+Backlog record $2.36B. CEO nao confirmou 2026 flight. Linha-na-areia: slip 2027 confirmado = rebuy $65-70.
+
+**VKTX ⚠️ CARRY — maintenance study pendente (late Q3)**
+Dados esperados agosto/setembro 2026. ATM $500M overhead continua. Nao aumentar.
+
+**PRME — IND PM647 janela Q3 2026 ativa (sem anuncio)**
+Sem novidade. Arbitragem Beam resolvida (AATD exclusivo confirmado). ARK a comprar. Vigiar.
 
 **ETOR ⚠️ CARRY — capital allocation**
 Sem novidade. Nao aumentar.
 
-**HAG.DE ⚠️ CARRY — downgrade Jefferies/JPMorgan**
-Sem novidade. Rotacao para R3NK.DE sugerida. Nao entrar novo.
+**HAG.DE ⚠️ CARRY — Jefferies Hold; JPMorgan Neutral EUR 85**
+Sem novidade. Tese operacional intacta; premium de valuation persiste. Nao entrar novo.
 
-**HYPE ⚠️ CARRY — MAS Singapore**
-Investor alert ativo. Usar exchange fora SG. Sem alteracao.
-
-**PRME — IND PM647 iminente (janela Q3 2026)**
-IND/CTA PM647 (AATD) esperado Q3 2026 — estamos na janela. Arbitragem Beam resolvida favoravel (exclusividade AATD confirmada). ARK continua a comprar. Vigiar anuncio.
+**HYPE ⚠️ CARRY — MAS Singapore investor alert**
+Sem novidade. Usar exchange fora SG.
 
 ---
 
@@ -43,23 +52,23 @@ IND/CTA PM647 (AATD) esperado Q3 2026 — estamos na janela. Arbitragem Beam res
 
 | Ticker | Movimento | Nota |
 |--------|-----------|------|
-| EYPT | -70% (Aug 17, de ~$15 para ~$4.28) | LUGANO primary endpoint MISS; LUCIA Q4 2026 restante; INVALIDADO para entrada nova |
-| INOD | ~-35% desde ref buylist ($95.50 → ~$61-62) | ATM $300M + 2 clientes = 71% Q2 rev; move confirmado Aug 12 |
-| RKLB | Positivo: Viasat GEO + NITE-STAR (Aug 17) | 2 contratos Space Force em 1 dia; Neutron watch mantida |
-| AAVE | TVL $14.75B (+5.2% 30d); Aavenomics 3.0 ativo | Buyback 292 AAVE/dia automatico; tese reforçada |
+| KTOS | Aug 18: USMC Valkyrie BLOS C2 demo confirmado em U.S. Navy Range | Positivo — CCA program validado operacionalmente; producao 40 Valkyries/ano by 2028; tese reforçada |
+| IONQ | Analyst Day Sep 8 NYSE anunciado (primeiro pos-SkyWater) | Positivo — guidance combinada IonQ+SkyWater; novo catalisador narrativo |
+| SOUN | LivePerson voto Aug 20; ISS + Glass Lewis FOR | Ver resultado amanha; aprovacao abre integracao; dilucao de curto prazo esperada |
+| GERN | +18.3% pos-Q2 Aug 5; IMpactMF threshold em renegociacao com reguladores | Mix: RYTELO ramp positivo; readout timing incerto ate nova data confirmada |
 
 ---
 
 ## Novos nomes
 
-0 novos nomes. EYPT colapso e INOD deterioracao consomem atencao; budget-light. Zero e resposta correcta.
+0 novos nomes. Budget-light; portfolio bem coberto; nenhum nome externo verificado com why_now solido e acessibilidade EU confirmada. Zero e resposta correcta.
 
 ---
 
 ## Sem alteracao
 
-26 instrumentos sem novidade: LEU, GERN, QURE, BIOA, ALT, VIRT, BGC, FLOW.AS, PLUS.L, CMCX.L, NXE, UUUU, FRVO, THEON.AS, EXOS.PA, R3NK.DE, KTOS, PL, IONQ, SOUN, CRWV, ASTS, RDW, VOYG, ONDO, MORPHO.
+22 instrumentos sem novidade: LEU, QURE, BIOA, ALT, VIRT, BGC, FLOW.AS, PLUS.L, CMCX.L, NXE, UUUU, FRVO, THEON.AS, EXOS.PA, R3NK.DE, PL, CRWV, RDW, VOYG, AAVE, ONDO, MORPHO.
 
 ---
 
-_Gerado automaticamente pelo investment-scanner em 2026-08-18. Nao e conselho de investimento._
+_Gerado automaticamente pelo investment-scanner em 2026-08-19. Nao e conselho de investimento._
