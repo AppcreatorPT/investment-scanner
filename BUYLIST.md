@@ -2,10 +2,10 @@
 
 | Score | Ticker | Nome | Tema | Conta | Entrada | Catalisador (data) | Porque agora |
 |-------|--------|------|------|-------|---------|-------------------|--------------|
-| 5 | PRME | Prime Medicine | Longevidade | neobroker | ~€10 | Q3 2026 (IND PM647) | IND PM577a aprovado Jul 2026 + ARK buying — nao totalmente no preco |
+| 5 | PRME | Prime Medicine | Longevidade | neobroker | ~€10 | Q3 2026 (IND PM647) | ✅ Beam arbitragem resolvida Jul 8 (IP fight eliminado); IND/CTA PM647 antes fim Set 2026; ARK buying — catalisador desbloqueado |
 | 5 | LEU | Centrus Energy | Materiais | neobroker | ~€30 | Q3 2026 | Contrato X-energy Ago 6 + DOE $900M + backlog $4.5B — unico HALEU domestico |
 | 5 | NBIS | Nebius Group | IA & Computacao | neobroker | ~€10 | Q4 2026 ⚠️ | ✅ Q2 BEAT $582.3M +454% YoY; EPS -$0.12 vs -$0.82 (beat 85%); stock +34% ~$259; ⚠️ Burry adicionou short $247 pos-earnings; debt $8.4B; capex $20-25B; vigiar posicao |
-| 4 | GERN | Geron Corporation | Longevidade | neobroker | ~€10 | H2 2026 ⚠️ | ⚠️ IMpactMF event threshold em renegociacao com reguladores — readout pode escorregar 2027; RYTELO Q2 $57.5M +11% QoQ; +18.3% pos-Q2 Aug 5; vigiar nova data |
+| 4 | GERN | Geron Corporation | Longevidade | neobroker | ~€10 | H2 2028 ⚠️ | ⚠️ IMpactMF base case escorregou para analise final H2 2028; interim H2 2026 e upside scenario apenas (event threshold em modificacao); RYTELO Q2 $57.5M +11% QoQ; vigiar modificacao do threshold |
 | 4 | QURE | uniQure | Longevidade | neobroker | ~€15 | Q3 2026 | BLA submission Huntington AMT-130 com 3 designacoes prioridade — first-in-disease |
 | 4 | VKTX | Viking Therapeutics | Longevidade | neobroker | ~€20 | Q3 2026 | ⚠️ $500M ATM shelf Jul 2026 (dilution); VANQUISH-1/-2 enrolled; maintenance Q3; cash $502M |
 | 4 | BIOA | BioAtla | Longevidade | neobroker | ~€10 | H2 2026 | NLRP3 BGE-102 best-in-class; QUELL-CV topline H2; micro-cap sub-coberto |
@@ -28,9 +28,9 @@
 | 4 | KTOS | Kratos Defense | Geopolitica | neobroker | ~€10 | Q3 2026 | Q2 CUMPRIDO +19.1%; Valkyrie 8→40 unidades; JPMorgan upgraded Overweight |
 | 4 | PL | Planet Labs | Geopolitica | neobroker | ~€10 | Q3 2026 | Primeiro ano EBITDA positivo; backlog +79%; GEOINT comercial valorizado em geopolitica ativa |
 | 4 | IONQ | IonQ | IA & Computacao | neobroker | ~€10 | H1 2027 | Q2 +287% RECORD; RPO $485M +297%; SkyWater 256-qubit = salto qualitativo |
-| 4 | SOUN | SoundHound AI | IA & Computacao | neobroker | ~€10 | Q3 2026 ⚠️ | ⚠️ LivePerson aquisicao voto Aug 20 (ISS + Glass Lewis FOR) — dilucao pos-fecho; risco integracao; Q2 RECORD +45%; Gartner MQ Leader; automotive embedded AI |
+| 4 | SOUN | SoundHound AI | IA & Computacao | neobroker | ~€10 | Q4 2026 ⚠️ | ⚠️ Voto LivePerson ADIADO 2-Set (quorum nao atingido Aug 20; 97% votos expressos = FOR); dilucao pos-fecho pendente; Q2 RECORD +45%; Gartner MQ Leader; automotive embedded AI |
 | 4 | INOD | Innodata Inc | IA & Computacao | neobroker | ~€10 | 2026-09-30 ⚠️ | ⚠️ ATM $300M (diluicao); 2 clientes = 71% Q2 rev (37%+34% — concentracao extrema); stock ~$61-62 (abaixo entry $90.68); CEO transition Set 30; nao aumentar |
-| 4 | CRWV | CoreWeave | IA & Computacao | neobroker | ~€20 | Q4 2026 ⚠️⚠️ | ⚠️⚠️ Lockup expirou ~Aug 14; insiders $1B+ (CEO + Magnetar) a vender a ritmo rapido; stock ~$93 (-33% a -46% pos-lockup/earnings do pico); Q3 CapEx $11.5-13.5B = FCF muito negativo; Q2 $2.58B +112% cumprido; tese hyperscaler intacta mas overhead real; analyst consensus $143; nao aumentar |
+| 4 | CRWV | CoreWeave | IA & Computacao | neobroker | ~€20 | Q4 2026 ⚠️⚠️ | ⚠️⚠️ Lockup expirou Aug 14; insiders $44M+ (CEO $28M + McBee $15M) a vender via 10b5-1; stock ~$89.76 (Aug 20); Q3 CapEx $11.5-13.5B = FCF muito negativo; Q2 $2.58B +112% cumprido; tese hyperscaler intacta; analyst consensus $143; nao aumentar |
 | 4 | RKLB | Rocket Lab USA | Espaco | neobroker | ~€10 | Q4 2026 ⚠️ | ⚠️ Q2 cumprido record $234M +62%; Neutron Q4 "window narrowing" — slip 2027 possivel; AH -6.8% ($74.60); nao aumentar sem Neutron confirmado |
 | 4 | ASTS | AST SpaceMobile | Espaco | neobroker | ~€10 | Q4 2026 ⚠️ | ⚠️ Deutsche Bank PT $93 (era $106, Aug 17) — 3o PT cut pos-Q2 miss; FY $150-200M mantida; backlog $1.3B; tese AT&T/Verizon intacta; nao aumentar |
 | 4 | LUNR | Intuitive Machines | Espaco | neobroker | ~€10 | H2 2026 (IM-3) ⚠️ | ⚠️ Q2 MISS: EPS -$0.29 vs -$0.09; rev $206M vs $224M; stock -9 a -16%; insider sale $14.7M; IM-3 date nao confirmada; backlog $1.8B; nao reforcar |
