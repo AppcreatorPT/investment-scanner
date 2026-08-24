@@ -41,12 +41,13 @@
 | EYPT | INVALIDADO | LUGANO falhou Aug 17 (-69%); nao re-incluir nunca |
 | CRWV | ⚠️ CARRY | CEO + McBee venderam $44M+ via 10b5-1; nao aumentar |
 | GERN | ⚠️ CARRY | IMpactMF base case escorregou para H2 2028; score baixado para 3 |
-| SOUN | ⚠️ ATENCAO | Voto LivePerson adiado para 2-Set (quorum pendente); aguardar resultado |
-| NBIS | ⚠️ CARRY | Burry short ainda activo sem Form 4 de fecho |
-| INOD | ⚠️ CARRY | Stock muito abaixo entry $90.68 (~$62); nao aumentar |
-| ASTS | ⚠️ CARRY | D2D rescheduled early 2027; 3 PT cuts; CEO insider sale $14.7M |
+| SOUN | ⚠️ ATENCAO | Voto LivePerson 2-Set (quorum iminente; 97% FOR; aprovacao esperada); aguardar resultado |
+| NBIS | ⚠️⚠️ CARRY | Burry DOBROU short @$247 pos-earnings beat Aug 12; "topo do boom de IA"; Form 4 fecho pendente |
+| INOD | ⚠️ CARRY | Stock muito abaixo entry $90.68 (~$62); CEO transition Sep 30; nao aumentar |
+| ASTS | ⚠️ CARRY | BlueBirds 11-13 (Block 2) lancados Aug 5 ✅; D2D comercial still early 2027; 3 PT cuts; CEO insider sale $14.7M |
 | LUNR | ⚠️ CARRY | IM-3 sem data confirmada; CEO insider sale $14.7M |
-| GLXY | ⚠️ CARRY | CLARITY Act 30% probabilidade 2026; Senate em recesso ate 14-Set |
+| GLXY | ⚠️ CARRY | CLARITY Act: vote procedural Sep 15 agendado (60 votos necessarios; estreito mas possivel) |
+| RKLB | ⚠️ ATENCAO | Neutron Q4 launchpad on track mas 2026 launch nao reafirmado; escorregamento 2027 possivel |
 | HAG.DE | ⚠️ CARRY | Jefferies Hold; JPMorgan Neutral EUR 85; premium persiste |
 | HYPE | ⚠️ ATENCAO | MAS Singapore alert — usar exchange fora de Singapore |
 | FRVO | ⚠️ ATENCAO | Lockup insiders expira Nov 14 2026 — aguardar pos-lockup para entrada |
