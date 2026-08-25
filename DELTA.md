@@ -1,25 +1,31 @@
-# Delta 2026-08-24 — funil para a tua DD, nao e conselho
+# Delta 2026-08-25 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**NBIS ⚠️⚠️ ESCALADO — Burry DOBROU short pos-earnings beat**
-Q2 revenue +454% fez stock +34%; Burry adicionou short a ~$247 no mesmo dia (Aug 12), chamou NBIS "o topo do boom de IA". Sem Form 4 de fecho. Stock ~$248 = short praticamente ao par. Nao aumentar.
+**NBIS ⚠️⚠️ ESCALADO — -15% + convertible notes $5B**
+Stock caiu de ~$248 (Aug 22) para ~$210 (Aug 24) = -15%. Causa: oferta de convertible notes $5B (upsized de $4.5B); dilucao estimada 15.8M acoes Classe A. Burry short ativo @$247 — o short esta agora IN THE MONEY. Sem Form 4 de fecho confirmado. Bear case (dilucao + depreciacao GPU 4-5 anos) ganhou forcada. Nao aumentar.
 
-**RKLB ⚠️ ESCALADO — Neutron 2026 em risco**
-Empresa PAROU de reafirmar lancamento antes do fim de 2026. Q4 launchpad confirmado (Archimedes 400+ hot-fire tests); primeiro voo pode escorregar para 2027. Kepler deal assinado para 2028. Linha-na-areia: slip 2027 confirmado = rebuy $65-70.
+**SOUN ⚠️ ATENCAO — Voto LivePerson 2-Set: 8 dias**
+97% dos votos expressos = FOR; quorum (maioria de todas as acoes emitidas) ainda nao confirmado. LivePerson urgiu acionistas Aug 23. Reuniao especial marcada 2-Set. Resultado esperado positivo mas nao garantido — quorum e o risco residual. Aguardar resultado formal antes de novas entradas.
 
-**SOUN ⚠️ ATENCAO — Voto LivePerson 2-Set: quorum iminente**
-Prazo de submissao de votos: 1-Set 23:59 ET. 97% votos expressos = FOR; quorum (maioria de todas as acoes emitidas) a poucos % de ser atingido. LivePerson urgiu ativamente acionistas Aug 23 via press release. Aprovacao esperada. Aguardar resultado formal.
+**GLXY ⚠️ CARRY — CLARITY Act Sep 15: probabilidade cai para 17-30%**
+Voto procedural (cloture, 60 votos) agendado Sep 15. Galaxy Research: 30%; Polymarket: ~17%. Coinbase CEO Armstrong diz que passa; democratas resistem sem salvaguardas de etica. Janela estreita antes do recesso de Outubro. Carry.
+
+**HYPE ⚠️ CARRY — Pullback de ATH $82 para $76; CFTC mecanismo indefinido**
+Pos-Trump endorsement (Aug 19) e ATH $82+ (Aug 23), HYPE recuou para ~$76 (-7%). CFTC compliance mechanism (KYC on-chain, leverage rules, custody) ainda nao definido. MAS Singapore alert ativo — usar exchange fora de SG. Nao entrar em ATH sem clareza regulatoria.
+
+**ASTS ⚠️ CARRY — FCC testing 30 dias (ate Sep 12); comercial early 2027**
+FCC autorizou 30 dias de testes D2D em 800MHz (Midland TX + Lanham MD, ate Sep 12). BlueBirds 11-13 (Block 2) lancados Aug 5 com sucesso — constelacao a expandir. D2D comercial confirmado para early 2027 (nao 2026). Carry; CEO insider sale $14.7M persiste.
 
 **CRWV ⚠️ CARRY — Insiders continuam a vender**
-EVP Goldberg $678K @$106.11 (Aug 17); CEO Intrator tax-sell $1.2M (Aug 20); Brian Venturo $542K @$91.88 (Aug 20). Stock ~$89-91. Tese backlog $104B intacta; nao aumentar.
+Carry-forward. EVP Goldberg $678K @$106 (Aug 17), CEO Intrator $1.2M (Aug 20), Venturo $542K @$92 (Aug 20). Backlog $104B e tese intacta; nao aumentar posicao.
 
-**GLXY ⚠️ CARRY — CLARITY Act: vote procedural agendado Sep 15**
-Cloture no motion to proceed agendado para Sep 15 (precisa 60 votos). Janela estreita: ~14 dias uteis antes recesso outubro. Probabilidade modesta mas nao zero para 2026. Carry.
+**RKLB ⚠️ CARRY — Neutron 2026 nao reafirmado**
+Carry-forward. Q4 launchpad confirmado (Archimedes 400+ hot-fire tests); primeiro voo pode ser 2027. Kepler deal assinado para 2028. Linha-na-areia mantida: slip 2027 confirmado = rebuy $65-70.
 
-**Carry sem novidade:** EYPT (INVALIDADO), GERN (base case H2 2028), INOD (CEO transition Sep 30), LUNR (IM-3 sem data; CEO insider sale $14.7M persiste), HAG.DE (Jefferies Hold; JPM EUR 85), HYPE (MAS alert — usar exchange fora SG; ver Movimentos), FRVO (lockup Nov 14 — nao entrar antes).
+**Carry sem novidade:** EYPT (INVALIDADO — nunca re-incluir), GERN (base case H2 2028; nao aumentar), INOD (CEO Singhal Sep 30; vigiar primeiros 30 dias), LUNR (IM-3 H2 2026 — 12 payloads confirmados Aug 4, mas sem data especifica; CEO insider sale persiste; nao reforcar), HAG.DE (Jefferies Hold; JPM EUR 85; rotacao → R3NK.DE), FRVO (lockup expira Nov 14 — nao entrar antes)
 
 ---
 
@@ -27,15 +33,12 @@ Cloture no motion to proceed agendado para Sep 15 (precisa 60 votos). Janela est
 
 | Ticker | Movimento | Nota |
 |--------|-----------|------|
-| AAVE | ✅ +25%+ de $98.88 (Aug 22) para ~$126 (Aug 23) | Rompeu resistencia $108; Aavenomics 292 AAVE/dia buybacks + momentum DeFi geral |
-| HYPE | ✅ Novo ATH $82+ (Aug 23); de ATH anterior $77.62 Aug 21 | Coinbase Derivatives self-certified HYPE Perp Futures (Mai 2026); rota CFTC via futures; compliance mechanism ainda nao definido |
-| ASTS | ✅ BlueBirds 11-13 (Block 2) lancados Aug 5 com sucesso | Block 2 = 2x throughput vs Block 1; constelacao em expansao; D2D comercial still early 2027; carry ⚠️ mantido |
-| MORPHO | ✅ Robinhood Earn JA LIVE Jul 1 | Antecipou catalisador projetado Q4; $11B+ TVL; Standard Chartered backing; catalisador cumprido antes do previsto |
-| R3NK.DE | ✅ David Brown Defence: acordo vinculativo Jul 3 | Backlog naval £700M; Five Eyes countries (UK/AU/CA/US/NZ); fecho esperado Q4 2026 — nao referenciado em updates anteriores |
-| LEU | ✅ X-energy contrato Aug 6 | LEU+HALEU para Xe-100 SMR; backlog total agora $3B contingent ($2.4B definitized); catalisador confirmado |
-| ONDO | ➡️ Ondo Stocks $1B TVL Aug 15 | Preco flat ~$0.38; Ondo Network (private execution layer) em desenvolvimento; catalisador CLARITY Act Sep 15 |
-| NBIS | ⚠️ Burry doubled down @$247 pos-earnings | Beat nao mudou convicao do short; "topo de boom"; Nao aumentar |
-| RKLB | ⚠️ Neutron 2026 launch nao reafirmado | Q4 launchpad on track; primeiro voo pode ser 2027; Kepler deal adicionado (2028) |
+| NBIS | ⚠️ -15% (~$248→$210) | $5B convertible notes; dilucao 15.8M acoes; Burry short IN THE MONEY |
+| AAVE | ✅ +9% ($126→~$137) | Cumulativo +38% desde sintese Aug-22; consolidando acima de $108 (resistencia rompida) |
+| HYPE | ➡️ -7% de ATH $82 para $76 | Consolidacao pos-Trump rally; CFTC path sem timeline definido |
+| QURE | ✅ BLA on track Q3 | FDA e QURE alinhados: 3-year Phase I/II aceite como base BLA acelerado; HD gene therapy historico potencial |
+| PRME | ➡️ PM647 IND Q3 pendente | Q2 (Aug 6) reconfirmou deadline Q3 2026; PM577a Phase 1 IND filed Jul 2026; janela Set fecha-se em 5 semanas |
+| VOYG | ✅ Elegivel track record desde Aug-24 | Q2 guidance raised $275-305M; Starlab CRD completo; NASA CLD RFP draft Jul 6; +DARPA wins |
 
 ---
 
@@ -47,8 +50,8 @@ Cloture no motion to proceed agendado para Sep 15 (precisa 60 votos). Janela est
 
 ## Sem alteracao
 
-17 instrumentos sem novidade relevante nas ultimas 48h: PRME (PM647 IND Q3 pendente, ate fim Set), NXE (construcao on track — 300 pessoas no site), UUUU, FRVO (lockup carry), VKTX (maintenance topline Q3 iminente — ate fim Set), QURE (BLA Q3 on track; 4-year data Set), ALT (PERFORMA Phase 3 activo desde Aug 3), BGC, VIRT, FLOW.AS, CMCX.L, PLUS.L, ETOR, KTOS, PL, EXOS.PA, THEON.AS.
+20 instrumentos sem novidade relevante nas ultimas 48h: LEU (X-energy contrato ja capturado; backlog $4.5B intacto), NXE (construcao Rook I on track), UUUU, VKTX (maintenance topline Q3 pendente — ainda sem anuncio), ALT (PERFORMA Phase 3 activo), BGC (FMX ramp em curso), VIRT, FLOW.AS, CMCX.L, PLUS.L, ETOR, KTOS, PL, EXOS.PA, R3NK.DE, THEON.AS, IONQ, ONDO, MORPHO, RDW.
 
 ---
 
-_Gerado automaticamente pelo investment-scanner em 2026-08-24. Nao e conselho de investimento._
+_Gerado automaticamente pelo investment-scanner em 2026-08-25. Nao e conselho de investimento._

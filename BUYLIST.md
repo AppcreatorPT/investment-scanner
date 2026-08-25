@@ -42,7 +42,7 @@
 | CRWV | ⚠️ CARRY | CEO + McBee venderam $44M+ via 10b5-1; nao aumentar |
 | GERN | ⚠️ CARRY | IMpactMF base case escorregou para H2 2028; score baixado para 3 |
 | SOUN | ⚠️ ATENCAO | Voto LivePerson 2-Set (quorum iminente; 97% FOR; aprovacao esperada); aguardar resultado |
-| NBIS | ⚠️⚠️ CARRY | Burry DOBROU short @$247 pos-earnings beat Aug 12; "topo do boom de IA"; Form 4 fecho pendente |
+| NBIS | ⚠️⚠️ CARRY | -15% (~$248→$210 Aug 24) — $5B convertible notes (upsized); Burry short IN THE MONEY @$247; Form 4 fecho pendente; nao aumentar |
 | INOD | ⚠️ CARRY | Stock muito abaixo entry $90.68 (~$62); CEO transition Sep 30; nao aumentar |
 | ASTS | ⚠️ CARRY | BlueBirds 11-13 (Block 2) lancados Aug 5 ✅; D2D comercial still early 2027; 3 PT cuts; CEO insider sale $14.7M |
 | LUNR | ⚠️ CARRY | IM-3 sem data confirmada; CEO insider sale $14.7M |
@@ -54,4 +54,4 @@
 
 ---
 
-_Gerado automaticamente pelo investment-scanner em 2026-08-24. Nao e conselho de investimento._
+_Gerado automaticamente pelo investment-scanner em 2026-08-25. Nao e conselho de investimento._
