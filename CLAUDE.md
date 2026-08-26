@@ -16,6 +16,16 @@ Scanner de oportunidades de investimento organizado em 7 temas. Gera listas cura
 
 ---
 
+## Carteira (`PORTFOLIO.md`)
+
+Alocacao alvo por tema + posicoes reais + regra de decisao mensal. **E a fonte de verdade
+para "o que compro este mes".** O scan diario e o dashboard leem este ficheiro.
+
+Regra: comprar no tema com maior `gap = alvo - peso_atual`; dentro do tema, ordenar por
+score → urgencia de catalisador → ausencia de flag. Pesos por valor de mercado, nao custo.
+
+---
+
 ## Categorias
 
 | # | Categoria | Prefixo ID | Prompt |
