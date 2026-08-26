@@ -91,6 +91,10 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+h1, h2, h3, h4, p, figure, blockquote { margin: 0; }
+ul, ol { margin: 0; padding: 0; list-style: none; }
+button, input, select, textarea { font: inherit; color: inherit; }
+img, svg { max-width: 100%; }
 
 body {
   margin: 0;
@@ -280,6 +284,7 @@ td.w { min-width: 260px; font-size: 12.5px; }
   .hero .amt { margin-left: 0; }
 }
 </style>
+<!--__HEAD_END__-->
 
 <header class="top">
   <h1 class="wordmark">Investment <span>Scanner</span></h1>
@@ -301,6 +306,15 @@ td.w { min-width: 260px; font-size: 12.5px; }
   <section class="panel" id="p-semana" role="tabpanel"></section>
   <p class="foot">Funil para a tua DD — nao e conselho de investimento. Construido a partir do repo em <span id="built" class="num"></span>.</p>
 </main>
+
+<!-- ADR-1: a carteira vive aqui. A rotina le este bloco do HTML publicado
+     (Artifact action:"read") e reescreve-o em PORTFOLIO.md. Nao renomear o id. -->
+<script id="portfolio-state" type="application/json">%%PORTFOLIO_STATE%%</script>
+
+<!-- A fonte canonica da propria pagina, como documento completo com os dois
+     placeholders por preencher. E o que permite a `publish()` sem serializar o
+     DOM vivo: reinserimo-la verbatim e a versao seguinte sabe fazer o mesmo. -->
+<script id="page-source" type="application/json">%%PAGE_SOURCE%%</script>
 
 <script>
 const D = /*__DATA__*/null;
@@ -344,6 +358,7 @@ function show(id) {
   document.querySelectorAll(".panel").forEach((p) => p.classList.toggle("on", p.id === "p-" + id));
   localStorage.setItem("scanner_tab", id);
 }
+window.__show = show;  // usado pelo scripts/shoot.mjs para trocar de separador
 nav.addEventListener("click", (e) => {
   const b = e.target.closest(".tab");
   if (b) show(b.dataset.t);

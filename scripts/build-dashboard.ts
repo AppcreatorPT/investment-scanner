@@ -10,52 +10,13 @@
 
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "fs";
 import { join } from "path";
+import { sections, table, num } from "./md.ts";
+import { readPositions } from "./portfolio-md.ts";
+import { makeState, stateToJson, type Position } from "./portfolio-state.ts";
+import { HEAD_END, STATE_SLOT, SOURCE_SLOT, toFullDocument, encodeSource } from "./page-source.ts";
 
 const ROOT = join(import.meta.dir, "..");
 const OUTPUT_DIR = join(ROOT, "output");
-
-// ─────────────────────────── markdown helpers ───────────────────────────
-
-/** Divide um documento em seccoes por heading `## `. */
-function sections(md: string): Record<string, string> {
-  const out: Record<string, string> = {};
-  const parts = md.split(/^##\s+/m);
-  for (const part of parts.slice(1)) {
-    const nl = part.indexOf("\n");
-    if (nl === -1) continue;
-    // Remove a regua "---" que separa seccoes e o rodape do ficheiro.
-    out[part.slice(0, nl).trim()] = part
-      .slice(nl + 1)
-      .replace(/\n-{3,}\s*$/, "")
-      .replace(/\n-{3,}\n[\s\S]*$/, "")
-      .trim();
-  }
-  return out;
-}
-
-/** Extrai a primeira tabela markdown de um bloco, como array de objectos. */
-function table(block: string): Record<string, string>[] {
-  const lines = block.split("\n");
-  const start = lines.findIndex(
-    (l, i) => l.trim().startsWith("|") && /^\|[\s:|-]+\|$/.test((lines[i + 1] ?? "").trim()),
-  );
-  if (start === -1) return [];
-
-  const cells = (l: string) =>
-    l.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
-
-  const headers = cells(lines[start]);
-  const rows: Record<string, string>[] = [];
-  for (const line of lines.slice(start + 2)) {
-    if (!line.trim().startsWith("|")) break;
-    const vals = cells(line);
-    if (vals.every((v) => !v)) continue; // linha placeholder vazia
-    const row: Record<string, string> = {};
-    headers.forEach((h, i) => (row[h] = vals[i] ?? ""));
-    rows.push(row);
-  }
-  return rows;
-}
 
 /** Ficheiro mais recente em output/ que corresponde ao sufixo. */
 function latest(suffix: string): string | null {
@@ -70,19 +31,9 @@ function read(path: string): string {
   return existsSync(path) ? readFileSync(path, "utf-8") : "";
 }
 
-const num = (s: string) => {
-  const m = (s ?? "").replace(/[^\d.,-]/g, "").replace(",", ".");
-  const v = parseFloat(m);
-  return Number.isFinite(v) ? v : 0;
-};
-
 // ─────────────────────────── parsers ───────────────────────────
 
 interface Target { theme: string; pct: number; rationale: string }
-interface Position {
-  date: string; ticker: string; name: string; theme: string;
-  units: string; cost: number; value: number;
-}
 
 function parsePortfolio() {
   const md = read(join(ROOT, "PORTFOLIO.md"));
@@ -94,17 +45,7 @@ function parsePortfolio() {
     rationale: r["Porque este peso"] ?? "",
   }));
 
-  const positions: Position[] = table(secs["Posicoes"] ?? "")
-    .filter((r) => r["Ticker"])
-    .map((r) => ({
-      date: r["Data"],
-      ticker: r["Ticker"],
-      name: r["Nome"],
-      theme: r["Tema"],
-      units: r["Unidades"],
-      cost: num(r["Custo total (€)"]),
-      value: num(r["Valor atual (€)"]),
-    }));
+  const positions: Position[] = readPositions(md);
 
   const monthly = num((md.match(/\*\*Aporte:\*\*\s*€?([\d.,]+)/) ?? [])[1] ?? "100");
   const lines = num((md.match(/\*\*Linhas por mes:\*\*\s*(\d+)/) ?? [])[1] ?? "4") || 4;
@@ -227,7 +168,7 @@ function recommend(
   const byTheme: Record<string, number> = {};
   let total = 0;
   for (const p of positions) {
-    const v = p.value || p.cost;
+    const v = p.value_eur || p.cost_eur;
     byTheme[p.theme] = (byTheme[p.theme] ?? 0) + v;
     total += v;
   }
@@ -312,10 +253,27 @@ if (!template) {
   process.exit(1);
 }
 
-writeFileSync(join(ROOT, "dashboard.html"), template.replace("/*__DATA__*/null", json));
+const withData = template.replace("/*__DATA__*/null", () => json);
+for (const marker of [HEAD_END, STATE_SLOT, SOURCE_SLOT]) {
+  if (!withData.includes(marker)) {
+    console.error(`Template sem o marcador ${marker}`);
+    process.exit(1);
+  }
+}
+
+// O fragmento vai para a ferramenta Artifact; leva embutida a fonte do documento
+// completo para a propria pagina se poder republicar (ver scripts/page-source.ts).
+const stateJson = stateToJson(makeState(portfolio.positions));
+const out = withData
+  .replace(HEAD_END, () => "")
+  .replace(STATE_SLOT, () => stateJson)
+  .replace(SOURCE_SLOT, () => encodeSource(toFullDocument(withData)));
+
+writeFileSync(join(ROOT, "dashboard.html"), out);
 
 const basket = rec.basket.map((b) => `${b.pick.ticker} €${b.amount}`).join(", ");
 console.log(
   `dashboard.html construido — ${buylist.picks.length} picks, ${delta.alerts.length} alertas, ` +
-    `${portfolio.positions.length} posicoes\ncabaz do mes: ${basket || "nenhum"}`,
+    `${portfolio.positions.length} posicoes, ${(out.length / 1024).toFixed(0)} KB\n` +
+    `cabaz do mes: ${basket || "nenhum"}`,
 );

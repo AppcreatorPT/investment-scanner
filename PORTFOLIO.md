@@ -34,17 +34,22 @@ nao a cada scan.
 
 ## Posicoes
 
-| Data | Ticker | Nome | Tema | Unidades | Custo total (€) | Valor atual (€) |
-|------|--------|------|------|----------|-----------------|-----------------|
-| | | | | | | |
+| Data | Ticker | Nome | Tema | Unidades | Custo total (€) | Valor atual (€) | ID |
+|------|--------|------|------|----------|-----------------|-----------------|----|
+| | | | | | | | |
 
-**Total investido:** €0
+**Total investido:** €0.00
 
-> Como atualizar: uma linha por compra. Se reforcares um nome, acrescenta nova linha em vez
-> de editar a antiga — preserva o historico de custo medio.
+> **Escreve-se no dashboard, nao aqui.** O separador Carteira da pagina publicada tem o
+> formulario; a rotina seguinte le a pagina e reescreve esta tabela. Editar a mao continua a
+> funcionar — so nao apagues a coluna `ID`, que e o que liga cada linha a pagina.
 >
-> `Valor atual` e opcional. Enquanto estiver vazio, o dashboard calcula os pesos pelo custo;
-> assim que o preencheres, passa a usar valor de mercado (que e o correto para rebalancear).
+> Uma linha por compra. Se reforcares um nome, acrescenta nova linha em vez de editar a
+> antiga — preserva o historico de custo medio.
+>
+> `Valor atual` e o override manual (extracto do broker). Vazio e o normal: o dashboard usa
+> `output/prices.json`, capturado pela rotina diaria. Precedencia: valor manual → preco
+> diario × unidades → custo.
 
 ---
 
