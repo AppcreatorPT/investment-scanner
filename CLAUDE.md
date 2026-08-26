@@ -19,7 +19,8 @@ Scanner de oportunidades de investimento organizado em 7 temas. Gera listas cura
 ## Carteira (`PORTFOLIO.md`)
 
 Alocacao alvo por tema + posicoes reais + regra de decisao mensal. **E a fonte de verdade
-para "o que compro este mes".** O scan diario e o dashboard leem este ficheiro.
+para "o que compro este mes"** — mas as posicoes escrevem-se **no dashboard**, e a rotina
+copia-as para aqui (ver ADR-1 mais abaixo). O scan diario e o dashboard leem este ficheiro.
 
 Regra: comprar no tema com maior `gap = alvo - peso_atual`; dentro do tema, ordenar por
 score → urgencia de catalisador → ausencia de flag. Pesos por valor de mercado, nao custo.
@@ -133,22 +134,69 @@ Cada ficheiro de output segue esta estrutura:
 
 ---
 
-## Dashboard — passo final de TODAS as rotinas
+## A rotina — ordem fixa, todos os dias
 
-`dashboard.html` e **gerado**, nunca editado a mao. No fim de cada rotina (diaria, segunda
-e sabado), depois de escrever os ficheiros:
+A carteira vive **na pagina publicada** (o utilizador escreve la) e a analise vive **no repo**.
+A rotina reconcilia os dois, por esta ordem. Saltar o passo 1 apaga o que o utilizador escreveu.
 
+**1. Ler a pagina viva.** Ferramenta Artifact, `action: "read"`, `url:` = conteudo de
+`.artifact-url`. O resultado vem num ficheiro local; guarda o caminho.
+
+**2. Trazer as posicoes para o repo.**
 ```bash
-bun run scripts/build-dashboard.ts        # 1. reconstroi
-git add -A && git commit -m "..." && git push origin HEAD   # 2. commit inclui o dashboard
+bun run scripts/merge-artifact-state.ts <ficheiro-lido.html>
+```
+Le `#portfolio-state` e reescreve a tabela Posicoes de `PORTFOLIO.md`. **Nunca falha a
+rotina:** se nao conseguir ler a pagina, diz porque e deixa tudo como estava. Le o output —
+ele diz o que mudou, o que a pagina ganhou, e o que recusou fazer.
+
+**3. Capturar precos.**
+```bash
+bun run scripts/capture-prices.ts --tickers      # quem precisa de preco hoje
+```
+Para cada um, WebFetch de **fonte citavel com hora de fecho**. Depois:
+```bash
+echo '{"prices":{"LEU":{"price":187.63,"currency":"USD","asof":"2026-08-26",
+  "source":"https://..."}},"bench":{"spy":766.08,"usd_per_eur":1.1669}}'   | bun run scripts/capture-prices.ts --date 2026-08-26
+```
+Cotacao sem `source` e sem `asof` **e recusada** e o preco anterior fica (marcado stale no
+dashboard). Sem fonte fiavel, nao se escreve nada — nunca se estima.
+
+**4. Escrever a analise do dia.** `DELTA.md` sempre; `NEWS.md` (prompt 11) sempre; ao
+**sabado** tambem `output/YYYY-MM-DD_tese-profunda.md` (prompt 10) e a sintese semanal.
+
+**5. Validar e construir.**
+```bash
+bun test                                  # tem de estar verde antes de publicar
+bun run scripts/build-dashboard.ts
+```
+`bun test` inclui 20 verificacoes num browser a serio (`scripts/page-checks.mjs`) e o lint de
+honestidade sobre a tese e as noticias.
+
+**6. Commit.**
+```bash
+git add -A && git commit -m "..." && git push origin HEAD
 ```
 
-3. **Republicar**: chamar a ferramenta Artifact com `file_path: dashboard.html` **e**
-   `url:` = o conteudo de `.artifact-url`. Sem esse `url` cria um link novo em vez de
-   actualizar o que o utilizador tem aberto — e o erro que estraga a rotina.
+**7. Republicar.** Ferramenta Artifact com `file_path: dashboard.html` **e** `url:` = conteudo
+de `.artifact-url`. Sem esse `url` cria um link novo em vez de actualizar o que o utilizador
+tem aberto — e o erro que estraga a rotina. **Nao passar `capabilities`**: a declaracao
+(`artifact`) ja esta guardada e e transportada; passa-la de novo so e preciso para a mudar.
 
-O build le `PORTFOLIO.md` + `DELTA.md` + `BUYLIST.md` + a sintese mais recente, calcula o
-cabaz do mes e emite HTML auto-contido. Template em `scripts/dashboard-template.html`.
+`dashboard.html` e **gerado, nunca editado a mao**. Template em `scripts/dashboard-template.html`.
+
+---
+
+## Como a carteira e a pagina se reconciliam (ADR-1)
+
+- A tabela Posicoes de `PORTFOLIO.md` tem uma coluna `ID` (uuid por linha). **Nao a apagar** —
+  e o que liga cada linha a pagina depois de reordenar, editar ou apagar.
+- A pagina embute o mesmo estado em `<script id="portfolio-state">`. Nao renomear esse id.
+- **Nas posicoes a pagina ganha** (e onde o utilizador escreve). **Na analise o repo ganha
+  sempre** — tese, noticias, buy-list e alvos nunca sao editados pela pagina.
+- Duas travas por cima disso, em `scripts/portfolio-state.ts`: state ilegivel nao mexe em nada,
+  e um wipe total (pagina com 0 posicoes, repo com posicoes) nao passa pela rotina. Esvaziar a
+  carteira e um gesto deliberado em `PORTFOLIO.md`.
 
 ---
 

@@ -72,6 +72,11 @@ function expect(actual) {
     toBeTruthy: () => assert.ok(actual, `esperava valor verdadeiro, recebi ${JSON.stringify(show(actual))}`),
     toBeLessThanOrEqual: (n) => assert.ok(actual <= n, `esperava <= ${n}, recebi ${actual}`),
     toMatchObject: (o) => { for (const [k, v] of Object.entries(o)) assert.deepStrictEqual(actual[k], v, `campo ${k}`); },
+    not: {
+      toBe: (e) => assert.notStrictEqual(actual, e),
+      toEqual: (e) => assert.notDeepStrictEqual(actual, e),
+      toContain: (e) => assert.ok(!String(actual).includes(e), `nao esperava conter ${JSON.stringify(e)}`),
+    },
   };
 }
 
@@ -132,7 +137,7 @@ test("P/L aparece calculado contra o preco do dia, com o sinal no texto", async 
   const pl = await page.textContent("table.pos tbody tr td:nth-child(9)");
   expect(pl).toContain("+€60.7");
   expect(await page.getAttribute("table.pos tbody tr td:nth-child(9) .pl", "class")).toContain("up");
-  expect(await page.textContent(".stats")).toContain("Investido");
+  expect(await page.textContent("#p-carteira .stats")).toContain("Investido");
   await page.close();
 });
 
@@ -260,4 +265,95 @@ test("sem scroll horizontal no telemovel com a carteira preenchida", async () =>
   await page.close();
 });
 
+test("o Hoje abre com o resumo antes do detalhe", async () => {
+  const page = await open();
+  const stats = await page.textContent("#p-hoje .stats");
+  for (const k of ["CARTEIRA", "CABAZ DO MES", "ALERTAS E NOTICIAS", "PRAZOS"]) {
+    expect(stats.toUpperCase()).toContain(k);
+  }
+  // O resumo esta acima dos alertas.
+  const order = await page.evaluate(() => {
+    const p = document.getElementById("p-hoje");
+    return [...p.children].map((c) => c.className);
+  });
+  expect(order[0]).toContain("stats");
+  await page.close();
+});
 
+test("as setas navegam entre separadores e o foco acompanha", async () => {
+  const page = await open();
+  await page.focus('.tab[data-t="hoje"]');
+  await page.keyboard.press("ArrowRight");
+  expect(await page.evaluate(() => document.activeElement.dataset.t)).toBe("carteira");
+  expect(await page.getAttribute('.tab[data-t="carteira"]', "aria-selected")).toBe("true");
+  expect(await page.getAttribute('.tab[data-t="hoje"]', "tabindex")).toBe("-1");
+  await page.keyboard.press("End");
+  expect(await page.evaluate(() => document.activeElement.dataset.t)).toBe("semana");
+  await page.keyboard.press("ArrowRight");        // da a volta
+  expect(await page.evaluate(() => document.activeElement.dataset.t)).toBe("hoje");
+  await page.close();
+});
+
+test("cada separador aponta para o seu painel (aria-controls)", async () => {
+  const page = await open();
+  const bad = await page.evaluate(() =>
+    [...document.querySelectorAll(".tab")].filter((t) => {
+      const p = document.getElementById(t.getAttribute("aria-controls"));
+      return !p || p.getAttribute("aria-labelledby") !== t.id;
+    }).map((t) => t.dataset.t));
+  expect(bad).toEqual([]);
+  await page.close();
+});
+
+test("novidades marcadas com ponto; abrir o separador limpa-o e persiste", async () => {
+  const page = await (await getBrowser()).newPage({ viewport: { width: 1280, height: 900 } });
+  await blockFonts(page);
+  await page.addInitScript(() => {
+    try {
+      localStorage.setItem("scanner_seen", JSON.stringify({
+        delta: "2000-01-01", news: "2000-01-01", thesis: "2000-01-01", weekly: "2000-01-01",
+      }));
+    } catch {}
+  });
+  await page.goto(pathToFileURL(DASH).href, { waitUntil: "domcontentloaded" });
+
+  expect(await page.locator('.tab[data-t="noticias"] .dot').count()).toBe(1);
+  expect(await page.textContent("#p-hoje .novo")).toContain("Novo desde a tua ultima visita");
+
+  await page.click('.tab[data-t="noticias"]');
+  expect(await page.locator('.tab[data-t="noticias"] .dot').count()).toBe(0);
+
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem("scanner_seen")).news);
+  expect(stored).not.toBe("2000-01-01");
+  await page.close();
+});
+
+test("primeira visita nao marca tudo como novidade", async () => {
+  const page = await open();
+  expect(await page.locator(".tab .dot").count()).toBe(0);
+  expect(await page.locator("#p-hoje .novo").count()).toBe(0);
+  await page.close();
+});
+
+test("prazos de catalisador so aparecem quando ha data lida", async () => {
+  const page = await open();
+  await page.evaluate(() => window.__show("buylist"));
+  const soun = await page.textContent('#blt tbody tr:has-text("SOUN") td:nth-child(7)');
+  expect(soun).toContain("7d");
+  // ALT nao tem data extraivel no catalisador — nao pode inventar prazo.
+  const alt = await page.locator('#blt tbody tr:has-text("ALT") td:nth-child(7) .due').count();
+  expect(alt).toBe(0);
+  await page.close();
+});
+
+test("o foco e visivel em cada controlo interactivo", async () => {
+  const page = await open();
+  const outline = await page.evaluate(() => {
+    const el = document.querySelector('.tab[data-t="carteira"]');
+    el.focus();
+    const s = getComputedStyle(el);
+    return s.outlineStyle + " " + s.outlineWidth;
+  });
+  expect(outline).toContain("solid");
+  await page.close();
+});

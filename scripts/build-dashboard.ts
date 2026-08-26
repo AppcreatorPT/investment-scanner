@@ -11,6 +11,7 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "fs";
 import { join } from "path";
 import { sections, table, num, blocks } from "./md.ts";
+import { catalystDeadline } from "./catalyst.ts";
 import { readPositions } from "./portfolio-md.ts";
 import { makeState, stateToJson, type Position } from "./portfolio-state.ts";
 import { HEAD_END, STATE_SLOT, SOURCE_SLOT, toFullDocument, encodeSource } from "./page-source.ts";
@@ -114,6 +115,7 @@ function parseBuylist() {
   const date = (md.match(/^#\s*Buy-list\s+(\S+)/m) ?? [])[1] ?? "";
 
   const picks = table(md).map((r) => ({
+    deadline: catalystDeadline(r["Catalisador (data)"] ?? ""),
     score: num(r["Score"]),
     ticker: r["Ticker"],
     name: r["Nome"],
