@@ -41,17 +41,18 @@
 | EYPT | INVALIDADO | LUGANO falhou Aug 17 (-69%); nao re-incluir nunca |
 | CRWV | ⚠️ CARRY | CEO + McBee venderam $44M+ via 10b5-1; nao aumentar |
 | GERN | ⚠️ CARRY | IMpactMF base case escorregou para H2 2028; score baixado para 3 |
-| SOUN | ⚠️ ATENCAO | Voto LivePerson 2-Set (quorum iminente; 97% FOR; aprovacao esperada); aguardar resultado |
-| NBIS | ⚠️⚠️ CARRY | -15% (~$248→$210 Aug 24) — $5B convertible notes (upsized); Burry short IN THE MONEY @$247; Form 4 fecho pendente; nao aumentar |
+| SOUN | ⚠️ ATENCAO MAXIMA | Voto LivePerson 2-Set 10h ET — deadline 1-Set 23:59; 97% FOR; quorum falta poucos pp; resultado em 7 dias |
+| NBIS | ⚠️⚠️ CARRY | -15% (~$248→$210) — $5.75B convertible notes FECHADOS (Aug 24: $3.45B 2030 + $2.3B 2034); dilucao ~15.8M acoes; Burry short IN THE MONEY; Form 4 fecho pendente; nao aumentar |
 | INOD | ⚠️ CARRY | Stock muito abaixo entry $90.68 (~$62); CEO transition Sep 30; nao aumentar |
 | ASTS | ⚠️ CARRY | BlueBirds 11-13 (Block 2) lancados Aug 5 ✅; D2D comercial still early 2027; 3 PT cuts; CEO insider sale $14.7M |
 | LUNR | ⚠️ CARRY | IM-3 sem data confirmada; CEO insider sale $14.7M |
 | GLXY | ⚠️ CARRY | CLARITY Act: vote procedural Sep 15 agendado (60 votos necessarios; estreito mas possivel) |
 | RKLB | ⚠️ ATENCAO | Neutron Q4 launchpad on track mas 2026 launch nao reafirmado; escorregamento 2027 possivel |
 | HAG.DE | ⚠️ CARRY | Jefferies Hold; JPMorgan Neutral EUR 85; premium persiste |
-| HYPE | ⚠️ ATENCAO | MAS Singapore alert — usar exchange fora de Singapore |
+| HYPE | ⚠️ ATENCAO | Novo ATH $83.27 (Aug 25); CFTC path via HYPE perp futures (Coinbase certified); MAS alert menos relevante; nao entrar/aumentar em ATH |
+| QURE | ⚠️ ATENCAO | BLA AMT-130 ainda nao submetida; janela Q3 fecha Sep 30 (5 semanas); vigiar press releases |
 | FRVO | ⚠️ ATENCAO | Lockup insiders expira Nov 14 2026 — aguardar pos-lockup para entrada |
 
 ---
 
-_Gerado automaticamente pelo investment-scanner em 2026-08-25. Nao e conselho de investimento._
+_Gerado automaticamente pelo investment-scanner em 2026-08-26. Nao e conselho de investimento._
