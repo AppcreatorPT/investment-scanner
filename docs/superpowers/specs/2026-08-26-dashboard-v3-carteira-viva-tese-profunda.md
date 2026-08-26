@@ -197,7 +197,7 @@ Podem correr em paralelo apos a decisao de arquitetura estar travada:
 
 | # | Workstream | Depende de | Entregavel |
 |---|-----------|-----------|-----------|
-| 0 | Confirmar Model B' + marcador de state | — | ADR curto neste doc |
+| 0 | Model B' + marcador de state | — | JA DECIDIDO em ADR-1 — implementar e testar, nao redesenhar |
 | 1 | Carteira viva + P/L + prices.json | 0 | build + template + rotina de merge |
 | 2 | Tese profunda (prompt + parse + tab) | — | prompts/10 + render |
 | 3 | News (prompt + tab) | — | prompts/11 + render |
@@ -206,6 +206,43 @@ Podem correr em paralelo apos a decisao de arquitetura estar travada:
 Sugestao de agentes: um "arquiteto" fecha o #0; depois fan-out 1/2/3 em paralelo; um
 "critico de honestidade" revê 2 contra as licoes do TRACK_RECORD; um "revisor de design"
 faz o #4 com screenshots (playwright ja configurado — ver historico da sessao).
+
+## ADR-1 — Contrato de merge das posicoes (PRE-DECIDIDO, nao debater)
+
+O ponto de maior risco de perda de dados. Fica cravado; o loop implementa e testa, nao
+redesenha.
+
+**Marcador de state.** A pagina embute as posicoes num unico bloco com id estavel:
+```html
+<script id="portfolio-state" type="application/json">
+{"schema":1,"updated":"<ISO>","positions":[
+  {"id":"<uuid>","date":"YYYY-MM-DD","ticker":"LEU","name":"Centrus Energy",
+   "theme":"Materiais & Energia","units":0.53,"cost_eur":30.00}
+]}
+</script>
+```
+- `id` por linha = uuid gerado no cliente (nao indice) — sobrevive a reordenacao/apagar.
+- O build LE este bloco de PORTFOLIO.md e escreve-o na pagina; a pagina reescreve-o em
+  `a.publish()`. Mesmo schema nos dois lados.
+
+**Fluxo da rotina (ordem fixa):**
+1. `Artifact action:"read"` do url em `.artifact-url` → HTML cru (artifact do proprio dono).
+2. Extrair `#portfolio-state`. Se falhar (pagina antiga, sem bloco, read indisponivel) →
+   **abortar o merge, usar PORTFOLIO.md como esta, logar aviso**. Nunca apagar posicoes por
+   nao conseguir ler a pagina.
+3. Reconciliar por `id`:
+   - **Posicoes (units/cost/date/ticker): a PAGINA ganha.** E onde o utilizador escreve.
+   - Escrever o resultado em PORTFOLIO.md (tabela Posicoes) preservando o `id`.
+4. Capturar precos, `bun build`, commit, republish.
+
+**Regra de ouro:** em qualquer duvida de leitura/parse, o merge e um NO-OP que preserva o
+que existe. Perder uma edicao e mau; apagar a carteira e inaceitavel. Testar explicitamente:
+(a) pagina sem bloco; (b) read devolve null; (c) JSON malformado; (d) mesmo id editado nos
+dois lados desde o ultimo build.
+
+**Analise (tese/news/buy-list/alvos): o REPO ganha sempre** — a pagina nunca os edita.
+
+---
 
 ## Fora de ambito
 - Precos real-time / feed pago / servidor proprio.
