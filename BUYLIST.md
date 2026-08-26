@@ -21,7 +21,7 @@ A €100/mes compras **1-2 posicoes por mes** — isto e um funil de candidatos,
 | 4 | FLOW.AS | Flow Traders | Trading & Mercados | cto-pea | ~€10 | Q3 earnings Nov 2026 | Maior market maker ETP europeu; MiCA cripto ETPs = spreads mais largos; acessivel direto EU |
 | 4 | IL0011284465 | Plus500 (Xetra) | Trading & Mercados | cto | ~€10 | US prediction markets H2 2026; Q3 Nov 2026 | Primeiro broker tradicional em EUA prediction markets; dividend yield suporte; Nasdaq dual listing |
 | 4 | ETOR | eToro | Trading & Mercados | cto | ~€10 | Q3 earnings Nov 2026 (primeiro pos-IPO completo) | 35M utilizadores; IPO overhang a diminuir; sub-coberto; cripto revenue recovery potencial |
-| 4 | KTOS | Kratos Defense | Geopolitica & Defesa | cto | ~€20 | DOD drone swarm contracts; Q3 Nov 2026 | Lider puro-play drones autonomos tacticos; XQ-58A unico loyal wingman US em producao |
+| 4 | KTOS | Kratos Defense | Geopolitica & Defesa | cto | ~€20 | Incremento 2 CCA (fornecedores por anunciar); Q3 Nov 2026 | Celula XQ-58 no unico CCA operacional adjudicado (MUX TACAIR, Jan 8 2026) — mas como subcontratada da Northrop, nao prime |
 | 4 | PL | Planet Labs | Geopolitica & Defesa | cto | ~€10 | NGA/DOD contracts; Q3 Nov 2026 | Unico daily global coverage; $600M market cap sub-avaliado vs data moat; NGA contratos activos |
 | 4 | EXOS.PA | Exosens | Geopolitica & Defesa | cto-pea | ~€10 | Encomendas NATO; H2 2026 earnings | Unico produtor europeu ITAR-free de image intensifiers; rearmamento NATO catalisador estrutural |
 | 4 | R3NK.DE | Renk Group | Geopolitica & Defesa | cto-pea | ~€15 | Contratos Bundeswehr; H2 2026 earnings | Monopolio transmissoes Leopard 2; rearmamento NATO backlog multi-ano; sub-coberto vs Rheinmetall |
@@ -59,6 +59,7 @@ LSE. **Plus500** foi recuperada pela listagem secundaria em Xetra (ISIN `IL00112
 |--------|------|------|
 | EYPT | INVALIDADO | LUGANO falhou Aug 17 (-69%); nao re-incluir nunca |
 | CRWV | ⚠️ CARRY | CEO + McBee venderam $44M+ via 10b5-1; nao aumentar |
+| KTOS | ⚠️ ATENCAO | Fora da producao do Incremento 1 da USAF (adjudicada a Anduril e General Atomics a 17-Jun-2026); a tese depende do Incremento 2, sem fornecedores anunciados |
 | GERN | ⚠️ CARRY | IMpactMF base case escorregou para H2 2028; score baixado para 3 |
 | SOUN | ⚠️ ATENCAO MAXIMA | Voto LivePerson 2-Set 10h ET — deadline 1-Set 23:59; 97% FOR; quorum falta poucos pp; resultado em 7 dias |
 | NBIS | ⚠️⚠️ CARRY | -15% (~$248→$210) — $5.75B convertible notes FECHADOS (Aug 24: $3.45B 2030 + $2.3B 2034); dilucao ~15.8M acoes; Burry short IN THE MONEY; Form 4 fecho pendente; nao aumentar |

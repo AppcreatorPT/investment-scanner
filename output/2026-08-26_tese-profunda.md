@@ -4,12 +4,23 @@
 > RKLB, IONQ) mais o outro score-5 que ficou de fora do cabaz (PRME). Carteira vazia, por
 > isso o perimetro e o que muda uma decisao das proximas semanas. Nao ha alvos de preco
 > aqui — ha juizo com analogia. Nao e conselho de investimento.
+>
+> **A seccao LEU foi corrigida na mesma ronda** — o falsificador que eu tinha escrito ja
+> tinha disparado a 6 de Agosto. A correccao esta a vista dentro da seccao.
 
 ---
 
 ## LEU — Centrus Energy
 
 **Tema:** Materiais & Energia · **Porque entrou:** cabaz do mes · **Confianca:** parcial
+
+> **Correccao 2026-08-26 (mesma ronda).** A primeira versao desta tese leu a Centrus como
+> "transformador a feitio para o Estado" e pos como falsificador *"um contrato de HALEU com
+> contraparte nao governamental"*. Esse contrato **ja existia**: a 6 de Agosto de 2026 a
+> Centrus assinou um acordo de LEU e HALEU com a **X-energy**, com prepagamentos. O
+> falsificador tinha disparado tres semanas antes de eu o escrever — falha de pesquisa na
+> janela do presente, nao de raciocinio. A seccao abaixo esta reescrita; a correccao fica
+> a vista porque e assim que este projecto trata erros.
 
 ### Analogo historico
 
@@ -21,70 +32,73 @@ centrifugas.** A empresa [saiu do Chapter 11 a 30 de Setembro de 2014 como Centr
 com nove milhoes de accoes novas e $240,4M de divida nova ([10-K FY2014](https://www.sec.gov/Archives/edgar/data/0001065059/000106505915000012/leu-20141231x10k.htm)).
 Quem tinha a accao antiga ficou sem nada.
 
-**O que e diferente agora:** ha um cliente que paga adiantado. O DOE atribuiu um contrato
-de HALEU que ja vai na Fase III e [foi prolongado por mais um ano em Junho de 2025](https://www.ans.org/news/2025-06-25/article-7134/doe-extends-centruss-haleu-production-contract-by-one-year/),
-e ha um award de $900M a suportar a expansao de Piketon. Em 2014 o Estado queria o produto
-mas nao assinava o cheque; em 2026 assina.
+**O que e diferente agora — e a diferenca e maior do que eu tinha lido.** A USEC morreu por
+nao conseguir financiar a fabrica. A Centrus esta a financia-la com dinheiro que nao e nem
+capital proprio nem divida: um award de $900M do DOE, e agora **prepagamentos de clientes**.
+No acordo com a X-energy, o CEO Amir Vexler diz textualmente que acordos destes fornecem
+["non-dilutive, non-debt capital to support our build out"](https://www.centrusenergy.com/news/centrus-energy-signs-leu-and-haleu-supply-agreement-with-x-energy/).
+E exactamente o mecanismo que faltou em 2014.
 
-**O que e igual:** a fabrica continua por construir e a empresa continua a nao a
-autofinanciar. A propria Centrus diz esperar as **primeiras centrifugas novas em Piketon
-em 2029**. Entre a narrativa e o caixa vao tres anos — exactamente o intervalo em que a
-USEC morreu.
+**O que continua igual:** a fabrica ainda nao produz. A gestao mantem **2029** como alvo de
+producao comercial em Piketon, com "esforcos em curso para avaliar se o calendario pode ser
+comprimido". Entre a assinatura e a entrega vao anos — e foi no intervalo que a USEC morreu.
 
 ### O invisivel
 
-Tres coisas que nao estao no comunicado:
+**Isto e uma historia de balanco disfarcada de historia de resultados.** O backlog comercial
+chega a **$4,5 mil milhoes ate 2040**, dos quais $3,0B de enriquecimento contingente de LEU e
+HALEU ([Q2 2026](https://www.centrusenergy.com/news/centrus-reports-second-quarter-2026-results/)).
+O prepagamento entra agora; a receita correspondente entra a partir de 2029-2030. Quem compra
+a accao pelo backlog esta a comprar uma data, nao um fluxo.
 
-**Todo o HALEU produzido ao abrigo do contrato e propriedade do DOE.** A Centrus e um
-transformador a feitio para o Estado, nao um vendedor no mercado. Isso significa que a
-conta de resultados de curto prazo **nao escala com o preco do uranio** — sobe o preco,
-nao muda a factura. Metade das pessoas que compram LEU como "play do uranio" esta a comprar
-outra coisa.
-
-**A escala contratada e minuscula.** A Fase III obriga a pelo menos **900 kg de HALEU UF6
-por ano**. Um unico nucleo inicial de reactor avancado esta na ordem das toneladas. Nao ha
-hoje reactores a HALEU em operacao comercial — a procura e uma promessa de politica publica,
-nao uma carteira de encomendas.
+**Prepagamento e um passivo com uma obrigacao de entrega a prazo fixo.** Resolve o
+financiamento e, ao mesmo tempo, vende enriquecimento em avanco. Se o preco do SWU subir
+muito ate 2030, parte da capacidade nova esta comprometida a precos de 2026. O mercado ve o
+lado bom do prepagamento — e o lado que financia — e nao costuma olhar para o outro.
 
 **A tese certa pela razao errada:** se o HALEU for mesmo escasso e caro, o racional para os
 projectistas de SMR nao e esperar — e **redesenhar para LEU+ (enriquecimento ate ~10%)**,
-que ja tem cadeia de fornecimento. O monopolio dissolve-se sem uma unica noticia ma sobre
-a Centrus. A jusante, quem ganha com o programa nuclear americano sao os fabricantes de
-combustivel e a logistica de deconversao e transporte, nao necessariamente quem enriquece.
+que ja tem cadeia de fornecimento. Nesse mundo a Centrus continua a vender LEU, mas o premio
+de monopolio do HALEU dissolve-se sem uma unica noticia ma sobre a empresa.
 
-**Correccao a buy-list:** o catalisador registado — "nova centrifuga Oak Ridge Q4 2026" —
-mistura duas coisas. Oak Ridge e o centro de **fabrico** de centrifugas, e a
-[expansao anunciada em Janeiro de 2026](https://www.ans.org/news/2026-01-26/article-7697/centrus-to-expand-oak-ridge-facility/)
-e financiada em parte por $50M de um fundo estadual do Tennessee. Capacidade de
-**enriquecimento** nova e em Piketon, em 2029. E um marco industrial, nao um marco de receita.
+**Nota sobre o contrato do DOE, que continua a valer:** o HALEU produzido ao abrigo desse
+contrato e propriedade do DOE. Essa parte do negocio nao escala com o preco do uranio. O que
+mudou e que ja **nao e a unica parte** — e a distincao que a primeira versao desta tese
+falhou.
+
+**Sobre a buy-list:** o catalisador registado — "nova centrifuga Oak Ridge Q4 2026" — **esta
+correcto**. A empresa espera concluir a primeira centrifuga nova em Oak Ridge ate ao fim de
+2026. Vale so distinguir o que e: Oak Ridge e **fabrico** e o marco prova que a cadeia de
+fornecimento fecha; **producao comercial** e em Piketon, em 2029.
 
 ### Under/over-value
 
 **Juizo:** caro
 
-Nao por um modelo proprio — por comparacao com a propria historia da accao. Os screeners
-publicos poem o P/E TTM algures entre ~57x e ~80x contra uma **mediana a 5 anos de 14,6x**
-para a mesma empresa (GuruFocus e Simply Wall St, 2026 — opiniao de terceiros, nao facto
-auditado). Nao e preciso acreditar no numero exacto para ler o sinal: o multiplo esta varias
-vezes acima do que esta empresa negociou durante meia decada, com a fabrica ainda por
-construir.
+Com uma qualificacao que a primeira versao nao tinha: a empresa da lucro. O Q2 2026 trouxe
+**$176,1M de receita, $16,8M de resultado liquido GAAP ($0,77 por accao diluida) e $1,77 de
+EPS ajustado**. Nao e uma promessa; e uma demonstracao de resultados.
+
+O "caro" e sobre o multiplo, nao sobre a qualidade. Os screeners publicos poem o P/E TTM
+algures entre ~57x e ~80x contra uma **mediana a 5 anos de 14,6x** para a mesma empresa
+(GuruFocus e Simply Wall St, 2026 — opiniao de terceiros, nao facto auditado). Nao e preciso
+acreditar no numero exacto para ler o sinal: o mercado esta a pagar hoje pelo Piketon de 2029.
 
 O segundo sinal e a volatilidade do proprio multiplo. Segundo a Investing.com, a accao caiu
-de ~$383 em Outubro de 2025 para ~$191,85 em Abril de 2026 — **-52% em seis meses** sem que
-o contrato do DOE ou a data de 2029 se tenham mexido. Quando o preco se move dessa maneira e
-os factos nao, o que esta a mover-se e o apetite, e o apetite volta a mudar.
+de ~$383 em Outubro de 2025 para ~$191,85 em Abril de 2026 — **-52% em seis meses**. Quando o
+preco se move dessa maneira e os factos estruturais nao, o que se move e o apetite.
 
 ### Cenarios
 
 | Cenario | Tese | Gatilho datavel | Probabilidade |
 |---------|------|-----------------|---------------|
-| Bull | Deixa de ser um programa do Estado e passa a ter cliente comercial: um offtake de HALEU com contraparte privada nomeada | Um 8-K a nomear a contraparte de um contrato comercial de HALEU | baixa |
-| Base | Continua a ser um programa governamental bem financiado com caixa material so no fim da decada; a accao negoceia o sentimento nuclear, nao os resultados | Filings trimestrais a reafirmar 2029 para as primeiras centrifugas de Piketon | alta |
-| Bear | Expansao de capacidade europeia (Urenco/Orano) ou um corte orcamental encolhe o premio de escassez; ou uma emissao de accoes para financiar Piketon | Apropriacoes do DOE; qualquer 424B de aumento de capital | media |
+| Bull | O calendario comprime-se: producao comercial em Piketon antes de 2029, e mais offtakes com prepagamento a empilhar-se sobre o da X-energy | Gestao a confirmar calendario comprimido; novos 8-K a nomear contrapartes | baixa a media |
+| Base | Backlog e prepagamentos acumulam-se conforme o plano, com receita material so no fim da decada; a accao negoceia sentimento nuclear e nao resultados | Filings trimestrais a reafirmar 2029; marco de Oak Ridge ate ao fim de 2026 | alta |
+| Bear | Derrapagem do calendario de Piketon, expansao europeia (Urenco/Orano) a comer o premio de escassez, ou o SWU a subir acima dos precos ja vendidos em prepagamento | Qualquer reafirmacao de data para depois de 2029; apropriacoes do DOE | media |
 
-**Falsificador:** um contrato de fornecimento de HALEU assinado com uma contraparte **nao
-governamental** antes do fim de 2027. Isso quebra a leitura de "transformador a feitio" e
-obriga a reavaliar o multiplo por inteiro.
+**Falsificador:** um adiamento da producao comercial de Piketon para depois de 2029, ou a
+renegociacao de um dos offtakes com prepagamento. **E o calendario que sustenta esta tese,
+nao a procura** — a procura ja esta contratada.
 
 ---
 

@@ -372,6 +372,31 @@ table.pos td { vertical-align: middle; }
   .form-mode { margin-left: 0; width: 100%; }
 }
 
+/* ═══ Noticias ═══ */
+.news { display: flex; flex-direction: column; gap: 12px; }
+.item {
+  display: grid; grid-template-columns: 3px 1fr; border-radius: 10px; overflow: hidden;
+  background: var(--surface); border: 1px solid var(--line-soft);
+}
+.item .stripe { background: var(--line); }
+.item[data-r="carteira"] { border-color: var(--accent-line); }
+.item[data-r="carteira"] .stripe { background: var(--accent); }
+.item[data-r="cabaz"] .stripe { background: var(--ink-3); }
+.item .in { padding: 15px 18px; display: flex; flex-direction: column; gap: 7px; }
+.item .hd { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.item .co { font-size: 13px; font-weight: 600; }
+.item .tag {
+  margin-left: auto; font-size: 10px; font-weight: 700; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--ink-3);
+}
+.item[data-r="carteira"] .tag { color: var(--accent); }
+.item p { font-size: 13px; color: var(--ink-2); max-width: 76ch; }
+.item .why { color: var(--ink-3); }
+.item .why b { color: var(--ink-2); font-weight: 600; }
+.item a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-line); }
+.item a:hover { border-bottom-color: var(--accent); }
+@media (max-width: 720px) { .item .tag { margin-left: 0; } }
+
 /* ═══ Tese profunda ═══ */
 .thesis-nav { display: flex; flex-wrap: wrap; gap: 6px; }
 .thesis-nav a {
@@ -481,6 +506,7 @@ table.pos td { vertical-align: middle; }
   <section class="panel" id="p-hoje" role="tabpanel"></section>
   <section class="panel" id="p-carteira" role="tabpanel"></section>
   <section class="panel" id="p-tese" role="tabpanel"></section>
+  <section class="panel" id="p-noticias" role="tabpanel"></section>
   <section class="panel" id="p-buylist" role="tabpanel"></section>
   <section class="panel" id="p-semana" role="tabpanel"></section>
   <p class="foot">Funil para a tua DD — nao e conselho de investimento. Construido a partir do repo em <span id="built" class="num"></span>.</p>
@@ -562,6 +588,7 @@ const TABS = [
   { id: "hoje", label: "Hoje", badge: D.delta.alerts.length || null },
   { id: "carteira", label: "Carteira", badge: null },
   { id: "tese", label: "Tese", badge: D.thesis.names.length || null },
+  { id: "noticias", label: "Noticias", badge: D.news.items.length || null },
   { id: "buylist", label: "Buy-list", badge: D.buylist.picks.length },
   { id: "semana", label: "Semana", badge: null },
 ];
@@ -1046,6 +1073,39 @@ nav.addEventListener("click", (e) => {
     document.getElementById(a.getAttribute("href").slice(1))
       ?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
   }));
+})();
+
+
+/* ── Noticias ── */
+(function () {
+  const n = D.news;
+  const host = document.getElementById("p-noticias");
+  if (!n.items.length) {
+    host.innerHTML = `<div class="empty">Ainda sem digest. A rotina diaria escreve
+      <strong>NEWS.md</strong> (<strong>prompts/11-news.md</strong>) e aparece aqui.</div>`;
+    return;
+  }
+
+  // O que toca a carteira vem primeiro; depois o cabaz; depois o resto.
+  const order = { carteira: 0, cabaz: 1, vigiar: 2 };
+  const items = [...n.items].sort((a, b) => order[a.relevance] - order[b.relevance]);
+  const tag = { carteira: "afeta a tua carteira", cabaz: "no cabaz do mes", vigiar: "em vigilancia" };
+
+  host.innerHTML = `<p class="lede">Digest de ${esc(n.date)} — ${esc(n.window)}, sobre
+      ${esc(n.scope)}. ${n.items.length} nome${n.items.length === 1 ? "" : "s"} com noticia material.</p>
+    <div class="news">` + items.map((i) => `
+      <article class="item" data-r="${esc(i.relevance)}"><div class="stripe"></div><div class="in">
+        <div class="hd">
+          <span class="chip tick">${esc(i.ticker)}</span>
+          <span class="co">${esc(i.name)}</span>
+          <span class="tag">${tag[i.relevance]}</span>
+        </div>
+        <p>${md(i.what)}</p>
+        <p class="why"><b>Porque importa:</b> ${md(i.why)}</p>
+        <p class="why">${md(i.source)}</p>
+      </div></article>`).join("") + `</div>` +
+    (n.quiet ? `<div class="carry"><b>Sem noticia material:</b> ${md(n.quiet.replace(/^\*\*.*?\*\*\s*/, ""))}</div>` : "") +
+    (n.note ? `<div class="carry">${md(n.note)}</div>` : "");
 })();
 
 /* ── Buy-list ── */

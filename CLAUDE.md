@@ -40,6 +40,7 @@ score → urgencia de catalisador → ausencia de flag. Pesos por valor de merca
 | 8 | Financas Alternativas | FIN- | prompts/08-financas-alt.md |
 | 9 | Agregacao | — | prompts/09-agregacao.md |
 | 10 | **Tese profunda** (sabado) | — | prompts/10-tese-profunda.md |
+| 11 | **News** (diaria) | — | prompts/11-news.md |
 
 ---
 
@@ -162,6 +163,20 @@ Saida em `output/YYYY-MM-DD_tese-profunda.md`, no formato exacto que o prompt fi
 parseia-o para o separador **Tese**. `bun test` faz lint ao ficheiro: lentes em falta,
 veredicto fora das quatro palavras, cenario sem probabilidade qualitativa ou alvo de preco
 fabricado fazem os testes falhar.
+
+---
+
+## News — rotina diaria
+
+`prompts/11-news.md` corre depois do delta, janela de ~48h, sobre **a carteira + o cabaz do
+mes + os alertas abertos**. E um digest curado: movimento de preco sem causa e do `DELTA.md`,
+nota de analista nao entra, e um nome sem noticia material **nao aparece**. Zero linhas e um
+resultado valido — o ficheiro fecha sempre com `**Sem noticia material:**`, que e a prova de
+que se olhou.
+
+Saida: `NEWS.md` na raiz (sobrescrito). O build cruza cada ticker com `PORTFOLIO.md` e com o
+cabaz e marca tres niveis — **afeta a tua carteira**, no cabaz, em vigilancia — que ordenam o
+separador **Noticias**. `bun test` verifica que cada fonte e um link datado.
 
 ---
 

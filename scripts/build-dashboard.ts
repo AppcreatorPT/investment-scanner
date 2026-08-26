@@ -211,6 +211,51 @@ interface ThesisName {
   lenses: ThesisLens[]; verdict: string; verdictKey: string; falsifier: string;
 }
 
+/**
+ * Digest diario (`NEWS.md`, ver prompts/11). Uma tabela e duas notas.
+ *
+ * O cruzamento com a carteira e feito aqui e nao no prompt: quem esta em
+ * PORTFOLIO.md muda de um dia para o outro, e uma noticia que toca uma posicao
+ * real merece destaque diferente de uma que toca um candidato.
+ */
+function parseNews(held: Set<string>, basket: Set<string>) {
+  const md = read(join(ROOT, "NEWS.md"));
+  if (!md.trim()) return { date: "", window: "", scope: "", items: [] as NewsItem[], quiet: "", note: "" };
+
+  const date = (md.match(/^#\s*Noticias\s+(\S+)/m) ?? [])[1] ?? "";
+  const field = (k: string) =>
+    (md.match(new RegExp(`\\*\\*${k}:\\*\\*\\s*([^·\\n]+)`)) ?? [])[1]?.trim() ?? "";
+  const window = field("Janela");
+  const scope = field("Perimetro");
+
+  const items: NewsItem[] = table(md).map((r) => {
+    const ticker = (r["Ticker"] ?? "").trim();
+    return {
+      ticker,
+      name: r["Nome"] ?? "",
+      what: r["O que aconteceu"] ?? "",
+      why: r["Porque importa"] ?? "",
+      source: r["Fonte"] ?? "",
+      // Tres niveis de relevancia, nao dois: o que se tem, o que se vai comprar, o resto.
+      relevance: held.has(ticker) ? "carteira" : basket.has(ticker) ? "cabaz" : "vigiar",
+    };
+  });
+
+  const quiet = (md.match(/\*\*Sem noticia material:\*\*\s*([\s\S]*?)(?:\n\n|\n>|$)/) ?? [])[1]
+    ?.replace(/\s+/g, " ").trim() ?? "";
+  // Um bloco de citacao pode ter varias linhas — sem o `m`, `$` seria fim de linha
+  // e a nota ficava truncada na primeira.
+  const note = (md.match(/(?:^>.*(?:\n|$))+/m) ?? [""])[0]
+    .split("\n").map((l) => l.replace(/^>\s?/, "").trim()).filter(Boolean).join(" ").trim();
+
+  return { date, window, scope, items, quiet, note };
+}
+
+interface NewsItem {
+  ticker: string; name: string; what: string; why: string; source: string;
+  relevance: "carteira" | "cabaz" | "vigiar";
+}
+
 // ─────────────────────────── recomendacao mensal ───────────────────────────
 
 /** Flags na buy-list que travam uma compra. */
@@ -297,6 +342,11 @@ const rec = recommend(
   portfolio.monthly, portfolio.lines, portfolio.unavailable,
 );
 
+const news = parseNews(
+  new Set(portfolio.positions.map((p) => p.ticker)),
+  new Set(rec.basket.map((b) => b.pick.ticker)),
+);
+
 const DATA = {
   built,
   portfolio,
@@ -309,6 +359,7 @@ const DATA = {
   buylist,
   weekly,
   thesis,
+  news,
   rec,
 };
 
@@ -365,7 +416,7 @@ writeFileSync(join(ROOT, "dashboard.html"), out);
 const basket = rec.basket.map((b) => `${b.pick.ticker} €${b.amount}`).join(", ");
 console.log(
   `dashboard.html construido — ${buylist.picks.length} picks, ${delta.alerts.length} alertas, ` +
-    `${portfolio.positions.length} posicoes, ${thesis.names.length} teses, ${(out.length / 1024).toFixed(0)} KB\n` +
+    `${portfolio.positions.length} posicoes, ${thesis.names.length} teses, ${news.items.length} noticias, ${(out.length / 1024).toFixed(0)} KB\n` +
     `precos: ${priceReason} — ${Object.keys(book.prices).length} cotacoes, ` +
     `${valuation.totals.priced}/${portfolio.positions.length} posicoes valorizadas\n` +
     `cabaz do mes: ${basket || "nenhum"}`,
