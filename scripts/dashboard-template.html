@@ -30,6 +30,8 @@
   --warn:        oklch(78% 0.14 82);
   --warn-dim:    oklch(78% 0.14 82 / 0.13);
 
+  --on-accent:   oklch(16% 0.02 60);
+
   --weight: 350;
   --shadow: none;
 }
@@ -57,6 +59,7 @@
     --bad-dim:   oklch(49% 0.18 25 / 0.10);
     --warn:      oklch(52% 0.13 72);
     --warn-dim:  oklch(52% 0.13 72 / 0.12);
+    --on-accent: oklch(99% 0.005 65);
 
     --weight: 400;
     --shadow: 0 1px 2px oklch(20% 0.02 55 / 0.06), 0 4px 16px oklch(20% 0.02 55 / 0.04);
@@ -85,6 +88,7 @@
   --bad-dim:   oklch(49% 0.18 25 / 0.10);
   --warn:      oklch(52% 0.13 72);
   --warn-dim:  oklch(52% 0.13 72 / 0.12);
+  --on-accent: oklch(99% 0.005 65);
 
   --weight: 400;
   --shadow: 0 1px 2px oklch(20% 0.02 55 / 0.06), 0 4px 16px oklch(20% 0.02 55 / 0.04);
@@ -283,6 +287,91 @@ td.w { min-width: 260px; font-size: 12.5px; }
 
 .foot { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--line-soft); font-size: 11.5px; color: var(--ink-3); }
 
+/* ═══ Carteira viva — resumo, P/L e formulario ═══ */
+
+/* Quatro numeros que se leem de relance. Nao e um grafico: com 1-4 linhas e uma
+   captura de preco por dia, qualquer grafico seria decoracao. */
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); border-radius: 12px; overflow: hidden; }
+.stat { background: var(--surface); padding: 16px 18px 15px; display: flex; flex-direction: column; gap: 3px; }
+.stat .lbl { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .09em; color: var(--ink-3); }
+.stat b { font-size: 23px; font-weight: 700; letter-spacing: -0.025em; font-variant-numeric: tabular-nums; }
+.stat em { font-style: normal; font-size: 11.5px; color: var(--ink-3); }
+
+/* Verde/vermelho e estado, nao o accent. O sinal vai sempre no texto — a cor
+   nunca e o unico portador da informacao. */
+.pl.up { color: var(--good); }
+.pl.down { color: var(--bad); }
+.pl.flat { color: var(--ink-2); }
+td .sub { display: block; font-style: normal; font-size: 11px; }
+.dash { color: var(--ink-3); }
+
+.stale {
+  display: inline-block; margin-left: 5px; padding: 1px 6px; border-radius: 5px;
+  font-size: 10px; font-weight: 600; letter-spacing: .02em;
+  background: var(--warn-dim); color: var(--warn); vertical-align: 1px;
+}
+
+table.pos td { vertical-align: middle; }
+.rowact { white-space: nowrap; text-align: right; }
+.mini {
+  appearance: none; background: none; border: 1px solid var(--line); border-radius: 6px;
+  color: var(--ink-3); font-size: 11.5px; padding: 3px 9px; cursor: pointer; margin-left: 5px;
+  transition: color .15s, border-color .15s;
+}
+.mini:hover { color: var(--ink); border-color: var(--ink-3); }
+
+/* ── formulario ── */
+.posform {
+  margin-top: 16px; padding: 20px 22px 18px; border-radius: 12px;
+  background: var(--surface); border: 1px solid var(--line-soft);
+  display: flex; flex-direction: column; gap: 16px;
+}
+.posform[inert] { opacity: .55; }
+.form-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.form-head h3 { font-size: 13.5px; font-weight: 600; }
+.form-mode { margin-left: auto; font-size: 11.5px; color: var(--ink-3); }
+
+.pill { display: inline-block; padding: 2px 8px; border-radius: 5px; font-size: 10.5px; font-weight: 700; letter-spacing: .03em; margin-right: 6px; }
+.pill.ok { background: var(--good-dim); color: var(--good); }
+.pill.warn { background: var(--warn-dim); color: var(--warn); }
+.pill.wait { background: var(--surface-2); color: var(--ink-3); }
+
+.fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px 14px; }
+.fields .wide { grid-column: span 2; }
+@media (max-width: 480px) { .fields .wide { grid-column: span 1; } }
+.fields label { display: flex; flex-direction: column; gap: 5px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); }
+.fields input, .fields select {
+  appearance: none; font: inherit; font-size: 14px; font-weight: 400;
+  text-transform: none; letter-spacing: 0; color: var(--ink);
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px;
+  padding: 8px 11px; width: 100%; min-width: 0;
+}
+.fields select {
+  background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+  background-position: right 14px center, right 9px center;
+  background-size: 5px 5px, 5px 5px; background-repeat: no-repeat; padding-right: 30px;
+}
+.fields input:focus, .fields select:focus { border-color: var(--accent-line); }
+.fields input::placeholder { color: var(--ink-3); }
+
+.form-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.form-actions button {
+  appearance: none; font: inherit; font-size: 13px; font-weight: 600; cursor: pointer;
+  padding: 9px 18px; border-radius: 8px; border: 1px solid transparent;
+  background: var(--accent); color: var(--on-accent);
+  transition: filter .15s;
+}
+.form-actions button:hover:not(:disabled) { filter: brightness(1.08); }
+.form-actions button:disabled { opacity: .45; cursor: default; }
+.form-actions .ghost { background: none; border-color: var(--line); color: var(--ink-2); font-weight: 500; }
+.form-note { font-size: 12px; color: var(--ink-3); }
+
+@media (max-width: 720px) {
+  .stat b { font-size: 20px; }
+  .posform { padding: 18px 16px 16px; }
+  .form-mode { margin-left: 0; width: 100%; }
+}
+
 /* ═══ Tese profunda ═══ */
 .thesis-nav { display: flex; flex-wrap: wrap; gap: 6px; }
 .thesis-nav a {
@@ -407,6 +496,10 @@ td.w { min-width: 260px; font-size: 12.5px; }
 <script id="page-source" type="application/json">%%PAGE_SOURCE%%</script>
 
 <script>
+/* Injectado pelo build a partir de scripts/prices.ts + scripts/valuation.ts —
+   a mesma conta de P/L que corre no build corre aqui. Nao editar a mao. */
+/*__SHARED__*/
+
 const D = /*__DATA__*/null;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -533,74 +626,380 @@ nav.addEventListener("click", (e) => {
 
 /* ── Carteira ── */
 (function () {
-  const { rec, portfolio: pf } = D;
-  const parts = [];
+  const host = document.getElementById("p-carteira");
+  const stateEl = document.getElementById("portfolio-state");
+  const THEMES = D.portfolio.targets.map((t) => t.theme);
 
-  if (rec.basket.length) {
+  /* Estado vivo da carteira. A fonte e o bloco #portfolio-state — nunca o DOM. */
+  function readState() {
+    try {
+      const s = JSON.parse(stateEl.textContent);
+      if (s && s.schema === 1 && Array.isArray(s.positions)) return s;
+    } catch (e) { /* bloco partido: melhor carteira vazia que lixo */ }
+    return { schema: 1, updated: "", positions: [] };
+  }
+
+  let state = readState();
+  let artifact = null;
+  let mode = "connecting";   // connecting · live · local · readonly
+  let editing = null;
+  let busy = false;
+
+  /* ── modo local: so este browser, nunca chega ao repo ── */
+  const LOCAL_KEY = "scanner_positions";
+  function loadLocal() {
+    try {
+      const raw = localStorage.getItem(LOCAL_KEY);
+      if (!raw) return null;
+      const saved = JSON.parse(raw);
+      // Se a pagina foi republicada depois deste rascunho, a pagina ganha:
+      // o repo e a carteira a serio, isto era so uma conveniencia.
+      if (saved.basedOn !== state.updated) { localStorage.removeItem(LOCAL_KEY); return null; }
+      return Array.isArray(saved.positions) ? saved.positions : null;
+    } catch (e) { return null; }
+  }
+  function saveLocal() {
+    try {
+      localStorage.setItem(LOCAL_KEY, JSON.stringify({ basedOn: state.updated, positions: state.positions }));
+    } catch (e) { /* browser sem storage: fica so em memoria */ }
+  }
+
+  /* ── republicar: espelho exacto de fill() em scripts/page-source.ts ──
+     A ordem importa. O state primeiro, porque a fonte reinserida contem ela propria
+     um %%PORTFOLIO_STATE%% que nao deve ser tocado. */
+  const stateJson = (s) => JSON.stringify(s).replace(/</g, "\\u003c");
+  function fullDocument(json) {
+    const tpl = JSON.parse(document.getElementById("page-source").textContent);
+    return tpl
+      .replace("%%PORTFOLIO_STATE%%", () => json)
+      .replace("%%PAGE_SOURCE%%", () => JSON.stringify(tpl).replace(/</g, "\\u003c"));
+  }
+
+  const uuid = () => (crypto.randomUUID ? crypto.randomUUID()
+    : "pos-" + Math.random().toString(36).slice(2, 10) + Date.now().toString(36));
+
+  /* ── ligacao a capability ── */
+  const use = (window.claude && typeof window.claude.use === "function")
+    ? window.claude.use("artifact").catch(() => null)
+    : Promise.resolve(null);
+
+  use.then((a) => {
+    artifact = a;
+    if (a) { setMode("live"); return; }
+    const local = loadLocal();
+    if (local) state = { ...state, positions: local };
+    setMode("local");
+  });
+
+  function setMode(next) { mode = next; render(); }
+
+  /* ── gravar ── */
+  async function commit(positions, note) {
+    const before = state;
+    state = { schema: 1, updated: new Date().toISOString(), positions };
+    editing = null;
+
+    if (mode !== "live") { saveLocal(); render(note || "guardado neste browser"); return; }
+
+    busy = true;
+    render("a gravar…");
+    try {
+      // A vista recarrega depois de publicar; o rascunho do formulario sobrevive aqui.
+      try { sessionStorage.setItem("scanner_form_note", note || ""); } catch (e) {}
+      await publishWithRetry(fullDocument(stateJson(state)));
+      // Normalmente a vista recarrega aqui. Se por alguma razao nao recarregar,
+      // o formulario tem de voltar a funcionar em vez de ficar preso em "a gravar".
+      busy = false;
+      render("gravado");
+    } catch (err) {
+      busy = false;
+      state = before;      // desfaz o optimismo: o que nao gravou nao aconteceu
+      handleError(err);
+    }
+  }
+
+  async function publishWithRetry(html) {
+    try {
+      return await artifact.publish(html);
+    } catch (err) {
+      // So o erro transitorio se repete, uma vez, com espera aleatoria.
+      if (err && err.code === "upstream_error") {
+        await new Promise((r) => setTimeout(r, 400 + Math.random() * 600));
+        return await artifact.publish(html);
+      }
+      throw err;
+    }
+  }
+
+  function handleError(err) {
+    const code = (err && err.code) || "upstream_error";
+    if (code === "conflict") {
+      render("Alguem gravou primeiro — a pagina vai recarregar com a versao mais recente.");
+      return;
+    }
+    if (["not_writer", "not_granted", "not_declared", "consent_required",
+         "capability_disabled", "capability_removed"].includes(code)) {
+      artifact = null;
+      setMode("local");
+      render("Esta vista nao pode gravar na pagina. As linhas ficam so neste browser.");
+      return;
+    }
+    const msg = {
+      too_large: "A pagina ficou grande demais para gravar. Regista esta compra em PORTFOLIO.md.",
+      rate_limited: "Gravacoes a mais seguidas — espera um minuto e tenta outra vez.",
+      invalid_content: "A pagina nao ficou num formato gravavel. Regista em PORTFOLIO.md e reconstroi.",
+      transform_error: "A pagina nao ficou num formato gravavel. Regista em PORTFOLIO.md e reconstroi.",
+    }[code] || "Nao foi possivel gravar. Tenta outra vez daqui a pouco.";
+    render(msg);
+  }
+
+  /* ── acoes ── */
+  function addOrUpdate(f) {
+    const p = {
+      id: editing || uuid(),
+      date: f.date, ticker: f.ticker.trim().toUpperCase(), name: f.name.trim(),
+      theme: f.theme, units: Number(f.units), cost_eur: Number(f.cost), value_eur: null,
+    };
+    const next = editing
+      ? state.positions.map((x) => (x.id === editing ? { ...x, ...p } : x))
+      : [...state.positions, p];
+    commit(next, editing ? "linha actualizada" : "compra registada");
+  }
+
+  function remove(id) {
+    const p = state.positions.find((x) => x.id === id);
+    if (!p) return;
+    if (!confirm(`Apagar ${p.ticker} — ${p.units} unidades por €${p.cost_eur.toFixed(2)}?`)) return;
+    commit(state.positions.filter((x) => x.id !== id), "linha apagada");
+  }
+
+  /* ── render ── */
+  function render(note) {
+    const v = valuePositions(state.positions, D.book, D.built);
+    const { rows } = themeRows(v.positions, D.portfolio.targets);
+    const parts = [];
+
+    if (state.positions.length) parts.push(statRow(v.totals));
+    parts.push(basket());
+    parts.push(alloc(rows));
+    parts.push(positions(v, note));
+    host.innerHTML = parts.join("");
+    wire();
+  }
+
+  const eur = (n) => "€" + n.toFixed(2);
+  const signed = (n, unit) => (n >= 0 ? "+" : "−") + unit + Math.abs(n).toFixed(unit === "€" ? 2 : 1) + (unit === "€" ? "" : "%");
+  const dir = (n) => (n > 0 ? "up" : n < 0 ? "down" : "flat");
+  const dm = (iso) => (iso || "").split("-").reverse().slice(0, 2).join("-");
+
+  /* Resumo antes do detalhe. Nao e um grafico — sao quatro numeros que se leem de relance. */
+  function statRow(t) {
+    const tiles = [
+      `<div class="stat"><span class="lbl">Investido</span><b class="num">${eur(t.invested)}</b>
+        <em>${state.positions.length} linha${state.positions.length === 1 ? "" : "s"}</em></div>`,
+      `<div class="stat"><span class="lbl">Valor actual</span>
+        <b class="num">${t.value === null ? "—" : eur(t.value)}</b>
+        <em>${t.unpriced
+          ? `so ${t.priced} de ${state.positions.length} linhas — as outras sem preco`
+          : (D.book.asof ? `preco de ${dm(D.book.asof)}` : "sem precos")}</em></div>`,
+    ];
+
+    tiles.push(t.pl === null
+      ? `<div class="stat"><span class="lbl">P/L</span><b class="num">—</b>
+          <em>falta preco em ${t.unpriced} linha${t.unpriced === 1 ? "" : "s"}</em></div>`
+      : `<div class="stat"><span class="lbl">P/L</span>
+          <b class="num pl ${dir(t.pl)}">${signed(t.pl, "€")}</b>
+          <em class="pl ${dir(t.pl)}">${signed(t.plPct, "")}</em></div>`);
+
+    const b = t.bench;
+    if (b && b.plPct !== null && t.plPct !== null) {
+      const d = t.plPct - b.plPct;
+      tiles.push(`<div class="stat"><span class="lbl">vs ${esc(b.ticker)}</span>
+        <b class="num pl ${dir(d)}">${d >= 0 ? "+" : "−"}${Math.abs(d).toFixed(1)} pp</b>
+        <em>${esc(b.ticker)} ${signed(b.plPct, "")} no mesmo periodo${b.uncovered ? ` · ${b.uncovered} linha(s) sem historico` : ""}</em></div>`);
+    } else if (b && b.plPct !== null) {
+      // O benchmark sabe-se; o que falta e o nosso P/L. Mostrar o que se sabe e
+      // dizer o que impede a comparacao — nao um travessao sem explicacao.
+      tiles.push(`<div class="stat"><span class="lbl">${esc(b.ticker)} no mesmo periodo</span>
+        <b class="num pl ${dir(b.plPct)}">${signed(b.plPct, "")}</b>
+        <em>comparacao completa quando todas as linhas tiverem preco</em></div>`);
+    } else if (b) {
+      tiles.push(`<div class="stat"><span class="lbl">vs ${esc(b.ticker)}</span><b class="num">—</b>
+        <em>sem historico do benchmark para ${b.uncovered} destas datas</em></div>`);
+    }
+
+    return `<div class="stats">${tiles.join("")}</div>` +
+      (t.anyStale ? `<p class="lede">Ha precos com mais de ${D.staleAfterDays} dias — marcados na tabela.</p>` : "");
+  }
+
+  function basket() {
+    const rec = D.rec;
+    if (!rec.basket.length) {
+      return `<div class="hero hero-empty"><p class="eyebrow">O cabaz deste mes</p>
+        <p class="why">Nenhum candidato passou o filtro — todos os nomes dos temas mais descobertos
+        estao travados por flag, lockup, praca por confirmar ou marcados como indisponiveis.</p></div>`;
+    }
     const spent = rec.basket.reduce((s, b) => s + b.amount, 0);
-    parts.push(`<div class="hero">
-      <div class="hero-head">
-        <p class="eyebrow">O cabaz deste mes</p>
-        <span class="amt num">€${spent}</span>
-      </div>
+    const alts = rec.basket.filter((b) => b.alternatives.length);
+    return `<div class="hero">
+      <div class="hero-head"><p class="eyebrow">O cabaz deste mes</p><span class="amt num">€${spent}</span></div>
       <ol class="basket">` + rec.basket.map((b) => `
         <li>
           <span class="line-amt num">€${b.amount}</span>
-          <span class="line-id">
-            <strong>${esc(b.pick.ticker)}</strong>
-            <span class="co">${esc(b.pick.name)}</span>
-          </span>
+          <span class="line-id"><strong>${esc(b.pick.ticker)}</strong><span class="co">${esc(b.pick.name)}</span></span>
           <span class="line-th">${esc(b.theme)}<em>${pct(b.gap)} vs alvo</em></span>
           <span class="line-cat">${esc(b.pick.catalyst)}</span>
         </li>`).join("") + `</ol>
-      <p class="why">Reparticao proporcional ao desvio face ao alvo. Executa como
-        <strong>planos programados</strong> — €0 de comissao. Em ordens avulsas sao
+      <p class="why">Reparticao proporcional ao desvio face ao alvo, calculada em ${esc(D.built)}.
+        Executa como <strong>planos programados</strong> — €0 de comissao. Em ordens avulsas sao
         €${rec.basket.length} de settlement, ${((rec.basket.length / spent) * 100).toFixed(0)}% do aporte.</p>
-    </div>`);
-
-    const alts = rec.basket.filter((b) => b.alternatives.length);
-    if (alts.length) {
-      parts.push(`<div class="carry"><b>Alternativas por tema:</b> ` +
-        alts.map((b) => `${esc(b.theme)} — ` +
-          b.alternatives.map((a) => esc(a.ticker)).join(", ")).join(" · ") + `</div>`);
-    }
-  } else {
-    parts.push(`<div class="hero hero-empty"><p class="eyebrow">O cabaz deste mes</p>
-      <p class="why">Nenhum candidato passou o filtro — todos os nomes dos temas mais descobertos estao travados por flag, lockup, praca por confirmar ou marcados como indisponiveis.</p></div>`);
+    </div>` + (alts.length ? `<div class="carry"><b>Alternativas por tema:</b> ` +
+      alts.map((b) => `${esc(b.theme)} — ${b.alternatives.map((a) => esc(a.ticker)).join(", ")}`).join(" · ") +
+      `</div>` : "");
   }
 
-  // Folga de 25% para a marca de alvo nunca encostar a borda da barra.
-  const max = Math.max(...rec.rows.map((r) => Math.max(r.pct, r.actual)), 1) * 1.25;
-  const inBasket = new Set(rec.basket.map((b) => b.theme));
-  parts.push(`<div><h2 class="sec">Alocacao — actual vs alvo</h2><div class="alloc">` +
-    [...rec.rows].sort((a, b) => b.gap - a.gap).map((r) => `
-      <div class="alloc-row ${inBasket.has(r.theme) ? "lead" : ""}" title="${esc(r.theme)}: ${r.actual.toFixed(1)}% actual, alvo ${r.pct}%">
-        <span class="nm">${esc(r.theme)}</span>
-        <span class="track">
-          <span class="fill" style="width:${Math.max((r.actual / max) * 100, 0.8)}%"></span>
-          <span class="mark" style="left:${(r.pct / max) * 100}%"></span>
-        </span>
-        <span class="val num">${r.actual.toFixed(0)}% / ${r.pct}%</span>
-      </div>`).join("") +
-    `</div><div class="alloc-key">
-      <span><i style="background:var(--accent)"></i>Peso actual</span>
-      <span><i style="background:var(--ink);width:2px"></i>Alvo</span>
-    </div></div>`);
+  function alloc(rows) {
+    const max = Math.max(...rows.map((r) => Math.max(r.pct, r.actual)), 1) * 1.25;
+    const inBasket = new Set(D.rec.basket.map((b) => b.theme));
+    return `<div><h2 class="sec">Alocacao — actual vs alvo</h2><div class="alloc">` +
+      [...rows].sort((a, b) => b.gap - a.gap).map((r) => `
+        <div class="alloc-row ${inBasket.has(r.theme) ? "lead" : ""}" title="${esc(r.theme)}: ${r.actual.toFixed(1)}% actual, alvo ${r.pct}%">
+          <span class="nm">${esc(r.theme)}</span>
+          <span class="track">
+            <span class="fill" style="width:${Math.max((r.actual / max) * 100, 0.8)}%"></span>
+            <span class="mark" style="left:${(r.pct / max) * 100}%"></span>
+          </span>
+          <span class="val num">${r.actual.toFixed(0)}% / ${r.pct}%</span>
+        </div>`).join("") +
+      `</div><div class="alloc-key">
+        <span><i style="background:var(--accent)"></i>Peso actual</span>
+        <span><i style="background:var(--ink);width:2px"></i>Alvo</span>
+      </div></div>`;
+  }
 
-  const pos = pf.positions;
-  parts.push(`<div><h2 class="sec">Posicoes</h2>` + (pos.length ? `<div class="tw"><table>
-    <thead><tr><th>Data</th><th>Ticker</th><th>Nome</th><th>Tema</th><th>Unidades</th><th>Custo</th><th>Valor</th></tr></thead>
-    <tbody>` + pos.map((p) => `<tr>
-      <td class="num">${esc(p.date)}</td><td class="k">${esc(p.ticker)}</td><td>${esc(p.name)}</td>
-      <td>${esc(p.theme)}</td><td class="num">${esc(p.units)}</td>
-      <td class="num">€${p.cost.toFixed(2)}</td><td class="num">${p.value ? "€" + p.value.toFixed(2) : "—"}</td>
-    </tr>`).join("") + `</tbody></table></div>
-    <p class="lede" style="margin-top:12px">Total investido: <span class="num">€${pos.reduce((s, p) => s + p.cost, 0).toFixed(2)}</span>${rec.total ? ` · valor actual <span class="num">€${rec.total.toFixed(2)}</span>` : ""}</p>`
-    : `<div class="empty">Carteira vazia. Regista a primeira compra em <strong>PORTFOLIO.md</strong> e esta vista ganha vida.</div>`) + `</div>`);
+  function positions(v, note) {
+    const rowsHtml = v.positions.map((p) => {
+      const price = p.price === null ? `<span class="dash">—</span>`
+        : `${esc(p.priceCurrency === "USD" ? "$" : "")}${p.price}` +
+          (p.stale ? ` <span class="stale" title="Preco de ${esc(p.priceAsof)}">${dm(p.priceAsof)}</span>` : "");
+      return `<tr data-id="${esc(p.id)}">
+        <td class="num">${esc(p.date)}</td>
+        <td class="k">${esc(p.ticker)}</td>
+        <td>${esc(p.name)}</td>
+        <td>${esc(p.theme)}</td>
+        <td class="num">${p.units}</td>
+        <td class="num">${eur(p.cost_eur)}</td>
+        <td class="num">${price}</td>
+        <td class="num">${p.value === null ? `<span class="dash">—</span>` : eur(p.value) +
+          (p.valueFrom === "manual" ? ` <span class="stale">manual</span>` : "")}</td>
+        <td class="num">${p.pl === null ? `<span class="dash">—</span>`
+          : `<b class="pl ${dir(p.pl)}">${signed(p.pl, "€")}</b><em class="sub pl ${dir(p.pl)}">${signed(p.plPct, "")}</em>`}</td>
+        <td class="rowact">${mode === "readonly" ? "" :
+          `<button type="button" class="mini" data-act="edit">Editar</button>
+           <button type="button" class="mini" data-act="del">Apagar</button>`}</td>
+      </tr>`;
+    }).join("");
 
-  document.getElementById("p-carteira").innerHTML = parts.join("");
+    const multi = v.holdings.filter((h) => h.lines > 1);
+    const avg = multi.length ? `<div><h2 class="sec">Custo medio por nome</h2><div class="tw"><table>
+      <thead><tr><th>Ticker</th><th>Compras</th><th>Unidades</th><th>Custo</th><th>Custo medio/un.</th><th>Valor</th><th>P/L</th></tr></thead>
+      <tbody>` + multi.map((h) => `<tr>
+        <td class="k">${esc(h.ticker)}</td><td class="num">${h.lines}</td>
+        <td class="num">${Number(h.units.toFixed(6))}</td><td class="num">${eur(h.cost)}</td>
+        <td class="num">${eur(h.avgCost)}</td>
+        <td class="num">${h.value === null ? "—" : eur(h.value)}</td>
+        <td class="num">${h.pl === null ? "—" : `<b class="pl ${dir(h.pl)}">${signed(h.pl, "€")}</b>`}</td>
+      </tr>`).join("") + `</tbody></table></div></div>` : "";
+
+    const table = v.positions.length ? `<div class="tw"><table class="pos">
+      <thead><tr><th>Data</th><th>Ticker</th><th>Nome</th><th>Tema</th><th>Un.</th><th>Custo</th>
+        <th>Preco</th><th>Valor</th><th>P/L</th><th></th></tr></thead>
+      <tbody>${rowsHtml}</tbody></table></div>`
+      : `<div class="empty">Carteira vazia. Regista a primeira compra aqui em baixo — fica gravada na propria pagina.</div>`;
+
+    return `<div><h2 class="sec">Posicoes</h2>${table}${form(note)}</div>${avg}`;
+  }
+
+  function form(note) {
+    if (mode === "readonly") {
+      return `<p class="lede">Vista so de leitura — as compras registam-se em PORTFOLIO.md.</p>`;
+    }
+    const e = editing ? state.positions.find((p) => p.id === editing) : null;
+    const banner = {
+      connecting: `<span class="pill wait">a ligar…</span>`,
+      local: `<span class="pill warn">so neste browser</span> as linhas nao chegam ao repo — copia-as para PORTFOLIO.md`,
+      live: `<span class="pill ok">grava na pagina</span> a rotina seguinte copia-as para PORTFOLIO.md`,
+    }[mode] || "";
+
+    return `<form class="posform" ${busy ? "inert" : ""}>
+      <div class="form-head">
+        <h3>${e ? "Editar linha" : "Registar compra"}</h3>
+        <span class="form-mode">${banner}</span>
+      </div>
+      <div class="fields">
+        <label>Ticker<input name="ticker" list="tickers" required autocomplete="off"
+          value="${e ? esc(e.ticker) : ""}" placeholder="LEU"></label>
+        <label>Nome<input name="name" value="${e ? esc(e.name) : ""}" placeholder="Centrus Energy"></label>
+        <label class="wide">Tema<select name="theme" required>${THEMES.map((t) =>
+          `<option${e && e.theme === t ? " selected" : ""}>${esc(t)}</option>`).join("")}</select></label>
+        <label>Data<input type="date" name="date" required value="${e ? esc(e.date) : D.built}"></label>
+        <label>Unidades<input type="number" name="units" step="any" min="0" required
+          value="${e ? e.units : ""}" placeholder="0,53"></label>
+        <label>Custo total €<input type="number" name="cost" step="0.01" min="0" required
+          value="${e ? e.cost_eur : ""}" placeholder="30,00"></label>
+      </div>
+      <div class="form-actions">
+        <button type="submit" ${mode === "connecting" ? "disabled" : ""}>${e ? "Guardar" : "Registar compra"}</button>
+        ${e ? `<button type="button" class="ghost" data-act="cancel">Cancelar</button>` : ""}
+        <span class="form-note" role="status">${esc(note || "")}</span>
+      </div>
+      <datalist id="tickers">${D.buylist.picks.map((p) =>
+        `<option value="${esc(p.ticker)}">${esc(p.name)}</option>`).join("")}</datalist>
+    </form>`;
+  }
+
+  /* ── eventos ── */
+  function wire() {
+    const f = host.querySelector(".posform");
+    if (f) {
+      f.addEventListener("submit", (ev) => {
+        ev.preventDefault();
+        const d = Object.fromEntries(new FormData(f));
+        if (!(Number(d.units) > 0) || !(Number(d.cost) >= 0)) {
+          host.querySelector(".form-note").textContent = "Unidades tem de ser maior que zero.";
+          return;
+        }
+        addOrUpdate(d);
+      });
+      // Escrever o ticker preenche nome e tema a partir da buy-list.
+      f.querySelector('input[name="ticker"]').addEventListener("input", (ev) => {
+        const p = D.buylist.picks.find((x) => x.ticker.toUpperCase() === ev.target.value.trim().toUpperCase());
+        if (!p) return;
+        const name = f.querySelector('input[name="name"]');
+        if (!name.value) name.value = p.name;
+        if (THEMES.includes(p.theme)) f.querySelector('select[name="theme"]').value = p.theme;
+      });
+      const cancel = f.querySelector('[data-act="cancel"]');
+      if (cancel) cancel.addEventListener("click", () => { editing = null; render(); });
+    }
+
+    host.querySelectorAll("tr[data-id] .mini").forEach((b) => b.addEventListener("click", () => {
+      const id = b.closest("tr").dataset.id;
+      if (b.dataset.act === "del") return remove(id);
+      editing = id;
+      render();
+      host.querySelector('.posform input[name="ticker"]')?.focus();
+    }));
+  }
+
+  // Nota que sobreviveu ao recarregamento depois de um publish bem sucedido.
+  let boot = "";
+  try {
+    boot = sessionStorage.getItem("scanner_form_note") || "";
+    sessionStorage.removeItem("scanner_form_note");
+  } catch (e) {}
+  render(boot);
 })();
-
 
 /* ── Tese ── */
 (function () {

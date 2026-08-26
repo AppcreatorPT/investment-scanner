@@ -1,0 +1,54 @@
+{
+  "asof": "2026-08-26",
+  "_nota": "Capturado pela rotina diaria. Cada cotacao TEM de trazer asof e source — scripts/prices.ts recusa as que nao trouxerem. Sem preco fiavel o anterior fica e o dashboard marca-o stale. Ver licoes #15/#22/#23 do TRACK_RECORD.md.",
+  "fx": {
+    "USD": {
+      "per_eur": 1.1669,
+      "asof": "2026-08-26",
+      "source": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-usd.en.html"
+    }
+  },
+  "prices": {
+    "LEU": {
+      "price": 187.63,
+      "currency": "USD",
+      "asof": "2026-08-26",
+      "source": "https://stockanalysis.com/stocks/leu/"
+    },
+    "KTOS": {
+      "price": 52.93,
+      "currency": "USD",
+      "asof": "2026-08-26",
+      "source": "https://stockanalysis.com/stocks/ktos/"
+    },
+    "RKLB": {
+      "price": 66.18,
+      "currency": "USD",
+      "asof": "2026-08-26",
+      "source": "https://stockanalysis.com/stocks/rklb/"
+    },
+    "IONQ": {
+      "price": 40.03,
+      "currency": "USD",
+      "asof": "2026-08-26",
+      "source": "https://stockanalysis.com/stocks/ionq/"
+    },
+    "PRME": {
+      "price": 3.58,
+      "currency": "USD",
+      "asof": "2026-08-26",
+      "source": "https://stockanalysis.com/stocks/prme/"
+    }
+  },
+  "benchmark": {
+    "ticker": "SPY",
+    "currency": "USD",
+    "source": "https://stockanalysis.com/etf/spy/",
+    "history": {
+      "2026-08-26": {
+        "spy": 766.08,
+        "usd_per_eur": 1.1669
+      }
+    }
+  }
+}

@@ -8,3 +8,6 @@ node_modules/
 # OS cruft
 Thumbs.db
 .DS_Store
+
+# Ficheiro temporario da verificacao de browser
+.gen2.html

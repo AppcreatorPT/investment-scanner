@@ -4,5 +4,6 @@
   "private": true,
   "scripts": {
     "validate": "bun run validate.ts"
-  }
+  },
+  "type": "module"
 }

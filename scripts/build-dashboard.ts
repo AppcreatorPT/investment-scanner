@@ -14,6 +14,8 @@ import { sections, table, num, blocks } from "./md.ts";
 import { readPositions } from "./portfolio-md.ts";
 import { makeState, stateToJson, type Position } from "./portfolio-state.ts";
 import { HEAD_END, STATE_SLOT, SOURCE_SLOT, toFullDocument, encodeSource } from "./page-source.ts";
+import { parseBook, STALE_AFTER_DAYS } from "./prices.ts";
+import { valuePositions, themeRows, type ValuedPosition } from "./valuation.ts";
 
 const ROOT = join(import.meta.dir, "..");
 const OUTPUT_DIR = join(ROOT, "output");
@@ -222,27 +224,15 @@ function blocked(ticker: string, carry: { ticker: string; flag: string; note: st
 
 function recommend(
   targets: Target[],
-  positions: Position[],
+  positions: ValuedPosition[],
   picks: ReturnType<typeof parseBuylist>["picks"],
   carry: ReturnType<typeof parseBuylist>["carry"],
   monthly: number,
   lines: number,
   unavailable: string[],
 ) {
-  // Peso actual por tema — valor de mercado se disponivel, senao custo.
-  const byTheme: Record<string, number> = {};
-  let total = 0;
-  for (const p of positions) {
-    const v = p.value_eur || p.cost_eur;
-    byTheme[p.theme] = (byTheme[p.theme] ?? 0) + v;
-    total += v;
-  }
-
-  const rows = targets.map((t) => {
-    const value = byTheme[t.theme] ?? 0;
-    const actual = total > 0 ? (value / total) * 100 : 0;
-    return { ...t, value, actual, gap: t.pct - actual };
-  });
+  // Mesma conta que a pagina refaz quando o utilizador regista uma posicao.
+  const { rows, total } = themeRows(positions, targets);
 
   // Candidatos compraveis de um tema, melhor score primeiro.
   const candidatesFor = (theme: string) =>
@@ -298,14 +288,23 @@ const delta = parseDelta();
 const buylist = parseBuylist();
 const weekly = parseWeekly();
 const thesis = parseThesis();
+const built = new Date().toISOString().slice(0, 10);
+const { book, reason: priceReason } = parseBook(read(join(OUTPUT_DIR, "prices.json")));
+const valuation = valuePositions(portfolio.positions, book, built);
+
 const rec = recommend(
-  portfolio.targets, portfolio.positions, buylist.picks, buylist.carry,
+  portfolio.targets, valuation.positions, buylist.picks, buylist.carry,
   portfolio.monthly, portfolio.lines, portfolio.unavailable,
 );
 
 const DATA = {
-  built: new Date().toISOString().slice(0, 10),
+  built,
   portfolio,
+  // O livro de precos inteiro vai para a pagina: e o que lhe permite recalcular o
+  // P/L com a mesma conta do build assim que o utilizador regista uma compra.
+  book,
+  staleAfterDays: STALE_AFTER_DAYS,
+  valuation,
   delta,
   buylist,
   weekly,
@@ -320,7 +319,32 @@ if (!template) {
   process.exit(1);
 }
 
-const withData = template.replace("/*__DATA__*/null", () => json);
+/**
+ * O mesmo codigo de valorizacao dos dois lados.
+ *
+ * O build calcula o P/L a partir de PORTFOLIO.md; a pagina tem de o recalcular
+ * assim que o utilizador regista uma compra, sem esperar pela rotina. Em vez de
+ * escrever a conta duas vezes (e ve-las divergir), transpilamos os modulos e
+ * injectamo-los na pagina. Uma implementacao, dois sitios a corre-la.
+ */
+function inlineModule(file: string): string {
+  const ts = new Bun.Transpiler({ loader: "ts" });
+  return ts
+    .transformSync(read(join(ROOT, "scripts", file)))
+    .replace(/^import\s[\s\S]*?from\s+"[^"]+";\s*$/gm, "")
+    .replace(/^export\s+(?=(function|const|let|var|class))/gm, "")
+    .replace(/^export\s*\{[\s\S]*?\};\s*$/gm, "")
+    .trim();
+}
+const shared = [inlineModule("prices.ts"), inlineModule("valuation.ts")].join("\n\n");
+
+const withData = template
+  .replace("/*__SHARED__*/", () => shared)
+  .replace("/*__DATA__*/null", () => json);
+if (template.includes("/*__SHARED__*/") === false) {
+  console.error("Template sem o marcador /*__SHARED__*/");
+  process.exit(1);
+}
 for (const marker of [HEAD_END, STATE_SLOT, SOURCE_SLOT]) {
   if (!withData.includes(marker)) {
     console.error(`Template sem o marcador ${marker}`);
@@ -342,5 +366,7 @@ const basket = rec.basket.map((b) => `${b.pick.ticker} €${b.amount}`).join(", 
 console.log(
   `dashboard.html construido — ${buylist.picks.length} picks, ${delta.alerts.length} alertas, ` +
     `${portfolio.positions.length} posicoes, ${thesis.names.length} teses, ${(out.length / 1024).toFixed(0)} KB\n` +
+    `precos: ${priceReason} — ${Object.keys(book.prices).length} cotacoes, ` +
+    `${valuation.totals.priced}/${portfolio.positions.length} posicoes valorizadas\n` +
     `cabaz do mes: ${basket || "nenhum"}`,
 );
