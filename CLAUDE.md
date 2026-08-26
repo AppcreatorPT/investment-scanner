@@ -131,6 +131,25 @@ Cada ficheiro de output segue esta estrutura:
 
 ---
 
+## Dashboard
+
+`dashboard.html` e **gerado**, nunca editado a mao. Reconstroi sempre que DELTA.md,
+BUYLIST.md, PORTFOLIO.md ou a sintese mudarem:
+
+```bash
+bun run scripts/build-dashboard.ts
+```
+
+Le `PORTFOLIO.md` + `DELTA.md` + `BUYLIST.md` + a sintese mais recente, calcula a
+recomendacao do mes, e emite um HTML auto-contido com os dados embutidos.
+Fontes em `scripts/dashboard-template.html`.
+
+**Publicar** (fim de cada rotina, depois do commit): republicar o ficheiro no artifact
+existente — URL em `.artifact-url`. Passar essa URL como `url` na ferramenta Artifact,
+senao cria um artifact novo em vez de actualizar o que o utilizador ja tem aberto.
+
+---
+
 ## Validacao
 
 Apos gerar um JSON, corre:
