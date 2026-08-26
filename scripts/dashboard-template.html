@@ -168,16 +168,31 @@ h2.sec {
 
 /* ═══ Hero — a compra do mes ═══ */
 .hero { padding: 30px 32px; border: 1px solid var(--accent-line); border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); }
-.hero .eyebrow { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .09em; color: var(--accent); margin: 0 0 16px; }
-.hero-main { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
-.hero .tick { font-size: 34px; font-weight: 700; letter-spacing: -0.025em; line-height: 1; margin: 0; }
-.hero .co { font-size: 17px; color: var(--ink-2); }
-.hero .amt { margin-left: auto; font-size: 22px; font-weight: 600; color: var(--accent); }
-.hero .why { margin: 18px 0 0; font-size: 14px; color: var(--ink-2); max-width: 62ch; }
-.hero .facts { display: flex; flex-wrap: wrap; gap: 10px 26px; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line-soft); font-size: 12.5px; }
-.hero .facts div { display: flex; gap: 7px; }
-.hero .facts .k { color: var(--ink-3); }
+.hero .eyebrow { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .09em; color: var(--accent); margin: 0; }
+.hero-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 20px; }
+.hero .amt { margin-left: auto; font-size: 26px; font-weight: 700; color: var(--accent); letter-spacing: -0.02em; }
+.hero .why { margin: 20px 0 0; padding-top: 18px; border-top: 1px solid var(--line-soft); font-size: 13px; color: var(--ink-3); max-width: 68ch; }
+.hero .why strong { color: var(--ink-2); font-weight: 600; }
 .hero-empty { padding: 30px 32px; }
+
+/* Linhas do cabaz */
+.basket { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.basket li {
+  display: grid; grid-template-columns: 62px minmax(150px, 1.1fr) minmax(120px, .9fr) 1.4fr;
+  align-items: baseline; gap: 18px;
+  padding: 14px 0; border-top: 1px solid var(--line-soft);
+}
+.basket li:first-child { border-top: none; padding-top: 0; }
+.line-amt { font-size: 19px; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; }
+.line-id strong { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
+.line-id .co { display: block; font-size: 12.5px; color: var(--ink-3); }
+.line-th { font-size: 12.5px; color: var(--ink-2); }
+.line-th em { display: block; font-style: normal; font-size: 11.5px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.line-cat { font-size: 12.5px; color: var(--ink-3); }
+@media (max-width: 720px) {
+  .basket li { grid-template-columns: 58px 1fr; gap: 6px 14px; }
+  .line-th, .line-cat { grid-column: 2; }
+}
 
 /* ═══ Barras de alocacao (alvo vs actual) ═══ */
 .alloc { display: flex; flex-direction: column; gap: 3px; }
@@ -381,36 +396,45 @@ nav.addEventListener("click", (e) => {
   const { rec, portfolio: pf } = D;
   const parts = [];
 
-  if (rec.pick) {
-    const p = rec.pick;
+  if (rec.basket.length) {
+    const spent = rec.basket.reduce((s, b) => s + b.amount, 0);
     parts.push(`<div class="hero">
-      <p class="eyebrow">A compra deste mes</p>
-      <div class="hero-main">
-        <h2 class="tick">${esc(p.ticker)}</h2><span class="co">${esc(p.name)}</span>
-        <span class="amt num">€${pf.monthly}</span>
+      <div class="hero-head">
+        <p class="eyebrow">O cabaz deste mes</p>
+        <span class="amt num">€${spent}</span>
       </div>
-      <p class="why">${esc(p.why)}</p>
-      <div class="facts">
-        <div><span class="k">Tema</span><span>${esc(p.theme)}</span></div>
-        <div><span class="k">Abaixo do alvo</span><span class="num">${pct(rec.gap)}</span></div>
-        <div><span class="k">Catalisador</span><span>${esc(p.catalyst)}</span></div>
-        <div><span class="k">Conta</span><span>${esc(p.account)}</span></div>
-      </div>
+      <ol class="basket">` + rec.basket.map((b) => `
+        <li>
+          <span class="line-amt num">€${b.amount}</span>
+          <span class="line-id">
+            <strong>${esc(b.pick.ticker)}</strong>
+            <span class="co">${esc(b.pick.name)}</span>
+          </span>
+          <span class="line-th">${esc(b.theme)}<em>${pct(b.gap)} vs alvo</em></span>
+          <span class="line-cat">${esc(b.pick.catalyst)}</span>
+        </li>`).join("") + `</ol>
+      <p class="why">Reparticao proporcional ao desvio face ao alvo. Executa como
+        <strong>planos programados</strong> — €0 de comissao. Em ordens avulsas sao
+        €${rec.basket.length} de settlement, ${((rec.basket.length / spent) * 100).toFixed(0)}% do aporte.</p>
     </div>`);
-    if (rec.alternatives.length) {
-      parts.push(`<div class="carry"><b>Alternativas no mesmo tema:</b> ` +
-        rec.alternatives.map((a) => `${esc(a.ticker)} (${esc(a.name)})`).join(" · ") + `</div>`);
+
+    const alts = rec.basket.filter((b) => b.alternatives.length);
+    if (alts.length) {
+      parts.push(`<div class="carry"><b>Alternativas por tema:</b> ` +
+        alts.map((b) => `${esc(b.theme)} — ` +
+          b.alternatives.map((a) => esc(a.ticker)).join(", ")).join(" · ") + `</div>`);
     }
   } else {
-    parts.push(`<div class="hero hero-empty"><p class="eyebrow">A compra deste mes</p>
-      <p class="why">Nenhum candidato passou o filtro. Todos os nomes dos temas mais descobertos estao travados por flag, lockup ou praca por confirmar.</p></div>`);
+    parts.push(`<div class="hero hero-empty"><p class="eyebrow">O cabaz deste mes</p>
+      <p class="why">Nenhum candidato passou o filtro — todos os nomes dos temas mais descobertos estao travados por flag, lockup, praca por confirmar ou marcados como indisponiveis.</p></div>`);
   }
 
   // Folga de 25% para a marca de alvo nunca encostar a borda da barra.
   const max = Math.max(...rec.rows.map((r) => Math.max(r.pct, r.actual)), 1) * 1.25;
+  const inBasket = new Set(rec.basket.map((b) => b.theme));
   parts.push(`<div><h2 class="sec">Alocacao — actual vs alvo</h2><div class="alloc">` +
     [...rec.rows].sort((a, b) => b.gap - a.gap).map((r) => `
-      <div class="alloc-row ${r.theme === rec.theme ? "lead" : ""}" title="${esc(r.theme)}: ${r.actual.toFixed(1)}% actual, alvo ${r.pct}%">
+      <div class="alloc-row ${inBasket.has(r.theme) ? "lead" : ""}" title="${esc(r.theme)}: ${r.actual.toFixed(1)}% actual, alvo ${r.pct}%">
         <span class="nm">${esc(r.theme)}</span>
         <span class="track">
           <span class="fill" style="width:${Math.max((r.actual / max) * 100, 0.8)}%"></span>

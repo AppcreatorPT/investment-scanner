@@ -3,7 +3,13 @@
 > Fonte de verdade para a decisao mensal. O dashboard e o scan diario leem este ficheiro.
 > **Nao e conselho de investimento.**
 
-**Aporte:** €100/mes · **Conta:** CTO Trade Republic · **PEA:** aberto so para antiguidade fiscal
+**Aporte:** €100/mes · **Linhas por mes:** 4 · **Conta:** CTO Trade Republic ·
+**PEA:** aberto so para antiguidade fiscal
+
+**Como executar:** preferir **planos de investimento programados** (€0 de comissao, minimo €1,
+varios em paralelo). Ordem fracionada avulsa custa €1 de settlement — em 4 linhas sao €4/mes
+= 4% do aporte, drag a serio. Se um nome nao for elegivel a plano programado, ou entra por
+ordem avulsa consciente do custo, ou passa-se ao seguinte do mesmo tema.
 
 ---
 
@@ -44,12 +50,18 @@ nao a cada scan.
 
 ## Regra de decisao mensal
 
+Os €100 dividem-se por **4 linhas**, nao numa so. Assim a carteira ganha largura desde o
+inicio em vez de esperar meses por diversificacao.
+
 1. Calcular o peso atual de cada tema: `valor_de_mercado[tema] / valor_total`
 2. Calcular o desvio: `gap[tema] = alvo[tema] - atual[tema]`
-3. O tema com maior `gap` e o tema do mes
-4. Dentro desse tema, escolher da buy-list por: **score** → depois **urgencia de catalisador**
-   (catalisador datavel mais proximo primeiro) → depois ausencia de flag ⚠️
-5. Comprar ~€100 desse nome
+3. Ordenar os temas por `gap` (empates desempatam pelo melhor score disponivel no tema)
+4. Tomar os **4 temas com maior gap** que tenham candidato compravel
+5. Repartir os €100 **proporcionalmente ao gap**, arredondado a €5, minimo €20 por linha
+6. Dentro de cada tema, escolher da buy-list por **score** → depois ausencia de flag
+
+Os temas rodam mes a mes: os que ficaram de fora sobem no ranking do gap e entram no mes
+seguinte. Ao fim de ~6 meses os 7 temas estao cobertos e a carteira converge para o alvo.
 
 **Peso usa valor de mercado, nao custo.** Um nome que dispare puxa o tema acima do alvo e
 o aporte seguinte vai para outro lado — e o rebalanceamento a acontecer sozinho, sem vender.
@@ -66,11 +78,16 @@ descoberto, mes apos mes, ate a carteira ganhar forma.
 
 ---
 
-## Primeira compra (carteira vazia)
+## Disponibilidade por confirmar na app
 
-Com a carteira a zero, todos os temas estao ao seu peso-alvo de distancia. O maior gap e
-empate a 20% entre **Geopolitica & Defesa** e **Materiais & Energia**; o desempate por score
-aponta para **LEU (Centrus Energy, score 5)**.
+Verificado em fonte publica que o Trade Republic **nao oferece a LSE** (nao opera no Reino
+Unido) e que os planos programados sao gratuitos. O que so a app confirma:
 
-Verificar antes: LEU esta ~$187/acao, logo so e compravel a €100 se o Trade Republic
-aceitar ordem fracionada nesse titulo. Se nao aceitar → proximo da lista no mesmo tema.
+| Nome | O que confirmar |
+|------|-----------------|
+| LEU | Cota em NYSE American, nao NYSE/Nasdaq — confirmar que esta sequer disponivel |
+| Qualquer linha | Se e elegivel a **plano programado** (€0) ou so a ordem avulsa (€1) |
+
+Marcar aqui os nomes que a app recusar, para o scan deixar de os propor:
+
+**Indisponiveis:** _(nenhum confirmado ainda)_

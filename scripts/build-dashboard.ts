@@ -107,7 +107,15 @@ function parsePortfolio() {
     }));
 
   const monthly = num((md.match(/\*\*Aporte:\*\*\s*€?([\d.,]+)/) ?? [])[1] ?? "100");
-  return { targets, positions, monthly };
+  const lines = num((md.match(/\*\*Linhas por mes:\*\*\s*(\d+)/) ?? [])[1] ?? "4") || 4;
+
+  // Nomes que a app recusou — nunca propor.
+  const unavailable = ((md.match(/\*\*Indisponiveis:\*\*\s*(.+)/) ?? [])[1] ?? "")
+    .split(/[,·]/)
+    .map((s) => s.trim().toUpperCase())
+    .filter((s) => s && !/^_?\(?NENHUM/i.test(s));
+
+  return { targets, positions, monthly, lines, unavailable };
 }
 
 interface Alert { ticker: string; level: string; title: string; body: string }
@@ -211,6 +219,9 @@ function recommend(
   positions: Position[],
   picks: ReturnType<typeof parseBuylist>["picks"],
   carry: ReturnType<typeof parseBuylist>["carry"],
+  monthly: number,
+  lines: number,
+  unavailable: string[],
 ) {
   // Peso actual por tema — valor de mercado se disponivel, senao custo.
   const byTheme: Record<string, number> = {};
@@ -231,6 +242,7 @@ function recommend(
   const candidatesFor = (theme: string) =>
     picks
       .filter((p) => p.theme === theme && p.account !== "verificar")
+      .filter((p) => !unavailable.includes(p.ticker.toUpperCase()))
       .filter((p) => !blocked(p.ticker, carry))
       .sort((a, b) => b.score - a.score);
 
@@ -243,12 +255,34 @@ function recommend(
       return (b.best[0]?.score ?? 0) - (a.best[0]?.score ?? 0);
     });
 
-  for (const { row, best } of ranked) {
-    if (best.length) {
-      return { theme: row.theme, gap: row.gap, pick: best[0], rows, total, alternatives: best.slice(1, 3) };
-    }
+  // Os N temas mais descobertos que tenham candidato compravel.
+  const chosen = ranked.filter((r) => r.best.length).slice(0, lines);
+  if (!chosen.length) return { basket: [], rows, total };
+
+  // Reparte o aporte proporcionalmente ao gap, a €5, com minimo por linha.
+  const MIN = 20, STEP = 5;
+  const weights = chosen.map((c) => Math.max(c.row.gap, 0.1));
+  const sum = weights.reduce((a, b) => a + b, 0);
+  const amounts = weights.map((w) =>
+    Math.max(MIN, Math.round((w / sum) * monthly / STEP) * STEP),
+  );
+
+  // Reconcilia o arredondamento contra o aporte, mexendo na maior linha.
+  const drift = monthly - amounts.reduce((a, b) => a + b, 0);
+  if (drift !== 0) {
+    const i = amounts.indexOf(Math.max(...amounts));
+    amounts[i] = Math.max(MIN, amounts[i] + drift);
   }
-  return { theme: "", gap: 0, pick: null, rows, total, alternatives: [] };
+
+  const basket = chosen.map((c, i) => ({
+    theme: c.row.theme,
+    gap: c.row.gap,
+    amount: amounts[i],
+    pick: c.best[0],
+    alternatives: c.best.slice(1, 3),
+  }));
+
+  return { basket, rows, total };
 }
 
 // ─────────────────────────── build ───────────────────────────
@@ -257,7 +291,10 @@ const portfolio = parsePortfolio();
 const delta = parseDelta();
 const buylist = parseBuylist();
 const weekly = parseWeekly();
-const rec = recommend(portfolio.targets, portfolio.positions, buylist.picks, buylist.carry);
+const rec = recommend(
+  portfolio.targets, portfolio.positions, buylist.picks, buylist.carry,
+  portfolio.monthly, portfolio.lines, portfolio.unavailable,
+);
 
 const DATA = {
   built: new Date().toISOString().slice(0, 10),
@@ -277,7 +314,8 @@ if (!template) {
 
 writeFileSync(join(ROOT, "dashboard.html"), template.replace("/*__DATA__*/null", json));
 
+const basket = rec.basket.map((b) => `${b.pick.ticker} €${b.amount}`).join(", ");
 console.log(
   `dashboard.html construido — ${buylist.picks.length} picks, ${delta.alerts.length} alertas, ` +
-    `${portfolio.positions.length} posicoes, recomendacao: ${rec.pick?.ticker ?? "nenhuma"}`,
+    `${portfolio.positions.length} posicoes\ncabaz do mes: ${basket || "nenhum"}`,
 );

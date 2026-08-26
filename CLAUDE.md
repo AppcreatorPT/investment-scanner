@@ -131,22 +131,22 @@ Cada ficheiro de output segue esta estrutura:
 
 ---
 
-## Dashboard
+## Dashboard — passo final de TODAS as rotinas
 
-`dashboard.html` e **gerado**, nunca editado a mao. Reconstroi sempre que DELTA.md,
-BUYLIST.md, PORTFOLIO.md ou a sintese mudarem:
+`dashboard.html` e **gerado**, nunca editado a mao. No fim de cada rotina (diaria, segunda
+e sabado), depois de escrever os ficheiros:
 
 ```bash
-bun run scripts/build-dashboard.ts
+bun run scripts/build-dashboard.ts        # 1. reconstroi
+git add -A && git commit -m "..." && git push origin HEAD   # 2. commit inclui o dashboard
 ```
 
-Le `PORTFOLIO.md` + `DELTA.md` + `BUYLIST.md` + a sintese mais recente, calcula a
-recomendacao do mes, e emite um HTML auto-contido com os dados embutidos.
-Fontes em `scripts/dashboard-template.html`.
+3. **Republicar**: chamar a ferramenta Artifact com `file_path: dashboard.html` **e**
+   `url:` = o conteudo de `.artifact-url`. Sem esse `url` cria um link novo em vez de
+   actualizar o que o utilizador tem aberto — e o erro que estraga a rotina.
 
-**Publicar** (fim de cada rotina, depois do commit): republicar o ficheiro no artifact
-existente — URL em `.artifact-url`. Passar essa URL como `url` na ferramenta Artifact,
-senao cria um artifact novo em vez de actualizar o que o utilizador ja tem aberto.
+O build le `PORTFOLIO.md` + `DELTA.md` + `BUYLIST.md` + a sintese mais recente, calcula o
+cabaz do mes e emite HTML auto-contido. Template em `scripts/dashboard-template.html`.
 
 ---
 

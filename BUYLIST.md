@@ -19,8 +19,7 @@ A €100/mes compras **1-2 posicoes por mes** — isto e um funil de candidatos,
 | 4 | VIRT | Virtu Financial | Trading & Mercados | cto | ~€20 | Q3 earnings Nov 2026 | Trading income +26% YoY; EBITDA 60.8%; expansao cripto e ETFs; volatilidade macro sustentada |
 | 4 | GLXY | Galaxy Digital | Trading & Mercados | cto | ~€10 | CLARITY Act Q4 2026 / 2027 | Unico pure-play institucional crypto management; CLARITY Act assimetria 30%; Nasdaq listing |
 | 4 | FLOW.AS | Flow Traders | Trading & Mercados | cto-pea | ~€10 | Q3 earnings Nov 2026 | Maior market maker ETP europeu; MiCA cripto ETPs = spreads mais largos; acessivel direto EU |
-| 4 | CMCX.L | CMC Markets | Trading & Mercados | verificar | ~€10 | Q3 earnings Nov 2026; Revolut B2B ramp | Pivot B2B via Revolut; FY2027 guidance raised; sub-coberto vs peers |
-| 4 | PLUS.L | Plus500 | Trading & Mercados | verificar | ~€10 | US prediction markets H2 2026; Q3 Nov 2026 | Primeiro broker tradicional em EUA prediction markets; dividend yield suporte; Nasdaq dual listing |
+| 4 | IL0011284465 | Plus500 (Xetra) | Trading & Mercados | cto | ~€10 | US prediction markets H2 2026; Q3 Nov 2026 | Primeiro broker tradicional em EUA prediction markets; dividend yield suporte; Nasdaq dual listing |
 | 4 | ETOR | eToro | Trading & Mercados | cto | ~€10 | Q3 earnings Nov 2026 (primeiro pos-IPO completo) | 35M utilizadores; IPO overhang a diminuir; sub-coberto; cripto revenue recovery potencial |
 | 4 | KTOS | Kratos Defense | Geopolitica & Defesa | cto | ~€20 | DOD drone swarm contracts; Q3 Nov 2026 | Lider puro-play drones autonomos tacticos; XQ-58A unico loyal wingman US em producao |
 | 4 | PL | Planet Labs | Geopolitica & Defesa | cto | ~€10 | NGA/DOD contracts; Q3 Nov 2026 | Unico daily global coverage; $600M market cap sub-avaliado vs data moat; NGA contratos activos |
@@ -47,9 +46,11 @@ separada e regime fiscal distinto — saem da buy-list. A tese pode voltar via *
 | AAVE | Aave | Token — precisa de cripto-exchange, nao de broker |
 | MORPHO | Morpho | Token — precisa de cripto-exchange, nao de broker |
 | ONDO | Ondo Finance | Token — precisa de cripto-exchange, nao de broker |
+| CMCX.L | CMC Markets | So LSE + OTC americano (CCMMF); Trade Republic nao opera nenhuma das duas |
 
-**LSE por confirmar:** CMCX.L e PLUS.L dependem de a London Stock Exchange estar
-disponivel no Trade Republic — nao confirmado. Verificar na app antes de qualquer ordem.
+**LSE resolvida (2026-08-26):** o Trade Republic nao opera no Reino Unido nem oferece a
+LSE. **Plus500** foi recuperada pela listagem secundaria em Xetra (ISIN `IL0011284465`).
+**CMC Markets** nao tem via — so LSE e OTC americano, nenhuma delas disponivel.
 
 
 ## Alertas de carry (nao aumentar)
