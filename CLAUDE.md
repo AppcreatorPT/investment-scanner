@@ -6,7 +6,13 @@ Le este ficheiro antes de fazer qualquer coisa.
 
 ## O que e este sistema
 
-Scanner de oportunidades de investimento organizado em 7 temas. Gera listas curadas de **instrumentos acessiveis a um retail da UE de baixo orcamento** (€10-100), com potencial de retorno assimetrico e **via de compra real** (direto ou proxy cotado), em formato JSON estruturado.
+Scanner de oportunidades de investimento organizado em 7 temas. Gera listas curadas de **instrumentos compraveis HOJE no CTO Trade Republic a partir de Franca**, com €100/mes de aporte, potencial de retorno assimetrico e **via de compra real** (direto ou proxy cotado), em formato JSON estruturado.
+
+**Perfil do investidor** (ver `prompts/_regra-acessibilidade-rigor.md` para a regra completa):
+- Franca · **€100/mes** · CTO Trade Republic (fracionado desde €1)
+- PEA aberto so para antiguidade fiscal — elegibilidade PEA e informacao util, nao destino
+- **So cotadas.** Sem pre-IPO, sem privadas, sem tokens cripto, sem CFDs
+- A €100/mes compra-se **1-2 posicoes por mes** → o scan e um funil, nao uma lista de compras
 
 ---
 
@@ -61,20 +67,20 @@ Cada ficheiro de output segue esta estrutura:
       "name": "Nome da Entidade",
       "description": "Descricao curta, 1-2 linhas",
       "subcategory": "Sub-area especifica",
-      "status": "privada | pre-IPO | cotada | token | fundo",
+      "status": "cotada | ETP",
       "ticker": "ticker COMPRAVEL (o do proxy se houver proxy) | null",
       "geography": "Pais sede + bolsa se cotada",
       "market_cap_or_valuation": "~$2B | Serie C $400M",
       "liquidity": "alta | media | baixa | sem mercado",
       "risk_level": "baixo | moderado | alto | especulativo",
-      "opportunity_type": "acao cotada | opcoes | IPO | pre-IPO | token | fundo | exposicao indireta",
+      "opportunity_type": "acao cotada | ETP cotado | exposicao indireta",
       "catalyst": "Evento especifico com data se possivel",
       "catalyst_date": "YYYY-MM-DD | Q2 2026 | null",
       "asymmetry_score": 4,
       "return_horizon": "curto (0-12m) | medio (1-3a) | longo (3+a)",
       "red_flags": "Risco principal ou null",
       "source": "URL real e datada (filing/noticia) — sem placeholders",
-      "account": "neobroker | vantage-cfd | cripto-exchange | abrir-conta",
+      "account": "cto | cto-pea | verificar",
       "proxy_for": "subjacente inacessivel que o ticker replica | null",
       "entry_min": "~€10 (fracionado)",
       "why_now": "porque existe e porque ainda nao esta no preco",
@@ -106,8 +112,8 @@ Cada ficheiro de output segue esta estrutura:
 5. **`_meta.total_entities`** deve corresponder ao comprimento real do array `entities`
 6. **IDs sequenciais** com o prefixo da categoria (LSA-001, LSA-002, ...)
 7. **Naming do output**: `YYYY-MM-DD_nome-categoria.json` (ex: `2026-04-05_longevidade.json`)
-8. **Acessivel-primeiro**: nada entra se um retail UE de baixo orcamento (€10-100, neobroker fracionado) nao puder comprar — direto ou via proxy cotado NOMEADO. Sem via → omitir.
-9. **Rotear `account`** por instrumento; `ticker` = o que se escreve no broker (o do proxy se houver proxy).
+8. **Comprável-hoje-primeiro**: nada entra se nao for compravel HOJE no CTO Trade Republic a partir de Franca — direto ou via proxy cotado NOMEADO. Sem via → omitir. Elimina pre-IPO, privadas, tokens cripto e CFDs. Ver `prompts/_regra-acessibilidade-rigor.md`.
+9. **Rotear `account`** (`cto` / `cto-pea` / `verificar`); `ticker` = o que se escreve no Trade Republic (o do proxy se houver proxy). Praca fora de NYSE/Nasdaq/Xetra/Euronext → `verificar` + explicar em `access_note`.
 10. **Catalisador datavel quase-obrigatorio**; sem `catalyst_date`, so com conviccao muito alta.
 11. **Grounded**: cada entidade traz `why_now` (porque ainda nao esta no preco) e `confidence`; `source` real e datada. Sem `why_now` solido → omitir.
 12. **Sem agregado**: a agregacao e feita ao vivo pelo dashboard; nao gerar `_agregado.json`.

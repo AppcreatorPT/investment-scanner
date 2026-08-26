@@ -45,13 +45,15 @@ Gera JSON valido seguindo o schema definido em CLAUDE.md. Guarda em `output/YYYY
 
 <!-- Aplicar SEMPRE as regras abaixo (ver prompts/_regra-acessibilidade-rigor.md) -->
 
-## Regra de Acessibilidade & Rigor (UE / baixo orcamento)
+## Regra de Acessibilidade & Rigor (Franca / €100 por mes)
 
-Toda a entidade DEVE ser compravel por um retail da UE (Franca) com €10-100:
+Toda a entidade DEVE ser compravel HOJE no **CTO Trade Republic** a partir de Franca:
 
-- **Acessivel-primeiro:** se a tese e inacessivel (pre-IPO, privada, ETF US sem KID), so
-  entra atraves de um **proxy cotado NOMEADO**. Sem proxy → nao incluir.
-- **`account`** (obrigatorio): `neobroker` · `vantage-cfd` · `cripto-exchange` · `abrir-conta`.
+- **So cotadas.** Sem pre-IPO, privadas, tokens cripto ou CFDs. Tese inacessivel so entra
+  via **proxy cotado NOMEADO**. Sem proxy → nao incluir.
+- **Praca elegivel:** NYSE, Nasdaq, Xetra, Euronext. Outra (incl. LSE) → `verificar`.
+- **Fracionavel.** Se preco/acao > €100 e nao fracionavel → omitir.
+- **`account`** (obrigatorio): `cto` (default) · `cto-pea` (acao UE, tambem elegivel a PEA) · `verificar` (praca por confirmar — dizer o que falta em `access_note`).
 - **`ticker`** = ticker compravel (o do proxy, se proxy). **`proxy_for`**: subjacente ou `null`.
 - **`entry_min`**: minimo realista. **`access_note`**: a pega ou `null`.
 - **`why_now`** (obrigatorio): porque ainda nao esta no preco. Sem boa resposta → omitir.

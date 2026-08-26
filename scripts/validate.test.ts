@@ -9,7 +9,7 @@ function baseEntity(over: Record<string, unknown> = {}) {
     catalyst: "c", catalyst_date: "Q3 2026", asymmetry_score: 4,
     return_horizon: "curto (0-12m)", red_flags: null,
     source: "https://sec.gov/x — 2026",
-    account: "neobroker", proxy_for: null, entry_min: "~€10 (fracionado)",
+    account: "cto", proxy_for: null, entry_min: "~€10 (fracionado)",
     why_now: "edge real", confidence: "parcial", access_note: null, ...over,
   };
 }

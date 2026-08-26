@@ -13,16 +13,26 @@ Usa WebSearch para verificar cada entidade antes de a incluir. **Aplica a metodo
 
 ## Scope
 
-DeFi institucional (protocolos com TVL significativo e auditorias), tokenizacao de ativos reais (RWA — real estate, treasuries, commodities, private credit), infrastructure cripto seria (L1/L2 chains com adocao real, bridges, oracles, MEV solutions), custodia institucional, compliance/RegTech cripto, stablecoins e CBDC infrastructure, exchanges reguladas emergentes, empresas de cripto data/analytics, mining operations eficientes, ETF issuers.
+Exposicao **cotada** a financas alternativas: empresas de asset management cripto,
+exchanges e brokers cotados, custodia institucional, compliance/RegTech, emissores de
+stablecoins e infraestrutura de pagamentos, empresas de cripto data/analytics, mining
+operations eficientes, ETF/ETP issuers, e empresas de tokenizacao de ativos reais (RWA).
+
+Tambem: **ETP/ETN cotados** em Euronext ou Xetra que dao exposicao a um protocolo ou
+cabaz sem exigir exchange cripto.
 
 ## Criterios de seleccao
 
-- Prioriza protocolos e empresas com tracao real (revenue, TVL, active users) e nao apenas hype
-- Exclui: Bitcoin, Ethereum, Solana (consensus, mas inclui projetos BUILD sobre eles)
-- Destaca catalisadores de curto prazo: aprovacoes regulatorias (ETF filings, MiCA compliance), token unlocks, mainnet launches, partnerships institucionais, airdrops de protocolos com produto
-- Inclui tokens negociaveis com liquidez >$1M diario
-- Sinaliza protocolos onde insiders/VCs estao locked e unlock dates se aproximam (risco E oportunidade)
-- Sinaliza red flags: tokenomics inflacionarios, team anonima sem accountability, smart contract nao auditado, concentracao de tokens >50% em poucos wallets, regulatory arbitrage fragil
+- **So instrumentos cotados.** Tokens comprados em exchange cripto NAO entram — exigem
+  conta separada e regime fiscal distinto. Se a tese e um protocolo, entra apenas via
+  **acao cotada** (ex.: GLXY, COIN) ou **ETP cotado NOMEADO** em Euronext/Xetra.
+- Prioriza empresas com tracao real (revenue, AUM, active users) e nao apenas hype
+- Quando uma tese de protocolo for forte, procura DELIBERADAMENTE o veiculo cotado que
+  lhe da exposicao (treasury company, ETP, equity do emissor) e nomeia-o em `proxy_for`
+- Destaca catalisadores de curto prazo: aprovacoes regulatorias (ETF/ETP filings, MiCA,
+  CLARITY Act), earnings, listings, partnerships institucionais
+- Sinaliza red flags: premio/desconto ao NAV em treasury companies, dilucao via ATM,
+  dependencia de um so ativo subjacente, regulatory arbitrage fragil
 
 ## Priorizacao de horizonte
 
@@ -45,13 +55,15 @@ Gera JSON valido seguindo o schema definido em CLAUDE.md. Guarda em `output/YYYY
 
 <!-- Aplicar SEMPRE as regras abaixo (ver prompts/_regra-acessibilidade-rigor.md) -->
 
-## Regra de Acessibilidade & Rigor (UE / baixo orcamento)
+## Regra de Acessibilidade & Rigor (Franca / €100 por mes)
 
-Toda a entidade DEVE ser compravel por um retail da UE (Franca) com €10-100:
+Toda a entidade DEVE ser compravel HOJE no **CTO Trade Republic** a partir de Franca:
 
-- **Acessivel-primeiro:** se a tese e inacessivel (pre-IPO, privada, ETF US sem KID), so
-  entra atraves de um **proxy cotado NOMEADO**. Sem proxy → nao incluir.
-- **`account`** (obrigatorio): `neobroker` · `vantage-cfd` · `cripto-exchange` · `abrir-conta`.
+- **So cotadas.** Sem pre-IPO, privadas, tokens cripto ou CFDs. Tese inacessivel so entra
+  via **proxy cotado NOMEADO**. Sem proxy → nao incluir.
+- **Praca elegivel:** NYSE, Nasdaq, Xetra, Euronext. Outra (incl. LSE) → `verificar`.
+- **Fracionavel.** Se preco/acao > €100 e nao fracionavel → omitir.
+- **`account`** (obrigatorio): `cto` (default) · `cto-pea` (acao UE, tambem elegivel a PEA) · `verificar` (praca por confirmar — dizer o que falta em `access_note`).
 - **`ticker`** = ticker compravel (o do proxy, se proxy). **`proxy_for`**: subjacente ou `null`.
 - **`entry_min`**: minimo realista. **`access_note`**: a pega ou `null`.
 - **`why_now`** (obrigatorio): porque ainda nao esta no preco. Sem boa resposta → omitir.

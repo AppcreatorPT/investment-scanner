@@ -13,12 +13,12 @@ const VALID_PREFIXES: Record<string, string> = {
   "Financas Alternativas": "FIN-",
 };
 
-const VALID_STATUS = ["privada", "pre-IPO", "cotada", "token", "fundo"];
+const VALID_STATUS = ["cotada", "ETP"];
 const VALID_LIQUIDITY = ["alta", "media", "baixa", "sem mercado"];
 const VALID_RISK = ["baixo", "moderado", "alto", "especulativo"];
-const VALID_OPPORTUNITY = ["acao cotada", "opcoes", "IPO", "pre-IPO", "token", "fundo", "exposicao indireta"];
+const VALID_OPPORTUNITY = ["acao cotada", "ETP cotado", "exposicao indireta"];
 const VALID_HORIZON = ["curto (0-12m)", "medio (1-3a)", "longo (3+a)"];
-const VALID_ACCOUNT = ["neobroker", "vantage-cfd", "cripto-exchange", "abrir-conta"];
+const VALID_ACCOUNT = ["cto", "cto-pea", "verificar"];
 const VALID_CONFIDENCE = ["verificado", "parcial", "especulativo"];
 
 export interface Entity {
