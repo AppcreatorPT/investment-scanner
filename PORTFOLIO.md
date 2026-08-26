@@ -28,14 +28,17 @@ nao a cada scan.
 
 ## Posicoes
 
-| Data | Ticker | Nome | Tema | Unidades | Custo total (€) |
-|------|--------|------|------|----------|-----------------|
-| _(vazio — preencher a primeira compra)_ | | | | | |
+| Data | Ticker | Nome | Tema | Unidades | Custo total (€) | Valor atual (€) |
+|------|--------|------|------|----------|-----------------|-----------------|
+| | | | | | | |
 
 **Total investido:** €0
 
 > Como atualizar: uma linha por compra. Se reforcares um nome, acrescenta nova linha em vez
 > de editar a antiga — preserva o historico de custo medio.
+>
+> `Valor atual` e opcional. Enquanto estiver vazio, o dashboard calcula os pesos pelo custo;
+> assim que o preencheres, passa a usar valor de mercado (que e o correto para rebalancear).
 
 ---
 
