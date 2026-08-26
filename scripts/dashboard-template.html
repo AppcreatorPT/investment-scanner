@@ -161,7 +161,13 @@ main { max-width: 1080px; margin: 0 auto; padding: 34px 32px 90px; }
 .panel { display: none; flex-direction: column; gap: 30px; }
 .panel.on { display: flex; }
 
-.lede { font-size: 13px; color: var(--ink-3); margin: -8px 0 0; }
+.lede { font-size: 13px; color: var(--ink-3); margin: -8px 0 0; max-width: 82ch; }
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .89em; padding: 1px 5px; border-radius: 4px;
+  background: var(--surface-2); color: var(--ink-2);
+}
 
 h2.sec {
   font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .09em;
@@ -277,6 +283,89 @@ td.w { min-width: 260px; font-size: 12.5px; }
 
 .foot { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--line-soft); font-size: 11.5px; color: var(--ink-3); }
 
+/* ═══ Tese profunda ═══ */
+.thesis-nav { display: flex; flex-wrap: wrap; gap: 6px; }
+.thesis-nav a {
+  display: inline-flex; align-items: baseline; gap: 7px; text-decoration: none;
+  padding: 6px 11px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--surface); font-size: 12px; color: var(--ink-2);
+  transition: border-color .15s, color .15s;
+}
+.thesis-nav a:hover { border-color: var(--accent-line); color: var(--ink); }
+.thesis-nav b { font-size: 12.5px; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; }
+
+.thesis { display: flex; flex-direction: column; gap: 42px; }
+.thesis > article { scroll-margin-top: 16px; }
+
+.th-head { padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 22px; }
+.th-title { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.th-title h3 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; }
+.th-title .tk {
+  font-size: 12px; font-weight: 700; letter-spacing: .04em; padding: 3px 9px;
+  border-radius: 6px; background: var(--accent-dim); color: var(--accent);
+}
+.th-meta { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-top: 9px; font-size: 12px; color: var(--ink-3); }
+.th-meta .k { color: var(--ink-2); }
+
+.verdict {
+  margin-left: auto; display: inline-flex; align-items: baseline; gap: 8px;
+  padding: 5px 12px; border-radius: 7px; font-size: 12px; font-weight: 600;
+  background: var(--surface-2); color: var(--ink-2); border: 1px solid var(--line);
+}
+.verdict::before { content: "valor"; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: .08em; opacity: .65; }
+.verdict[data-v="caro"]   { background: var(--warn-dim); color: var(--warn); border-color: transparent; }
+.verdict[data-v="barato"] { background: var(--good-dim); color: var(--good); border-color: transparent; }
+.verdict[data-v="justo"]  { background: var(--surface-2); color: var(--ink); }
+
+.lens { display: flex; flex-direction: column; gap: 26px; }
+.lens section { display: flex; flex-direction: column; gap: 10px; }
+.lens h4 {
+  font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--accent); margin: 0;
+}
+.lens .prose { display: flex; flex-direction: column; gap: 13px; }
+/* A largura de leitura e do texto; a tabela de cenarios usa a largura toda. */
+.lens .prose > p { font-size: 14px; line-height: 1.72; color: var(--ink-2); max-width: 68ch; }
+.lens .prose strong { color: var(--ink); font-weight: 600; }
+.lens .prose a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-line); }
+.lens .prose a:hover { border-bottom-color: var(--accent); }
+
+.scen td:first-child { color: var(--ink); font-weight: 600; white-space: nowrap; }
+.prob { font-size: 11.5px; font-weight: 600; white-space: nowrap; color: var(--ink-2); }
+.prob[data-p="alta"]  { color: var(--ink); }
+.prob[data-p="baixa"] { color: var(--ink-3); }
+
+.falsifier {
+  display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: baseline;
+  padding: 15px 18px; border-radius: 10px; background: var(--surface-2);
+  border: 1px solid var(--line-soft); font-size: 13px; color: var(--ink-2); max-width: 74ch;
+}
+.falsifier b {
+  font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--ink-3); white-space: nowrap;
+}
+.falsifier strong { color: var(--ink); font-weight: 600; }
+
+@media (max-width: 720px) {
+  .th-title h3 { font-size: 17px; }
+  .verdict { margin-left: 0; }
+  .falsifier { grid-template-columns: 1fr; gap: 6px; }
+
+  /* Quatro colunas de prosa nao cabem num telemovel — cada cenario vira um cartao. */
+  .scen thead { display: none; }
+  .scen, .scen tbody, .scen tr, .scen td { display: block; width: 100%; }
+  .scen tr { padding: 14px 0 16px; border-bottom: 1px solid var(--line-soft); }
+  .scen tr:last-child { border-bottom: none; }
+  .scen tbody tr:hover { background: none; }
+  .scen td { border: none; padding: 3px 15px; }
+  .scen td[data-l]::before {
+    content: attr(data-l); display: block; margin-bottom: 1px;
+    font-size: 9.5px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: .09em; color: var(--ink-3);
+  }
+  .scen td:first-child { font-size: 15px; padding-bottom: 8px; }
+}
+
 @media (max-width: 720px) {
   .top, .tabs, main { padding-left: 18px; padding-right: 18px; }
   .alloc-row { grid-template-columns: 108px 1fr 62px; gap: 10px; }
@@ -302,6 +391,7 @@ td.w { min-width: 260px; font-size: 12.5px; }
 <main>
   <section class="panel" id="p-hoje" role="tabpanel"></section>
   <section class="panel" id="p-carteira" role="tabpanel"></section>
+  <section class="panel" id="p-tese" role="tabpanel"></section>
   <section class="panel" id="p-buylist" role="tabpanel"></section>
   <section class="panel" id="p-semana" role="tabpanel"></section>
   <p class="foot">Funil para a tua DD — nao e conselho de investimento. Construido a partir do repo em <span id="built" class="num"></span>.</p>
@@ -321,11 +411,45 @@ const D = /*__DATA__*/null;
 
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const md = (s) => esc(s)
+  .replace(/`([^`]+)`/g, "<code>$1</code>")
   .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
   .replace(/\[(.+?)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
 const pct = (n) => (n >= 0 ? "+" : "") + n.toFixed(1) + "%";
 
-/* ── Tema ── */
+const cells = (l) => l.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
+
+/** Markdown de leitura: paragrafos e tabelas. Nao e um parser geral — cobre o que a tese usa. */
+function rich(src, tableClass = "") {
+  const lines = String(src ?? "").split("\n");
+  const out = [];
+  let i = 0;
+  while (i < lines.length) {
+    const line = lines[i];
+    if (line.trim().startsWith("|") && /^\|[\s:|-]+\|$/.test((lines[i + 1] ?? "").trim())) {
+      const head = cells(line);
+      i += 2;
+      const rows = [];
+      while (i < lines.length && lines[i].trim().startsWith("|")) rows.push(cells(lines[i++]));
+      out.push(`<div class="tw"><table class="${tableClass}"><thead><tr>` +
+        head.map((h) => `<th>${esc(h)}</th>`).join("") + `</tr></thead><tbody>` +
+        rows.map((r) => `<tr>` + r.map((c, n) => {
+          const prob = tableClass === "scen" && n === head.length - 1;
+          // data-l e o rotulo que substitui o cabecalho quando a tabela vira cartoes no telemovel.
+          const label = tableClass === "scen" && n > 0 ? ` data-l="${esc(head[n])}"` : "";
+          return `<td${label}>${prob ? `<span class="prob" data-p="${esc(c.split(" ")[0])}">${esc(c)}</span>` : md(c)}</td>`;
+        }).join("") + `</tr>`).join("") + `</tbody></table></div>`);
+    } else if (!line.trim()) {
+      i++;
+    } else {
+      const para = [];
+      while (i < lines.length && lines[i].trim() && !lines[i].trim().startsWith("|")) para.push(lines[i++]);
+      out.push(`<p>${md(para.join(" "))}</p>`);
+    }
+  }
+  return out.join("");
+}
+
+/* \u2500\u2500 Tema \u2500\u2500 */
 const themeBtn = document.getElementById("themeBtn");
 const stored = localStorage.getItem("scanner_theme");
 if (stored) document.documentElement.setAttribute("data-theme", stored);
@@ -344,6 +468,7 @@ document.getElementById("built").textContent = D.built;
 const TABS = [
   { id: "hoje", label: "Hoje", badge: D.delta.alerts.length || null },
   { id: "carteira", label: "Carteira", badge: null },
+  { id: "tese", label: "Tese", badge: D.thesis.names.length || null },
   { id: "buylist", label: "Buy-list", badge: D.buylist.picks.length },
   { id: "semana", label: "Semana", badge: null },
 ];
@@ -474,6 +599,54 @@ nav.addEventListener("click", (e) => {
     : `<div class="empty">Carteira vazia. Regista a primeira compra em <strong>PORTFOLIO.md</strong> e esta vista ganha vida.</div>`) + `</div>`);
 
   document.getElementById("p-carteira").innerHTML = parts.join("");
+})();
+
+
+/* ── Tese ── */
+(function () {
+  const t = D.thesis;
+  const host = document.getElementById("p-tese");
+  if (!t.names.length) {
+    host.innerHTML = `<div class="empty">Ainda sem tese profunda. Corre a rotina de sabado
+      (<strong>prompts/10-tese-profunda.md</strong>) e os nomes da carteira aparecem aqui.</div>`;
+    return;
+  }
+
+  const slug = (x) => "th-" + x.toLowerCase().replace(/[^a-z0-9]/g, "");
+  host.innerHTML = `<p class="lede">${esc(t.intro)}</p>
+    <nav class="thesis-nav" aria-label="Nomes analisados">` +
+      t.names.map((n) => `<a href="#${slug(n.ticker)}"><b>${esc(n.ticker)}</b>${esc(n.name)}</a>`).join("") +
+    `</nav>
+    <div class="thesis">` + t.names.map((n) => `
+      <article id="${slug(n.ticker)}">
+        <header class="th-head">
+          <div class="th-title">
+            <span class="tk">${esc(n.ticker)}</span>
+            <h3>${esc(n.name)}</h3>
+            ${n.verdictKey ? `<span class="verdict" data-v="${esc(n.verdictKey)}" title="${esc(n.verdict)}">${esc(n.verdictKey)}</span>` : ""}
+          </div>
+          <div class="th-meta">
+            <span>${esc(n.theme)}</span>
+            ${n.why ? `<span><span class="k">porque entrou:</span> ${esc(n.why)}</span>` : ""}
+            ${n.confidence ? `<span><span class="k">confianca:</span> ${esc(n.confidence)}</span>` : ""}
+          </div>
+        </header>
+        <div class="lens">` +
+          n.lenses.map((l) => `<section>
+            <h4>${esc(l.title)}</h4>
+            <div class="prose">${rich(l.body, /Cenario/i.test(l.title) ? "scen" : "")}</div>
+          </section>`).join("") +
+          (n.falsifier ? `<p class="falsifier"><b>Falsificador</b><span>${md(n.falsifier)}</span></p>` : "") +
+        `</div>
+      </article>`).join("") + `</div>`;
+
+  // A jump-nav e a unica navegacao util com cinco textos longos — mas o hash
+  // muda de separador se o utilizador voltar mais tarde, por isso e interceptada.
+  host.querySelectorAll(".thesis-nav a").forEach((a) => a.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById(a.getAttribute("href").slice(1))
+      ?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+  }));
 })();
 
 /* ── Buy-list ── */

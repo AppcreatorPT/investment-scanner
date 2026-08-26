@@ -51,3 +51,24 @@ export function num(s: string): number {
   const v = parseFloat(m);
   return Number.isFinite(v) ? v : 0;
 }
+
+/**
+ * Divide markdown em blocos por nivel de heading, **preservando a ordem**
+ * (ao contrario de `sections()`, que devolve um mapa). Usado pela tese profunda,
+ * onde a ordem das lentes e parte do argumento.
+ */
+export function blocks(md: string, level: 2 | 3): { title: string; body: string }[] {
+  const re = new RegExp(`^${"#".repeat(level)} (?!#)(.+)$`, "gm");
+  const out: { title: string; body: string }[] = [];
+  let m: RegExpExecArray | null;
+  let open: { title: string; from: number } | null = null;
+
+  while ((m = re.exec(md))) {
+    if (open) out.push({ title: open.title, body: md.slice(open.from, m.index).trim() });
+    open = { title: m[1].trim(), from: m.index + m[0].length };
+  }
+  if (open) out.push({ title: open.title, body: md.slice(open.from).trim() });
+
+  // A regua "---" que separa blocos irmaos nao pertence a nenhum deles.
+  return out.map((b) => ({ ...b, body: b.body.replace(/\n*^-{3,}\s*$/m, "").trim() }));
+}

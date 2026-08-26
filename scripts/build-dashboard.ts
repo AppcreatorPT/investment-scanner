@@ -10,7 +10,7 @@
 
 import { readFileSync, writeFileSync, readdirSync, existsSync } from "fs";
 import { join } from "path";
-import { sections, table, num } from "./md.ts";
+import { sections, table, num, blocks } from "./md.ts";
 import { readPositions } from "./portfolio-md.ts";
 import { makeState, stateToJson, type Position } from "./portfolio-state.ts";
 import { HEAD_END, STATE_SLOT, SOURCE_SLOT, toFullDocument, encodeSource } from "./page-source.ts";
@@ -144,6 +144,71 @@ function parseWeekly() {
   return { date: file.slice(0, 10), blocks };
 }
 
+/**
+ * Tese profunda (`output/YYYY-MM-DD_tese-profunda.md`, ver prompts/10).
+ *
+ * Um `##` por nome, um `###` por lente. O parser e generico sobre as lentes — se a
+ * rotina de sabado acrescentar uma quinta, aparece sem mexer no build. So dois
+ * campos sao extraidos por nome: o veredicto de valor (a pill) e o falsificador
+ * (o rodape), porque sao os dois que o dashboard trata como dados e nao como texto.
+ */
+function parseThesis() {
+  const file = latest("_tese-profunda.md");
+  if (!file) return { date: "", intro: "", names: [] as ThesisName[] };
+  const md = read(join(OUTPUT_DIR, file));
+
+  const head = md.split(/^##\s/m)[0];
+  const intro = (head.match(/^>\s?(.+(?:\n>\s?.+)*)/m) ?? ["", ""])[1]
+    .split("\n").map((l) => l.replace(/^>\s?/, "").trim()).join(" ").trim();
+
+  const names: ThesisName[] = blocks(md, 2).map((b) => {
+    const [ticker, ...rest] = b.title.split(/\s+—\s+/);
+    const meta = (k: string) =>
+      (b.body.match(new RegExp(`\\*\\*${k}:\\*\\*\\s*([^·\\n]+)`)) ?? ["", ""])[1].trim();
+
+    const lenses = blocks(b.body, 3).map((l) => {
+      let body = l.body;
+      let verdict = "";
+      const v = body.match(/^\*\*Juizo:\*\*\s*(.+)$/m);
+      if (v) { verdict = v[1].trim(); body = body.replace(v[0], "").trim(); }
+      let falsifier = "";
+      const f = body.match(/^\*\*Falsificador:\*\*\s*([\s\S]+)$/m);
+      if (f) { falsifier = f[1].replace(/\s+/g, " ").trim(); body = body.replace(f[0], "").trim(); }
+      return { title: l.title, body, verdict, falsifier };
+    });
+
+    return {
+      ticker: ticker.trim(),
+      name: rest.join(" — ").trim(),
+      theme: meta("Tema"),
+      why: meta("Porque entrou"),
+      confidence: meta("Confianca"),
+      lenses,
+      verdict: lenses.find((l) => l.verdict)?.verdict ?? "",
+      verdictKey: verdictKey(lenses.find((l) => l.verdict)?.verdict ?? ""),
+      falsifier: lenses.find((l) => l.falsifier)?.falsifier ?? "",
+    };
+  });
+
+  return { date: file.slice(0, 10), intro, names };
+}
+
+/** Normaliza o veredicto para a pill: quatro estados, nada de texto livre. */
+function verdictKey(v: string): "barato" | "justo" | "caro" | "incerto" | "" {
+  const t = v.toLowerCase();
+  if (!t) return "";
+  if (t.startsWith("barato")) return "barato";
+  if (t.startsWith("justo")) return "justo";
+  if (t.startsWith("caro")) return "caro";
+  return "incerto";
+}
+
+interface ThesisLens { title: string; body: string; verdict: string; falsifier: string }
+interface ThesisName {
+  ticker: string; name: string; theme: string; why: string; confidence: string;
+  lenses: ThesisLens[]; verdict: string; verdictKey: string; falsifier: string;
+}
+
 // ─────────────────────────── recomendacao mensal ───────────────────────────
 
 /** Flags na buy-list que travam uma compra. */
@@ -232,6 +297,7 @@ const portfolio = parsePortfolio();
 const delta = parseDelta();
 const buylist = parseBuylist();
 const weekly = parseWeekly();
+const thesis = parseThesis();
 const rec = recommend(
   portfolio.targets, portfolio.positions, buylist.picks, buylist.carry,
   portfolio.monthly, portfolio.lines, portfolio.unavailable,
@@ -243,6 +309,7 @@ const DATA = {
   delta,
   buylist,
   weekly,
+  thesis,
   rec,
 };
 
@@ -274,6 +341,6 @@ writeFileSync(join(ROOT, "dashboard.html"), out);
 const basket = rec.basket.map((b) => `${b.pick.ticker} €${b.amount}`).join(", ");
 console.log(
   `dashboard.html construido — ${buylist.picks.length} picks, ${delta.alerts.length} alertas, ` +
-    `${portfolio.positions.length} posicoes, ${(out.length / 1024).toFixed(0)} KB\n` +
+    `${portfolio.positions.length} posicoes, ${thesis.names.length} teses, ${(out.length / 1024).toFixed(0)} KB\n` +
     `cabaz do mes: ${basket || "nenhum"}`,
 );

@@ -39,6 +39,7 @@ score → urgencia de catalisador → ausencia de flag. Pesos por valor de merca
 | 7 | Espaco & Deep Tech | SDT- | prompts/07-espaco-deeptech.md |
 | 8 | Financas Alternativas | FIN- | prompts/08-financas-alt.md |
 | 9 | Agregacao | — | prompts/09-agregacao.md |
+| 10 | **Tese profunda** (sabado) | — | prompts/10-tese-profunda.md |
 
 ---
 
@@ -147,6 +148,20 @@ git add -A && git commit -m "..." && git push origin HEAD   # 2. commit inclui o
 
 O build le `PORTFOLIO.md` + `DELTA.md` + `BUYLIST.md` + a sintese mais recente, calcula o
 cabaz do mes e emite HTML auto-contido. Template em `scripts/dashboard-template.html`.
+
+---
+
+## Tese profunda — rotina de sabado
+
+`prompts/10-tese-profunda.md` corre sobre **os nomes na carteira + o cabaz do mes + os
+score-5 que ficaram de fora**, no maximo 6. Quatro lentes por nome: analogo historico datado,
+o invisivel/2a ordem, under/over-value **como juizo e nunca alvo numerico**, e cenarios
+bull/base/bear com gatilho datavel e probabilidade qualitativa.
+
+Saida em `output/YYYY-MM-DD_tese-profunda.md`, no formato exacto que o prompt fixa — o build
+parseia-o para o separador **Tese**. `bun test` faz lint ao ficheiro: lentes em falta,
+veredicto fora das quatro palavras, cenario sem probabilidade qualitativa ou alvo de preco
+fabricado fazem os testes falhar.
 
 ---
 
