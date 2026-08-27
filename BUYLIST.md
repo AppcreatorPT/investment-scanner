@@ -65,8 +65,8 @@ LSE. **Plus500** foi recuperada pela listagem secundaria em Xetra (ISIN `IL00112
 | INOD | ⚠️ CARRY | Stock muito abaixo entry $90.68 (~$62); CEO transition Sep 30; nao aumentar |
 | ASTS | ⚠️ CARRY | BlueBirds 11-13 (Block 2) lancados Aug 5 ✅; D2D comercial still early 2027; 3 PT cuts; CEO insider sale $14.7M |
 | LUNR | ⚠️ CARRY | IM-3 sem data confirmada; CEO insider sale $14.7M |
-| GLXY | ⚠️ CARRY | CLARITY Act: vote procedural Sep 15 agendado (60 votos necessarios; estreito mas possivel) |
-| RKLB | ⚠️ ATENCAO | Neutron Q4 launchpad on track mas 2026 launch nao reafirmado; escorregamento 2027 possivel |
+| GLXY | ⚠️⚠️ CATALISADOR ENFRAQUECIDO | CLARITY Act: Galaxy Research corta odds 2026 para 10% (Aug 14; era 75% Mai). Cloture Sep 15 (60 votos) provavelmente falha; catalisador principal baixa-probabilidade — nao aumentar por esta tese |
+| RKLB | ⚠️ CATALISADOR ADIADO | Neutron: Beck (Aug 10) "janela 2026 a estreitar"; rutura tanque Stage 1 (Jan); pad delivery Q4 2026 mas 1o voo exposto a 2027. Acao ~$67 (-13%) = zona rebuy $65-70 da sintese; tese intacta via Electron+space systems |
 | HAG.DE | ⚠️ CARRY | Jefferies Hold; JPMorgan Neutral EUR 85; premium persiste |
 | HYPE | ⚠️ ATENCAO | Novo ATH $83.27 (Aug 25); CFTC path via HYPE perp futures (Coinbase certified); MAS alert menos relevante; nao entrar/aumentar em ATH |
 | QURE | ⚠️ ATENCAO | BLA AMT-130 ainda nao submetida; janela Q3 fecha Sep 30 (5 semanas); vigiar press releases |
