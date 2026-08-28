@@ -65,7 +65,7 @@ LSE. **Plus500** foi recuperada pela listagem secundaria em Xetra (ISIN `IL00112
 | INOD | ⚠️ CARRY | Stock muito abaixo entry $90.68 (~$62); CEO transition Sep 30; nao aumentar |
 | ASTS | ⚠️ CARRY | BlueBirds 11-13 (Block 2) lancados Aug 5 ✅; D2D comercial still early 2027; 3 PT cuts; CEO insider sale $14.7M |
 | LUNR | ⚠️ CARRY | IM-3 sem data confirmada; CEO insider sale $14.7M |
-| GLXY | ⚠️ CARRY | CLARITY Act: vote procedural Sep 15 agendado (60 votos necessarios; estreito mas possivel) |
+| GLXY | ⚠️⚠️ CARRY | CLARITY Act: Galaxy Research corta odds 2026 para ~10% (Aug 2026); cloture Sep 15 mantem-se mas improvavel; catalisador curto-prazo enfraquece; tese estrutural intacta |
 | RKLB | ⚠️ ATENCAO | Neutron Q4 launchpad on track mas 2026 launch nao reafirmado; escorregamento 2027 possivel |
 | HAG.DE | ⚠️ CARRY | Jefferies Hold; JPMorgan Neutral EUR 85; premium persiste |
 | HYPE | ⚠️ ATENCAO | Novo ATH $83.27 (Aug 25); CFTC path via HYPE perp futures (Coinbase certified); MAS alert menos relevante; nao entrar/aumentar em ATH |
