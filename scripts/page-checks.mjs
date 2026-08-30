@@ -41,9 +41,12 @@ after(async () => { await browser?.close(); });
  * `window.__published` para inspeccao.
  */
 async function open(opts = {}) {
-  const page = await (await getBrowser()).newPage({ viewport: { width: 1280, height: 900 } });
+  const page = await (await getBrowser()).newPage({
+    viewport: { width: 1280, height: 900 },
+    reducedMotion: opts.motion ? "no-preference" : "reduce",
+  });
   await blockFonts(page);
-  await page.addInitScript(({ capability, fail }) => {
+  await page.addInitScript(({ capability, fail, hold }) => {
     window.__published = null;
     if (!capability) return;
     window.claude = {
@@ -51,11 +54,12 @@ async function open(opts = {}) {
         publish: (html) => {
           if (fail) return Promise.reject(Object.assign(new Error(fail), { code: fail }));
           window.__published = html;
+          if (hold) return new Promise(() => {});      // fica a gravar para sempre
           return Promise.resolve({ version: "v2" });   // sem reload: queremos inspeccionar
         },
       }),
     };
-  }, { capability: opts.capability !== false, fail: opts.fail ?? "" });
+  }, { capability: opts.capability !== false, fail: opts.fail ?? "", hold: !!opts.hold });
   await page.goto(pathToFileURL(DASH).href, { waitUntil: "domcontentloaded" });
   await page.evaluate(() => window.__show("carteira"));
   return page;
@@ -224,7 +228,7 @@ test("o documento publicado sabe republicar-se a si proprio (geracao 3)", async 
   await page.close();
 
   // Carrega a versao publicada e regista outra compra por cima.
-  const page2 = await (await getBrowser()).newPage({ viewport: { width: 1280, height: 900 } });
+  const page2 = await (await getBrowser()).newPage({ viewport: { width: 1280, height: 900 }, reducedMotion: "reduce" });
   await blockFonts(page2);
   await page2.addInitScript(() => {
     window.__published = null;
@@ -249,7 +253,7 @@ test("o documento publicado sabe republicar-se a si proprio (geracao 3)", async 
 });
 
 test("sem scroll horizontal no telemovel com a carteira preenchida", async () => {
-  const page = await (await getBrowser()).newPage({ viewport: { width: 390, height: 844 } });
+  const page = await (await getBrowser()).newPage({ viewport: { width: 390, height: 844 }, reducedMotion: "reduce" });
   await blockFonts(page);
   await page.addInitScript(() => {
     window.claude = { use: () => Promise.resolve({ publish: () => Promise.resolve({ version: "v" }) }) };
@@ -306,7 +310,7 @@ test("cada separador aponta para o seu painel (aria-controls)", async () => {
 });
 
 test("novidades marcadas com ponto; abrir o separador limpa-o e persiste", async () => {
-  const page = await (await getBrowser()).newPage({ viewport: { width: 1280, height: 900 } });
+  const page = await (await getBrowser()).newPage({ viewport: { width: 1280, height: 900 }, reducedMotion: "reduce" });
   await blockFonts(page);
   await page.addInitScript(() => {
     try {
@@ -338,8 +342,13 @@ test("primeira visita nao marca tudo como novidade", async () => {
 test("prazos de catalisador so aparecem quando ha data lida", async () => {
   const page = await open();
   await page.evaluate(() => window.__show("buylist"));
+  // Os dias dependem da data do build — calcula-se, nao se fixa.
+  const dias = await page.evaluate(() => {
+    const p = D.buylist.picks.find((x) => x.ticker === "SOUN");
+    return Math.round((Date.parse(p.deadline + "T00:00:00Z") - Date.parse(D.built + "T00:00:00Z")) / 86400000);
+  });
   const soun = await page.textContent('#blt tbody tr:has-text("SOUN") td:nth-child(7)');
-  expect(soun).toContain("7d");
+  expect(soun).toContain(dias + "d");
   // ALT nao tem data extraivel no catalisador — nao pode inventar prazo.
   const alt = await page.locator('#blt tbody tr:has-text("ALT") td:nth-child(7) .due').count();
   expect(alt).toBe(0);
@@ -355,5 +364,112 @@ test("o foco e visivel em cada controlo interactivo", async () => {
     return s.outlineStyle + " " + s.outlineWidth;
   });
   expect(outline).toContain("solid");
+  await page.close();
+});
+
+/* ── Movimento ──
+   Os testes acima correm com prefers-reduced-motion, o que de caminho prova que a
+   pagina funciona toda sem animacao nenhuma. Estes correm com o movimento ligado. */
+
+test("a barra do separador desliza para o separador activo", async () => {
+  const page = await open({ motion: true });
+  const at = async () => page.evaluate(() => {
+    const i = document.querySelector(".tab-ink");
+    return { x: i.style.transform, w: i.style.width };
+  });
+  const hoje = await at();
+  expect(hoje.w).not.toBe("");
+  await page.click('.tab[data-t="semana"]');
+  const semana = await at();
+  expect(semana.x).not.toBe(hoje.x);
+  // A largura acompanha a do separador activo.
+  const btn = await page.evaluate(() =>
+    Math.round(document.querySelector('.tab[data-t="semana"]').getBoundingClientRect().width));
+  expect(Math.round(parseFloat(semana.w))).toBe(btn);
+  await page.close();
+});
+
+test("a barra continua alinhada com a fila de separadores deslocada", async () => {
+  // O caso fragil: no telemovel a fila faz scroll e a barra vive dentro dela.
+  const page = await (await getBrowser()).newPage({ viewport: { width: 390, height: 700 } });
+  await blockFonts(page);
+  await page.goto(pathToFileURL(DASH).href, { waitUntil: "domcontentloaded" });
+  await page.evaluate(() => document.querySelector('.tab[data-t="semana"]').scrollIntoView({ inline: "end" }));
+  await page.click('.tab[data-t="semana"]');
+  await page.waitForTimeout(400);
+  const g = await page.evaluate(() => {
+    const nav = document.getElementById("tabs");
+    const b = nav.querySelector('.tab[aria-selected="true"]').getBoundingClientRect();
+    const i = nav.querySelector(".tab-ink").getBoundingClientRect();
+    return { scrolled: nav.scrollLeft > 0, dx: Math.abs(b.left - i.left), dw: Math.abs(b.width - i.width) };
+  });
+  expect(g.scrolled).toBe(true);
+  expect(g.dx < 1.5).toBe(true);
+  expect(g.dw < 1.5).toBe(true);
+  await page.close();
+});
+
+test("a entrada do painel corre uma vez e nao se repete no re-render", async () => {
+  const page = await open({ motion: true });
+  await page.click('.tab[data-t="tese"]');
+  expect(await page.evaluate(() => document.getElementById("p-tese").classList.contains("intro"))).toBe(true);
+  await page.waitForTimeout(1300);
+  expect(await page.evaluate(() => document.getElementById("p-tese").classList.contains("intro"))).toBe(false);
+
+  // Voltar ao painel nao volta a animar.
+  await page.click('.tab[data-t="hoje"]');
+  await page.click('.tab[data-t="tese"]');
+  expect(await page.evaluate(() => document.getElementById("p-tese").classList.contains("intro"))).toBe(false);
+  await page.close();
+});
+
+test("registar uma compra nao volta a animar a carteira", async () => {
+  const page = await open({ motion: true });
+  await page.click('.tab[data-t="carteira"]');
+  await page.waitForTimeout(1300);
+  await page.waitForSelector(".pill.ok");
+  await fill(page, { ticker: "LEU", units: "1", cost: "100" });
+  await page.waitForSelector("table.pos tbody tr");
+  expect(await page.evaluate(() => document.getElementById("p-carteira").classList.contains("intro"))).toBe(false);
+  await page.close();
+});
+
+test("com prefers-reduced-motion nao ha entrada nem contagem", async () => {
+  const page = await open();                      // reduced por defeito
+  await page.click('.tab[data-t="tese"]');
+  expect(await page.evaluate(() => document.getElementById("p-tese").classList.contains("intro"))).toBe(false);
+  // O numero fica no valor final desde o primeiro fotograma.
+  const n = await page.textContent("#p-hoje .stat b.num");
+  expect(n).toBe("vazia");
+  await page.close();
+});
+
+test("os numeros contam ate ao valor certo e ficam la", async () => {
+  const page = await open({ motion: true });
+  await page.click('.tab[data-t="carteira"]');
+  const amt = page.locator("#p-carteira .hero .amt");
+  await page.waitForTimeout(900);                 // a contagem dura ~620ms
+  expect((await amt.textContent()).trim()).toBe("€100");
+  await page.close();
+});
+
+test("a linha acabada de escrever acende-se uma vez", async () => {
+  const page = await open({ motion: true });
+  await page.click('.tab[data-t="carteira"]');
+  await page.waitForSelector(".pill.ok");
+  await fill(page, { ticker: "LEU", units: "1", cost: "100" });
+  await page.waitForSelector("table.pos tbody tr");
+  expect(await page.locator("tr[data-flash]").count()).toBe(1);
+  await page.close();
+});
+
+test("enquanto grava, o botao mostra que esta a gravar", async () => {
+  const page = await open({ motion: true, hold: true });
+  await page.click('.tab[data-t="carteira"]');
+  await page.waitForSelector(".pill.ok");
+  await fill(page, { ticker: "LEU", units: "1", cost: "100" });
+  await page.waitForSelector(".posform button .spin", { timeout: 5000 });
+  expect(await page.textContent(".posform button[type=submit]")).toContain("a gravar");
+  expect(await page.isDisabled(".posform button[type=submit]")).toBe(true);
   await page.close();
 });
