@@ -42,6 +42,7 @@ score → urgencia de catalisador → ausencia de flag. Pesos por valor de merca
 | 9 | Agregacao | — | prompts/09-agregacao.md |
 | 10 | **Tese profunda** (sabado) | — | prompts/10-tese-profunda.md |
 | 11 | **News** (diaria) | — | prompts/11-news.md |
+| 12 | **Sintese semanal** (sabado) | — | prompts/12-sintese-semanal.md |
 
 ---
 
@@ -183,6 +184,10 @@ de `.artifact-url`. Sem esse `url` cria um link novo em vez de actualizar o que 
 tem aberto — e o erro que estraga a rotina. **Nao passar `capabilities`**: a declaracao
 (`artifact`) ja esta guardada e e transportada; passa-la de novo so e preciso para a mudar.
 
+**Passar sempre `contract: 'latest'`** — decisao do utilizador (2026-08-30): a pagina anda
+sempre na versao mais recente do runtime. Se alguma vez uma actualizacao do contrato partir
+alguma coisa, diz-lho em vez de voltares a fixar a versao por tua conta.
+
 `dashboard.html` e **gerado, nunca editado a mao**. Template em `scripts/dashboard-template.html`.
 
 ---
@@ -216,7 +221,8 @@ fabricado fazem os testes falhar.
 
 ## News — rotina diaria
 
-`prompts/11-news.md` corre depois do delta, janela de ~48h, sobre **a carteira + o cabaz do
+`prompts/12-sintese-semanal.md` fixa a forma da sintese de sabado — sem ela, cada semana
+saia diferente e o build deitava fora metade. `prompts/11-news.md` corre depois do delta, janela de ~48h, sobre **a carteira + o cabaz do
 mes + os alertas abertos**. E um digest curado: movimento de preco sem causa e do `DELTA.md`,
 nota de analista nao entra, e um nome sem noticia material **nao aparece**. Zero linhas e um
 resultado valido — o ficheiro fecha sempre com `**Sem noticia material:**`, que e a prova de

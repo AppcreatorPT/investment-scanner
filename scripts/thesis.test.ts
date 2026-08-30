@@ -68,6 +68,23 @@ for (const file of files) {
       }
     });
 
+    test(`${file} · ${ticker}: tem a versao em palavras simples`, () => {
+      const m = n.body.match(/\*\*Em palavras simples:\*\*\s*([\s\S]*?)(?:\n\n|$)/);
+      expect(m).not.toBeNull();
+      const txt = m![1].replace(/\s+/g, " ").trim();
+      expect(txt.length).toBeGreaterThan(80);
+      // Simplificar nao e virar conselho. "Quem compra hoje esta a pagar..." e
+      // descricao; o que nao pode aparecer e o imperativo.
+      expect(txt).not.toMatch(/\b(recomend\w+|aconselh\w+|deves?\s+(comprar|vender)|vale a pena comprar|boa altura para)\b/i);
+    });
+
+    test(`${file} · ${ticker}: cada lente abre com uma linha simples`, () => {
+      for (const l of lenses) {
+        const first = l.body.split("\n").find((x) => x.trim());
+        expect(`${l.title}: ${first}`).toMatch(/^.+: >\s*\S/);
+      }
+    });
+
     test(`${file} · ${ticker}: tem falsificador`, () => {
       expect(n.body).toMatch(/\*\*Falsificador:\*\*\s*\S/);
     });

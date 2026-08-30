@@ -137,15 +137,59 @@ function parseBuylist() {
   return { date, picks, excluded, carry };
 }
 
+/**
+ * Sintese semanal (`output/YYYY-MM-DD_sintese-semanal.md`, ver prompts/12).
+ *
+ * A versao anterior deitava fora a seccao "Eventos" — que e a analise toda — e
+ * despejava o resto como texto cru. Agora cada seccao mantem a sua forma (listas,
+ * tabelas) e os eventos vem separados, um a um.
+ */
 function parseWeekly() {
   const file = latest("_sintese-semanal.md");
-  if (!file) return { date: "", blocks: [] as { title: string; body: string }[] };
+  const empty = { date: "", market: "", simple: "", sections: [] as WeeklySection[], events: [] as WeeklyEvent[] };
+  if (!file) return empty;
   const md = read(join(OUTPUT_DIR, file));
-  const secs = sections(md);
-  const blocks = Object.entries(secs)
-    .filter(([t]) => !/^Eventos$/i.test(t))
-    .map(([title, body]) => ({ title, body: body.slice(0, 4000) }));
-  return { date: file.slice(0, 10), blocks };
+
+  // A linha de mercado logo abaixo do titulo, antes da primeira seccao.
+  const head = md.split(/^##\s/m)[0];
+  const market = (head.match(/^\*\*(SPY:.*?)\*\*/m) ?? ["", ""])[1].trim();
+  let simple = "";
+
+  const sections: WeeklySection[] = [];
+  let events: WeeklyEvent[] = [];
+
+  for (const b of blocks(md, 2)) {
+    if (/^Eventos$/i.test(b.title)) {
+      events = blocks(b.body, 3).map((e) => {
+        const m = e.title.match(/^(\d+)\.\s*(.*)$/);
+        const title = m ? m[2] : e.title;
+        // Os campos variam de semana para semana ("O que aconteceu" / "O que
+        // acontece agora" / "O que fazer agora"). Le-se o rotulo, nao uma lista fixa.
+        const fields: { label: string; text: string }[] = [];
+        const re = /^\*\*(.+?):\*\*\s*([\s\S]*?)(?=\n\*\*.+?:\*\*|$)/gm;
+        let f: RegExpExecArray | null;
+        while ((f = re.exec(e.body))) {
+          fields.push({ label: f[1].trim(), text: f[2].replace(/\s+/g, " ").trim() });
+        }
+        return {
+          ticker: (title.match(/^([A-Z0-9.]{2,12})\b/) ?? ["", ""])[1],
+          title: title.replace(/^[A-Z0-9.]{2,12}\s*—\s*/, "").trim(),
+          fields,
+          body: e.body,
+        };
+      });
+      continue;
+    }
+    if (/^Em palavras simples$/i.test(b.title)) { simple = b.body.trim(); continue; }
+    sections.push({ title: b.title, body: b.body.slice(0, 6000) });
+  }
+
+  return { date: file.slice(0, 10), market, simple, sections, events };
+}
+
+interface WeeklySection { title: string; body: string }
+interface WeeklyEvent {
+  ticker: string; title: string; fields: { label: string; text: string }[]; body: string;
 }
 
 /**
@@ -170,15 +214,29 @@ function parseThesis() {
     const meta = (k: string) =>
       (b.body.match(new RegExp(`\\*\\*${k}:\\*\\*\\s*([^·\\n]+)`)) ?? ["", ""])[1].trim();
 
+    // A nota do preambulo (correccoes, avisos) estava a ser deitada fora.
+    const preamble = b.body.split(/^###\s/m)[0];
+    const note = (preamble.match(/(?:^>.*(?:\n|$))+/m) ?? [""])[0]
+      .split("\n").map((x) => x.replace(/^>\s?/, "").trim()).filter(Boolean).join(" ").trim();
+    const simple = (preamble.match(/\*\*Em palavras simples:\*\*\s*([\s\S]*?)(?:\n\n|$)/) ?? ["", ""])[1]
+      .replace(/\s+/g, " ").trim();
+
     const lenses = blocks(b.body, 3).map((l) => {
       let body = l.body;
+      // A primeira citacao de cada lente e a versao em linguagem simples.
+      let plain = "";
+      const q = body.match(/^(?:>.*(?:\n|$))+/);
+      if (q) {
+        plain = q[0].split("\n").map((x) => x.replace(/^>\s?/, "").trim()).filter(Boolean).join(" ").trim();
+        body = body.slice(q[0].length).trim();
+      }
       let verdict = "";
       const v = body.match(/^\*\*Juizo:\*\*\s*(.+)$/m);
       if (v) { verdict = v[1].trim(); body = body.replace(v[0], "").trim(); }
       let falsifier = "";
       const f = body.match(/^\*\*Falsificador:\*\*\s*([\s\S]+)$/m);
       if (f) { falsifier = f[1].replace(/\s+/g, " ").trim(); body = body.replace(f[0], "").trim(); }
-      return { title: l.title, body, verdict, falsifier };
+      return { title: l.title, body, plain, verdict, falsifier };
     });
 
     return {
@@ -187,6 +245,8 @@ function parseThesis() {
       theme: meta("Tema"),
       why: meta("Porque entrou"),
       confidence: meta("Confianca"),
+      simple,
+      note,
       lenses,
       verdict: lenses.find((l) => l.verdict)?.verdict ?? "",
       verdictKey: verdictKey(lenses.find((l) => l.verdict)?.verdict ?? ""),
@@ -207,9 +267,10 @@ function verdictKey(v: string): "barato" | "justo" | "caro" | "incerto" | "" {
   return "incerto";
 }
 
-interface ThesisLens { title: string; body: string; verdict: string; falsifier: string }
+interface ThesisLens { title: string; body: string; plain: string; verdict: string; falsifier: string }
 interface ThesisName {
   ticker: string; name: string; theme: string; why: string; confidence: string;
+  simple: string; note: string;
   lenses: ThesisLens[]; verdict: string; verdictKey: string; falsifier: string;
 }
 

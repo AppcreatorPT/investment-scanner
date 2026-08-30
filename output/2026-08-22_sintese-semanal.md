@@ -4,6 +4,23 @@
 
 ---
 
+## Em palavras simples
+
+- Uma das empresas da lista **falhou o teste que interessava** e foi riscada: a EYPT caiu 69% num
+  unico dia, e o aviso de que isto podia acontecer estava escrito ha semanas.
+- **O mercado inteiro desceu 1,4%** esta semana, por isso quase tudo o que temos desceu um bocado
+  sem ter culpa nenhuma.
+- Descobrimos que **dois precos que tinhamos escrito estavam errados** (IONQ e CRWV) — eram
+  estimativas sem fonte. Foram corrigidos, e os ganhos que pensavamos ter eram menores.
+- **Tres nomes tiveram boas noticias:** a HYPE por causa de uma declaracao do presidente
+  americano, a CRWV por ter vendido mais do que se esperava, e a RKLB por ter batido um recorde
+  de receita.
+- **O que fazer:** nada de urgente. Ha tres testes importantes a chegar no mesmo trimestre
+  (VKTX, PRME, QURE) — e como a EYPT acabou de mostrar, um destes pode cair 70% num dia. Nao por
+  muito dinheiro em cada um.
+
+---
+
 ## Carry-forward alerts
 
 - **EYPT ❌ LUGANO FALHOU (Aug 17)** — REMOVIDA DA BUY-LIST. Topline Aug 17: primary endpoint NAO atingido no full dataset. Ad hoc analysis com exclusao de 4% cohort (9/211 pacientes) atingiu nao-inferioridade (p=0.0096) mas o mercado nao aceitou dados com exclusao. Stock -69% para ~$4.57; 52-week low $3.95. RBC cortou PT $37→$5 (Sector Perform); JPMorgan Neutral; Jefferies manteve Buy (PT $8). Jefferies e Cantor apontam segundo trial LAGO (DME indicacao) como proximo catalisador 2027. Binary resolveu NEGATIVAMENTE conforme alertado. Posicoes existentes: decidir exit vs posicao pequena para LAGO. Nao entrar novo.

@@ -14,6 +14,8 @@
 
 **Tema:** Materiais & Energia · **Porque entrou:** cabaz do mes · **Confianca:** parcial
 
+**Em palavras simples:** Faz o combustivel especial de que as centrais nucleares novas vao precisar. Ja tentou construir esta mesma fabrica uma vez e faliu a meio, em 2014. Agora tem o Estado americano e um cliente a pagarem adiantado — mas a fabrica so comeca a produzir a serio em 2029. Quem compra hoje esta a pagar por uma coisa que so acontece daqui a tres anos.
+
 > **Correccao 2026-08-26 (mesma ronda).** A primeira versao desta tese leu a Centrus como
 > "transformador a feitio para o Estado" e pos como falsificador *"um contrato de HALEU com
 > contraparte nao governamental"*. Esse contrato **ja existia**: a 6 de Agosto de 2026 a
@@ -23,6 +25,8 @@
 > a vista porque e assim que este projecto trata erros.
 
 ### Analogo historico
+
+> A mesma empresa ja faliu a tentar construir esta mesma fabrica, no mesmo sitio, em 2014. Quem tinha accoes ficou sem nada.
 
 O melhor analogo desta empresa e **ela propria, ha doze anos**. A USEC — a antecessora
 directa da Centrus — pediu **Chapter 11 a 5 de Marco de 2014**, depois de nao conseguir
@@ -44,6 +48,8 @@ producao comercial em Piketon, com "esforcos em curso para avaliar se o calendar
 comprimido". Entre a assinatura e a entrega vao anos — e foi no intervalo que a USEC morreu.
 
 ### O invisivel
+
+> O dinheiro dos clientes entra agora, mas o produto so sai em 2029 — e ja esta vendido a um preco combinado hoje.
 
 **Isto e uma historia de balanco disfarcada de historia de resultados.** O backlog comercial
 chega a **$4,5 mil milhoes ate 2040**, dos quais $3,0B de enriquecimento contingente de LEU e
@@ -73,6 +79,8 @@ fornecimento fecha; **producao comercial** e em Piketon, em 2029.
 
 ### Under/over-value
 
+> Caro: a accao custa hoje muitas mais vezes o lucro do que custou nos ultimos cinco anos.
+
 **Juizo:** caro
 
 Com uma qualificacao que a primeira versao nao tinha: a empresa da lucro. O Q2 2026 trouxe
@@ -90,6 +98,8 @@ preco se move dessa maneira e os factos estruturais nao, o que se move e o apeti
 
 ### Cenarios
 
+> Se a fabrica abrir mais cedo, ganha; se atrasar, perde. E o calendario que decide, nao a procura — essa ja esta contratada.
+
 | Cenario | Tese | Gatilho datavel | Probabilidade |
 |---------|------|-----------------|---------------|
 | Bull | O calendario comprime-se: producao comercial em Piketon antes de 2029, e mais offtakes com prepagamento a empilhar-se sobre o da X-energy | Gestao a confirmar calendario comprimido; novos 8-K a nomear contrapartes | baixa a media |
@@ -106,7 +116,11 @@ nao a procura** — a procura ja esta contratada.
 
 **Tema:** Geopolitica & Defesa · **Porque entrou:** cabaz do mes · **Confianca:** parcial
 
+**Em palavras simples:** Faz avioes sem piloto, baratos, para voarem ao lado dos cacas. Foi a primeira a por um a voar — mas quando a Forca Aerea escolheu quem os vai construir a serio, escolheu duas empresas concorrentes. A Kratos continua no jogo a vender a estrutura do aviao a outros, nao o aviao inteiro.
+
 ### Analogo historico
+
+> Quem faz o primeiro modelo muitas vezes nao fica com a encomenda grande. Foi exactamente o que aconteceu aqui, em Junho de 2026.
 
 O analogo nao esta em 1980 — esta nos ultimos dois anos, no proprio programa. Em Janeiro de
 2024 a Forca Aerea americana financiou cinco desenhos de Collaborative Combat Aircraft
@@ -121,6 +135,8 @@ ganha o demonstrador nao ganha o programa**. O demonstrador prova que a coisa e 
 programa vai para quem consegue industrializa-la e para quem controla o software de missao.
 
 ### O invisivel
+
+> Vende a estrutura do aviao, mas o dinheiro esta a ir para quem faz o programa que o pilota sozinho.
 
 **A Kratos monetiza como fornecedor, nao como prime.** No unico CCA operacional ja
 adjudicado a uma equipa que a inclui — o MUX TACAIR dos Marines,
@@ -145,6 +161,8 @@ Atomics e o YFQ-44A da Anduril.
 
 ### Under/over-value
 
+> Impossivel dizer: o que esta assinado sao dezenas de milhoes, e o preco da accao fala de milhares de avioes que ainda ninguem encomendou.
+
 **Juizo:** impossivel de dizer
 
 Impossivel de dizer com honestidade — mas o onus da prova esta do lado optimista. Nao ha
@@ -159,6 +177,8 @@ fala de milhares de fuselagens num incremento cujos fornecedores ainda nao foram
 Nao ponho um alvo. Ponho a pergunta: quanto e que ja esta pago do Incremento 2?
 
 ### Cenarios
+
+> Tudo depende da segunda grande encomenda da Forca Aerea, que ainda nao tem fornecedores escolhidos.
 
 | Cenario | Tese | Gatilho datavel | Probabilidade |
 |---------|------|-----------------|---------------|
@@ -175,7 +195,11 @@ Isso inverte a leitura toda — deixa de ser fornecedor e passa a ser dono do pr
 
 **Tema:** Espaco & Deep Tech · **Porque entrou:** cabaz do mes · **Confianca:** parcial
 
+**Em palavras simples:** Faz foguetoes. Os pequenos ja funcionam e voam muitas vezes por ano. O grande, o Neutron, foi prometido para 2024 e ainda nao voou. Esta empresa costuma acabar por conseguir — so nunca na data que promete.
+
 ### Analogo historico
+
+> O foguetao pequeno tambem falhou a primeira, em 2017, e correu bem a segunda. A empresa cumpre; as datas que anuncia nao.
 
 Outra vez a propria empresa. O **Electron** voou pela primeira vez a **25 de Maio de 2017**,
 chegou ao espaco e nao chegou a orbita por causa de uma falha de equipamento de comunicacoes
@@ -197,6 +221,8 @@ consistentes com o historico, nao uma anomalia.
 
 ### O invisivel
 
+> "Chegar a rampa" nao e "descolar". Falta pelo meio o teste mais perigoso de todos.
+
 **"Entrega a rampa" nao e "lancamento".** A linguagem do filing e sobre alinhar a producao do
 tanque do primeiro andar com a entrega do Neutron **a rampa** no Q4 2026. Entre estar na
 rampa e voar fica o **static fire integrado em Wallops** — descrito como o marco de maior
@@ -215,6 +241,8 @@ ninguem discute.
 
 ### Under/over-value
 
+> Caro, e de uma maneira especial: o preco e uma aposta no foguetao grande, e cada mes de atraso gasta um bocado dessa aposta.
+
 **Juizo:** caro
 
 E a forma do "caro" importa: isto e uma opcao com theta. Nao vale a pena procurar um
@@ -227,6 +255,8 @@ neutro: e premio a evaporar-se. Foi por isso que os avisos de carry ja registado
 importante do nome, e nao um rodape.
 
 ### Cenarios
+
+> Um teste de motor sem problemas muda tudo. Outra avaria empurra para 2028 e obriga a pedir dinheiro.
 
 | Cenario | Tese | Gatilho datavel | Probabilidade |
 |---------|------|-----------------|---------------|
@@ -243,7 +273,11 @@ que transforma a data de "aspiracao" em "plano", e sobe o cenario base de uma pr
 
 **Tema:** IA & Computacao · **Porque entrou:** cabaz do mes · **Confianca:** parcial
 
+**Em palavras simples:** Constroi computadores quanticos. Quase todo o dinheiro que entra hoje nao vem dai: vem de empresas que comprou e de equipamento que faz para satelites. A tecnologia pode vir a ser enorme; a pergunta e se e esta empresa que fica com o dinheiro.
+
 ### Analogo historico
+
+> Em 2000, a empresa que decifrou o genoma humano valia uma fortuna e um ano depois valia oito vezes menos. Quem ganhou dinheiro foi quem vendia as maquinas.
 
 **Celera Genomics, 2000-2001.** A Celera sequenciou o genoma humano — a proeza cientifica da
 decada — e a accao [chegou a ~$276 em Marco de 2000](https://money.cnn.com/2000/04/10/companies/celera/).
@@ -262,6 +296,8 @@ disposto a pagar hoje por receita que so faz sentido daqui a uma decada.
 Celera nunca teve. O analogo avisa sobre a **forma** do risco, nao garante o desfecho.
 
 ### O invisivel
+
+> A IonQ compra as suas proprias maquinas a uma fabrica de chips. Nesta historia, ela esta do lado de quem compra as maquinas.
 
 **A qualidade da receita nao e a quantidade.** A IonQ reportou
 [$64,7M no Q1 2026, +755% em termos homologos](https://www.businesswire.com/news/home/20260506736198/en/IonQ-Announces-First-Quarter-2026-Financial-Results),
@@ -282,6 +318,8 @@ unica. Ambos os pontos vem de comentario publico, nao de filings: **confianca pa
 
 ### Under/over-value
 
+> Caro: da prejuizo e diz que vai continuar a dar. O preco e uma promessa sobre coisas tecnicas que ainda nao aconteceram.
+
 **Juizo:** caro
 
 A empresa diz que espera perdas significativas e despesa operacional crescente no futuro
@@ -296,6 +334,8 @@ Nota de honestidade que este projecto ja pagou para aprender: em Agosto de 2026 
 era $46,26 (Licao #23). Aqui nao ha estimativa nenhuma. Ha um veredicto e a razao dele.
 
 ### Cenarios
+
+> Se o dinheiro que vem da computacao quantica crescer mais depressa que o das empresas compradas, deixa de ser aposta e passa a ser negocio.
 
 | Cenario | Tese | Gatilho datavel | Probabilidade |
 |---------|------|-----------------|---------------|
@@ -313,7 +353,11 @@ seguidos. Isso transformaria a tese de "aposta em marcos" em "negocio".
 
 **Tema:** Longevidade & Saude · **Porque entrou:** score-5 fora do cabaz · **Confianca:** parcial
 
+**Em palavras simples:** Esta a inventar tratamentos que corrigem erros no ADN das pessoas. Ainda nao vende nada. Tem dinheiro que chega ate 2027 e os primeiros resultados tambem sao em 2027 — por isso vai quase de certeza ter de pedir mais dinheiro antes de saber se resulta.
+
 ### Analogo historico
+
+> O primeiro tratamento deste tipo aprovado no mundo so chegou a cerca de 60 pessoas em dois anos. O que travou nao foi a ciencia — foi nao conseguirem recolher celulas suficientes.
 
 **Casgevy, 2023-2026.** A primeira terapia de edicao genetica CRISPR aprovada — a prova
 definitiva de que a tecnologia funciona em doentes. E depois: **mais de dois anos apos a
@@ -333,6 +377,8 @@ recolha de celulas do doente, logo o gargalo especifico do Casgevy nao se aplica
 avisa que ha *sempre* um gargalo operacional invisivel — nao que seja o mesmo.
 
 ### O invisivel
+
+> O que mexe com o preco nos proximos meses nao e a ciencia, e a conta bancaria.
 
 **O verdadeiro catalisador de curto prazo nao e o IND. E o financiamento.** A Prime reportou
 **$149,2M de caixa e equivalentes a 31 de Marco de 2026, com runway "para dentro de 2027"**
@@ -355,6 +401,8 @@ licenciador do que para o proximo trimestre.
 
 ### Under/over-value
 
+> Impossivel dizer: nao vende nada, nao ha com o que comparar. So se pode medir o dinheiro que tem contra o tempo que falta.
+
 **Juizo:** impossivel de dizer
 
 E biotecnologia pre-receita: nao ha multiplo. Qualquer numero que eu produzisse aqui seria
@@ -367,6 +415,8 @@ recapitalizacao provavel antes de ver os dados. Isso pode compensar — mas e o 
 comprar, e vale a pena dize-lo em voz alta.
 
 ### Cenarios
+
+> Se arranjar dinheiro sem criar accoes novas, muda o jogo. Se nao, ha diluicao antes de se saber se o tratamento resulta.
 
 | Cenario | Tese | Gatilho datavel | Probabilidade |
 |---------|------|-----------------|---------------|

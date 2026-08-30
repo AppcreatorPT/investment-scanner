@@ -344,11 +344,6 @@ td.w { min-width: 260px; font-size: 12.5px; }
 .empty { padding: 30px; text-align: center; color: var(--ink-3); font-size: 13px; background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; }
 
 /* ═══ Sintese ═══ */
-.wk { display: flex; flex-direction: column; gap: 24px; }
-.wk article { padding: 22px 26px; background: var(--surface); border: 1px solid var(--line-soft); border-radius: 11px; }
-.wk h3 { margin: 0 0 12px; font-size: 15px; font-weight: 600; text-wrap: balance; }
-.wk .body { font-size: 13px; color: var(--ink-2); white-space: pre-wrap; max-width: 78ch; overflow-wrap: break-word; }
-.wk .body strong { color: var(--ink); font-weight: 600; }
 
 .foot { margin-top: 46px; padding-top: 18px; border-top: 1px solid var(--line-soft); font-size: 11.5px; color: var(--ink-3); }
 
@@ -459,6 +454,86 @@ tbody tr { transition: background var(--t-micro) var(--ease); }
 
 /* So o alerta mais grave respira — e o unico que justifica movimento sozinho. */
 .alert[data-l="high"] .stripe { animation: breathe 2.4s ease-in-out 3; }
+
+/* Listas e citacoes dentro de prosa — o reset global tira os marcadores, por isso
+   estas repoem-nos de propria conta. */
+.rl { display: flex; flex-direction: column; gap: 11px; padding-left: 0; }
+.rl li { position: relative; padding-left: 22px; font-size: 14px; line-height: 1.7; color: var(--ink-2); max-width: 76ch; }
+.rl li strong { color: var(--ink); font-weight: 600; }
+ul.rl li::before { content: ""; position: absolute; left: 2px; top: .72em; width: 6px; height: 1px; background: var(--ink-3); }
+ol.rl { counter-reset: n; }
+ol.rl li::before {
+  counter-increment: n; content: counter(n); position: absolute; left: 0; top: .18em;
+  font-size: 11px; font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums;
+}
+blockquote.note {
+  margin: 0; padding: 13px 16px; border-radius: 9px; border-left: 2px solid var(--accent-line);
+  background: var(--surface-2); font-size: 13.5px; line-height: 1.65; color: var(--ink-2); max-width: 76ch;
+}
+blockquote.note strong { color: var(--ink); font-weight: 600; }
+
+/* ── Em palavras simples: a versao que se le sem saber nada do assunto. ── */
+.plain {
+  padding: 18px 22px; border-radius: 12px; background: var(--accent-dim);
+  border: 1px solid var(--accent-line); display: flex; flex-direction: column; gap: 8px;
+}
+.plain h4 {
+  font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .1em;
+  color: var(--accent);
+}
+.plain p, .plain li { font-size: 15px; line-height: 1.68; color: var(--ink); max-width: 68ch; }
+.plain .rl li { color: var(--ink); }
+
+/* ── Lentes que abrem e fecham: le-se o resumo, abre-se o que interessa. ── */
+.lens details { border: 1px solid var(--line-soft); border-radius: 11px; background: var(--surface); }
+.lens details[open] { border-color: var(--line); }
+.lens summary {
+  list-style: none; cursor: pointer; padding: 15px 18px;
+  display: grid; grid-template-columns: 1fr 20px; gap: 5px 14px; align-items: start;
+  border-radius: 11px;
+}
+.lens summary::-webkit-details-marker { display: none; }
+.lens summary:hover .h { color: var(--ink); }
+.lens summary .h {
+  grid-column: 1; font-size: 10.5px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .1em; color: var(--accent); transition: color var(--t-micro);
+}
+.lens summary .p { grid-column: 1; font-size: 14.5px; line-height: 1.6; color: var(--ink); max-width: 68ch; }
+.chev { width: 18px; height: 18px; color: var(--ink-3); align-self: center; transition: transform var(--t-ui) var(--ease); }
+.lens summary .chev { grid-column: 2; grid-row: 1 / span 2; }
+details[open] > summary .chev { transform: rotate(180deg); }
+.lens details > .prose { padding: 2px 18px 18px; }
+details[open] > .prose, details[open] > .ev-body { animation: fade var(--t-ui) var(--ease); }
+
+/* ── Acontecimentos da semana ── */
+.events { display: flex; flex-direction: column; gap: 10px; }
+details.ev { border: 1px solid var(--line-soft); border-radius: 11px; background: var(--surface); }
+details.ev[open] { border-color: var(--line); }
+details.ev summary {
+  list-style: none; cursor: pointer; padding: 14px 18px;
+  display: grid; grid-template-columns: auto 1fr 20px; gap: 11px; align-items: center; border-radius: 11px;
+}
+details.ev summary::-webkit-details-marker { display: none; }
+details.ev summary .t { font-size: 13.5px; font-weight: 600; color: var(--ink); }
+.ev-body { padding: 0 18px 16px; display: flex; flex-direction: column; gap: 14px; }
+.ev-field h5 {
+  font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--ink-3); margin: 0 0 4px;
+}
+.ev-field p { font-size: 13.5px; line-height: 1.68; color: var(--ink-2); max-width: 76ch; }
+.ev-field strong { color: var(--ink); font-weight: 600; }
+
+.wk-body { display: flex; flex-direction: column; gap: 14px; }
+.wk-body p { font-size: 14px; line-height: 1.7; color: var(--ink-2); max-width: 76ch; }
+.wk-body em { color: var(--ink-3); }
+
+@media (max-width: 720px) {
+  .plain { padding: 16px 16px; }
+  .plain p, .plain li { font-size: 14.5px; }
+  .lens summary, details.ev summary { padding: 13px 14px; }
+  .lens details > .prose { padding: 2px 14px 16px; }
+  .ev-body { padding: 0 14px 14px; }
+}
 
 /* ═══ Noticias ═══ */
 .news { display: flex; flex-direction: column; gap: 12px; }
@@ -640,19 +715,47 @@ const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<
 const md = (s) => esc(s)
   .replace(/`([^`]+)`/g, "<code>$1</code>")
   .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+  .replace(/\*([^*\n]+?)\*/g, "<em>$1</em>")
   .replace(/\[(.+?)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
 const pct = (n) => (n >= 0 ? "+" : "") + n.toFixed(1) + "%";
 
 const cells = (l) => l.trim().replace(/^\||\|$/g, "").split("|").map((c) => c.trim());
 
-/** Markdown de leitura: paragrafos e tabelas. Nao e um parser geral — cobre o que a tese usa. */
+const LIST = /^\s*(?:[-*]|\d+\.)\s+/;
+
+/**
+ * Markdown de leitura: paragrafos, tabelas, listas e citacoes. Nao e um parser
+ * geral — cobre exactamente o que a tese e a sintese semanal usam.
+ */
 function rich(src, tableClass = "") {
   const lines = String(src ?? "").split("\n");
   const out = [];
   let i = 0;
+  const blankAhead = (n) => { while (n < lines.length && !lines[n].trim()) n++; return n; };
+
   while (i < lines.length) {
     const line = lines[i];
-    if (line.trim().startsWith("|") && /^\|[\s:|-]+\|$/.test((lines[i + 1] ?? "").trim())) {
+    if (LIST.test(line)) {
+      const ordered = /^\s*\d+\./.test(line);
+      const items = [];
+      while (i < lines.length && LIST.test(lines[i])) {
+        let item = lines[i++].replace(LIST, "");
+        // linhas de continuacao do mesmo ponto
+        while (i < lines.length && lines[i].trim() && !LIST.test(lines[i]) && !lines[i].trim().startsWith("|")) {
+          item += " " + lines[i++].trim();
+        }
+        items.push(item);
+        // os pontos podem estar separados por linha em branco
+        const j = blankAhead(i);
+        if (j > i && LIST.test(lines[j] ?? "")) i = j;
+      }
+      const tag = ordered ? "ol" : "ul";
+      out.push(`<${tag} class="rl">` + items.map((x) => `<li>${md(x)}</li>`).join("") + `</${tag}>`);
+    } else if (line.trim().startsWith(">")) {
+      const quote = [];
+      while (i < lines.length && lines[i].trim().startsWith(">")) quote.push(lines[i++].replace(/^\s*>\s?/, ""));
+      out.push(`<blockquote class="note">${md(quote.join(" "))}</blockquote>`);
+    } else if (line.trim().startsWith("|") && /^\|[\s:|-]+\|$/.test((lines[i + 1] ?? "").trim())) {
       const head = cells(line);
       i += 2;
       const rows = [];
@@ -669,7 +772,8 @@ function rich(src, tableClass = "") {
       i++;
     } else {
       const para = [];
-      while (i < lines.length && lines[i].trim() && !lines[i].trim().startsWith("|")) para.push(lines[i++]);
+      while (i < lines.length && lines[i].trim() && !lines[i].trim().startsWith("|")
+             && !LIST.test(lines[i]) && !lines[i].trim().startsWith(">")) para.push(lines[i++]);
       out.push(`<p>${md(para.join(" "))}</p>`);
     }
   }
@@ -1332,6 +1436,17 @@ nav.addEventListener("keydown", (e) => {
     return;
   }
 
+  // As lentes tem nomes tecnicos no ficheiro; no ecra usam-se as perguntas que
+  // elas respondem. O protocolo em prompts/10 fica na mesma.
+  const LENS = {
+    "Analogo historico": "Ja aconteceu antes",
+    "O invisivel": "O que ninguem esta a ver",
+    "Under/over-value": "Esta caro ou barato",
+    "Cenarios": "O que pode acontecer",
+  };
+  const chev = `<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>`;
+
   const slug = (x) => "th-" + x.toLowerCase().replace(/[^a-z0-9]/g, "");
   host.innerHTML = `<p class="lede">${md(t.intro)}</p>
     <nav class="thesis-nav" aria-label="Nomes analisados">` +
@@ -1351,24 +1466,27 @@ nav.addEventListener("keydown", (e) => {
             ${n.confidence ? `<span><span class="k">confianca:</span> ${esc(n.confidence)}</span>` : ""}
           </div>
         </header>
+        ${n.simple ? `<div class="plain"><h4>Em palavras simples</h4><p>${md(n.simple)}</p></div>` : ""}
+        ${n.note ? `<blockquote class="note">${md(n.note)}</blockquote>` : ""}
         <div class="lens">` +
-          n.lenses.map((l) => `<section>
-            <h4>${esc(l.title)}</h4>
+          n.lenses.map((l) => `<details>
+            <summary>
+              <span class="h">${esc(LENS[l.title] || l.title)}</span>
+              ${l.plain ? `<span class="p">${md(l.plain)}</span>` : ""}
+              ${chev}
+            </summary>
             <div class="prose">${rich(l.body, /Cenario/i.test(l.title) ? "scen" : "")}</div>
-          </section>`).join("") +
-          (n.falsifier ? `<p class="falsifier"><b>Falsificador</b><span>${md(n.falsifier)}</span></p>` : "") +
+          </details>`).join("") +
+          (n.falsifier ? `<p class="falsifier"><b>O que me faria mudar de ideias</b><span>${md(n.falsifier)}</span></p>` : "") +
         `</div>
       </article>`).join("") + `</div>`;
 
-  // A jump-nav e a unica navegacao util com cinco textos longos — mas o hash
-  // muda de separador se o utilizador voltar mais tarde, por isso e interceptada.
   host.querySelectorAll(".thesis-nav a").forEach((a) => a.addEventListener("click", (e) => {
     e.preventDefault();
     document.getElementById(a.getAttribute("href").slice(1))
-      ?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
+      ?.scrollIntoView({ behavior: still() ? "auto" : "smooth", block: "start" });
   }));
 })();
-
 
 /* ── Noticias ── */
 (function () {
@@ -1458,10 +1576,45 @@ nav.addEventListener("keydown", (e) => {
 /* ── Semana ── */
 (function () {
   const w = D.weekly;
-  document.getElementById("p-semana").innerHTML = w.blocks.length
-    ? `<p class="lede">Sintese semanal de ${esc(w.date)}.</p><div class="wk">` +
-      w.blocks.map((s) => `<article><h3>${esc(s.title)}</h3><div class="body">${md(s.body)}</div></article>`).join("") + `</div>`
-    : `<div class="empty">Ainda sem sintese semanal.</div>`;
+  const host = document.getElementById("p-semana");
+  if (!w.sections.length && !w.events.length) {
+    host.innerHTML = `<div class="empty">Ainda sem sintese semanal.</div>`;
+    return;
+  }
+
+  // As seccoes vem por esta ordem quando existem; as que nao estao na lista
+  // seguem-se pela ordem do ficheiro. A buy-list global fica no fim: ja tem
+  // separador proprio.
+  const ORDER = ["O que mudou esta semana", "Carry-forward alerts", "Riscos sistemicos", "Buy-list global"];
+  const rank = (t) => { const i = ORDER.indexOf(t); return i === -1 ? ORDER.length - 0.5 : i; };
+  const ordered = [...w.sections].sort((a, b) => rank(a.title) - rank(b.title));
+
+  const parts = [`<p class="lede">Sintese semanal de ${esc(w.date)}.</p>`];
+
+  if (w.simple) parts.push(`<div class="plain"><h4>Em palavras simples</h4>${rich(w.simple)}</div>`);
+  if (w.market) parts.push(`<div class="carry"><b>Mercado:</b> ${md(w.market)}</div>`);
+
+  if (w.events.length) {
+    parts.push(`<div><h2 class="sec">Os ${w.events.length} acontecimentos da semana</h2>
+      <div class="events">` + w.events.map((e) => `
+        <details class="ev">
+          <summary>
+            ${e.ticker ? `<span class="chip tick">${esc(e.ticker)}</span>` : ""}
+            <span class="t">${esc(e.title)}</span>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="ev-body">` + e.fields.map((f) => `
+            <div class="ev-field"><h5>${esc(f.label)}</h5><p>${md(f.text)}</p></div>`).join("") + `
+          </div>
+        </details>`).join("") + `</div></div>`);
+  }
+
+  for (const s of ordered) {
+    parts.push(`<div><h2 class="sec">${esc(s.title)}</h2><div class="wk-body">${rich(s.body)}</div></div>`);
+  }
+
+  host.innerHTML = parts.join("");
 })();
 
 show(localStorage.getItem("scanner_tab") || "hoje");

@@ -32,6 +32,26 @@ Nunca os 24 nomes. Se sobrarem lugares, deixam-se vazios.
 
 ---
 
+## Em palavras simples (obrigatorio)
+
+Cada nome abre com um bloco **`**Em palavras simples:**`**, entre a linha de meta e a
+primeira lente. E a versao que se le **sem saber nada do assunto** — a regra pratica e:
+*uma crianca de dez anos tem de perceber o que a empresa faz e qual e o problema.*
+
+- 2 a 4 frases curtas. Sem jargao: nao "backlog contingente", sim "encomendas ja assinadas
+  que so se transformam em dinheiro daqui a uns anos".
+- Diz **o que a empresa faz**, e depois **a tensao principal** — a coisa que decide se isto
+  corre bem ou mal.
+- **Simplificar nao e suavizar.** Se a conclusao e "isto e caro e o catalisador esta a tres
+  anos", a versao simples diz isso por outras palavras, nao diz menos.
+- Nunca vira conselho. Descreve; nao manda comprar nem vender.
+
+**Alem disso, cada lente abre com uma linha de citacao (`> `)** — uma frase, a mesma ideia
+em linguagem simples. E o que aparece no dashboard antes de a lente ser aberta, e e por
+essas quatro linhas que o leitor decide o que vale a pena ler por inteiro.
+
+---
+
 ## As quatro lentes
 
 Cada nome produz exactamente estes quatro blocos, por esta ordem.
@@ -113,21 +133,32 @@ por `### ` (uma por lente) — os titulos tem de bater certo.
 
 **Tema:** X · **Porque entrou:** carteira | cabaz do mes | score-5 · **Confianca:** parcial
 
+**Em palavras simples:** O que a empresa faz, em duas frases sem jargao, e a tensao
+principal que decide se isto corre bem ou mal.
+
 ### Analogo historico
+
+> A mesma ideia numa frase simples.
 
 Corpo, com [fontes datadas](url).
 
 ### O invisivel
 
+> A mesma ideia numa frase simples.
+
 Corpo.
 
 ### Under/over-value
+
+> A mesma ideia numa frase simples.
 
 **Juizo:** caro
 
 Corpo.
 
 ### Cenarios
+
+> A mesma ideia numa frase simples.
 
 | Cenario | Tese | Gatilho datavel | Probabilidade |
 |---------|------|-----------------|---------------|
@@ -140,5 +171,9 @@ Corpo.
 ---
 ```
 
-O `**Juizo:**` tem de ser a primeira linha do bloco Under/over-value — e o que o dashboard
-usa para a pill de veredicto.
+O `**Juizo:**` tem de ser a primeira linha **depois da citacao** no bloco Under/over-value —
+e o que o dashboard usa para a pill de veredicto.
+
+No dashboard as lentes aparecem com o nome da pergunta que respondem — "Ja aconteceu antes",
+"O que ninguem esta a ver", "Esta caro ou barato", "O que pode acontecer" — mas **os titulos
+no ficheiro sao os canonicos acima**, que e o que o parser procura.
