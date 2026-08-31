@@ -1,77 +1,49 @@
-# Buy-list 2026-08-24 — funil para a tua DD, nao e conselho
+# Buy-list 2026-08-31 — funil para a tua DD, nao e conselho
 
-**Perfil:** Franca · €100/mes · CTO Trade Republic (fracionado) · so cotadas.
-A €100/mes compras **1-2 posicoes por mes** — isto e um funil de candidatos, nao uma lista de compras.
-
-`cto` = compravel ja · `cto-pea` = tambem elegivel a PEA (acao UE) · `verificar` = praca por confirmar
+*Score >= 4, ordenado por asymmetry_score desc. 43 instrumentos. Precos/dados dos scans de 2026-08-31. Nao e recomendacao.*
 
 | Score | Ticker | Nome | Tema | Conta | Entrada | Catalisador (data) | Porque agora |
-|-------|--------|------|------|-------|---------|-------------------|--------------|
-| 5 | LEU | Centrus Energy | Materiais & Energia | cto | ~€30 | Nova centrifuga Oak Ridge Q4 2026 | Monopolio HALEU nos EUA; contrato DOE $900M; backlog $4.5B ate 2040 |
-| 5 | PRME | Prime Medicine | Longevidade & Saude | cto | ~€10 | PM647 IND/CTA FDA/EMA antes fim Set 2026 | Arbitragem Beam resolvida Jul 8; dois catalisadores sequenciais; ARK a comprar |
-| 4 | NXE | NexGen Energy | Materiais & Energia | cto | ~€10 | Milestones construcao Rook I Q4 2026 | Aprovacao CNSC Mar 2026; construcao activa Jun 8; >20% supply global uranio |
-| 4 | UUUU | Energy Fuels | Materiais & Energia | cto | ~€10 | HREE Phase 1 operacional late 2027 | Dupla exposicao uranio + rare earths; $1.9B NPV8% BFS; unica instalacao integrada US |
-| 4 | FRVO | Fervo Energy | Materiais & Energia | cto | ~€10 | Cape Station GeoBlock 1 Q4 2026 | Primeira EGS utility-scale em comissionamento; Google como cliente; 24/7 clean baseload |
-| 4 | VKTX | Viking Therapeutics | Longevidade & Saude | cto | ~€20 | VK2735 maintenance study topline antes fim Set 2026 | Catalisador mais aguardado Q3 em obesidade; durabilidade diferenciador critico vs semaglutide |
-| 4 | QURE | uniQure | Longevidade & Saude | cto | ~€15 | BLA AMT-130 submission Q3 2026 | FDA aceitou 3-year analysis pos-Type B reversal; primeiro gene therapy HD seria historico |
-| 4 | ALT | Altimmune | Longevidade & Saude | cto | ~€10 | PERFORMA Phase 3 (iniciado Aug 3 2026) | Breakthrough Therapy Designation MASH; Phase 3 activa; deal target potencial Big Pharma |
-| 4 | BGC | BGC Group | Trading & Mercados | cto | ~€10 | FMX full curve US Treasuries lancado Aug 3; Q3 Nov 2026 | FMX 42% market share Treasuries; catalisador real ainda nao totalmente no preco |
-| 4 | VIRT | Virtu Financial | Trading & Mercados | cto | ~€20 | Q3 earnings Nov 2026 | Trading income +26% YoY; EBITDA 60.8%; expansao cripto e ETFs; volatilidade macro sustentada |
-| 4 | GLXY | Galaxy Digital | Trading & Mercados | cto | ~€10 | CLARITY Act Q4 2026 / 2027 | Unico pure-play institucional crypto management; CLARITY Act assimetria 30%; Nasdaq listing |
-| 4 | FLOW.AS | Flow Traders | Trading & Mercados | cto-pea | ~€10 | Q3 earnings Nov 2026 | Maior market maker ETP europeu; MiCA cripto ETPs = spreads mais largos; acessivel direto EU |
-| 4 | IL0011284465 | Plus500 (Xetra) | Trading & Mercados | cto | ~€10 | US prediction markets H2 2026; Q3 Nov 2026 | Primeiro broker tradicional em EUA prediction markets; dividend yield suporte; Nasdaq dual listing |
-| 4 | ETOR | eToro | Trading & Mercados | cto | ~€10 | Q3 earnings Nov 2026 (primeiro pos-IPO completo) | 35M utilizadores; IPO overhang a diminuir; sub-coberto; cripto revenue recovery potencial |
-| 4 | KTOS | Kratos Defense | Geopolitica & Defesa | cto | ~€20 | DOD drone swarm contracts; Q3 Nov 2026 | Lider puro-play drones autonomos tacticos; XQ-58A unico loyal wingman US em producao |
-| 4 | PL | Planet Labs | Geopolitica & Defesa | cto | ~€10 | NGA/DOD contracts; Q3 Nov 2026 | Unico daily global coverage; $600M market cap sub-avaliado vs data moat; NGA contratos activos |
-| 4 | EXOS.PA | Exosens | Geopolitica & Defesa | cto-pea | ~€10 | Encomendas NATO; H2 2026 earnings | Unico produtor europeu ITAR-free de image intensifiers; rearmamento NATO catalisador estrutural |
-| 4 | R3NK.DE | Renk Group | Geopolitica & Defesa | cto-pea | ~€15 | Contratos Bundeswehr; H2 2026 earnings | Monopolio transmissoes Leopard 2; rearmamento NATO backlog multi-ano; sub-coberto vs Rheinmetall |
-| 4 | THEON.AS | Theon International | Geopolitica & Defesa | cto-pea | ~€10 | Contratos NATO forcas especiais; H2 2026 | Unico ITAR-free night vision europeu; procurement urgente pos-Ukraine; sub-coberto |
-| 4 | IONQ | IonQ | IA & Computacao | cto | ~€10 | IonQ Forte launch; Q3 Nov 2026 | Unica pure-play quantum cotada; backlog governamental real e crescente; Q2 +16% spike |
-| 4 | CRWV | CoreWeave | IA & Computacao | cto | ~€20 | Q3 earnings Nov 2026 | Maior GPU cloud puro-play; analyst consensus $143 vs stock $90; backlog Microsoft/Meta/OpenAI |
-| 4 | SOUN | SoundHound AI | IA & Computacao | cto | ~€10 | Voto LivePerson 2-Set-2026; Q3 Nov 2026 | 97% votos FOR; catalisador de curto prazo claro; moat automotive >250 OEM |
-| 4 | RKLB | Rocket Lab USA | Espaco & Deep Tech | cto | ~€10 | Neutron pad Q4 2026; Iridium deal | Unico end-to-end launch+spacecraft alternativo ao SpaceX; space systems division sub-avaliada |
-| 4 | ASTS | AST SpaceMobile | Espaco & Deep Tech | cto | ~€10 | BlueBirds Block 1; commercial D2D Q1 2027 | Unica D2D tech validada em orbit; backlog $1.3B AT&T/Verizon/Vodafone; TAM global |
-
----
-
-## Fora do perimetro desde 2026-08-26
-
-Regra nova: so instrumentos compraveis no CTO Trade Republic. Tokens exigem exchange
-separada e regime fiscal distinto — saem da buy-list. A tese pode voltar via **proxy cotado**
-(acao ou ETP em Euronext/Xetra); o tema Financas Alternativas passa a cacar essa forma.
-
-| Ticker | Nome | Motivo |
-|--------|------|--------|
-| HYPE | Hyperliquid | Token — precisa de cripto-exchange, nao de broker |
-| AAVE | Aave | Token — precisa de cripto-exchange, nao de broker |
-| MORPHO | Morpho | Token — precisa de cripto-exchange, nao de broker |
-| ONDO | Ondo Finance | Token — precisa de cripto-exchange, nao de broker |
-| CMCX.L | CMC Markets | So LSE + OTC americano (CCMMF); Trade Republic nao opera nenhuma das duas |
-
-**LSE resolvida (2026-08-26):** o Trade Republic nao opera no Reino Unido nem oferece a
-LSE. **Plus500** foi recuperada pela listagem secundaria em Xetra (ISIN `IL0011284465`).
-**CMC Markets** nao tem via — so LSE e OTC americano, nenhuma delas disponivel.
-
-
-## Alertas de carry (nao aumentar)
-
-| Ticker | Flag | Nota |
-|--------|------|------|
-| EYPT | INVALIDADO | LUGANO falhou Aug 17 (-69%); nao re-incluir nunca |
-| CRWV | ⚠️ CARRY | CEO + McBee venderam $44M+ via 10b5-1; nao aumentar |
-| GERN | ⚠️ CARRY | IMpactMF base case escorregou para H2 2028; score baixado para 3 |
-| SOUN | ⚠️ ATENCAO MAXIMA | Voto LivePerson 2-Set 10h ET — deadline 1-Set 23:59; 97% FOR; quorum falta poucos pp; resultado em 7 dias |
-| NBIS | ⚠️⚠️ CARRY | -15% (~$248→$210) — $5.75B convertible notes FECHADOS (Aug 24: $3.45B 2030 + $2.3B 2034); dilucao ~15.8M acoes; Burry short IN THE MONEY; Form 4 fecho pendente; nao aumentar |
-| INOD | ⚠️ CARRY | Stock muito abaixo entry $90.68 (~$62); CEO transition Sep 30; nao aumentar |
-| ASTS | ⚠️ CARRY | BlueBirds 11-13 (Block 2) lancados Aug 5 ✅; D2D comercial still early 2027; 3 PT cuts; CEO insider sale $14.7M |
-| LUNR | ⚠️ CARRY | IM-3 sem data confirmada; CEO insider sale $14.7M |
-| GLXY | ⚠️ CARRY | CLARITY Act: vote procedural Sep 15 agendado (60 votos necessarios; estreito mas possivel) |
-| RKLB | ⚠️ ATENCAO | Neutron Q4 launchpad on track mas 2026 launch nao reafirmado; escorregamento 2027 possivel |
-| HAG.DE | ⚠️ CARRY | Jefferies Hold; JPMorgan Neutral EUR 85; premium persiste |
-| HYPE | ⚠️ ATENCAO | Novo ATH $83.27 (Aug 25); CFTC path via HYPE perp futures (Coinbase certified); MAS alert menos relevante; nao entrar/aumentar em ATH |
-| QURE | ⚠️ ATENCAO | BLA AMT-130 ainda nao submetida; janela Q3 fecha Sep 30 (5 semanas); vigiar press releases |
-| FRVO | ⚠️ ATENCAO | Lockup insiders expira Nov 14 2026 — aguardar pos-lockup para entrada |
-
----
-
-_Gerado automaticamente pelo investment-scanner em 2026-08-26. Nao e conselho de investimento._
+|-------|--------|------|------|-------|---------|--------------------|--------------|
+| 5 | PURR | Hyperliquid Strategies | Fin. Alt. | cto | ~€10 (fracionado) | Continuacao do uso da facilidade de emissao de acoes de $1B para crescer a tesouraria de HYPE (2026-11) | A tesouraria de HYPE mais que duplicou (12.5M para 29.3M tokens) num balanco sem divida e com $305.5M de net income no FY2026, mas o mercado ainda desconta fortemente... |
+| 5 | CNCK | Coincheck Group | Fin. Alt. | cto | ~€3 (fracionado, preco baixo por acao) | Expansao continuada do modelo 'crypto-as-a-service' com parceiros terceiros apos investimento estrategico da KDDI (fechado 12 mai 2026) (2026-09) | A KDDI (gigante das telecomunicacoes japonesas) investiu estrategicamente na empresa, que esta a diversificar via 'crypto-as-a-service' com terceiros, mas o mercado... |
+| 5 | AVAV | AeroVironment | Geopolitica | cto | ~€10 (fracionado) | Encomenda US Army $51M de Switchblade 600 Block 2 (Ago 2026) parte de IDIQ $990M (2026-09-09) | Nucleo de drones/loitering munitions (Switchblade) continua a ganhar contratos Army solidos mesmo com o escandalo do segmento Space |
+| 5 | LGVN | Longeveron | Longevidade | cto | ~€7 (fracionado) | Top-line do Phase 2b ELPIS II (laromestrocel em HLHS) esperado meados de Setembro 2026 (2026-09-15) | Database lock e literalmente hoje (31 Ago 2026), com top-line em semanas — catalisador binario extremamente proximo e quase nao coberto por analistas dado o tamanho... |
+| 4 | RKLB | Rocket Lab USA | Espaco | cto | ~€10 (fracionado) | Entrega do Neutron ao launchpad (Wallops Island LC-3) Q4 2026 (2026-12-31) | Rocket Lab continua a ser o unico launch provider operacional alternativo a SpaceX com manufacturing de spacecraft integrado |
+| 4 | RDW | Redwire Corporation | Espaco | cto | ~€10 (fracionado) | Task orders sob Andromeda IDIQ (space domain awareness) e SHIELD IDIQ (missile defense) ao longo de 2026-2027 (Q4 2026) | Redwire acumulou em 2026 dois IDIQs de grande escala (Andromeda $1.8B, SHIELD $151B) que ainda nao estao totalmente refletidos no preco porque sao ceilings... |
+| 4 | VOYG | Voyager Technologies | Espaco | cto | ~€10 (fracionado) | Starlab completou a Commercial Critical Design Review (CCDR) com a NASA presente, transicao de design para manufacturing/integracao (Q4 2026) | Starlab passou da fase de design para manufacturing - marco visivel que reduz o risco tecnico da estacao substituta da ISS |
+| 4 | FLY | Firefly Aerospace | Espaco | cto | ~€10 (fracionado) | Missao Blue Ghost CLPS acelerada financiada pelos $144M da NASA (2026-12-31) | Firefly e uma das poucas empresas privadas-agora-publicas com um pouso lunar bem sucedido ja realizado (Blue Ghost, Mar 2025) e revenue recorde a crescer |
+| 4 | OUST | Ouster | Espaco | cto | ~€10 (fracionado) | Expansao de capacidade de fabrico com a Benchmark para mais de 100.000 sensores Rev8/ano (Q4 2026) | Ouster pivotou de lidar automotivo (mercado saturado) para lidar de cor nativa aplicado a robotica humanoide, industrial e defesa (Counter-UAS) - um angulo... |
+| 4 | SPIR | Spire Global | Espaco | cto | ~€10 (fracionado) | Expansao de contratos governamentais e comerciais com o produto HyMS (Q4 2026) | Spire e descrita mesmo pela imprensa mainstream como 'a empresa menos conhecida' do sector EO, apesar de crescer 50% YoY com um modelo data-as-a-service diversificado... |
+| 4 | GLXY | Galaxy Digital | Fin. Alt. | cto | ~€10 (fracionado) | Voto de cloture no Senado dos EUA sobre o CLARITY Act (estrutura de mercado cripto) a 15 de setembro de 2026, que abriria o debate formal ao bill (2026-09-15) | O mercado ja desconta falha do CLARITY Act em 2026 (odds a 10%, segundo a propria empresa) |
+| 4 | FIGR | Figure Technology Solutions | Fin. Alt. | cto | ~€10 (fracionado) | Fecho previsto da aquisicao da Kiavi (expansao para novas classes de ativos de credito) e lancamento da rede OPEN (On-Chain Public Equity Network) para tokenizacao de acoes (2026-11) | Crescimento de volume de +132% YoY no Consumer Loan Marketplace e lider de mercado em RWA tokenization (>$1B de originacoes mensais on-chain), mas a acao ja corrigiu... |
+| 4 | EXOD | Exodus Movement | Fin. Alt. | cto | ~€10 (fracionado) | Conclusao da integracao da Monavate e Baanx e arranque da parceria de pagamentos com a UFC (2026-Q4) | A acao subiu 41% apos o anuncio do pivot para fintech de pagamentos B2B (receita menos ciclica que uma wallet cripto pura), mas o mercado ainda trata a EXOD como uma... |
+| 4 | ADE | Bitcoin Group SE | Fin. Alt. | cto-pea | ~€10 (fracionado, a confirmar disponibilidade fracionada na TR) | Resultados semestrais/trimestrais com progresso do redesenvolvimento da plataforma de trading bitcoin.de (2026-11) | Unica exchange cripto cotada na Europa com banco totalmente licenciado (BaFin) e exposicao direta a bitcoin em balanco, mas ofuscada pelas grandes cotadas americanas... |
+| 4 | XRPL | CoinShares Physical XRP | Fin. Alt. | cto | ~€10 (fracionado) | Classificacao de tokens como XRP no CLARITY Act (voto de cloture 15/set/2026) e adocao continuada de RippleNet/ODL por instituicoes financeiras (2026-09-15) | XRP e um dos tokens mais debatidos na classificacao regulatoria do CLARITY Act (commodity vs security) |
+| 4 | KTOS | Kratos Defense & Security Solutions | Geopolitica | cto | ~€10 (fracionado) | Valkyrie CCA demonstrou capacidades de electronic warfare e BLOS C2 em teste do US Marine Corps (2026-11-05) | KTOS e o unico loyal wingman americano em producao real (XQ-58A) num momento em que o DOD esta a comprometer bilioes para autonomous systems |
+| 4 | EXENS.PA | Exosens | Geopolitica | cto-pea | ~€10 (fracionado) | Contrato OCCAR de ~€500M com Theon para 100.000 binoculares MIKRON (maior acordo de night-vision de sempre) (Q1 2027) | Unico produtor europeu de image intensifier tubes independente |
+| 4 | R3NK.DE | Renk Group | Geopolitica | cto-pea | ~€15 (fracionado) | H1 2026: order intake record €1.2B (+29.7% YoY), backlog €7.4B (>90% da receita 2026), book-to-bill 1.9 (2027-03-01) | Monopolio de facto em transmissoes de blindados europeus |
+| 4 | THEON.AS | Theon International | Geopolitica | cto-pea | ~€10 (fracionado) | Contrato OCCAR conjunto com Exosens (~€500M, 100.000 binoculares MIKRON) (2026-09-09) | ITAR-free night vision europeu tem procura estrutural — exercitos europeus nao querem dependencia ITAR US |
+| 4 | MRCY | Mercury Systems | Geopolitica | cto | ~€10 (fracionado) | FY2026 (fechado): receita $984M (+7.9%), EBITDA ajustado $150M (+25.7%) (2026-10-15) | MRCY processa sinal em >300 plataformas de defesa criticas — switching cost pratico e zero |
+| 4 | BKSY | BlackSky Technology | Geopolitica | cto | ~€10 (fracionado) | Contrato internacional multi-ano (Assured + On-Demand, Gen-2/Gen-3 imagery) (2026-11-05) | Complemento contrarian e sub-coberto a Planet Labs — market cap ~6x menor mas com crescimento de receita semelhante (+50% YoY) e sem o re-rating extremo ja sofrido... |
+| 4 | CRWV | CoreWeave | IA | cto | ~€20 (fracionado) | Q3 2026 earnings (Q4 2026) | CoreWeave continua o maior GPU cloud puro-play listado, com Q2 a bater consensus (+112% YoY) e guidance FY subida para $12.4-13.2B |
+| 4 | SOUN | SoundHound AI | IA | cto | ~€10 (fracionado) | Voto reconvocado de accionistas LivePerson 2-Set-2026 (97%+ dos votos expressos a favor, mas quorum de maioria de accoes emitidas ainda por atingir) (2026-09-02) | SoundHound continua o unico voice AI puro-play cotado com adocao real em >250 OEM automotive |
+| 4 | SYM | Symbotic | IA | cto | ~€10 (fracionado) | Novos deployments e expansao de software (Q4 2026) | Symbotic e um dos poucos players de embodied AI/robotica ja com GAAP profitability e receita real (nao apenas promessa) — Q3 FY26 confirma execucao com EBITDA... |
+| 4 | APLD | Applied Digital | IA | cto | ~€10 (fracionado) | Expansao de capacidade de data centers AI (Q4 2026) | Applied Digital e um picks-and-shovels de AI data center infrastructure que beneficia de qualquer aumento de procura de compute independentemente do vencedor entre... |
+| 4 | PRME | Prime Medicine | Longevidade | cto | ~€5 (fracionado) | PM647 IND/CTA submission FDA/EMA Q3 2026 (janela fecha 30 Set) (2026-09-30) | Arbitragem com a Beam resolvida a favor de PRME (direitos PM647 confirmados em AATD) |
+| 4 | BIOA | BioAge Labs | Longevidade | cto | ~€10 (fracionado) | Resultados preliminares da Phase 2 de azelaprag + semaglutida em obesidade em adultos mais velhos esperados em H2 2026 (Q4 2026) | E uma das poucas empresas cotadas cuja tese e literalmente biologia do envelhecimento (nao apenas obesidade ou oncologia com narrativa de longevidade colada) |
+| 4 | ELDN | Eledon Pharmaceuticals | Longevidade | cto | ~€5 (fracionado) | Inicio de Phase 3 em transplante renal (tegoprubart, ~600 doentes) previsto para finais de 2026 (Q4 2026) | Tegoprubart e o unico imunossupressor usado em todos os xenotransplantes suino-humano recentes (4 casos no MGH com a eGenesis) — e a via 'picks-and-shovels' cotada... |
+| 4 | GRAL | GRAIL | Longevidade | cto | ~€20 (fracionado) | Reuniao do painel consultivo da FDA sobre o PMA do teste Galleri MCED (2026-09-23) | O painel de 23 Set e o primeiro grande teste regulatorio do MCED (deteccao multi-cancro) nos EUA — uma decisao positiva abriria via de aprovacao e reembolso mais... |
+| 4 | BMEA | Biomea Fusion | Longevidade | cto | ~€2 (fracionado) | Dados iniciais de 28 dias de perda de peso do Phase 1 GLP-131 (BMF-650) esperados no Q3 2026 (2026-09-30) | O mercado de GLP-1 oral esta em erupcao (orforglipron da Lilly ja aprovado Q1 2026) mas BMEA ($122M) ainda nao esta associado a este tema pela maioria dos... |
+| 4 | QTRX | Quanterix | Longevidade | cto | ~€10 (fracionado, confirmar preco atual) | Decisao da FDA sobre submissao 510(k) do teste multi-analito de Alzheimer's (Lucent AD Complete) esperada no Q4 2026 (Q4 2026) | A decisao da FDA no Q4 2026 seria a primeira aprovacao de um teste sanguineo multi-analito para Alzheimer's da Quanterix |
+| 4 | NXE | NexGen Energy | Materiais | cto | ~€1 (fracionado) | Inicio formal da construcao do Rook I no verao de 2026 apos Decisao Final de Investimento (2026-09-01) | Aprovacao regulatoria final (CNSC, mar 2026) e FID ja emitidas mas a construcao so arrancou no verao de 2026 |
+| 4 | FRVO | Fervo Energy | Materiais | cto | ~€1 (fracionado) | Primeira producao de energia da Fase I (100 MW) de Cape Station esperada no final de 2026 (2026-11-11) | Entrada recomendada pos-lockup (apos 11 nov 2026): a pressao de oferta de accoes dos insiders tende a criar um ponto de entrada mais barato antes do arranque... |
+| 4 | USAR | USA Rare Earth | Materiais | cto | ~€1 (fracionado) | Rampagem da linha de Fase 1a de imanes sinterizados NdFeB para 600 MTPA ate final de Q4 2026 (Q4 2026) | E dos poucos players ocidentais a produzir imanes NdFeB comerciais em solo americano em 2026 (inicio Q2), mas o mercado ainda nao precificou a rampagem para 600 MTPA... |
+| 4 | AMPX | Amprius Technologies | Materiais | cto | ~€1 (fracionado) | Backlog de $53.3M a converter em receita nos proximos 12 meses (Q4 2026) | Guidance elevada duas vezes em 2026 (receita Q1 2.5x em termos homologos) e contratos de defesa validados (Air Force $270M via cliente, Army $117M) ainda nao... |
+| 4 | PPTA | Perpetua Resources | Materiais | cto | ~€1 (fracionado) | Emprestimo EXIM de $2.9B aprovado em mai 2026, disponibilidade esperada no 2S 2026 apos documentacao final (Q3 2026) | O antimonio e um mineral critico de defesa (China domina mais de 80% da oferta global) sem outra reserva domestica dos EUA identificada |
+| 4 | NB | NioCorp Developments | Materiais | cto | ~€1 (fracionado) | Pedido de financiamento EXIM de $780M em curso, designado prioridade de topo pelo banco (Q4 2026) | Unico deposito ocidental a combinar niobio (100% importado pelos EUA), escandio e terras raras numa unica mina quase financiada (~US$500M ja levantados, EXIM em... |
+| 4 | LNZA | LanzaTech | Materiais | cto | ~€1 (fracionado) | Reset estrutural anunciado no Q2 2026 (cortes de custos), com 6 plantas comerciais ja a produzir etanol e a primeira planta de SAF operacional desde fev 2026 | Nome esquecido pelo mercado apos anos de promessas nao cumpridas desde o SPAC de 2023 e forte queda da accao |
+| 4 | VUL | Vulcan Energy Resources | Materiais | cto | ~€2 (fracionado, cotacao em euros) | Avanco do projecto integrado Lionheart (litio + geotermia) no Vale do Reno Superior (2026-09-10) | Sub-coberto por analistas norte-americanos apesar de ser o unico projecto de litio geotermico de baixo carbono na Europa com apoio local (subsidios alemaes/UE) |
+| 4 | BGC | BGC Group | Trading | cto | ~€10 (fracionado) | Q3 2026 earnings (inicio Nov 2026) (2026-11-05) | FMX subiu de 35% para 42% de quota em US Treasuries em 12 meses e lancou a curva completa de futuros a 3 Ago 2026, abrindo nova linha de receita |
+| 4 | ETOR | eToro | Trading | cto | ~€10 (fracionado) | Fecho da aquisicao da TradeZero esperado no H1 2027 (clearing proprio, opcoes e futuros) (2026-11-10) | Equities passaram de 25% para 60% do trading commission em 18 meses — a eToro esta a diversificar-se de cripto com sucesso, mas o mercado ainda a trata como proxy... |
+| 4 | ENX.PA | Euronext | Trading | cto-pea | ~€20 (fracionado) | Marcos do plano Innovate for Growth 2027 (2026-11-05) | Nove trimestres consecutivos de crescimento organico de dois digitos e um padrao raro entre exchanges publicas — o modelo de M&A disciplinado (Atenas, Admincontrol)... |
+| 4 | SNEX | StoneX Group | Trading | cto | ~€20 (fracionado) | Fiscal Q4 2026 earnings (~Dez 2026) (2026-12-01) | A queda de 12.7% pos-earnings por um EPS miss ocorre apesar de net income +102% e receita +47% — a reacao parece desproporcional ao miss, criando ponto de entrada num... |
