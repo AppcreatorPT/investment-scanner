@@ -1,25 +1,28 @@
-# Delta 2026-08-26 — funil para a tua DD, nao e conselho
+# Delta 2026-09-01 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**HYPE ✅/⚠️ NOVO ATH $83.27 (Aug 25) — CFTC path mais concreto**
-De $76 (delta Aug 25) para ~$83.27 em Aug 25 = +9.5% vs ultimo delta; novo ATH historico. Catalisador: Coinbase Derivatives filed self-certification CFTC para "HYPE Perp Style Futures" (Regulation 40.2(a)) — CFTC path via futures agora oficial, nao apenas endorsement presidencial. MAS Singapore alert perde relevancia com regulacao US a avançar. Aviso mantido: nao entrar/aumentar em ATH sem posicao pre-existente; aguardar pullback ou confirmacao de cloture CFTC.
+**LGVN ⚠️⚠️ ATENCAO MAXIMA — top-line ELPIS II binario a semanas**
+Database lock passou (31 Ago). Top-line do Phase 2b ELPIS II (laromestrocel em HLHS, 40 doentes pediatricos) confirmado para Setembro 2026 no update Q2 (12 Ago). Catalisador binario extremamente proximo e pouco coberto por analistas. Regra binarios biotech: posicao pequena (max 3-5%); nao aumentar antes do dado — pode fazer +/-50% em 24h. Aguardar readout.
 
-**SOUN ⚠️ ATENCAO MAXIMA — Voto LivePerson 2-Set: 7 dias**
-LivePerson adiou novamente reuniao (convocada e suspensa Aug 20) para 2-Set-2026, 10h ET. Deadline para votar: 1-Set 23:59 ET. 97% dos votos expressos = FOR, mas quorum (maioria de TODAS as acoes emitidas) ainda nao atingido — faltam poucos pontos percentuais. Mercado antecipa aprovacao. Resultado resolve em menos de 7 dias — aguardar antes de novas entradas/saidas.
+**SOUN ⚠️ Voto LivePerson RESOLVE AMANHA (2-Set)**
+Reuniao mantida para 2-Set 10h ET; deadline de voto e HOJE 1-Set 23:59 ET. 97% dos votos expressos = FOR, quorum (maioria de todas as acoes emitidas) a poucos pontos. Mercado antecipa aprovacao. Resolve em <24h — aguardar resultado antes de mexer.
 
-**NBIS ⚠️⚠️ CARRY — Notes $5.75B confirmados fechados**
-Convertible notes confirmados fechados Aug 24: $3.45B (0.50%, 2030) + $2.3B (4.50%, 2034) = $5.75B total (acima dos $5B inicialmente anunciados). Adicionalmente, $400M de 2029 Notes + $400M de 2031 Notes trocadas por ~15.8M Classe A shares. Dilucao confirmada. Burry short ainda ativo (Form 4 de fecho ainda pendente). Stock ~$210. Nao aumentar.
+**HYPE/PURR ✅/⚠️ NOVO ATH $86.64 (27 Ago) — nao entrar em ATH**
+HYPE novo ATH $86.64 em 27 Ago, recuou para ~$83.73 (~flat vs delta anterior $83.27). PURR ~$13.6-14.2 (+140% do minimo de Julho); Hyperliquid Strategies anunciou tesouraria HYPE de $1.9B e "fortress balance sheet" (27 Ago). Unlock de tokens a 29 Ago causou -3.5%. Aviso mantido: nao iniciar/aumentar em ATH sem posicao pre-existente; aguardar pullback.
 
-**QURE ⚠️ JANELA BLA A FECHAR — 5 semanas**
-BLA AMT-130 (Huntington HD gene therapy) ainda nao submetida. Q3 2026 termina Sep 30 — janela agora de 5 semanas. FDA e QURE alinhados no design do estudo confirmatório (concurrent control, sem sham). Se BLA slip para Q4 = re-avaliacao do catalisador. Vigiar press releases QURE nas proximas 4 semanas.
+**CLARITY Act ⚠️ CARRY — cloture Senado 15-Set confirmada (2:15pm ET)**
+Thune agendou voto de cloture na motion to proceed para 15-Set, 2:15pm ET; precisa 60 votos (mesmo numero da aprovacao formal). Armstrong (Coinbase) diz que passa; trackers ainda dao odds baixas (~14%). Afeta GLXY, XRPL, FIGR, EXOD, ADE, CNCK. Mercado ainda desconta falha — assimetria mantida mas evento e binario e datavel. Vigiar 15-Set.
 
-**PRME ⚠️ JANELA IND A FECHAR — 5 semanas**
-PM647 IND/CTA filing reconfirmado como Q3 2026 nos resultados Q2 (Aug 2026). Janela identica: 5 semanas restantes. ARK Invest continua a comprar. Sem nova press release de submissao. Vigiar.
+**PRME ⚠️ CARRY — janela IND PM647 a fechar (~4 semanas)**
+IND/CTA de PM647 (AATD) reconfirmado "Q3 2026" no 10-Q/Q2; ainda nao submetido. Q3 termina 30-Set = ~4 semanas. Dados clinicos so em 2027. Sem press release de submissao. Vigiar.
 
-**Carry sem novidade material:** GLXY (CLARITY Act Sep 15, 30%; esperar resultado), ASTS (FCC 30-day testing ativo ate Sep 12), CRWV (insiders continuam a vender; ~$88; carry), RKLB (Neutron Q4 launchpad on track; slip 2027 nao confirmado), FRVO (lockup Nov 14; nao entrar antes), EYPT (INVALIDADO — nunca re-incluir), GERN (base case H2 2028; nao aumentar), INOD (CEO Singhal Sep 30; vigiar), LUNR (IM-3 sem data; CEO insider sale persiste; nao reforcar), HAG.DE (Jefferies Hold; rotacao R3NK.DE)
+**GRAL — painel FDA 23-Set confirmado (primeiro MCED de sempre)**
+Molecular and Clinical Genetics Panel agendado 23-Set para rever PMA do Galleri. Primeira revisao de sempre de um teste MCED pela FDA; base = PATHFINDER 2 (25.490 doentes). Catalisador regulatorio datavel; risco de voto negativo real. Vigiar.
+
+**Carry sem novidade material:** FRVO (lockup expira 14-Nov; nao entrar antes), CRWV (insiders continuam a vender; carry), EYPT (INVALIDADO Ago-17 LUGANO miss; nunca re-incluir — nao esta na buy-list).
 
 ---
 
@@ -27,24 +30,24 @@ PM647 IND/CTA filing reconfirmado como Q3 2026 nos resultados Q2 (Aug 2026). Jan
 
 | Ticker | Movimento | Nota |
 |--------|-----------|------|
-| HYPE | ✅ +9.5% ($76→$83.27) | Novo ATH Aug 25; Coinbase HYPE perp futures CFTC-certified; ainda nao entrar em ATH |
-| AAVE | ➡️ -6% de pico ($140→$129) | Rejeicao tecnica em $140; consolidando $128-130; buybacks 292/dia continuam |
-| SOUN | ➡️ -4% ($7.32→$7.00) | Normal pre-evento; LivePerson merger vote Sep 2; aguardar resultado |
-| CRWV | ➡️ -2% (~$90→$88) | Pressao de insider selling; "lower highs" padrao; tese fundamental intacta |
-| SPY | ➡️ ~$765-766 | Flat vs delta; mercado aguarda catalyzers de setembro |
+| HYPE | ✅ novo ATH $86.64 (27 Ago) → ~$83.73 | ~flat vs delta anterior; nao entrar em ATH |
+| PURR | ✅ tesouraria HYPE $1.9B "fortress balance sheet" (27 Ago) | +140% do minimo Julho; unlock -3.5% em 29 Ago |
+| AVAV | encomenda US Army $51M Switchblade 600 (26 Ago) | ja no catalisador da buy-list; sob IDIQ $990M |
+| NXE | Investor Day HOJE 1-Set (progresso Rook I) | FID feita, construcao greenlit; sem surpresa |
+| SPY | ➡️ $769.35 (28 Ago), +0.5% na semana | flat; mercado aguarda catalisadores de Setembro |
 
 ---
 
 ## Novos nomes
 
-0 novos nomes. Budget-light; nenhum nome externo verificado com catalisador datavel e acessibilidade EU retail confirmada. Zero e resposta correcta.
+0 novos nomes. Passagem budget-light (sem rescan completo dos temas); nenhum nome externo com catalisador datavel e acessibilidade EU retail confirmada surgiu. Zero e resposta correcta.
 
 ---
 
 ## Sem alteracao
 
-22 instrumentos sem novidade relevante nas ultimas 48h: LEU, NXE, UUUU, VKTX (maintenance topline pendente — Q3 nao encerrou), ALT (PERFORMA Phase 3 ativa Aug 3; readout 2029), BGC, VIRT, FLOW.AS, CMCX.L, PLUS.L, ETOR, KTOS, PL, EXOS.PA, R3NK.DE, THEON.AS, IONQ, ASTS (FCC testing on track), RKLB, MORPHO, ONDO, RDW.
+~28 instrumentos da buy-list sem novidade material nas ultimas ~48h (defesa EU/US, materiais/uranio, trading, restantes espaco e longevidade sem catalisador esta semana).
 
 ---
 
-_Gerado automaticamente pelo investment-scanner em 2026-08-26. Nao e conselho de investimento._
+_Gerado automaticamente pelo investment-scanner em 2026-09-01. Nao e conselho de investimento._
