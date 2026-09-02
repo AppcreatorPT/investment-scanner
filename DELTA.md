@@ -1,28 +1,25 @@
-# Delta 2026-09-01 — funil para a tua DD, nao e conselho
+# Delta 2026-09-02 — funil para a tua DD, nao e conselho
 
 ---
 
 ## Alertas
 
-**LGVN ⚠️⚠️ ATENCAO MAXIMA — top-line ELPIS II binario a semanas**
-Database lock passou (31 Ago). Top-line do Phase 2b ELPIS II (laromestrocel em HLHS, 40 doentes pediatricos) confirmado para Setembro 2026 no update Q2 (12 Ago). Catalisador binario extremamente proximo e pouco coberto por analistas. Regra binarios biotech: posicao pequena (max 3-5%); nao aumentar antes do dado — pode fazer +/-50% em 24h. Aguardar readout.
+**SOUN ⚠️⚠️ VOTO LIVEPERSON RESOLVE HOJE (2-Set 10h ET)**
+Reuniao especial de accionistas LivePerson mantida para hoje 2-Set 10h ET (deadline de voto foi ontem 1-Set 23:59 ET). 97%+ dos votos expressos = FOR, mas falta atingir quorum (maioria de TODAS as acoes emitidas) — a poucos pontos. Aprovacoes regulatorias estrangeiras (IT/CA/DE/UK/BG) ja obtidas. Resolve nas proximas horas — aguardar resultado antes de mexer.
 
-**SOUN ⚠️ Voto LivePerson RESOLVE AMANHA (2-Set)**
-Reuniao mantida para 2-Set 10h ET; deadline de voto e HOJE 1-Set 23:59 ET. 97% dos votos expressos = FOR, quorum (maioria de todas as acoes emitidas) a poucos pontos. Mercado antecipa aprovacao. Resolve em <24h — aguardar resultado antes de mexer.
+**LGVN ⚠️⚠️ TOP-LINE ELPIS II BINARIO A DIAS — carry**
+Q2 update (12 Ago) e Nasdaq confirmam top-line do Phase 2b ELPIS II (laromestrocel em HLHS, 40 doentes pediatricos) esperado Setembro 2026, enrollment completo. Catalisador binario extremamente proximo, pouco coberto. Regra binarios biotech: posicao pequena (max 3-5%), nao aumentar antes do dado (+/-50% possivel em 24h). Aguardar readout.
 
-**HYPE/PURR ✅/⚠️ NOVO ATH $86.64 (27 Ago) — nao entrar em ATH**
-HYPE novo ATH $86.64 em 27 Ago, recuou para ~$83.73 (~flat vs delta anterior $83.27). PURR ~$13.6-14.2 (+140% do minimo de Julho); Hyperliquid Strategies anunciou tesouraria HYPE de $1.9B e "fortress balance sheet" (27 Ago). Unlock de tokens a 29 Ago causou -3.5%. Aviso mantido: nao iniciar/aumentar em ATH sem posicao pre-existente; aguardar pullback.
-
-**CLARITY Act ⚠️ CARRY — cloture Senado 15-Set confirmada (2:15pm ET)**
-Thune agendou voto de cloture na motion to proceed para 15-Set, 2:15pm ET; precisa 60 votos (mesmo numero da aprovacao formal). Armstrong (Coinbase) diz que passa; trackers ainda dao odds baixas (~14%). Afeta GLXY, XRPL, FIGR, EXOD, ADE, CNCK. Mercado ainda desconta falha — assimetria mantida mas evento e binario e datavel. Vigiar 15-Set.
+**CLARITY Act ⚠️ CARRY — cloture Senado 15-Set confirmada**
+Thune filed cloture na motion to proceed a 8-Ago; voto marcado 15-Set (60 votos necessarios). Armstrong (Coinbase) diz que passa; foundations ainda dao odds baixas. Afeta GLXY, XRPL, FIGR, EXOD, ADE, CNCK. Mercado ainda desconta falha — assimetria mantida, evento binario e datavel. Vigiar 15-Set.
 
 **PRME ⚠️ CARRY — janela IND PM647 a fechar (~4 semanas)**
-IND/CTA de PM647 (AATD) reconfirmado "Q3 2026" no 10-Q/Q2; ainda nao submetido. Q3 termina 30-Set = ~4 semanas. Dados clinicos so em 2027. Sem press release de submissao. Vigiar.
+IND/CTA de PM647 (AATD) reconfirmado "Q3 2026"; Q3 termina 30-Set. Ainda sem press release de submissao. Dados clinicos so 2027. Vigiar.
 
-**GRAL — painel FDA 23-Set confirmado (primeiro MCED de sempre)**
-Molecular and Clinical Genetics Panel agendado 23-Set para rever PMA do Galleri. Primeira revisao de sempre de um teste MCED pela FDA; base = PATHFINDER 2 (25.490 doentes). Catalisador regulatorio datavel; risco de voto negativo real. Vigiar.
+**GRAL ⚠️ CARRY — painel FDA 23-Set (primeiro MCED de sempre)**
+Molecular and Clinical Genetics Panel agendado 23-Set para rever PMA do Galleri. Risco de voto negativo real. Vigiar.
 
-**Carry sem novidade material:** FRVO (lockup expira 14-Nov; nao entrar antes), CRWV (insiders continuam a vender; carry), EYPT (INVALIDADO Ago-17 LUGANO miss; nunca re-incluir — nao esta na buy-list).
+**Carry sem novidade material:** HYPE/PURR (near ATH — nao entrar em ATH; unlocks de tokens inicio Set = pressao de oferta), FRVO (lockup 14-Nov; nao entrar antes), CRWV (insiders continuam a vender), CLARITY-basket acima. **EYPT permanece INVALIDADO (Ago-17 LUGANO miss) — nao esta na buy-list, nunca re-incluir.**
 
 ---
 
@@ -30,24 +27,24 @@ Molecular and Clinical Genetics Panel agendado 23-Set para rever PMA do Galleri.
 
 | Ticker | Movimento | Nota |
 |--------|-----------|------|
-| HYPE | ✅ novo ATH $86.64 (27 Ago) → ~$83.73 | ~flat vs delta anterior; nao entrar em ATH |
-| PURR | ✅ tesouraria HYPE $1.9B "fortress balance sheet" (27 Ago) | +140% do minimo Julho; unlock -3.5% em 29 Ago |
-| AVAV | encomenda US Army $51M Switchblade 600 (26 Ago) | ja no catalisador da buy-list; sob IDIQ $990M |
-| NXE | Investor Day HOJE 1-Set (progresso Rook I) | FID feita, construcao greenlit; sem surpresa |
-| SPY | ➡️ $769.35 (28 Ago), +0.5% na semana | flat; mercado aguarda catalisadores de Setembro |
+| HYPE | ➡️ ~$82.24 (2-Set), ~flat vs ~$83.73 (1-Set) | ATH $86.64 (27 Ago); unlocks inicio Set pressionam oferta |
+| PURR | ➡️ ~$12.83 | dentro do range; sem novidade material vs delta 1-Set |
+| AVAV | ➡️ ~$144.29 (2-Set); Q1 earnings 9-Set, fireside Jefferies 10-Set | $51M Switchblade ja no catalisador; earnings 9-Set e proximo catalisador |
+
+Nenhum movimento de preco >10% detetado nas ultimas ~48h entre os 43 instrumentos da buy-list.
 
 ---
 
 ## Novos nomes
 
-0 novos nomes. Passagem budget-light (sem rescan completo dos temas); nenhum nome externo com catalisador datavel e acessibilidade EU retail confirmada surgiu. Zero e resposta correcta.
+0 novos nomes. Passagem budget-light (sem rescan completo dos temas); nenhum nome externo com catalisador datavel e acessibilidade EU retail (10-100 EUR) confirmada surgiu. Zero e resposta correcta.
 
 ---
 
 ## Sem alteracao
 
-~28 instrumentos da buy-list sem novidade material nas ultimas ~48h (defesa EU/US, materiais/uranio, trading, restantes espaco e longevidade sem catalisador esta semana).
+~37 instrumentos da buy-list sem novidade material nas ultimas ~48h (defesa EU/US, materiais/uranio/terras raras, trading, restantes espaco, longevidade e fin. alt. sem catalisador esta semana).
 
 ---
 
-_Gerado automaticamente pelo investment-scanner em 2026-09-01. Nao e conselho de investimento._
+_Gerado automaticamente pelo investment-scanner em 2026-09-02. Nao e conselho de investimento._
